@@ -5,7 +5,6 @@ margin:54px 99px 99px 99px;
 }@font-face {
 font-family: 'DIAGRAPH';
 src: url('../Dia/Dia.otf') format('opentype');
-font-size:12px;
 }::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
 visibility:hidden;
 width:0px;
