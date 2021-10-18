@@ -51,9 +51,10 @@ word-spacing:-54px;
 text-align-last:justify;
 color:#540000;
 }
-p.WORDOF a {
-text-decoration:none;
-}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 p.WORDOFASC {
 font-family:DIAGRAPH;
 line-height:11px;
