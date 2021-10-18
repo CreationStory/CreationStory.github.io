@@ -43,13 +43,15 @@ min-width:123px;
 max-width:123px;
 margin-bottom:45px;
 }
-p.WORDOF, a {
+p.WORDOF {
 font-family:DIAGRAPH;
 line-height:18px;
 margin-left:9px;
 word-spacing:-54px;
 text-align-last:justify;
 color:#540000;
+}
+p.WORDOF a {
 text-decoration:none;
 }
 p.WORDOFASC {
