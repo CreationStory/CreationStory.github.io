@@ -5,7 +5,6 @@ margin:54px 99px 99px 99px;
 }@font-face {
 font-family: 'DIAGRAPH';
 src: url('../Dia/Dia.otf') format('opentype');
-text-decoration:none;
 }::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
 visibility:hidden;
 width:0px;
@@ -44,13 +43,14 @@ min-width:123px;
 max-width:123px;
 margin-bottom:45px;
 }
-p.WORDOF {
+p.WORDOF, a {
 font-family:DIAGRAPH;
 line-height:18px;
 margin-left:9px;
 word-spacing:-54px;
 text-align-last:justify;
 color:#540000;
+text-decoration:none;
 }
 p.WORDOFASC {
 font-family:DIAGRAPH;
@@ -75,3 +75,48 @@ transition: 0.18s linear;
 .LANGUAGE2 {
 filter:drop-shadow(1px 45px 0px #000)invert(1)hue-rotate(-99deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
