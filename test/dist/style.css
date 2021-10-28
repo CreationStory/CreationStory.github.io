@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+}
+h1 span {
+  background-color: #ccc;
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0 0.5em;
+  width: 3em;
+}
