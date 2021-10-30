@@ -8,4 +8,6 @@ https://naejc.github.io/Script/GodsWords
 
 https://naejc.github.io/Script/SHOWuploadings/EDoubleG
 
-https://naejc.github.io/Script/SHOWuploadings/Boneslab
+https://naejc.github.io/Script/SHOWuploadings/BoneSlab
+
+https://naejc.github.io/Script/SHOWuploadings/MonadualSix
