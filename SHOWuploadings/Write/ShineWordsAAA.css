@@ -17,7 +17,12 @@ scrollbar-width:none;
 }@font-face {
 font-family: 'DIAGRAPH';
 src: url('../Dia/Dia.otf') format('opentype');
-}::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
+} 
+a, a:hover, a:focus, a:active {
+text-decoration:none;
+color:inherit;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
 visibility:hidden;
 width:0px;
 scrollbar-width:none;
