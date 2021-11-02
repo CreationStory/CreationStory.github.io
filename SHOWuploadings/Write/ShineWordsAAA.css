@@ -123,12 +123,12 @@ transition: 0.18s linear;
 transition: 0.21s linear;
 }
 .CALLINE {
-padding-top:18px;
 min-height:45px;
-width:100%;
+min-width:100%;
 background:url('CalLine.png');
 background-repeat:no-repeat;
 background-size:cover;
+object-fit:scale-down;
 }
 .zoom {
 display:inline-block;
