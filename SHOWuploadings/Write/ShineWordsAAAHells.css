@@ -120,6 +120,10 @@ justify-content:start;
 align-self:stretch;
 align-items:flex-start;
 }
+.audio {
+visibility:hidden;
+display:none;
+}
 #WORD1, #WORD2, #WORD3 {
 filter:drop-shadow(2px 1px 1px #450000);
 transition: 0.121s linear;
