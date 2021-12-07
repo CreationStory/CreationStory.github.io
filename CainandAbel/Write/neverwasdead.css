@@ -1,0 +1,154 @@
+*::-webkit-scrollbar {
+display:none;
+visibility:hidden;
+scrollbar-width:none;
+-ms-overflow-style:none;
+}
+body {
+background:url('Skindead.png');
+background-repeat:repeat;
+background-attachment:fixed;
+background-position:center center;
+background-size:cover;
+text-align:center;
+margin:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+}
+@font-face {
+font-family: 'DIAGRAPH';
+src: url('../Dia/Dia.otf') format('opentype');
+}@font-face {
+font-family: 'DIAGRAPH2';
+src: url('../Dia/BDCalais.ttf') format('truetype');
+}::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
+visibility:hidden;
+width:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+display:none;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-thumb {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track-piece {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-button {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-moz-selection {
+color:#450000;
+background:#ff000018;
+}::selection {
+color:#450000;
+background:#ff000018;
+}
+.WORD {
+font-color:#fff;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.HIGHLOWWORDOR {
+margin-top:9px;
+margin-bottom:45px;
+display:inline-flex;
+justify-content:space-between;
+width:91%;
+}
+p.HIGHLOWWORDER {
+font-size:18px;
+text-align: center;
+text-shadow:1px 15px 0px #000;
+white-space: nowrap;
+font-family:DIAGRAPH;
+letter-spacing:0.06rem;
+color:#540000;
+}
+p.WORDOF {
+font-size:1.23vw;
+font-weight:100;
+word-spacing:18px;
+font-family:DIAGRAPH2;
+letter-spacing:1px;
+margin-top:54px;
+padding-right:54px;
+padding-left:54px;
+color:#ff5400;
+transition: 0.321s linear;
+}
+p.WORDOF b {
+font-weight:900;
+}
+.ART {
+padding-right:81px;
+padding-left:81px;
+display:block;
+}
+.ART IMG {
+max-width:100%;
+margin:auto;
+}
+.FACE9 {
+display:inline-flex;
+}
+.FACE9DON {
+display:table-caption;
+width:54vw;
+}
+#A1, #A2, #A3 {
+filter:drop-shadow(0px 0px 1px #ff5400);
+transition: 0.18s linear;
+}
+.LANGUAGE {
+filter:drop-shadow(1px 1px 95px #40000012)sepia(40%)!important;
+text-shadow:0px -2px 1px #000;
+}
+.HIGHLANGUAGELOW {
+filter:drop-shadow(1px 1px 1px #000)invert(1)hue-rotate(-99deg)!important;
+}
+#HIGHLOWWORD {
+text-shadow:0px 1px 0px #000;
+filter:drop-shadow(1px -18px 0px #f30);
+transition: 0.18s linear;
+}
+#HIGHLOWWORD9 {
+transition: 0.21s linear;
+}
+.CALLINE {
+height:37px;
+min-height:37px;
+max-height:37px;
+width:100%;
+background:url('CalLinedead.png');
+background-repeat:repeat;
+background-size:cover;
+}
+.zoom {
+display:inline-block;
+position: relative;
+}.zoom:after {
+content:'';
+width:1px; 
+height:1px; 
+display:block;  
+position:absolute; 
+top:0;
+right:0;
+background:none;
+}.zoom img {
+display: block;
+}.zoom img::selection { background-color:transparent;}
+.Viewspecifiicc {
+margin-top:36.9vh;
+}
