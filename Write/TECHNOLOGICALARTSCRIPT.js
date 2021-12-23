@@ -3,12 +3,12 @@ var defaults = {
 url: false,
 callback: false,
 target: false,
-duration: 180,
+duration: 145,
 on: 'mouseover',
 touch: true,
-onZoomIn: true,
-onZoomOut: true,
-magnify: 1.18
+onZoomIn: false,
+onZoomOut: false,
+magnify: 1.11
 };
 $.zoom = function(target, source, img, magnify) {
 var targetHeight,
