@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hell's Lakes</title>
+<link href="Write/ShineWordsAAAHells.css" rel="stylesheet">
+</head>
+<body>
+<video playsinline autoplay muted loop poster="Write/Empty.png">
+<source src="Art/Hell.mp4" type="video/mp4">
+</video>
+<div class="HIGHLOWWORDOR">
+<p class="HIGHLOWWORDER" id="HIGHLOWWORD"></p>
+<p class="HIGHLOWWORDER" id="HIGHLOWWORD9"></p>
+</div>
+<div class="WORD">
+<div class="FACE">
+<p class="WORDOF" id="WORD1"></p>
+</div>
+<div class="FACEA">
+<p class="WORDOF" id="WORD2"></p>
+</div>
+<div class="FACEAAA">
+<p class="WORDOF" id="WORD3"></p>
+</div>
+</div>
+<audio controls autoplay hidden>
+<source src="Write/Trailing_By_Race_Banyon.mp3" type="audio/mpeg">
+</audio>
+<script type="text/javascript">
+var initWords = function (element) {
+const symbols = ['&nbsp', '&nbsp', '&nbsp', '&nbsp', 'Fire', 'Fire', 'Fire', 'Fire', 'Fire', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp'];
+let count = 0;
+const iteration = () => {
+element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
+if (count % 2 !== 0) {
+element.classList.add("LANGUAGE");
+} else {
+element.classList.remove("LANGUAGE");
+}
+count++;
+if (count === symbols.length * 2) {
+count = 0;
+}
+};
+let inthandle = setInterval(iteration, 720);
+iteration();}
+initWords(document.getElementById("WORD1"));
+</script>
+
+<script type="text/javascript">
+var initWords = function (element) {
+const symbols = ['&nbsp', '&nbsp', '&nbsp', 'Of', 'Of', 'Of', 'Of', 'Of', 'Of', '&nbsp', '&nbsp', '&nbsp', 'Look', 'Below', '&nbsp', '&nbsp', 'Scroll down!'];
+let count = 0;
+const iteration = () => {
+element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
+if (count % 2 !== 0) {
+element.classList.add("LANGUAGE");
+} else {
+element.classList.remove("LANGUAGE");
+}
+count++;
+if (count === symbols.length * 2) {
+count = 0;
+}
+};
+let inthandle = setInterval(iteration, 720);
+iteration();}
+initWords(document.getElementById("WORD2"));
+</script>
+
+<script type="text/javascript">
+var initWords = function (element) {
+const symbols = ['&nbsp', '&nbsp', 'Lake', 'Lake', 'Lake', 'Lake', 'Lake', 'Lake', 'Lake', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp', '&nbsp'];
+let count = 0;
+const iteration = () => {
+element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
+if (count % 2 !== 0) {
+element.classList.add("LANGUAGE");
+} else {
+element.classList.remove("LANGUAGE");
+}
+count++;
+if (count === symbols.length * 2) {
+count = 0;
+}
+};
+let inthandle = setInterval(iteration, 720);
+iteration();}
+initWords(document.getElementById("WORD3"));
+</script>
+
+<script type="text/javascript">
+var initWords = function (element) {
+const symbols = ["HelL&#x599s", "HeLl&#x599s"];
+let count = 0;
+const iteration = () => {
+element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
+if (count % 2 !== 0) {
+element.classList.add("HIGHLANGUAGELOW");
+} else {
+element.classList.remove("HIGHLANGUAGELOW");
+}
+count++;
+if (count === symbols.length * 2) {
+count = 0;
+}
+};
+let inthandle = setInterval(iteration, 42);
+iteration();}
+initWords(document.getElementById("HIGHLOWWORD"));
+</script>
+<script type="text/javascript">
+var initWords = function (element) {
+const symbols = [' 𒐫 Lakes ', ' Lakes 𒐫 '];
+let count = 0;
+const iteration = () => {
+element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
+if (count % 2 !== 0) {
+element.classList.add("HIGHLANGUAGELOW");
+} else {
+element.classList.remove("HIGHLANGUAGELOW");
+}
+count++;
+if (count === symbols.length * 2) {
+count = 0;
+}
+};
+let inthandle = setInterval(iteration, 219);
+iteration();}
+initWords(document.getElementById("HIGHLOWWORD9"));
+</script>
+</body>
+</html>
