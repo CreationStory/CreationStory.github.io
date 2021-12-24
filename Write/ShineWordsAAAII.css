@@ -18,6 +18,10 @@ scrollbar-width:none;
 font-family: 'DIAGRAPH';
 src: url('../Dia/Dia.otf') format('opentype');
 } 
+@font-face {
+font-family: 'DIAGRAPH9';
+src: url('../Dia/9.ttf') format('truetype');
+} 
 a, a:hover, a:focus, a:active {
 text-decoration:none;
 color:inherit;
@@ -89,11 +93,46 @@ overflow:revert;
 overflow-wrap:revert;
 text-align:center;
 text-align-last:end;
-filter: drop-shadow(1px 2px 1px #ff9000);
+filter:drop-shadow(1px 2px 1px #ff9000);
 animation-name:WordSheep9;
 animation-duration:2.1s;
 animation-iteration-count:1;
 transition: 0.54s ease-in-out;
+}
+.Vari {
+position:absolute;
+width:100vw;
+bottom:0.321vh;
+}
+p.Vari9 {
+position:absolute;
+width:100vw;
+bottom:2vh;
+font-family:DIAGRAPH9;
+color:#450000;
+font-weight:900;
+font-size:1.8vw;
+word-spacing:1vw;
+letter-spacing:1px;
+text-shadow:18px 18px 9px #300f00, 0px 0px 6px #ffc, 3px 0px 1px rgb(1 1 1), 6px -2px 2px #ffaa1169, 5px 0px 0px #ccc, -9px 0px 18px #000, 23px -1px 9px rgb(1 1 1 / 45%), 21px 0px 1px #5e0000, 0 14px 9px rgb(9 1 255 / 14%);
+filter:none;
+transition:.81s linear;
+}
+p.Vari9:hover {
+transition:.45s linear;
+filter:drop-shadow(1px 27px 27px #ff9000);
+}
+.Vari9A {
+position:absolute;
+bottom:0vh;
+font-family:DIAGRAPH9;
+color:#450000;
+font-weight:900;
+font-size:2.34vw;
+word-spacing:1vw;
+letter-spacing:1px;
+text-shadow:-43px 4px 2px #ffffcc23, 2px 0px 2px rgb(1 1 1 / 27%), 2px -2px 2px #ffaa1169, 0px 2px 2px #ff554445, 4px 2px 2px #fe591c27;
+z-index:-1;
 }
 p.WORDOF:hover {
 text-shadow:0 1px 6px #ccc, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
