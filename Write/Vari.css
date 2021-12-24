@@ -88,17 +88,18 @@ word-spacing:18px;
 font-family:DIAGRAPH2;
 letter-spacing:1px;
 margin-top:0px;
+color:#000;
 padding-right:45px;
 padding-left:45px;
-text-shadow: 0 1px 0 #ccc,
-0 2px 0 #c9c9c9,
-0 3px 0 #bbb,
-0 4px 0 #b9b9b9,
-0 5px 0 #aaa,
-0 6px 1px rgba(0,0,0,1.1),
+text-shadow:0 -2px 3px #ccc,
+0 7px 2px #c9c9c9,
+0 -4px 9px #bbb,
+0 -2px 1px #b9b9b9,
+0 7px 0 #aaa,
+0 74px 1px rgba(0,0,0,1.1),
 0 0 5px rgba(0,0,0,.1),
-0 1px 3px rgba(0,0,0,.3),
-0 3px 5px rgba(0,0,0,.2),
+0 1px 1px rgba(0,0,0,1),
+0 55px 5px rgba(0,0,0,.2),
 0 5px 10px rgba(0,0,0,.27),
 0 10px 10px rgba(0,0,0,.2),
 0 20px 20px rgba(0,0,0,.18)!important;
@@ -157,6 +158,7 @@ display:inline;
 }
 .ART9 IMG {
 max-width:49vw;
+transition:9s ease-in-out;
 }
 .ART IMG {
 max-width:49vw;
