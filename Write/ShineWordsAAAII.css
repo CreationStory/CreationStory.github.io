@@ -107,7 +107,10 @@ bottom:0.321vh;
 p.Vari9 {
 position:absolute;
 width:100vw;
-bottom:2vh;
+padding-top:9vh;
+padding-bottom:5.7vh;
+margin-bottom:0;
+bottom:0;
 font-family:DIAGRAPH9;
 color:#450000;
 font-weight:900;
