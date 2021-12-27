@@ -287,6 +287,8 @@ transition: 0.321s linear;
 }
 .FACE9 {
 display:inline-flex;
+user-select:none;
+pointer-events:none;
 }
 .FACE9DON {
 display:table-caption;
