@@ -178,6 +178,11 @@ display:inline;
 }
 .ART IMG {
 max-width:1024px;
+transition:4s linear;
+}
+.ART IMG:hover {
+filter:contrast(118%)brightness(118%)saturate(118%);
+transition:9s linear;
 }
 .ART2 {
 float:right;
