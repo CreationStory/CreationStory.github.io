@@ -1,0 +1,114 @@
+*::-webkit-scrollbar {
+display:none;
+visibility:hidden;
+scrollbar-width:none;
+-ms-overflow-style:none;
+}
+body {
+background:url('Skin.png');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center center;
+background-size:cover;
+text-align:center;
+margin:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+}@font-face {
+font-family: 'DIAGRAPH';
+src: url('../Dia/Dia.otf') format('opentype');
+} 
+@font-face {
+font-family: 'DIAGRAPH9';
+src: url('../Dia/9.ttf') format('truetype');
+} 
+a, a:hover, a:focus, a:active {
+text-decoration:none;
+color:inherit;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
+visibility:hidden;
+width:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+display:none;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-thumb {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track-piece {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-button {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-moz-selection {
+color:#450000;
+background:#ff000018;
+}::selection {
+color:#450000;
+background:#ff000018;
+}
+.WORD {
+}
+p.WORDOF {
+font-size:7.2vw;
+font-weight:900;
+word-spacing:18px;
+font-family:DIAGRAPH;
+letter-spacing:2px;
+margin-top:1vh;
+padding-right:9vw;
+padding-left:9vw;
+color:#ff5400;
+overflow:revert;
+overflow-wrap:revert;
+text-align:left;
+text-align-last:end;
+text-shadow:1px 1px 8px #000, 0 -3px 3px #000, -4px 1px 5px rgb(1 1 1), 0 2px 0 #000, 6px 0px 1px #000, 2px 0 0 #000, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
+filter:drop-shadow(1px 2px 1px #ff9000);
+animation-name:WordSheep9;
+animation-duration:2.7s;
+animation-iteration-count:1;
+animation-fill-mode:both;
+transition:1.18s linear;
+animation-timing-function:linear;
+}
+p.WORDOF:hover {
+transition:1.18s linear;
+text-shadow:0 11px 8px #ff5400, 0 -3px 3px #c9c9c9, -4px 1px 8px rgb(1 1 1), 0 2px 0 #b9b9b9, 1px 1px 8px #aaa, 2px 0 0 #ccc, 1px 1px 8px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 8px 9px 3px rgb(0 0 0 / 18%);
+}
+@keyframes WordSheep9 {
+0% {
+text-shadow:1px 1px 8px #fff, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
+filter:drop-shadow(1px 2px 11px #ff9000);
+}
+100% {
+text-shadow:1px 1px 8px #000, 0 -3px 3px #000, -4px 1px 5px rgb(1 1 1), 0 2px 0 #000, 6px 0px 1px #000, 2px 0 0 #000, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
+filter:drop-shadow(1px 2px 1px #ff9000);
+}
+}
+.FACEH {
+margin-top:9vh;
+width:99vw;
+display:inline-block;
+}
+.FACE {
+display:inline-flex;
+}
+.CALLINE {
+min-height:40px;
+min-width:100%;
+background:url('CalLine.png');
+background-repeat:no-repeat;
+background-size:cover;
+object-fit:scale-down;
+}
