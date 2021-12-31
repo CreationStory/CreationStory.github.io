@@ -4,12 +4,14 @@ visibility:hidden;
 scrollbar-width:none;
 -ms-overflow-style:none;
 }
-body {
+html {
 background:url('Skin.png');
 background-repeat:no-repeat;
 background-attachment:fixed;
 background-position:center center;
 background-size:cover;
+}
+body {
 text-align:center;
 margin:0px;
 scrollbar-width:none;
