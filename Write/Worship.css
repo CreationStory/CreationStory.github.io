@@ -181,7 +181,7 @@ max-width:1024px;
 transition:4s linear;
 }
 .ART IMG:hover {
-filter:contrast(118%)brightness(118%)saturate(118%);
+filter:contrast(118%)brightness(111%)saturate(118%)sepia(118%)hue-rotate(-24deg);
 transition:9s linear;
 }
 .ART2 {
