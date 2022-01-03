@@ -108,7 +108,7 @@ bottom:0.321vh;
 p.Vari9 {
 position:absolute;
 width:100vw;
-padding-top:14.9vh;
+padding-top:18vh;
 padding-bottom:5.7vh;
 margin-bottom:0;
 bottom:0;
@@ -139,7 +139,7 @@ text-shadow:-43px 4px 2px #ffffcc23, 2px 0px 2px rgb(1 1 1 / 27%), 2px -2px 2px 
 z-index:-1;
 }
 p.WORDOF:hover {
-text-shadow:0 1px 6px #ccc, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
+text-shadow:0 1px 6px #ccc, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%)!important;
 animation-play-state:paused;
 transition: 0.321s ease-in-out;
 }
