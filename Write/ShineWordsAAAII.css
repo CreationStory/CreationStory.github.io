@@ -96,7 +96,7 @@ text-align-last:end;
 filter:drop-shadow(1px 2px 1px #ff9000);
 text-shadow:none;
 animation-name:WordSheep9;
-animation-duration:1.28s;
+animation-duration:0.72s;
 animation-iteration-count:1;
 transition: 0.54s ease-in-out;
 }
@@ -147,7 +147,7 @@ transition: 0.321s ease-in-out;
 0% {
 text-shadow:0 1px 6px #ccc, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
 }
-27% {
+81% {
 text-shadow:0 1px 6px #ccc, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
 }
 100% {
