@@ -249,10 +249,11 @@ word-spacing:1vw;
 letter-spacing:2px;
 text-shadow:-1px 0px 18px #ff500045, 1px 0px 1px #ffc;
 filter:drop-shadow(2px 0px 1px #ffff9991);
-transition:.81s linear;
+transition:.9s linear;
 }
 p.Vari9 span:hover {
-transition:.27s linear;
+transition:.18s linear;
+text-shadow:-1px 0px 18px #ff500072, 1px 0px 1px #ffc;
 filter:drop-shadow(2px 0px 0px #ffc);
 }
 a, a:hover, a:focus, a:active {
