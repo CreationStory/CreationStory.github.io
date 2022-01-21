@@ -92,6 +92,7 @@ margin-top:0px;
 color:#000;
 padding-right:45px;
 padding-left:45px;
+user-select:none;
 text-shadow:0 -2px 3px #ccc,
 0 7px 2px #c9c9c9,
 0 -4px 9px #bbb,
@@ -160,10 +161,12 @@ display:inline;
 .ART9 IMG {
 max-width:49vw;
 transition:9s ease-in-out;
+user-select:none;
 }
 .ART IMG {
 max-width:49vw;
 transition:9s ease-in-out;
+user-select:none;
 }
 .ART IMG:hover {
 filter:hue-rotate(-81deg)sepia(27%)saturate(369%)contrast(145%);
@@ -249,11 +252,11 @@ word-spacing:1vw;
 letter-spacing:2px;
 text-shadow:-1px 0px 18px #ff500045, 1px 0px 1px #ffc;
 filter:drop-shadow(2px 0px 1px #ffff9991);
-transition:.9s linear;
+transition:1.11s linear;
 }
 p.Vari9 span:hover {
-transition:.18s linear;
-text-shadow:-1px 0px 18px #ff500072, 1px 0px 1px #ffc;
+transition:.22s linear;
+text-shadow:-1px 0px 18px #ff540045, 1px 0px 1px #ffc;
 filter:drop-shadow(2px 0px 0px #ffc);
 }
 a, a:hover, a:focus, a:active {
