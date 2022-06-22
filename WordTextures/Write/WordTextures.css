@@ -1,0 +1,173 @@
+*::-webkit-scrollbar {
+display:none;
+visibility:hidden;
+scrollbar-width:none;
+-ms-overflow-style:none;
+}
+body {
+background:url('SKIN.png');
+background-repeat:repeat;
+background-attachment:fixed;
+background-color:#000;
+background-position:center center;
+background-size:contain;
+text-align:center;
+margin:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
+visibility:hidden;
+width:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+display:none;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-thumb {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track-piece {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-button {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-moz-selection {
+color:#450000;
+background:#ff000018;
+}::selection {
+color:#450000;
+background:#ff000018;
+}
+.WORDOFCC {
+position:absolute;
+display:inline-block;
+margin-top:4px;
+margin-bottom:0;
+right:0;
+left:0;
+}
+.WORDINGSE {
+position:absolute;
+display:inline-block;
+width:234px;
+margin:0;
+top:1.8vh;
+left:1vw;
+font-family:"Times New Roman";
+font-size:1.114vw;
+color:#f50;
+text-shadow:0 0 14px #f40;
+font-weight:100;
+letter-spacing:1px;
+word-spacing:8px;
+text-align:center;
+text-align-last: center;
+line-height:27px;
+filter:drop-shadow(0 0 123px #f40);
+transition:.123s linear;
+animation-name:WORDINGSEO;
+animation-duration:7.2s;
+animation-delay:.0s;
+animation-iteration-count:infinite;
+animation-fill-mode:both;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:-1;
+}
+.WORDINGSW {
+position:absolute;
+display:inline-block;
+width:234px;
+margin:0;
+top:1.8vh;
+right:1.23vw;
+font-family:"Times New Roman";
+font-size:1.114vw;
+color:#f50;
+text-shadow:0 0 14px #f50;
+font-weight:100;
+letter-spacing:1px;
+word-spacing:8px;
+text-align:center;
+text-align-last: center;
+line-height:27px;
+filter:drop-shadow(0 0 123px #f40);
+transition:.123s linear;
+animation-name:WORDINGSEO;
+animation-duration:7.2s;
+animation-delay:1.23s;
+animation-iteration-count:infinite;
+animation-fill-mode:both;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:-1;
+}
+@keyframes WORDINGSEO {
+from {
+filter:drop-shadow(0 0 123px #f40);
+color:#f50;
+}
+54% {
+filter:drop-shadow(0 0 18px #f40);
+color:#f70;
+}
+100% {
+filter:drop-shadow(0 0 123px #f40);
+color:#f50;
+}
+}
+.WORDSEAMLESS {
+margin:auto;
+width:100%;
+}
+a, a:focus {
+color:inherit;
+text-decoration:none;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.VEC {
+display:inline;
+}
+.VEC IMG {
+margin:auto;
+pointer-events:none;
+user-select:none;
+}
+.FADERHEADTH {
+position:fixed;
+background:url(GHeadR.png);
+background-repeat:repeat;
+background-size:contain;
+height:1.45vh;
+width:100%;
+top:0;
+pointer-events:none;
+user-select:none;
+z-index:1;
+}
+.FADERHEADTHDi {
+position:fixed;
+background:url(GHeadDi.png);
+background-repeat:repeat;
+background-size:contain;
+height:3.21vh;
+width:100%;
+bottom:0;
+pointer-events:none;
+user-select:none;
+z-index:1;
+}
