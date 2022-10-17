@@ -2,7 +2,7 @@
 <html>
 <head>
 <link href="Write/ShineWordsAAAG.css" rel="stylesheet">
-<title>E Double G</title>
+<title>Callum Sharp - Visual Designer</title>
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script src='Write/TECHNOLOGICALARTSCRIPT.js'></script>
 <link rel="icon" href="Write/CS.ico">
@@ -35,61 +35,29 @@ $('#RP0').zoom({ on:'click' });
 <body>
 <div class="HIGHLOWWORDOR">
 <p class="HIGHLOWWORDER" id="HIGHLOWWORD"></p>
-<p class="HIGHLOWWORDER" id="HIGHLOWWORD9"></p>
 </div>
 <div class="WORD">
 <div class="CALLINE"></div>
 <div class="FACEH">
 <div class="FACE">
-<p class="WORDOF" id="A1">E Double G</p>
+<p class="WORDOF" id="A1">Dye-printing texture for well known fashion brand item of wear.</p>
 </div>
 </div>
 <div class="ART">
 <span class='zoom' id='9A'>
-<img src="Art/E_DOUBLE_G2.png"/>
+<img src="Art/E_DOUBLE_G3.png"/>
 </span>
 <span class='zoom' id='9A'>
 <img src="Art/E_DOUBLE_G3Prem.png"/>
 </span>
 <span class='zoom' id='CAL'>
-<img src="Art/E_DOUBLE_G3.png"/>
-</span>
-<span class='zoom' id='9A'>
-<img src="Art/E_DOUBLE_G49.png"/>
-</span>
-<span class='zoom' id='9'>
-<img src="Art/E_DOUBLE_G.png"/>
-</span>
-<span class='zoom' id='RP0'>
-<img src="Art/E_DOUBLE_G5.png"/>
+<img src="Art/E_DOUBLE_G2.png"/>
 </span>
 </div>
 </div>
-
 <script type="text/javascript">
 var initWords = function (element) {
-const symbols = ['E Double G', 'E Double G', 'E Double G'];
-let count = 0;
-const iteration = () => {
-element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
-if (count % 2 !== 0) {
-element.classList.add("LANGUAGE");
-} else {
-element.classList.remove("LANGUAGE");
-}
-count++;
-if (count === symbols.length * 2) {
-count = 0;
-}
-};
-let inthandle = setInterval(iteration, 8100);
-iteration();}
-initWords(document.getElementById("A1"));
-</script>
-
-<script type="text/javascript">
-var initWords = function (element) {
-const symbols = ['Callum', 'Callum'];
+const symbols = ['Callum Sharp', 'Callum Sharp'];
 let count = 0;
 const iteration = () => {
 element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
@@ -107,27 +75,5 @@ let inthandle = setInterval(iteration, 18);
 iteration();}
 initWords(document.getElementById("HIGHLOWWORD"));
 </script>
-
-<script type="text/javascript">
-var initWords = function (element) {
-const symbols = ['Sharp', 'Sharp'];
-let count = 0;
-const iteration = () => {
-element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
-if (count % 2 !== 0) {
-element.classList.add("HIGHLANGUAGELOW");
-} else {
-element.classList.remove("HIGHLANGUAGELOW");
-}
-count++;
-if (count === symbols.length * 2) {
-count = 0;
-}
-};
-let inthandle = setInterval(iteration, 18);
-iteration();}
-initWords(document.getElementById("HIGHLOWWORD9"));
-</script>
-
 </body>
 </html>
