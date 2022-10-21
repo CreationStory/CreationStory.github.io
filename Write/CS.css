@@ -253,8 +253,8 @@ letter-spacing:2px;
 text-shadow:-1px 0px 18px #ff500045, 1px 0px 1px #ffc;
 filter:drop-shadow(2px 0px 1px #ffff9991);
 transition:1.18s linear;
-padding-right:.81vw;
-padding-left:.81vw;
+padding-right:1vw;
+padding-left:1vw;
 }
 p.Vari9 span:hover {
 transition:.14s linear;
