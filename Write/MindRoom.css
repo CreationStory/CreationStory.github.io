@@ -229,8 +229,8 @@ color:#ff5400;
 transition: 0.321s linear;
 }
 .Vari {
-display:inline;
-width:100vw;
+padding-right:4vw;
+padding-left:4vw;
 }
 p.Vari9 {
 font-family:DIAGRAPH9;
@@ -248,12 +248,14 @@ p.Vari9 span {
 font-family:DIAGRAPH9;
 color:#403232;
 font-weight:100;
-font-size:1.45vw;
+font-size:1.54vw;
 word-spacing:1vw;
 letter-spacing:2px;
 text-shadow:-1px 0px 18px #ff500045, 1px 0px 1px #ffc;
 filter:drop-shadow(2px 0px 1px #ffff9991);
-transition:1.11s linear;
+transition:1.18s linear;
+padding-right:.81vw;
+padding-left:.81vw;
 }
 p.Vari9 span:hover {
 transition:.22s linear;
