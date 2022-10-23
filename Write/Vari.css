@@ -159,8 +159,8 @@ display:inline;
 display:inline;
 }
 .ART9 IMG {
-max-width:49vw;
-transition:.0s linear;
+max-width:19vw;
+transition:.19s linear;
 user-select:none;
 }
 .ART IMG {
@@ -254,8 +254,8 @@ letter-spacing:2px;
 text-shadow:-1px 0px 18px #ff500045, 1px 0px 1px #ffc;
 filter:drop-shadow(2px 0px 1px #ffff9991);
 transition:1.18s linear;
-padding-right:1vw;
-padding-left:1vw;
+padding-right:1.4vw;
+padding-left:1.4vw;
 }
 p.Vari9 span:hover {
 transition:.14s linear;
