@@ -83,6 +83,18 @@ background-size:cover;
 overflow:hidden;
 }
 
+.no-js #loader {display:none;}
+.js #loader {display:block;position:absolute;left:100px;top:0;}
+.Buff {
+position:fixed;
+top:0;
+right:0;
+width:100vw;
+height:100vh;
+z-index:9999;
+background:url('./1L.png') center center no-repeat #000;
+}
+
 #slateT {
 position:fixed;
 background:url('./1T.png');
@@ -109,7 +121,7 @@ z-index:1;
 
 #slate {
 position:fixed;
-background:url(./1.png);
+background:url('./1.png');
 background-position:center;
 background-repeat:no-repeat;
 background-size:contain;
