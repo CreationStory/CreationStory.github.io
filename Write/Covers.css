@@ -83,18 +83,6 @@ background-size:cover;
 overflow:hidden;
 }
 
-.no-js #loader {display:none;}
-.js #loader {display:block;position:absolute;left:100px;top:0;}
-.Buff {
-position:fixed;
-top:0;
-right:0;
-width:100vw;
-height:100vh;
-z-index:9999;
-background:url('./1L.png') center center no-repeat #000;
-}
-
 #slateT {
 position:fixed;
 background:url('./1T.png');
@@ -257,11 +245,10 @@ margin-block-start:0;
 margin-block-end:0;
 text-shadow:0px 3px 0px #000, 0px 1px 0px #f40, 0px 0px 2px #000;
 animation-name:HI;
-animation-delay:7s;
+animation-delay:4s;
 animation-duration:8.1s;
-animation-fill-mode:forwards;
-animation-play-state:running;
 animation-iteration-count:1;
+animation-play-state:running;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
 pointer-events:none;
 user-select:none;
@@ -270,9 +257,6 @@ opacity:0;
 @keyframes HI {
 0% {
 opacity:0;
-}
-40% {
-opacity:1;
 }
 70% {
 opacity:1;
