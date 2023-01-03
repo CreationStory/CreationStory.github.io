@@ -122,7 +122,7 @@ right:0;
 left:0;
 bottom:0;
 animation-name:tio;
-animation-delay:0s;
+animation-delay:2s;
 animation-duration:81s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -245,7 +245,7 @@ margin-block-start:0;
 margin-block-end:0;
 text-shadow:0px 3px 0px #000, 0px 1px 0px #f40, 0px 0px 2px #000;
 animation-name:HI;
-animation-delay:4s;
+animation-delay:7s;
 animation-duration:8.1s;
 animation-iteration-count:1;
 animation-play-state:running;
@@ -265,11 +265,6 @@ opacity:1;
 opacity:0;
 }
 }
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-animation-play-state:paused!important;
-}
 .Init {
 position:relative;
 height:100vh;
@@ -283,7 +278,7 @@ animation-name:Init_;
 animation-delay:1.18s;
 animation-duration:.24s;
 animation-iteration-count:1;
-animation-play-state:running!important;
+animation-play-state:running;
 animation-fill-mode:forwards;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
 pointer-events:none;
