@@ -265,28 +265,37 @@ opacity:1;
 opacity:0;
 }
 }
-.js-loading .loading {
-display: block;
-}
 .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
 animation-play-state:paused!important;
 }
-.animated-header {
-background:#0000;
-position:absolute;
-top:0;
-right:0;
-left:0;
-bottom:0;
+.Init {
+position:relative;
+height:100vh;
+width:100vw;
+background:url('./1L.png');
+background-position:center; 
+background-repeat:repeat;
+background-size:cover;
 overflow:hidden;
+animation-name:Init_;
+animation-delay:1.18s;
+animation-duration:.24s;
+animation-iteration-count:1;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+pointer-events:none;
+user-select:none;
+z-index:9999;
+opacity:1;
 }
-.loading {
-position:absolute;
-top:49vh;
-right:14vw;
-color:#FFF;
-font-size:48px;
-display:none;
+@keyframes Init_ {
+0% {
+opacity:1;
+}
+100% {
+opacity:0;
+}
 }
