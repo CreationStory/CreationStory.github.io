@@ -80,6 +80,7 @@ background:url('./1L.png');
 background-position:center; 
 background-repeat:repeat;
 background-size:cover;
+background-color:#161616;
 overflow:hidden;
 }
 
@@ -271,7 +272,7 @@ opacity:0;
 position:fixed;
 height:100vh;
 width:100vw;
-background:url('./1L.png');
+background-color:#161616;
 background-position:center; 
 background-repeat:repeat;
 background-size:cover;
