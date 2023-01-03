@@ -2,10 +2,8 @@
 <head>
 <link rel="stylesheet" type="text/css" href="Write/Covers.css">
 <title>Visual Design - Album / Cover Art</title>
-<link rel="preload" href="Write/1L.png" as="image" />
 <link rel="preload" href="Write/1.png" as="image" />
-<link rel="preload" href="Write/1T.png" as="image" />
-<link rel="preload" href="Write/1T2.png" as="image" />
+<link rel="preload" href="Write/1L.png" as="image" />
 </head>
 <body><div class="Init"></div>
 <div class="CovernMum">
@@ -71,5 +69,14 @@
 <div class="PLATEGIORPTINF">
 <img class="PLATEGIORPTIN-img" src="CoverArt/18.png">
 </div><div class="NForMYgAP1189"></div></div>
+<script>
+setTimeout(myTimer, 2400);
+function myTimer() {
+var elements = document.getElementsByClassName("Init");
+for(i=0;i<elements.length;i++){
+elements[i].style.animationPlayState = "running";
+}
+}
+</script>
 </body>
 </html>
