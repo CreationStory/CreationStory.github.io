@@ -1,7 +1,7 @@
 <html>
 <head>
 <link rel="preload" as="style" href="Write/Covers.css">
-<link rel="preload" as="image" href="CoverArt/1.png">
+<link rel="preload" as="image" href="Write/1.png">
 <link rel="stylesheet" type="text/css" href="Write/Covers.css">
 <title>Visual Design - Album / Cover Art</title>
 </head>
@@ -78,16 +78,5 @@ elements[i].style.animationPlayState = "running";
 }
 }
 </script>
-<script>$(function () {
-   $("img").not(":visible").each(function () {
-       $(this).data("src", this.src);
-       this.src = "";
-   });
-
-   var reveal = function (selector) {
-       var img = $(selector);
-       img[0].src = img.data("src");
-   }
-});</script>
 </body>
 </html>
