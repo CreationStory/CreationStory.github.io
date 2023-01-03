@@ -283,7 +283,7 @@ animation-name:Init_;
 animation-delay:1.18s;
 animation-duration:.24s;
 animation-iteration-count:1;
-animation-play-state:running;
+animation-play-state:running!important;
 animation-fill-mode:forwards;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
 pointer-events:none;
