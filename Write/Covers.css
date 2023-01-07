@@ -298,8 +298,5 @@ opacity:0;
 }
 }
 .cacheSTREI9 {
-height:0px;
-width:0px;
-visibility:hidden!important;
-display:none!important;
+display:none;
 }
