@@ -105,6 +105,7 @@ display:inline-block;
 display:inline-flex;
 }
 .CALLINE {
+margin-top:-4px;
 min-height:40px;
 min-width:100%;
 background:url('CalLine.png');
