@@ -4,7 +4,7 @@
 <link href="Write/Worship.css" rel="stylesheet">
 <link href="Write/Apocalum.css" rel="stylesheet">
 <link href="Write/Apocaluma.css" rel="stylesheet">
-<title>The Most High, Holy Father, Lord God The Creator Of All Things</title>
+<title>Apocalum</title>
 <link rel="icon" href="Write/CS.ico">
 <body>
 <div class="HIGHLOWWORDOR">
@@ -229,6 +229,9 @@
 </div>
 <div class="date9NX">
 <p>Creation Story</p>
+<div class="ENDING">
+<div class="cs rights">&#10015;</div>
+</div>
 </div>
 </div>
 <script type="text/javascript">
@@ -250,6 +253,20 @@ count = 0;
 let inthandle = setInterval(iteration, 18);
 iteration();}
 initWords(document.getElementById("HIGHLOWWORD"));
+</script>
+<script>
+const square = document.querySelector('.cs');
+square.classList.remove('rights');
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+square.classList.add('rights');
+return;
+}
+square.classList.remove('rights');
+});
+});
+observer.observe(document.querySelector('.ENDING'));
 </script>
 </body>
 </html>
