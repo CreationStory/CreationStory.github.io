@@ -7,6 +7,7 @@ background-position:center center;
 background-size:cover;
 text-align:center;
 margin:0px;
+cursor:cell;
 scrollbar-width:none;
 -ms-overflow-style:none;
 }
@@ -261,4 +262,30 @@ filter:drop-shadow(0px 0px 1px #ff0000);
 .ReadersFix {
 margin:14vh;
 padding:0;
+}
+.ENDING {
+display:inline-block;
+mix-blend-mode:lighten;
+cursor:cell;
+}
+.cs {
+color:#140000;
+font-size:41px;
+transition:transform 4s ease,color 4s ease-in,filter 4s ease;
+transform:none;
+mix-blend-mode:lighten;
+height:4vh;
+line-height:90px;
+text-shadow:0 1px 1px #fb9b49,0 0px 7px #9b8787,0 0px 0 #750805,0 0px 1px #ffc5a4,0 4px 1px #90350b,0 4px 1px rgb(118 118 118),0px -3px 1px rgb(0 0 0 / 98%),0 -3px 4px rgb(0 0 0 / 80%);
+filter:drop-shadow(0px 0px 124px #ff9100);
+}
+.cs::Selection{
+color:#fff;
+text-shadow:0 0 8px #fff;
+}
+.rights {
+color:#fff;
+transform:scale(12);
+mix-blend-mode:lighten;
+filter:drop-shadow(0px 0px 0px #ff9100);
 }
