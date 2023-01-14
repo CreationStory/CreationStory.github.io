@@ -108,7 +108,7 @@ color:#540000;
 }
 .CALGRADI {
 position:fixed;
-background:url('Calgrad.png');
+background:url('CalGrad.png');
 background-repeat:repeat;
 background-size:contain;
 height:32.1vh;
@@ -268,6 +268,10 @@ padding:0;
 display:inline-block;
 mix-blend-mode:lighten;
 cursor:cell;
+}
+.NotLikeThis {
+user-select:none;
+pointer-events:none;
 }
 .cs {
 color:#140000;
