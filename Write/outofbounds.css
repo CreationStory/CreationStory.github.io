@@ -8,35 +8,13 @@ body {
 background:url('Skin.png');
 background-repeat:no-repeat;
 background-attachment:fixed;
-background-position:-744px 0;
+background-position:0 0;
 background-size:cover;
-animation-name:Skin;
-animation-duration:14s;
-animation-fill-mode:forwards;
-animation-direction:alternate;
-animation-iteration-count:infinite;
-transition:1.18s ease-in-out;
-animation-timing-function:ease-in-out;
 text-align:center;
 margin:0px;
 scrollbar-width:none;
 -ms-overflow-style:none;
 background-color:#590007;
-}
-@keyframes Skin {
-0% {
-background-position:-744px 0;
-}
-100% {
-background-position:-1024px 0;
-}
-}
-@media (min-width:524px) {
-body {
-animation:none;
-background-position:0 0;
-background-size:cover;
-}
 }
 @font-face {
 font-family: 'DIAGRAPH';
