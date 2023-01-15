@@ -266,7 +266,7 @@ padding:0;
 }
 .ENDING {
 display:inline-block;
-mix-blend-mode:lighten;
+mix-blend-mode:Hard-light;
 cursor:cell;
 }
 .NotLikeThis {
