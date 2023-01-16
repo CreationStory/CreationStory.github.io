@@ -62,7 +62,7 @@ background:#ffffff00;
 
 @font-face {
 font-family: 'Ser';
-src: url('../Dia/Designer.ttf') format('truetype');
+src: url('https://creationstory.github.io/Dia/Designer.ttf') format('truetype');
 }
 
 html, html * {
