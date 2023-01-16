@@ -202,7 +202,7 @@ text-align-last:center;
 letter-spacing:.054vw;
 transition:.321s linear;
 text-indent:0vw;
-text-shadow:0 1px 0 #ff8132;
+text-shadow:0 .04rem 0 #ff8132;
 line-height:1.8rem;
 filter:drop-shadow(0px 0px 1px #ff9100);
 }
