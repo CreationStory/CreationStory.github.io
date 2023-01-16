@@ -10,6 +10,9 @@ visibility:hidden;
 width:0px;
 height:0px;
 }
+* {
+cursor:Crosshair;
+}
 body {
 background:url('Skin.png');
 background-repeat:no-repeat;
@@ -22,7 +25,8 @@ text-align:center;
 margin:0px;
 scrollbar-width:none;
 -ms-overflow-style:none;
-}@font-face {
+}
+@font-face {
 font-family: 'DIAGRAPH';
 src: url('../Dia/Dia.otf') format('opentype');
 } 
