@@ -1,0 +1,293 @@
+*::-webkit-scrollbar {
+display:none;
+visibility:hidden;
+scrollbar-width:none;
+-ms-overflow-style:none;
+}
+body {
+background:url('Skin.png');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:0 0;
+background-size:cover;
+text-align:center;
+margin:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+background-color:#590007;
+overflow:hidden;
+}
+@font-face {
+font-family: 'DIAGRAPH';
+src: url('../Dia/Dia.otf') format('opentype');
+} 
+@font-face {
+font-family: 'DIAGRAPH9';
+src: url('../Dia/9.ttf') format('truetype');
+} 
+a, a:hover, a:focus, a:active {
+text-decoration:none;
+color:inherit;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
+visibility:hidden;
+width:0px;
+scrollbar-width:none;
+-ms-overflow-style:none;
+display:none;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-thumb {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track-piece {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-button {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-track {
+visibility:hidden;
+width:0px;
+}::-webkit-scrollbar-corner {
+visibility:hidden;
+width:0px;
+}::-moz-selection {
+color:#450000;
+background:#ff000018;
+}::selection {
+color:#450000;
+background:#ff000018;
+}
+.WORD {
+}
+p.WORDOF {
+font-size:23.124877vw;
+font-weight:900;
+word-spacing:18px;
+font-family:DIAGRAPH;
+letter-spacing:2px;
+line-height:8.1247884vh;
+margin-top:1vh;
+margin-block-end:0;
+margin-inline-end:0;
+color:#a71408;
+padding-right:14vw;
+padding-left:14vw;
+overflow:visible;
+white-space:normal;
+overflow-wrap:normal;
+text-align:left;
+text-align-last:end;
+text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
+filter:drop-shadow(0px 0px 4px #000);
+animation-name:WordSheep9;
+animation-duration:1.8s;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+transition:1.18s ease-in-out;
+animation-timing-function:ease-in-out;
+}
+p.WORDOF:hover {
+transition:1.18s ease-in-out;
+text-shadow:0 11px 8px #ff5400, 0 -3px 3px #c9c9c9, -4px 1px 8px rgb(1 1 1), 0 2px 0 #b9b9b9, 1px 1px 8px #aaa, 2px 0 0 #ccc, 1px 1px 8px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 8px 9px 3px rgb(0 0 0 / 18%);
+}
+@keyframes WordSheep9 {
+0% {
+text-shadow:1px 1px 8px #fff, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
+filter:drop-shadow(1px 2px 14px #f80);
+}
+23% {
+text-shadow:1px 1px 8px #fff, 0 -3px 3px #c9c9c9, -4px 1px 5px rgb(1 1 1), 0 2px 0 #b9b9b9, 6px 0px 1px #aaa, 2px 0 0 #ccc, 1px 1px 1px rgb(0 0 0 / 27%), 0 1px 1px rgb(0 0 0 / 10%), 0 14px 9px rgb(0 0 0 / 18%);
+filter:drop-shadow(1px 2px 14px #f40);
+}
+100% {
+text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
+filter:drop-shadow(0px 0px 4px #000);
+}
+}
+p.WORDOF span {
+font-variant:small-caps;
+text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;
+transition:.24s ease-in-out;
+}
+.FACEH {
+margin-top:4vh;
+width:99vw;
+display:inline-block;
+}
+.FACE {
+display:inline-flex;
+}
+.CALLINE {
+margin-top:-1px;
+min-height:32px;
+min-width:100%;
+animation-name:CAl;
+animation-duration:1s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:ease-in-out;
+background:url('MCAL.png');
+background-repeat:no-repeat;
+background-size:cover;
+background-position-x:0vw;
+user-select:none;
+pointer-events:none;
+}
+@keyframes CAl {
+0% {
+background-position-x:0vw;
+}
+100% {
+background-position-x:-27vw;
+}
+}
+.CALLINE2 {
+position:absolute;
+top:0;
+right:0px;
+min-height:100%;
+min-width:27px;
+animation-name:CAl2;
+animation-duration:1s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:ease-in-out;
+background:url('MCAL2.png');
+background-repeat:repeat;
+background-size:cover;
+background-position-y:0vw;
+user-select:none;
+pointer-events:none;
+}
+@keyframes CAl2 {
+0% {
+background-position-y:0vw;
+}
+100% {
+background-position-y:-7vw;
+}
+}
+.CALLINE4 {
+position:absolute;
+top:0;
+left:0;
+min-height:100%;
+min-width:27px;
+animation-name:CAl4;
+animation-duration:1s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:ease-in-out;
+background:url('MCAL4.png');
+background-repeat:repeat;
+background-size:cover;
+background-position-y:-27vw;
+user-select:none;
+pointer-events:none;
+}
+@keyframes CAl4 {
+0% {
+background-position-y:-27vw;
+}
+100% {
+background-position-y:-4vw;
+}
+}
+.CALLINE18 {
+position:absolute;
+bottom:0;
+right:0;
+min-height:32px;
+min-width:100%;
+animation-name:CAl18;
+animation-duration:1s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:ease-in-out;
+background:url('MCAL_.png');
+background-repeat:no-repeat;
+background-size:cover;
+background-position-x:-4vw;
+user-select:none;
+pointer-events:none;
+}
+@keyframes CAl18 {
+0% {
+background-position-x:-4vw;
+}
+100% {
+background-position-x:0vw;
+}
+}
+@media (min-width:598px) {
+.CALLINE {
+display:none;
+}
+}
+@media (min-width:598px) {
+.CALLINE2 {
+display:none;
+}
+}
+@media (min-width:598px) {
+.CALLINE4 {
+display:none;
+}
+}
+@media (min-width:598px) {
+.CALLINE18 {
+display:none;
+}
+}
+@media (min-width:524px) {
+p.WORDOF {
+font-size:18vw;
+}
+}
+@media (min-width:700px) {
+p.WORDOF {
+font-size:14vw;
+}
+}
+@media (min-width:1400px) {
+p.WORDOF {
+font-size:9vw;
+}
+}
+.G {
+padding-top:8.1vh;
+line-height:4vh!important;
+}
+@media (max-width:1080px) {
+.G {
+line-height:5vh!important;
+}
+}
+@media (max-width:841px) {
+.G {
+line-height:7vh!important;
+}
+}
+@media (max-width:597px) {
+.G {
+padding-top:0vh;
+}
+}
+@media (max-width:489px) {
+.G {
+padding-top:4vh;
+line-height:4vh!important;
+}
+}
+@media (max-width:489px) {
+p.WORDOF small {
+font-size:12.34vw!important;
+}
+}
