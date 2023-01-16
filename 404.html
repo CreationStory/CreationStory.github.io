@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="Write/outofbounds.css" rel="stylesheet">
-<title>CS</title>
+<link href="Write/e4Cl.css" rel="stylesheet">
+<title>CreationStory</title>
 <link rel="icon" href="Write/CS.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,">
 </head>
@@ -14,9 +14,12 @@
 <div class="CALLINE18"></div>
 <div class="FACEH">
 <div class="FACE">
-<p class="WORDOF"><span>Page not found<br><u><sub>▀▀▀</u></sub>error<u><sub>▀</sub></span></p></u>
+<p class="WORDOF"><span>Page not found</span></p>
 </div>
-<p style="font-size:4rem;white-space:nowrap;margin-block-start:2rem;margin-inline-start:0;">>:{</p>
+<p style="font-size:4rem;white-space:nowrap;margin-block-end:14vh;margin-block-start:14vh;margin-inline-start:0;">>:{</p>
+</div>
+<div class="FACE">
+<p class="WORDOF G"><span><small style="font-size:8vh;">Contact<br>github.com|<br>CreationStory</small></span></p>
 </div>
 </div>
 </a>
@@ -30,6 +33,17 @@ for (var i = 0; i < 6; i++ ) {
 color += letters[Math.floor(Math.random() * 16)];
 }
 $('span').css('color',color);
+}
+</script>
+<script>
+getRandomColor2()
+function getRandomColor2() {
+var letters = '0123456789ABCDEF'.split('');
+var color = '#';
+for (var i = 0; i < 6; i++ ) {
+color += letters[Math.floor(Math.random() * 16)];
+}
+$('small').css('color',color);
 }
 </script>
 </body>
