@@ -100,21 +100,14 @@ z-index:1;
 top:78vh!important;
 }
 }
-@media (min-width:420px)
+@media (min-width:587px)
 {
 .VectorEngageA2 {
 display:none;
 visibility:hidden;
 }
 }
-@media (min-width:420px)
-{
-.VectorEngageASlateDraw24 {
-display:none;
-visibility:hidden;
-}
-}
-@media (min-width:420px)
+@media (min-width:587px)
 {
 .VectorEngageA2RenderCold {
 display:none;
@@ -171,6 +164,13 @@ animation-timing-function:ease-in-out;
 pointer-events:none;
 user-select:none;
 z-index:-1;
+}
+@media (min-width:587px)
+{
+.VectorEngageASlateDraw24 {
+display:none;
+visibility:hidden;
+}
 }
 }
 @media (orientation:landscape) {
@@ -241,6 +241,13 @@ animation-timing-function:ease-in-out;
 pointer-events:none;
 user-select:none;
 z-index:-1;
+}
+}
+@media (min-width:914px)
+{
+.VectorEngageASlateDraw24 {
+display:none;
+visibility:hidden;
 }
 }
 }
