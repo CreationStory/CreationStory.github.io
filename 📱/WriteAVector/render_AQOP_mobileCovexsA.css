@@ -5,17 +5,18 @@ cursor:Cell;
 }
 *, *::before, *::after {
 box-sizing:border-box;
+user-select:none;
 }
-*:focus:not(.focus-visible) {
+*:focus {
 outline:none;
 }
 @font-face {
-font-family: 'Ampithcast_RenderVector';
-src: url('https://creationstory.github.io/Dia/Designer.ttf') format('truetype');
+font-family:'Ampithcast_RenderVector';
+src:url('https://creationstory.github.io/Dia/Designer.ttf') format('truetype');
 }
 @font-face {
-font-family: 'ViaFronts_GrtASPEC_A814';
-src: url('https://creationstory.github.io/Dia/Word.ttf') format('truetype');
+font-family:'ViaFronts_GrtASPEC_A814';
+src:url('https://creationstory.github.io/Dia/Word.ttf') format('truetype');
 }
 *::-webkit-scrollbar {
 display:none;
@@ -58,12 +59,12 @@ visibility:hidden;
 width:0px;
 }
 ::selection {
-color:#000;
-background:#0000;
+color:#fff0;
+background:#fff0;
 }
 ::-moz-selection {
-color:#000;
-background:#0000;
+color:#fff0;
+background:#fff0;
 }
 body {
 margin:0;
@@ -93,44 +94,233 @@ pointer-events:none;
 user-select:none;
 z-index:1;
 }
+@media (max-height:800px)
+{
+.VectorEngageA2 {
+top:78vh!important;
+}
+}
+@media (min-width:420px)
+{
+.VectorEngageA2 {
+display:none;
+visibility:hidden;
+}
+}
+@media (min-width:420px)
+{
+.VectorEngageASlateDraw24 {
+display:none;
+visibility:hidden;
+}
+}
+@media (min-width:420px)
+{
+.VectorEngageA2RenderCold {
+display:none;
+visibility:hidden;
+}
+}
 @keyframes GloryLP81szz {
 0% {
-transform: rotate(1deg);
+transform:rotate(1deg);
 }
 100% {
-transform: rotate(7deg);
+transform:rotate(7deg);
 }
 }
 .VectorEngageASlateDraw24 {
-position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url(VectorGRANISGc_Crisp14Striteaerr.png);
-    background-position: 14.18rem -2vh;
-    background-repeat: no-repeat;
-    background-size: auto;
-    animation-name: GloryUNTO;
-    animation-delay: .14s;
-    animation-duration: 27s;
-    animation-fill-mode: both;
-    animation-direction: alternate;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-	pointer-events:none;
-	user-select:none;
-	z-index:-1;
+position:fixed;
+top:0;
+height:100vh;
+width:100vw;
+background-image:url(VectorGRANISGc_Crisp14Striteaerr.png);
+background-position:14.18rem -2vh;
+background-repeat:no-repeat;
+background-size:auto;
+animation-name:GloryUNTO;
+animation-delay:.14s;
+animation-duration:27s;
+animation-fill-mode:both;
+animation-direction:alternate;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:-1;
+}
+@media (orientation:portrait) {
+.VectorEngageASlateDraw24 {
+position:fixed;
+top:0;
+height:100vh;
+width:100vw;
+background-image:url(VectorGRANISGc_Crisp14Striteaerr.png);
+background-position:14.18rem -2vh;
+background-repeat:no-repeat;
+background-size:auto;
+animation-name:GloryUNTO;
+animation-delay:.14s;
+animation-duration:27s;
+animation-fill-mode:both;
+animation-direction:alternate;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:-1;
+}
+}
+@media (orientation:landscape) {
+.VectorEngageASlateDraw24 {
+position:fixed;
+top:0;
+height:100vh;
+width:100vw;
+background-image:url(VectorGRANISGc_Crisp14Striteaerr.png);
+background-position:38rem -81vh;
+background-repeat:no-repeat;
+background-size:auto;
+animation-name:GloryUNTODiverulgentso;
+animation-delay:.14s;
+animation-duration:28s;
+animation-fill-mode:both;
+animation-direction:alternate;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:-1;
+}
+@media (max-width:874px)
+{
+.VectorEngageASlateDraw24 {
+position:fixed;
+top:0;
+height:100vh;
+width:100vw;
+background-image:url(VectorGRANISGc_Crisp14Striteaerr.png);
+background-position:38rem -81vh;
+background-repeat:no-repeat;
+background-size:auto;
+animation-name:GloryUNTODiverulgentsovOltimestiudnonicsalomTAW;
+animation-delay:.14s;
+animation-duration:28s;
+animation-fill-mode:both;
+animation-direction:alternate;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:-1;
+}
+}
+@media (max-width:801px)
+{
+.VectorEngageASlateDraw24 {
+position:fixed;
+top:0;
+height:100vh;
+width:100vw;
+background-image:url(VectorGRANISGc_Crisp14Striteaerr.png);
+background-position:34rem -81vh;
+background-repeat:no-repeat;
+background-size:auto;
+animation-name:GloryUNTODiverulgentsovOltimestiudnonicsalomTAW4S;
+animation-delay:.14s;
+animation-duration:28s;
+animation-fill-mode:both;
+animation-direction:alternate;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:-1;
+}
+}
+}
+@keyframes GloryUNTODiverulgentsovOltimestiudnonicsalomTAW {
+0% {
+background-position:38rem -81vh;
+}
+100% {
+background-position:38rem -2vh;
+}
+}
+@keyframes GloryUNTODiverulgentsovOltimestiudnonicsalomTAW4S {
+0% {
+background-position:34rem -81vh;
+}
+100% {
+background-position:34rem -2vh;
+}
+}
+.VectorEngageA2RenderCold {
+display:none;
+visibility:hidden;
+}
+@media (orientation:portrait) {
+.VectorEngageA2RenderCold {
+display:none;
+visibility:hidden;
+}
+}@media (orientation:landscape) {
+.VectorEngageA2RenderCold {
+display:inline-flex;
+visibility:visible;
+position:fixed;
+top:19vh;
+height:448px;
+width:1088px;
+background-image:url(VectorGRANISGc_Crisp.png);
+background-position:41vh 41px;
+background-repeat:no-repeat;
+transform-origin:23vw 104vh;
+background-size:auto;
+transform:rotate(-87deg);
+animation-name:RenderBackVICTORYMY;
+animation-delay:.1s;
+animation-duration:12.4s;
+animation-fill-mode:both;
+animation-direction:alternate;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:1;
+}
+}
+@keyframes RenderBackVICTORYMY {
+0% {
+background-position: 41vh 41px;
+}
+100% {
+background-position: 0 41px;
+}
 }
 @keyframes GloryUNTO {
 0% {
-background-position: 14.18rem -2vh;
+background-position:14.18rem -2vh;
 }
 100% {
-background-position: 14.18rem -24vh;
+background-position:14.18rem -29vh;
 }
 }
-@media (orientation: portrait) {
+@keyframes GloryUNTODiverulgentso {
+0% {
+background-position:41rem -81vh;
+}
+100% {
+background-position:41rem -2vh;
+}
+}
+@media (orientation:portrait) {
 .VectorEngageA2 {
 position:fixed;
 top:74vh;
@@ -150,73 +340,68 @@ animation-direction:alternate;
 animation-play-state:running;
 animation-iteration-count:infinite;
 animation-timing-function:ease-in-out;
+pointer-events:none;
+user-select:none;
+z-index:1;
 }
 }
-@media (orientation: landscape) {
+@media (orientation:landscape) {
 .VectorEngageA2 {
-position:fixed;
-top:74vh;
-height:448px;
-width:1088px;
-background-image:url(VectorGRANISGc_Crisp.png);
-background-position:-18px 0;
-background-repeat:no-repeat;
-transform-origin:180vw -288vh;
-background-size:auto;
-transform:rotate(1deg);
-animation-name:GloryLP81szz;
-animation-delay:.1s;
-animation-duration:12s;
-animation-fill-mode:both;
-animation-direction:alternate;
-animation-play-state:running;
-animation-iteration-count:infinite;
-animation-timing-function:ease-in-out;
+display:none;
+visibility:hidden;
 }
 }
 .RenderBlock_CalRR_MobileARCST_castBlock {
-position: relative;
-    display: flex;
-    justify-content: center;
-    margin:.8rem 1rem 0 2.29rem;
+position:relative;
+display:flex;
+justify-content:center;
+margin:.8rem 1rem 0 2.29rem;
+z-index:1;
 }
-@media (orientation: portrait) {
+@media (orientation:portrait) {
 .RenderBlock_CalRR_MobileARCST_castBlock {
-position: relative;
-    display: flex;
-    justify-content: center;
-    margin:.8rem 1rem 0 2.29rem;
+position:relative;
+display:flex;
+justify-content:center;
+margin:.8rem 1rem 0 2.29rem;
+z-index:1;
 }
 }
-@media (orientation: landscape) {
+@media (orientation:landscape) {
 .RenderBlock_CalRR_MobileARCST_castBlock {
-position: relative;
-    display: flex;
-    justify-content: left;
-    margin:1rem 1rem 0 2.47rem;
+position:relative;
+display:flex;
+justify-content:center;
+margin:1.24rem 2rem 0 0;
+z-index:1;
 }
 }
 .RenderBlock_CalTY_MobileARCST_castBlock2 {
-position: relative;
-    display: flex;
-    justify-content: left;
-    margin: 4rem 2rem 0 2.48rem;
-    align-items: center;
-    animation-name: test;
-    animation-fill-mode: forwards;
-	animation-duration:7s;
-	animation-delay:.41s;
-	animation-iteration-count:1;
-    animation-direction: normal;
-    animation-play-state: running;
-	animation-timing-function:ease;
-    filter: drop-shadow(0 0 24px #fff);
-    opacity:0;
-	background: radial-gradient(#fff0 1px, #fff0 148px);
-  z-index:-4;
-
+position:relative;
+display:flex;
+justify-content:left;
+margin:4rem 2rem 0 2.48rem;
+align-items:center;
+animation-name:HashingsVIADirective_QuadracticRenderQOZ8TradiTrRl;
+animation-fill-mode:forwards;
+animation-duration:7s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-timing-function:ease;
+filter:drop-shadow(0 0 24px #fff);
+opacity:0;
+background:radial-gradient(#fff0 1px, #fff0 148px);
+z-index:41;
 }
-@keyframes test {
+@media (max-height:800px)
+{
+.RenderBlock_CalTY_MobileARCST_castBlock2 {
+margin:3rem 2.1rem 0 2.48rem;
+}
+}
+@keyframes HashingsVIADirective_QuadracticRenderQOZ8TradiTrRl {
 0% {
 filter:drop-shadow(0 0 24px #fff);
 opacity:0;
@@ -248,43 +433,67 @@ opacity:1;
 mix-blend-mode:normal;
 }
 }
-@media (orientation: portrait) {
-.1RenderBlock_CalTY_MobileARCST_castBlock2 {
-position: relative;
-    display: flex;
-    justify-content: left;
-    margin: 4rem 2rem 0 2.48rem;
+@media (orientation:portrait) {
+.RenderBlock_CalTY_MobileARCST_castBlock2 {
+position:relative;
+display:flex;
+justify-content:left;
+margin:4rem 2rem 0 2.48rem;
+align-items:center;
+animation-name:HashingsVIADirective_QuadracticRenderQOZ8TradiTrRl;
+animation-fill-mode:forwards;
+animation-duration:7s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-timing-function:ease;
+filter:drop-shadow(0 0 24px #fff);
+opacity:0;
+background:radial-gradient(#fff0 1px, #fff0 148px);
+z-index:41;
 }
 }
-@media (orientation: landscape) {
-.1RenderBlock_CalTY_MobileARCST_castBlock2 {
-position: relative;
-    display: flex;
-    justify-content: left;
-    margin: 4rem 2rem 0 2.48rem;
+@media (orientation:landscape) {
+.RenderBlock_CalTY_MobileARCST_castBlock2 {
+position:relative;
+display:block;
+margin:2.8rem 0 0 0;
+animation-name:HashingsVIADirective_QuadracticRenderQOZ8TradiTrRl;
+animation-fill-mode:forwards;
+animation-duration:7s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-timing-function:ease;
+filter:drop-shadow(0 0 24px #fff);
+opacity:0;
+background:radial-gradient(#fff0 1px, #fff0 148px);
+z-index:41;
 }
 }
 p.RenderMobile_CS067wrapsizams {
-font-size: 4rem;
-    font-weight: 100;
-    word-spacing: 4px;
-    color: #1c0c0c;
-    font-family: Ampithcast_RenderVector;
-    letter-spacing: 3px;
-    line-height: 4.48rem;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    overflow: revert;
-    text-indent: -19px;
-    overflow-wrap: revert;
-    white-space: break-spaces;
-    text-align: left;
-    text-align-last: left;
-    text-shadow: -2px 2px 1px #000, 0px -1px 0px #f40;
-    filter: drop-shadow(0px 0px 4px #000);
-    transition:.1s ease-in-out;
+font-size:4rem;
+font-weight:100;
+word-spacing:4px;
+color:#1c0c0c;
+font-family:Ampithcast_RenderVector;
+letter-spacing:3px;
+line-height:4.48rem;
+margin-block-start:0;
+margin-block-end:0;
+margin-inline-start:0;
+margin-inline-end:0;
+overflow:revert;
+text-indent:-19px;
+overflow-wrap:revert;
+white-space:break-spaces;
+text-align:left;
+text-align-last:left;
+text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
+filter:drop-shadow(0px 0px 4px #000);
+transition:.1s ease-in-out;
 }
 p.RenderMobile_CS067wrapsizams span {
 font-variant:small-caps;
@@ -292,145 +501,396 @@ text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;
 transition:.1s ease-in-out;
 }
 .RenderMobile_CS4245SorryI {
-    font-size: 1.4rem;
-    font-weight: 100;
-    word-spacing: 0;
-    font-family: ViaFronts_GrtASPEC_A814;
-    color: #221c1a;
-    line-height: 1rem;
-	writing-mode: vertical-lr;
-    white-space: break-spaces;
-	text-underline-position: right;
-	text-orientation: upright;
-    text-align: center;
-    text-align-last: center;
-	text-decoration: underline;
-	text-decoration-color: #171814;
-	text-decoration-line: underline;
-    letter-spacing: 0;
-    transition: .321s linear;
-    text-shadow: 0 -1px 0px #fff, 0 0 2px #000;
-    filter: drop-shadow(0 0 7px #000);
-    font-variant: all-small-caps;
-    margin-block-start: 0;
-    margin-block-end: 4rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-	animation-name:ForHashings498122fixSorryzHIOGodForUnto;
-    animation-fill-mode: forwards;
-	animation-duration:2s;
-	animation-delay:1s;
-	animation-iteration-count:1;
-    animation-direction: normal;
-	animation-timing-function:ease;
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+}
+@media (orientation:portrait) {
+.RenderMobile_CS4245SorryI {
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+}
+}
+@media (orientation:landscape) {
+.RenderMobile_CS4245SorryI {
+font-size:1.7rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:horizontal-tb;
+white-space:break-spaces;
+text-underline-position:from-font;
+text-orientation:initial;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:0rem;
+margin-inline-start:0;
+margin-inline-end:0;
+}
 }
 @keyframes ForHashings498122fixSorryzHIOGodForUnto {
 0% {
-filter: drop-shadow(0 0 7px #000);
+filter:drop-shadow(0 0 7px #000);
 }
 41% {
-filter: drop-shadow(0 0 11px #fff);
+filter:drop-shadow(0 0 14px #fff);
 }
 100% {
-filter: drop-shadow(0 0 1px #000);
+filter:drop-shadow(0 0 1px #000);
 }
 }
 .RenderMobile_CS4245SorryI:nth-child(1) {
-    font-size: 1.4rem;
-    font-weight: 100;
-    word-spacing: 0;
-    font-family: ViaFronts_GrtASPEC_A814;
-    color: #221c1a;
-    line-height: 1rem;
-	writing-mode: vertical-lr;
-    white-space: break-spaces;
-	text-underline-position: right;
-	text-orientation: upright;
-    text-align: center;
-    text-align-last: center;
-	text-decoration: underline;
-	text-decoration-color: #171814;
-	text-decoration-line: underline;
-    letter-spacing: 0;
-    transition: .321s linear;
-    text-shadow: 0 -1px 0px #fff, 0 0 2px #000;
-    filter: drop-shadow(0 0 7px #000);
-    font-variant: all-small-caps;
-    margin-block-start: 0;
-    margin-block-end: 4rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-	animation-name:ForHashings498122fixSorryzHIOGodForUnto;
-    animation-fill-mode: forwards;
-	animation-duration:4s;
-	animation-delay:1s;
-	animation-iteration-count:1;
-    animation-direction: normal;
-	animation-timing-function:ease;
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:1.24s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
 }
 .RenderMobile_CS4245SorryI:nth-child(2) {
-    font-size: 1.4rem;
-    font-weight: 100;
-    word-spacing: 0;
-    font-family: ViaFronts_GrtASPEC_A814;
-    color: #221c1a;
-    line-height: 1rem;
-	writing-mode: vertical-lr;
-    white-space: break-spaces;
-	text-underline-position: right;
-	text-orientation: upright;
-    text-align: center;
-    text-align-last: center;
-	text-decoration: underline;
-	text-decoration-color: #171814;
-	text-decoration-line: underline;
-    letter-spacing: 0;
-    transition: .321s linear;
-    text-shadow: 0 -1px 0px #fff, 0 0 2px #000;
-    filter: drop-shadow(0 0 7px #000);
-    font-variant: all-small-caps;
-    margin-block-start: 0;
-    margin-block-end: 4rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-	animation-name:ForHashings498122fixSorryzHIOGodForUnto;
-    animation-fill-mode: forwards;
-	animation-duration:4s;
-	animation-delay:1.4s;
-	animation-iteration-count:1;
-    animation-direction: normal;
-	animation-timing-function:ease;
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:1.8s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
 }
 .RenderMobile_CS4245SorryI:nth-child(3) {
-    font-size: 1.4rem;
-    font-weight: 100;
-    word-spacing: 0;
-    font-family: ViaFronts_GrtASPEC_A814;
-    color: #221c1a;
-    line-height: 1rem;
-	writing-mode: vertical-lr;
-    white-space: break-spaces;
-	text-underline-position: right;
-	text-orientation: upright;
-    text-align: center;
-    text-align-last: center;
-	text-decoration: underline;
-	text-decoration-color: #171814;
-	text-decoration-line: underline;
-    letter-spacing: 0;
-    transition: .321s linear;
-    text-shadow: 0 -1px 0px #fff, 0 0 2px #000;
-    filter: drop-shadow(0 0 7px #000);
-    font-variant: all-small-caps;
-    margin-block-start: 0;
-    margin-block-end: 4rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-	animation-name:ForHashings498122fixSorryzHIOGodForUnto;
-    animation-fill-mode: forwards;
-	animation-duration:4s;
-	animation-delay:1.8s;
-	animation-iteration-count:1;
-    animation-direction: normal;
-	animation-timing-function:ease;
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:2.14s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+@media (orientation:portrait) {
+.RenderMobile_CS4245SorryI:nth-child(1) {
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:1.24s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+.RenderMobile_CS4245SorryI:nth-child(2) {
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:1.8s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+.RenderMobile_CS4245SorryI:nth-child(3) {
+font-size:1.4rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:vertical-lr;
+white-space:break-spaces;
+text-underline-position:right;
+text-orientation:upright;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:4rem;
+margin-inline-start:0;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:2.14s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+}
+@media (orientation:landscape) {
+.RenderMobile_CS4245SorryI:nth-child(1) {
+font-size:1.8rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:horizontal-tb;
+white-space:break-spaces;
+text-underline-position:from-font;
+text-orientation:initial;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:2rem;
+margin-inline-start:-18rem;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:1.24s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+.RenderMobile_CS4245SorryI:nth-child(2) {
+font-size:1.8rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:horizontal-tb;
+white-space:break-spaces;
+text-underline-position:from-font;
+text-orientation:initial;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:2rem;
+margin-inline-start:4rem;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:1.8s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+.RenderMobile_CS4245SorryI:nth-child(3) {
+font-size:1.8rem;
+font-weight:100;
+word-spacing:0;
+font-family:ViaFronts_GrtASPEC_A814;
+color:#221c1a;
+line-height:1rem;
+writing-mode:horizontal-tb;
+white-space:break-spaces;
+text-underline-position:from-font;
+text-orientation:initial;
+text-align:center;
+text-align-last:center;
+text-decoration:underline;
+text-decoration-color:#171814;
+text-decoration-line:underline;
+letter-spacing:0;
+transition:.321s linear;
+text-shadow:0 -1px 0px #fff, 0 0 2px #000;
+filter:drop-shadow(0 0 7px #000);
+font-variant:all-small-caps;
+margin-block-start:0;
+margin-block-end:1.8vh;
+margin-inline-start:24rem;
+margin-inline-end:0;
+animation-name:ForHashings498122fixSorryzHIOGodForUnto;
+animation-fill-mode:forwards;
+animation-duration:4s;
+animation-delay:2.14s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
 }
