@@ -94,10 +94,10 @@ pointer-events:none;
 user-select:none;
 z-index:1;
 }
-@media (max-height:800px)
+@media (max-height:814px)
 {
 .VectorEngageA2 {
-top:78vh!important;
+top:81vh!important;
 }
 }
 @media (min-width:587px)
@@ -445,7 +445,7 @@ mix-blend-mode:normal;
 position:relative;
 display:flex;
 justify-content:left;
-margin:4rem 2rem 0 2.48rem;
+margin:2rem 2rem 0 2.48rem;
 align-items:center;
 animation-name:HashingsVIADirective_QuadracticRenderQOZ8TradiTrRl;
 animation-fill-mode:forwards;
@@ -601,7 +601,7 @@ filter:drop-shadow(0 0 1px #000);
 }
 }
 .RenderMobile_CS4245SorryI:nth-child(1) {
-font-size:1.4rem;
+font-size:1.8rem;
 font-weight:100;
 word-spacing:0;
 font-family:ViaFronts_GrtASPEC_A814;
@@ -634,7 +634,7 @@ animation-direction:normal;
 animation-timing-function:ease;
 }
 .RenderMobile_CS4245SorryI:nth-child(2) {
-font-size:1.4rem;
+font-size:1.8rem;
 font-weight:100;
 word-spacing:0;
 font-family:ViaFronts_GrtASPEC_A814;
@@ -667,7 +667,7 @@ animation-direction:normal;
 animation-timing-function:ease;
 }
 .RenderMobile_CS4245SorryI:nth-child(3) {
-font-size:1.4rem;
+font-size:1.8rem;
 font-weight:100;
 word-spacing:0;
 font-family:ViaFronts_GrtASPEC_A814;
@@ -701,7 +701,7 @@ animation-timing-function:ease;
 }
 @media (orientation:portrait) {
 .RenderMobile_CS4245SorryI:nth-child(1) {
-font-size:1.4rem;
+font-size:1.8rem;
 font-weight:100;
 word-spacing:0;
 font-family:ViaFronts_GrtASPEC_A814;
@@ -734,7 +734,7 @@ animation-direction:normal;
 animation-timing-function:ease;
 }
 .RenderMobile_CS4245SorryI:nth-child(2) {
-font-size:1.4rem;
+font-size:1.8rem;
 font-weight:100;
 word-spacing:0;
 font-family:ViaFronts_GrtASPEC_A814;
@@ -767,7 +767,7 @@ animation-direction:normal;
 animation-timing-function:ease;
 }
 .RenderMobile_CS4245SorryI:nth-child(3) {
-font-size:1.4rem;
+font-size:1.8rem;
 font-weight:100;
 word-spacing:0;
 font-family:ViaFronts_GrtASPEC_A814;
