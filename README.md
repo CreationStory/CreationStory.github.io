@@ -1,4 +1,1 @@
-# CreationStory.github.io
-Visual Designer Callum Sharp
-SCRIPT.SHELL
-exposein T
+![](https://raw.githubusercontent.com/CreationStory/CreationStory.github.io/main/SmallWindow/Write/CS.png)
