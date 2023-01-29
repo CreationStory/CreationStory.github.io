@@ -11,10 +11,9 @@ background-attachment:fixed;
 background-position:0 0;
 background-size:cover;
 text-align:center;
-margin:0px;
 scrollbar-width:none;
--ms-overflow-style:none;
 background-color:#590007;
+margin:0px;Cursor:cell;
 overflow:hidden;
 }
 @font-face {
