@@ -5,7 +5,7 @@ scrollbar-width:none;
 }
 body {
 cursor:Cell;
-margin:0px;
+margin:0;
 background:url('Skin.png');
 background-repeat:no-repeat;
 background-attachment:fixed;
