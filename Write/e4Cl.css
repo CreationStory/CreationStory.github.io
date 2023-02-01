@@ -2,20 +2,19 @@
 display:none;
 visibility:hidden;
 scrollbar-width:none;
--ms-overflow-style:none;
 }
 body {
+cursor:Cell;
+margin:0;
 background:url('Skin.png');
 background-repeat:no-repeat;
 background-attachment:fixed;
 background-position:0 0;
 background-size:cover;
-text-align:center;
-margin:0px;
-scrollbar-width:none;
--ms-overflow-style:none;
 background-color:#590007;
+text-align:center;
 overflow:hidden;
+scrollbar-width:none;
 }
 @font-face {
 font-family: 'DIAGRAPH';
@@ -33,7 +32,6 @@ color:inherit;
 visibility:hidden;
 width:0px;
 scrollbar-width:none;
--ms-overflow-style:none;
 display:none;
 }::-webkit-scrollbar-corner {
 visibility:hidden;
