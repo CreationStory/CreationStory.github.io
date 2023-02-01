@@ -4,9 +4,6 @@ visibility:hidden;
 scrollbar-width:none;
 -ms-overflow-style:none;
 }
-* {
-cursor:Cell;
-}
 body {
 background:url('Skin.png');
 background-repeat:no-repeat;
@@ -14,10 +11,11 @@ background-attachment:fixed;
 background-position:0 0;
 background-size:cover;
 text-align:center;
+margin:0px;
 scrollbar-width:none;
+-ms-overflow-style:none;
 background-color:#590007;
 overflow:hidden;
-margin:0;
 }
 @font-face {
 font-family: 'DIAGRAPH';
