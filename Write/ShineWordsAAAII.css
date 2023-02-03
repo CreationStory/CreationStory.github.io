@@ -127,6 +127,16 @@ filter:drop-shadow(2px 1px 0px #000);
 transition:.24s ease-in-out;
 }
 }
+@media (orientation:landscape) and (max-height:700px) {
+.VariLine {
+position:absolute;
+width:100vw;
+display:flex;
+bottom:4vh!important;
+justify-content:space-around;
+user-select:none;
+}
+}
 p.HIGHLOWWORDER {
 font-size:4rem;
 margin-right:7vw;
