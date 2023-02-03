@@ -12,11 +12,11 @@ outline:none;
 }
 @font-face {
 font-family:'Ampithcast_RenderVector';
-src:url('https://creationstory.github.io/Dia/Designer.ttf') format('truetype');
+src:url('Designer.ttf') format('truetype');
 }
 @font-face {
 font-family:'ViaFronts_GrtASPEC_A814';
-src:url('https://creationstory.github.io/Dia/Word.ttf') format('truetype');
+src:url('Word.ttf') format('truetype');
 }
 *::-webkit-scrollbar {
 display:none;
