@@ -1212,22 +1212,20 @@ justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
-right:0;
 bottom:0;
+right:0;
 background-color:#161616;
 z-index:2;
 visibility:hidden;
 opacity:0;
 overflow:overlay;
 transition:.24s ease-in-out;
-    box-sizing: border-box;
-	clear:both;
 }
 .Covers-inner {
 top:0;
 right:0;
-position:static;
-display:inline;
+position:absolute;
+display:inline-block;
 align-items:center;
 justify-content:center;
 max-width:100vw;
@@ -1260,7 +1258,6 @@ opacity:1;
 .Covers:target .Covers-inner {
 bottom:0;
 right:0;
-transform:rotate(0);
 }
 .Covers__close {
 position:fixed;
