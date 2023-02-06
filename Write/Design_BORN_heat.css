@@ -1222,7 +1222,7 @@ overflow:overlay;
 transition:.24s ease-in-out;
 }
 .Covers-inner {
-top:0;
+bottom:0;
 right:0;
 position:absolute;
 display:inline;
@@ -1292,31 +1292,28 @@ color:#ffffff54;
 background-color:#ffffff54;
 text-shadow:0 0 9px #000, 0px 1px 1px #ffffff54, 0px 0px 1px #ff0000;
 }
-#Covers-inner::-webkit-scrollbar-track
+#Covers::-webkit-scrollbar-track
 {
 box-shadow:inset 0 0 4px #000;
 background-color:#540007;
 display:block;
 visibility: visible;
-z-index:41;
 }
 
-#Covers-inner::-webkit-scrollbar
+#Covers::-webkit-scrollbar
 {
 width:9px;
 background-color:#441000;
 display:block;
 visibility:visible;
-z-index:42;
 }
 
-#Covers-inner::-webkit-scrollbar-thumb
+#Covers::-webkit-scrollbar-thumb
 {
 background-color:#ff0000;
 box-shadow:inset 0px 0px 3px #000;
 display:block;
 visibility:visible;
-z-index:49;
 }
 .Covers__text {
 width:81vw;
