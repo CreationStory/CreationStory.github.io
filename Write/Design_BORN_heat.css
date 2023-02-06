@@ -23,7 +23,7 @@ margin:0px;
 scrollbar-width:none;
 -ms-overflow-style:none;
 }
-.preload * {
+body.preload {
 animation-play-state:paused!important;
 }
 * {
