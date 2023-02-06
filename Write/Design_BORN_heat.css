@@ -1207,6 +1207,8 @@ font-variant:small-caps;
 }
 .Covers {
 display:flex;
+align-items:center;
+justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
