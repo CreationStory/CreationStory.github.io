@@ -1208,11 +1208,11 @@ font-variant:small-caps;
 .Covers {
 display:block;
 position:fixed;
-width:100%;
-height:100%;
+width:100vw;
+height:100vh;
 top:0;
 right:0;
-background-color:#161616;
+background-color:#fff;
 z-index:2;
 visibility:hidden;
 opacity:0;
