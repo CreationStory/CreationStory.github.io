@@ -1214,7 +1214,7 @@ width:100vw;
 height:100vh;
 top:0;
 bottom:0;
-background-color:#fff;
+background-color:#171717;
 z-index:2;
 visibility:hidden;
 opacity:0;
@@ -1296,24 +1296,24 @@ text-shadow:0 0 9px #000, 0px 1px 1px #ffffff54, 0px 0px 1px #ff0000;
 {
 box-shadow:inset 0 0 4px #000;
 background-color:#540007;
-display:block;
-visibility: visible;
+display:inline!important;
+visibility:visible!important;
 }
 
 #Covers::-webkit-scrollbar
 {
 width:9px;
 background-color:#441000;
-display:block;
-visibility:visible;
+display:inline!important;
+visibility:visible!important;
 }
 
 #Covers::-webkit-scrollbar-thumb
 {
 background-color:#ff0000;
 box-shadow:inset 0px 0px 3px #000;
-display:block;
-visibility:visible;
+display:inline!important;
+visibility:visible!important;
 }
 .Covers__text {
 width:81vw;
