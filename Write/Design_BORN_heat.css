@@ -1206,12 +1206,12 @@ color:#745d41;
 font-variant:small-caps;
 }
 .Covers {
-display:flex;
+display:block;
 position:fixed;
 width:100vw;
 height:100vh;
-top:0;
 right:0;
+bottom:0;
 background-color:#171717;
 z-index:2;
 visibility:hidden;
@@ -1222,7 +1222,7 @@ transition:.24s ease-in-out;
 .Covers-inner {
 top:0;
 right:0;
-position:absolute;
+position:relative;
 display:inline;
 align-items:center;
 justify-content:center;
@@ -1254,7 +1254,7 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
-top:0;
+bottom:0;
 right:0;
 transform:rotate(0);
 }
