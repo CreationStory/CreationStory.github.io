@@ -317,6 +317,7 @@ background-color:#0000;
 scroll-snap-type:y mandatory;
 scroll-behavior:smooth;
 overflow-y:scroll;
+overflow-x:hidden;
 z-index:124;
 }
 .PLATEGIORPTIN-item {
