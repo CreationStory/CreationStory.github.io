@@ -1221,7 +1221,7 @@ transition:.24s ease-in-out;
 }
 .Covers-inner {
 top:0;
-right:0;
+right:-5px;
 position:absolute;
 display:inline;
 width:100vw;
@@ -1250,7 +1250,6 @@ opacity:1;
 }
 .Covers:target .Covers-inner {
 bottom:0;
-right:0;
 }
 .Covers__close {
 position:fixed;
@@ -1395,7 +1394,7 @@ text-shadow:-2px 2px 1px #000, 0px 0px 0px #ff4400a9, 1px 1px 1px #fff;
 font-weight:900;
 font-variant:small-caps;
 }
-@media (max-width:418px) {
+@media (max-width:448px) {
 .Covers__text p span {
 font-size:1rem;
 color:#f70;
@@ -1471,7 +1470,7 @@ color:#1c0c0c;
 font-family:Designer;
 letter-spacing:4px;
 margin:0;
-text-indent:4.8rem;
+text-indent:4.7rem;
 margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
@@ -1483,14 +1482,14 @@ transition:.24s ease-in-out;
 }
 @media (max-width:584px) {
 p.WORDOFZXAC478UO9WmIH {
-font-size:4rem;
+font-size:4.494rem;
 font-weight:100;
 word-spacing:18px;
 color:#1c0c0c;
 font-family:Designer;
 letter-spacing:4px;
 margin:0;
-text-indent:4rem;
+text-indent:4.4rem;
 margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
@@ -1500,16 +1499,16 @@ filter:drop-shadow(0px 0px 4px #000);
 transition:.24s ease-in-out;
 }
 }
-@media (max-width:471px) {
+@media (max-width:494px) {
 p.WORDOFZXAC478UO9WmIH {
-font-size:3.4rem;
+font-size:4rem;
 font-weight:100;
 word-spacing:8px;
 color:#1c0c0c;
 font-family:Designer;
 letter-spacing:1px;
 margin:0;
-text-indent:4rem;
+text-indent:4.14rem;
 margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
@@ -1518,16 +1517,16 @@ text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
 filter:drop-shadow(0px 0px 4px #000);
 transition:.24s ease-in-out;
 }
-@media (max-width:408px) {
+@media (max-width:418px) {
 p.WORDOFZXAC478UO9WmIH {
-font-size:3.21rem;
+font-size:3.4rem;
 font-weight:100;
 word-spacing:7px;
 color:#1c0c0c;
 font-family:Designer;
 letter-spacing:4px;
 margin:0;
-text-indent:3.4rem;
+text-indent:4.2rem;
 margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
@@ -1546,7 +1545,7 @@ color:#1c0c0c;
 font-family:Designer;
 letter-spacing:4px;
 margin:0;
-text-indent:3.4rem;
+text-indent:4rem;
 margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
@@ -1584,7 +1583,7 @@ color:#1c0c0c;
 font-family:Designer;
 letter-spacing:2px;
 margin:0;
-text-indent:3.24rem;
+text-indent:4rem;
 margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
