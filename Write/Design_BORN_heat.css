@@ -1206,7 +1206,7 @@ color:#745d41;
 font-variant:small-caps;
 }
 .Covers {
-display:inline;
+display:block;
 position:fixed;
 width:100vw;
 height:100vh;
