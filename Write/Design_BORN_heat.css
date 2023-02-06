@@ -23,6 +23,9 @@ margin:0px;
 scrollbar-width:none;
 -ms-overflow-style:none;
 }
+.preload * {
+animation-play-state:paused!important;
+}
 * {
 cursor:Cell;
 }
