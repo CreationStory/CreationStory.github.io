@@ -1223,7 +1223,7 @@ transition:.24s ease-in-out;
 .Covers-inner {
 top:0;
 right:0;
-position:absolute;
+position:absolute;object-fit:contain;
 display:inline;
 width:100vw;
 height:100vh;
