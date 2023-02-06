@@ -1212,14 +1212,15 @@ justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
-bottom:0;
+top:0;
 right:0;
-background-color:#000;
-z-index:2;
+bottom:0;
+background-color:#fff;
 visibility:hidden;
 opacity:0;
 overflow:overlay;
 transition:.24s ease-in-out;
+z-index:2;
 }
 .Covers-inner {
 top:0;
