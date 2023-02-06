@@ -1206,15 +1206,13 @@ color:#745d41;
 font-variant:small-caps;
 }
 .Covers {
-display:flex;
-align-items:center;
-justify-content:center;
+display:block;
 position:fixed;
 width:100vw;
 height:100vh;
-bottom:0;
+top:0;
 right:0;
-background-color:#161616;
+background-color:#171717;
 z-index:2;
 visibility:hidden;
 opacity:0;
@@ -1444,8 +1442,9 @@ color:#745d41;
 font-variant:small-caps;
 }
 .WORDOFZXAC478UO9WmIHBible {
-display:block;
-margin:1rem 1rem 0 1rem;
+display:inline-block;
+width:99vw;
+margin:0;
 user-select:none;
 }
 p.WORDOFZXAC478UO9WmIH {
