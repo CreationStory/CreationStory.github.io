@@ -1212,9 +1212,10 @@ justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
-right:0;
+top:1px;
 bottom:0;
-background-color:#fff;
+right:0;
+background-color:#171717;
 z-index:2;
 visibility:hidden;
 opacity:0;
@@ -1256,7 +1257,7 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
-bottom:1;
+bottom:0;
 right:0;
 transform:rotate(0);
 }
