@@ -1207,14 +1207,12 @@ font-variant:small-caps;
 }
 .Covers {
 display:flex;
-align-items:center;
-justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
 bottom:0;
 right:0;
-background-color:#161616;
+background-color:#fff;
 z-index:2;
 visibility:hidden;
 opacity:0;
