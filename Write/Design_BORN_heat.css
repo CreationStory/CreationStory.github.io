@@ -1256,7 +1256,7 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
-bottom:0;
+top:0;
 right:0;
 transform:rotate(0);
 }
@@ -1444,9 +1444,8 @@ color:#745d41;
 font-variant:small-caps;
 }
 .WORDOFZXAC478UO9WmIHBible {
-display:inline-block;
-width:99vw;
-margin:0;
+display:block;
+margin:1rem 1rem 0 1rem;
 user-select:none;
 }
 p.WORDOFZXAC478UO9WmIH {
@@ -1457,7 +1456,7 @@ color:#1c0c0c;
 font-family:Designer;
 letter-spacing:4px;
 margin:0;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1480,7 +1479,7 @@ font-family:Designer;
 letter-spacing:4px;
 margin:0;
 text-indent:4.8rem;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1499,7 +1498,7 @@ font-family:Designer;
 letter-spacing:4px;
 margin:0;
 text-indent:4rem;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1518,7 +1517,7 @@ font-family:Designer;
 letter-spacing:1px;
 margin:0;
 text-indent:4rem;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1536,7 +1535,7 @@ font-family:Designer;
 letter-spacing:4px;
 margin:0;
 text-indent:3.4rem;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1555,7 +1554,7 @@ font-family:Designer;
 letter-spacing:4px;
 margin:0;
 text-indent:3.4rem;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1574,7 +1573,7 @@ font-family:Designer;
 letter-spacing:2px;
 margin:0;
 text-indent:4rem;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1593,7 +1592,7 @@ font-family:Designer;
 letter-spacing:2px;
 margin:0;
 text-indent:3.24rem;
-margin-block-start:1.24rem;
+margin-block-start:24px;
 margin-block-end:0;
 text-align:center;
 text-align-last:center;
@@ -1603,5 +1602,5 @@ transition:.24s ease-in-out;
 }
 }
 .Tibbles {
+	
 }
-				
