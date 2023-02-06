@@ -1206,13 +1206,13 @@ color:#745d41;
 font-variant:small-caps;
 }
 .Covers {
-display:block;
+display:flex;
 position:fixed;
 width:100vw;
 height:100vh;
-top:0;
+bottom:0;
 right:0;
-background-color:#171717;
+background-color:#161616;
 z-index:2;
 visibility:hidden;
 opacity:0;
