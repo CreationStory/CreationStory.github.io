@@ -1206,30 +1206,24 @@ color:#745d41;
 font-variant:small-caps;
 }
 .Covers {
-display:flex;
-align-items:center;
-justify-content:center;
+display:block;
 position:fixed;
-width:100vw;
-height:100vh;
-bottom:0;
+width:100%;
+height:100%;
+top:0;
 right:0;
 background-color:#161616;
 z-index:2;
 visibility:hidden;
 opacity:0;
-overflow:overlay;
+overflow:auto;
 transition:.24s ease-in-out;
 }
 .Covers-inner {
 top:0;
 right:0;
 position:absolute;
-display:inline-block;
-align-items:center;
-justify-content:center;
-max-width:100vw;
-max-height:100vh;
+display:inline;
 width:100vw;
 height:100vh;
 transform:rotate(0);
