@@ -1223,7 +1223,7 @@ transition:.24s ease-in-out;
 .Covers-inner {
 top:0;
 right:0;
-position:absolute;object-fit:contain;
+position:absolute;
 display:inline;
 width:100vw;
 height:100vh;
@@ -1251,7 +1251,7 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
-bottom:0;object-fit:contain;
+bottom:0;
 right:0;
 }
 .Covers__close {
