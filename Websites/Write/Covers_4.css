@@ -131,6 +131,81 @@ animation-iteration-count:infinite;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
 z-index:0;
 }
+@media (max-width:1449px) {
+#slate {
+position:fixed;
+background:url('./1.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:contain;
+transform:rotate(-23deg);
+transform-origin:144vw 57vw;
+height:218vh;
+width:144vw;
+top:0;
+right:0;
+left:0;
+bottom:0;
+animation-name:tio;
+animation-delay:1.4s;
+animation-duration:81s;
+animation-fill-mode:both;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+z-index:0;
+}
+}
+@media (max-width:870px) {
+#slate {
+position:fixed;
+background:url('./1.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:contain;
+transform:rotate(-23deg);
+transform-origin:178vw 87vw;
+height:218vh;
+width:144vw;
+top:0;
+right:0;
+left:0;
+bottom:0;
+animation-name:tio;
+animation-delay:1.4s;
+animation-duration:81s;
+animation-fill-mode:both;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+z-index:0;
+}
+}
+@media (max-width:477px) {
+#slate {
+position:fixed;
+background:url('./1.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:contain;
+transform:rotate(-23deg);
+transform-origin:280VW 180vw;
+height:200vh;
+width:200vw;
+top:0;
+right:0;
+left:0;
+bottom:0;
+animation-name:tio;
+animation-delay:1.4s;
+animation-duration:81s;
+animation-fill-mode:both;
+animation-play-state:running;
+animation-iteration-count:infinite;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+z-index:0;
+}
+}
 @keyframes tio {
 0% {
 transform:rotate(-23deg);
