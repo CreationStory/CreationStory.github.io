@@ -1214,7 +1214,7 @@ width:100vw;
 height:100vh;
 bottom:0;
 right:0;
-background-color:#161616;
+background-color:#fff;
 z-index:2;
 visibility:hidden;
 opacity:0;
@@ -1222,7 +1222,7 @@ overflow:overlay;
 transition:.24s ease-in-out;
 }
 .Covers-inner {
-bottom:0;
+top:0;
 right:0;
 position:absolute;
 display:inline;
@@ -1256,7 +1256,7 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
-bottom:0;
+top:0;
 right:0;
 transform:rotate(0);
 }
