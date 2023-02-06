@@ -1213,18 +1213,20 @@ position:fixed;
 width:100vw;
 height:100vh;
 right:0;
-left:0;
+bottom:0;
 background-color:#161616;
 z-index:2;
 visibility:hidden;
 opacity:0;
 overflow:overlay;
 transition:.24s ease-in-out;
+    box-sizing: border-box;
+	clear:both;
 }
 .Covers-inner {
 top:0;
 right:0;
-position:absolute;
+position:static;
 display:inline;
 align-items:center;
 justify-content:center;
