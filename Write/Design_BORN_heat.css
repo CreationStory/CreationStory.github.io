@@ -1212,9 +1212,9 @@ justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
-top:0;
+bottom:0;
 right:0;
-background-color:#fff;
+background-color:#161616;
 z-index:2;
 visibility:hidden;
 opacity:0;
@@ -1222,7 +1222,7 @@ overflow:overlay;
 transition:.24s ease-in-out;
 }
 .Covers-inner {
-top:0;
+bottom:0;
 right:0;
 position:absolute;
 display:inline;
