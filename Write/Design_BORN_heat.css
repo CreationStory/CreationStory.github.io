@@ -1206,13 +1206,15 @@ color:#745d41;
 font-variant:small-caps;
 }
 .Covers {
-display:inline-block;
+display:flex;
+align-items:center;
+justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
 right:0;
 bottom:0;
-background-color:#fff;
+background-color:#000;
 z-index:2;
 visibility:hidden;
 opacity:0;
@@ -1222,10 +1224,10 @@ transition:.24s ease-in-out;
 .Covers-inner {
 top:0;
 right:0;
-left:0;
-bottom:0;
-position:relative;
+position:absolute;
 display:inline;
+align-items:center;
+justify-content:center;
 max-width:100vw;
 max-height:100vh;
 width:100vw;
@@ -1254,7 +1256,7 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
-bottom:0;
+top:0;
 right:0;
 transform:rotate(0);
 }
