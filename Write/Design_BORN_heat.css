@@ -1226,7 +1226,7 @@ background-color:#f40;
 z-index:2;
 visibility:hidden;
 opacity:0;
-overflow:overlay;
+overflow:auto;
 transition:.24s ease-in-out;
 }
 .Covers-inner {
