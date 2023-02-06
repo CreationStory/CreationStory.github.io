@@ -1208,22 +1208,21 @@ font-variant:small-caps;
 .Covers {
 display:block;
 position:fixed;
-width:100vw;
-height:100vh;
+width:100%;
+height:100%;
 top:0;
 right:0;
-background-color:#fff;
+background-color:#161616;
 z-index:2;
 visibility:hidden;
 opacity:0;
-overflow:auto;
-object-fit:contain;
+overflow:overlay;
 transition:.24s ease-in-out;
 }
 .Covers-inner {
 top:0;
 right:0;
-position:absolute;object-fit:contain;
+position:absolute;
 display:inline;
 width:100vw;
 height:100vh;
