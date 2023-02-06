@@ -392,7 +392,7 @@ footer {
 	@media (max-width: 960px)
 	  {
       .left-col {
-		padding-right: 0 !important;
+		padding-right: 21px!important;
 		}
 	  }
 
