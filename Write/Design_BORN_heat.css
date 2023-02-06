@@ -23,9 +23,6 @@ margin:0px;
 scrollbar-width:none;
 -ms-overflow-style:none;
 }
-body.preload {
-animation-play-state:paused!important;
-}
 * {
 cursor:Cell;
 }
@@ -110,6 +107,35 @@ margin-bottom:1rem;
 margin-right:4rem;
 margin-left:1.18rem;
 width:90vw;
+}
+}
+.Init___‼_ {
+position:fixed;
+height:100%;
+width:100%;
+background-color:#141414;
+background-position:center; 
+background-repeat:repeat;
+background-size:cover;
+overflow:hidden;
+animation-name:Init_;
+animation-delay:1.80s;
+animation-duration:1.24s;
+animation-iteration-count:1;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+pointer-events:none;
+user-select:none;
+z-index:118;
+opacity:1;
+}
+@keyframes Init_ {
+0% {
+opacity:1;
+}
+100% {
+opacity:0;
 }
 }
 @media (orientation:landscape) and (max-height:587px) {
@@ -607,8 +633,8 @@ transition:.24s ease-in-out;
 .Casting IMG:first-child {
 position:absolute;
 animation-name:GODSLAWR8Iop;
-animation-delay:.14s;
-animation-duration:4s;
+animation-delay:1.4s;
+animation-duration:7s;
 animation-iteration-count:1;
 animation-play-state:running;
 animation-fill-mode:forwards;
@@ -620,8 +646,8 @@ opacity:1;
 }
 .Casting IMG:nth-child(2) {
 animation-name:GODSLAWR8IopSc4;
-animation-delay:.28s;
-animation-duration:1.24s;
+animation-delay:1.8s;
+animation-duration:2s;
 animation-iteration-count:1;
 animation-play-state:running;
 animation-fill-mode:forwards;
