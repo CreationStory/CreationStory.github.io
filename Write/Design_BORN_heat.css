@@ -1,22 +1,14 @@
 ::-webkit-scrollbar, ::-webkit-scrollbar:horizontal, ::-webkit-scrollbar:vertical {
-visibility:visible;
+display:none;
+visibility:hidden;
+width:0px;
+height:0px;
 }
-*::-webkit-scrollbar-track
-{
-box-shadow:inset 0 0 4px #000;
-background-color:#540007;
-}
-
-*::-webkit-scrollbar
-{
-width:9px;
-background-color:#441000;
-}
-
-*::-webkit-scrollbar-thumb
-{
-background-color:#ff0000;
-box-shadow:inset 0px 0px 3px #000;
+*::-webkit-scrollbar, *::-webkit-scrollbar:horizontal, *::-webkit-scrollbar:vertical {
+display:none;
+visibility:hidden;
+width:0px;
+height:0px;
 }
 body {
 background:url('Skin.png');
@@ -1214,24 +1206,30 @@ color:#745d41;
 font-variant:small-caps;
 }
 .Covers {
-display:inline-block;
+display:flex;
+align-items:center;
+justify-content:center;
 position:fixed;
 width:100vw;
 height:100vh;
 right:0;
 bottom:0;
-background-color:#f40;
+background-color:#161616;
 z-index:2;
 visibility:hidden;
 opacity:0;
-overflow:auto;
+overflow:overlay;
 transition:.24s ease-in-out;
 }
 .Covers-inner {
 top:0;
 right:0;
-position:relative;
-display:block;
+position:absolute;
+display:inline;
+align-items:center;
+justify-content:center;
+max-width:100vw;
+max-height:100vh;
 width:100vw;
 height:100vh;
 transform:rotate(0);
@@ -1258,6 +1256,8 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
+bottom:0;
+right:0;
 transform:rotate(0);
 }
 .Covers__close {
@@ -1296,18 +1296,24 @@ text-shadow:0 0 9px #000, 0px 1px 1px #ffffff54, 0px 0px 1px #ff0000;
 {
 box-shadow:inset 0 0 4px #000;
 background-color:#540007;
+display:block;
+visibility: visible;
 }
 
 #Covers::-webkit-scrollbar
 {
 width:9px;
 background-color:#441000;
+display:block;
+visibility:visible;
 }
 
 #Covers::-webkit-scrollbar-thumb
 {
 background-color:#ff0000;
 box-shadow:inset 0px 0px 3px #000;
+display:block;
+visibility:visible;
 }
 .Covers__text {
 width:81vw;
