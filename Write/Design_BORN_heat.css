@@ -1256,7 +1256,7 @@ visibility:visible;
 opacity:1;
 }
 .Covers:target .Covers-inner {
-bottom:0;
+top:0;
 right:0;
 transform:rotate(0);
 }
