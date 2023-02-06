@@ -110,7 +110,9 @@ width:90vw;
 }
 }
 .Init___‼_ {
-position:fixed;
+position:absolute;
+top:0;
+right:0;
 height:100%;
 width:100%;
 background-color:#141414;
