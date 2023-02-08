@@ -38,23 +38,25 @@ src: url('../Dia/Designer.ttf') format('truetype');
 font-family: 'DIAGRAPH9';
 src: url('../Dia/9.ttf') format('truetype');
 } 
-a, a:hover, a:focus, a:active {
-text-decoration:none;
-color:inherit;
-}
 ::-moz-selection {
 color:#450000;
 background:#ff000018;
+}
+a, a:focus {
+text-decoration:none;
+color:inherit;
 }
 ::selection {
 color:#fff;
 background:#ffffff00;
 }
+a:link {text-decoration:none;} a:visited {text-decoration:none;}
+a:hover {cursor:CrossHAIR!important;text-decoration:none;} a:active {text-decoration:none;}
 .WORD {
 position:relative;
 display:flex;
 justify-content:space-between;
-margin-top:4vh;
+margin-top:4.8vh;
 margin-right:7vw;
 margin-left:7vw;
 }
@@ -68,13 +70,9 @@ margin-right:0;
 margin-left:0;
 }
 }
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
 .HIGHLOWWORDOR {
 margin-top:4vh;
-margin-bottom:4.8vh;
+margin-bottom:4.2vh;
 display:inline-flex;
 justify-content:space-between;
 width:94vw;
@@ -110,9 +108,12 @@ width:90vw;
 }
 }
 .Init___‼_ {
+display:flex;
 position:absolute;
 top:0;
 right:0;
+align-items:center;
+justify-content:space-around;
 height:100%;
 width:100%;
 background-color:#141414;
@@ -121,13 +122,14 @@ background-repeat:repeat;
 background-size:cover;
 overflow:hidden;
 animation-name:Init_;
-animation-delay:1.80s;
-animation-duration:1.24s;
+animation-delay:2s;
+animation-duration:.24s;
 animation-iteration-count:1;
 animation-play-state:running;
 animation-fill-mode:forwards;
 animation-timing-function:cubic-bezier(.18,.14,.24,1);
 pointer-events:none;
+box-sizing:content-box;
 user-select:none;
 z-index:118;
 opacity:1;
@@ -140,6 +142,98 @@ opacity:1;
 opacity:0;
 }
 }
+.__BufferVectors {
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border-radius:81%;
+animation-name:_BUFFERSQWONTSLALrmm;
+animation-duration:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+animation-play-state:running;
+animation-timing-function:ease-in-out;
+height:200px;
+width:200px;
+}
+.__BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f00, #fff, #fff, #f40);
+animation-name:_BUFFERSQWONTSLALS;
+animation-duration:3s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+}
+.__BufferVHH8I {
+position:absolute;
+height:144px;
+width:140px;
+top:0.8rem;
+right:0.9rem;
+background:#141414;
+border-radius:4%;
+border:14px double #fff;
+animation-name:_BUFFERSQWONTSLALrmmM;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+filter:blur(7px);
+z-index:9;
+}
+@keyframes _BUFFERSQWONTSLALrmmM {
+0% {
+border-radius: 1%;
+filter: blur(4px);
+border: 14px double #fff;
+}
+100% {
+border-radius: 100%;
+filter: blur(1px);
+border: 14px double #c80000;
+}
+}
+@keyframes _BUFFERSQWONTSLALS {
+0% {
+border-radius:4%;
+}
+100% {
+border-radius:100%;
+}
+}
+.__BufferVectors span:nth-child(2) {
+filter:blur(1px);
+}
+.__BufferVectors span:nth-child(3) {
+filter:blur(4px);
+}
+.__BufferVectors span:nth-child(4) {
+filter:blur(4px);
+}
+.__BufferVectors span:nth-child(5) {
+filter:blur(4px);
+}
+.__BufferVectors span:nth-child(6) {
+filter:blur(4px);
+}
+.__BufferVectors span:nth-child(7) {
+filter:blur(4px);
+}
+.__BufferVectors span:nth-child(8) {
+filter:blur(4px);
+}
+.__BufferVectors span:nth-child(9) {
+filter:blur(4px);
+}
 @media (orientation:landscape) and (max-height:587px) {
 .HIGHLOWWORDOR {
 visibility:hidden;
@@ -150,6 +244,13 @@ display:none;
 .VariLine {
 visibility:hidden;
 display:none;
+}
+}
+@media (orientation:landscape) and (max-height:587px) {
+.CA_88 {
+visibility:hidden;
+display:none;
+opacity:0;
 }
 }
 @media (max-height:587px) and (orientation:landscape) {
@@ -177,6 +278,16 @@ filter:drop-shadow(2px 1px 0px #000);
 transition:.24s ease-in-out;
 }
 }
+@keyframes _BUFFERSQWONTSLALrmm {
+0% {
+rotate:0deg;
+filter:hue-rotate(24deg);
+}
+100% {
+rotate:1800deg;
+filter:hue-rotate(0deg);
+}
+}
 @media (orientation:landscape) and (max-height:700px) {
 .VariLine {
 position:absolute;
@@ -199,9 +310,6 @@ letter-spacing:.09rem;
 color:#ffffff4a;
 margin-block-start:0;
 margin-block-end:0;
-}
-a:hover {
-cursor:CrossHAIR!important;
 }
 p.HIGHLOWWORDER9 {
 font-size:1.24rem;
@@ -305,7 +413,7 @@ font-weight:100;
 word-spacing:14px;
 font-family:Designer;
 letter-spacing:2px;
-line-height:3.48rem;
+line-height:4.4rem;
 margin-block-start:0;
 margin-block-end:0;
 color:#78584cc9;
@@ -646,7 +754,7 @@ font-family:Designer;
 word-spacing:18px;
 font-weight:100;
 letter-spacing:2px;
-line-height:4vh;
+line-height:2vh;
 margin-block-start:0;
 margin-block-end:0;
 overflow:revert;
@@ -767,10 +875,6 @@ visibility:hidden;
 opacity:0;
 }
 }
-.CA:hover {
-filter:drop-shadow(0px 0px 14px #ff440048);
-transition:.4s cubic-bezier(.18,.14,.27,1);
-}
 .CA_88 {
 display:flex;
 transition:.4s cubic-bezier(.18,.14,.27,1);
@@ -778,16 +882,12 @@ display:none;
 visibility:hidden;
 opacity:0;
 }
-@media (max-width:924px) {
+@media (max-width:924px) and (min-height:587px) {
 .CA_88 {
 display:inline;
 visibility:visible;
 opacity:1;
 }
-}
-.CA_88:hover {
-filter:drop-shadow(0px 0px 14px #ff440048);
-transition:.4s cubic-bezier(.18,.14,.27,1);
 }
 p.WORDOFZXAC9 {
 font-size:2.7vw;
@@ -1052,14 +1152,38 @@ transition:0.18s linear;
 }
 .CALLINE {
 min-height:40px;
+max-height:40px;
 min-width:100%;
 background:url('CalLine.png');
 background-repeat:no-repeat;
 background-size:cover;
 object-fit:scale-down;
-pointer-events:none;
 user-select:none;
-mix-blend-mode:soft-light;
+mix-blend-mode:luminosity;
+}
+.CALLINE img {
+position:relative;
+display:inline;
+margin:0;
+top:7px;
+right:-.81vw;
+margin-inline-start:1rem;
+margin-inline-end:0;
+margin-block-start:0;
+margin-block-end:0;
+height:25px;
+width:auto;
+float:left;
+transition:all 1.14s cubic-bezier(.18,.14,.24,1);
+z-index:490;
+mix-blend-mode:hard-light;
+filter:none;
+}
+.CALLINE img:hover {
+cursor:Crosshair;
+transition:all .24s cubic-bezier(.14,.18,.24,1);
+filter:none;
+filter:brightness(0%) saturate(87%) drop-shadow(0 0px 1px #000);
 }
 .MindRoom {
 display:block;
