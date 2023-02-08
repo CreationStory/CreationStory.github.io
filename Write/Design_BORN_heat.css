@@ -864,6 +864,7 @@ background-size:cover;
 object-fit:scale-down;
 pointer-events:none;
 user-select:none;
+mix-blend-mode:luminosity;
 }
 .MindRoom {
 display:flex;
