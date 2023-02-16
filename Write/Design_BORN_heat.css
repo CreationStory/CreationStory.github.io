@@ -1587,7 +1587,7 @@ pointer-events:none;
 .Covers:target {
 visibility:visible;
 opacity:1;
-display:block;
+display:block!important;
 }
 .Covers:target .Covers-inner {
 bottom:0;
