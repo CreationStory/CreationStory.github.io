@@ -1017,7 +1017,7 @@ position:relative;
 top:1.24rem;
 }
 }
-@media (max-width:970px) {
+@media (max-width:970px) and (min-height:400px) {
 .FACE {
 top:2rem;
 }
