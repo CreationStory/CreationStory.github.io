@@ -1108,8 +1108,8 @@ display:block;
 position:fixed;
 width:100vw;
 height:100vh;
-top:-400px;
-right:800px;
+top:0;
+right:0;
 background-color:#000;
 z-index:2;
 visibility:hidden;
@@ -1146,8 +1146,6 @@ pointer-events:none;
 .MindRoom:target {
 visibility:visible;
 opacity:1;
-top:0;
-right:0;
 }
 .MindRoom:target .MindRoom-inner {
 bottom:0;
