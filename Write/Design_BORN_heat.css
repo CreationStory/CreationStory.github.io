@@ -1014,12 +1014,17 @@ position:relative;
 }
 @media (max-width:1240px) and (max-height:570px) {
 .FACE {
-top:1.24rem;
+top:1rem;
 }
 }
-@media (max-width:970px) and (min-height:400px) {
+@media (max-width:970px) {
 .FACE {
 top:2rem;
+}
+}
+@media (max-width:970px) and (max-height:400px) {
+.FACE {
+top:1rem;
 }
 }
 @media (orientation:landscape) and (max-width:841px) {
@@ -1083,14 +1088,13 @@ width:auto;
 float:left;
 transition:all 1.14s cubic-bezier(.18,.14,.24,1);
 z-index:490;
-mix-blend-mode:soft-light;
+mix-blend-mode:color-dodge;
 filter:none;
 }
 .CALLINE img:hover {
 cursor:Crosshair;
 transition:all .24s cubic-bezier(.14,.18,.24,1);
-filter:none;
-filter:brightness(0%) saturate(87%) drop-shadow(0 0px 1px #000);
+filter:brightness(400%)saturate(4000%)drop-shadow(0 0 1px #000)hue-rotate(124deg);
 }
 .MindRoom {
 display:block;
