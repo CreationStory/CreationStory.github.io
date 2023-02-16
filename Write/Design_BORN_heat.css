@@ -111,6 +111,7 @@ width:90vw;
 .Init___‼_ {
 display:flex;
 position:absolute;
+visibility:visible;
 top:0;
 right:0;
 align-items:center;
@@ -124,22 +125,28 @@ background-size:cover;
 overflow:hidden;
 animation-name:Init_;
 animation-delay:4s;
-animation-duration:.24s;
+animation-duration:.41s;
 animation-iteration-count:1;
 animation-play-state:running;
 animation-fill-mode:forwards;
 animation-timing-function:cubic-bezier(.18,.14,.24,1);
-pointer-events:none;
 box-sizing:content-box;
 user-select:none;
-z-index:118;
+z-index:8888;
 opacity:1;
 }
 @keyframes Init_ {
 0% {
+display:flex;
+visibility:visible;
 opacity:1;
 }
+99% {
+opacity:0;
+}
 100% {
+display:none;
+visibility:hidden;
 opacity:0;
 }
 }
@@ -827,8 +834,8 @@ transition:.24s ease-in-out;
 .Casting IMG:first-child {
 position:absolute;
 animation-name:GODSLAWR8Iop;
-animation-delay:1.4s;
-animation-duration:7s;
+animation-delay:4.7s;
+animation-duration:8s;
 animation-iteration-count:1;
 animation-play-state:running;
 animation-fill-mode:forwards;
@@ -840,8 +847,8 @@ opacity:1;
 }
 .Casting IMG:nth-child(2) {
 animation-name:GODSLAWR8IopSc4;
-animation-delay:1.8s;
-animation-duration:2s;
+animation-delay:4.1s;
+animation-duration:4s;
 animation-iteration-count:1;
 animation-play-state:running;
 animation-fill-mode:forwards;
@@ -1101,8 +1108,8 @@ display:block;
 position:fixed;
 width:100vw;
 height:100vh;
-top:0;
-right:0;
+top:-400px;
+right:800px;
 background-color:#000;
 z-index:2;
 visibility:hidden;
@@ -1139,6 +1146,8 @@ pointer-events:none;
 .MindRoom:target {
 visibility:visible;
 opacity:1;
+top:0;
+right:0;
 }
 .MindRoom:target .MindRoom-inner {
 bottom:0;
