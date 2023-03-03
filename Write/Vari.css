@@ -204,17 +204,110 @@ margin-top:4rem;
 justify-content:center;
 z-index:24;
 }
+@media (max-width:1400px) {
+.Vari {
+position:relative;
+display:flex;
+margin-top:1.24rem;
+justify-content:center;
+z-index:24;
+}
+}
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:nowrap;
+column-gap:17rem;
+margin-right:8rem;
+margin-left:7.4rem;
+justify-content:space-evenly;
+transition:.81s linear;
+user-select:none;
+row-gap:4rem;
+}
+@media (max-width:2400px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:nowrap;
+column-gap:17rem;
+margin-right:8rem;
+margin-left:7rem;
+justify-content:space-evenly;
+transition:.81s linear;
+user-select:none;
+row-gap:4rem;
+}
+}
+@media (max-width:1800px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:nowrap;
+column-gap:14rem;
+margin-right:8.24rem;
+margin-left:7rem;
+justify-content:space-evenly;
+transition:.81s linear;
+user-select:none;
+row-gap:4rem;
+}
+}
+@media (max-width:1600px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:nowrap;
+column-gap:12.4rem;
+margin-right:8.24rem;
+margin-left:7rem;
+justify-content:space-evenly;
+transition:.81s linear;
+user-select:none;
+row-gap:4rem;
+}
+}
+@media (max-width:1400px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap;
+column-gap:17rem;
+margin-right:12.4rem;
+margin-left:12.14rem;
+justify-content:space-evenly;
+transition:.81s linear;
+user-select:none;
+row-gap:4rem;
+}
+}
+@media (max-width:1040px) {
 .Vari9 {
 display:flex;
 width:100%;
 flex-wrap:wrap;
 column-gap:14rem;
-margin-right:7rem;
-margin-left:7rem;
-justify-content:center;
+margin-right:8.24rem;
+margin-left:8rem;
+justify-content:space-evenly;
 transition:.81s linear;
 user-select:none;
 row-gap:4rem;
+}
+}
+@media (max-width:840px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap;
+column-gap:8rem;
+margin-right:7rem;
+margin-left:4rem;
+justify-content:space-evenly;
+transition:.81s linear;
+user-select:none;
+row-gap:4rem;
+}
 }
 p.Vari9 span {
 font-family:DIAGRAPH9;
@@ -439,7 +532,7 @@ transform-style:preserve-3d;
 ._RenderVectorCHRISTGLORY {
 position:absolute;
 animation-name:M__;
-animation-delay:.124s;
+animation-delay:4.124s;
 animation-duration:41s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -584,7 +677,7 @@ text-stroke:4px #000;
 ._RenderVectorCHRISTGLORY:first-child:after {
 color:#c80000;
 animation-name:aa;
-animation-delay:4s;
+animation-delay:8s;
 animation-duration:24s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -603,7 +696,7 @@ color:#fff;
 .__RenderVectorCHRISTGLORY {
 position:absolute;
 animation-name:M___;
-animation-delay:.124s;
+animation-delay:4.124s;
 animation-duration:41s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -748,7 +841,7 @@ text-stroke:4px #000;
 .__RenderVectorCHRISTGLORY:first-child:after {
 color:#c80000;
 animation-name:aa__;
-animation-delay:4s;
+animation-delay:8s;
 animation-duration:24s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -767,7 +860,7 @@ color:#fff;
 .___RenderVectorCHRISTGLORY {
 position:absolute;
 animation-name:M____;
-animation-delay:.124s;
+animation-delay:4.124s;
 animation-duration:41s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -801,7 +894,7 @@ transform:rotateY(2deg) rotateX(-4deg) perspective(124px) skew(-2deg, -1deg) tra
 }
 .___RenderVectorCHRISTGLORY:after {
 position:absolute;
-content:"Source"!important;
+content:"MindRoom"!important;
 font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
 font-weight:100;
 font-size:2.448rem;
@@ -912,7 +1005,7 @@ text-stroke:4px #000;
 .___RenderVectorCHRISTGLORY:first-child:after {
 color:#c80000;
 animation-name:aa____;
-animation-delay:4s;
+animation-delay:8s;
 animation-duration:24s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -931,7 +1024,7 @@ color:#fff;
 .____RenderVectorCHRISTGLORY {
 position:absolute;
 animation-name:M_____;
-animation-delay:.124s;
+animation-delay:4.124s;
 animation-duration:41s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -1076,7 +1169,7 @@ text-stroke:4px #000;
 .____RenderVectorCHRISTGLORY:first-child:after {
 color:#c80000;
 animation-name:aa______;
-animation-delay:4s;
+animation-delay:8s;
 animation-duration:24s;
 animation-fill-mode:both;
 animation-play-state:running;
@@ -1109,4 +1202,9 @@ text-shadow:2px 0px 1px #ffffff, 4px 2px 4px #240000;
 font-stretch:ultra-expanded;
 font-variant:petite-caps;
 user-select:auto;
+}
+.W_G::selection {
+color:#fff;
+-webkit-text-stroke:1px #242424;
+background-color:#c80000;
 }

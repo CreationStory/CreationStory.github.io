@@ -281,7 +281,7 @@ user-select:none;
 position:absolute;
 max-height:114px;
 min-height:114px;
-top:180px;
+top:12.4vh;
 left:0;
 }
 .VectorCASTS_ALGA778888-scrollbar:before {
@@ -414,4 +414,890 @@ background-image:radial-gradient(#8c8c8c, #8c8c8c, #8c8c8c, #8c8c8c);
 color:#fff;
 text-shadow:1px 0px 2px #000, 2px -1px 1px #000, 0px 0px 4px #000;
 filter:drop-shadow(0px 0px 1px #c4c4c4);
+}
+.Init___‼_ {
+display:flex;
+position:absolute;
+top:0;
+right:0;
+height:100%;
+width:100%;
+align-items:center;
+justify-content:space-around;
+background-color:#141414;
+background-position:center; 
+background-repeat:repeat;
+background-size:cover;
+animation-name:Init_;
+animation-delay:4.32s;
+animation-duration:1.24s;
+animation-iteration-count:1;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+overflow:hidden;
+z-index:1244;
+opacity:1;
+}
+@keyframes Init_ {
+0% {
+display:flex;
+visibility:visible;
+opacity:1;
+}
+99% {
+opacity:0;
+}
+100% {
+display:none;
+visibility:hidden;
+opacity:0;
+}
+}
+.__BufferVectors {
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border-radius:81%;
+animation-name:_BUFFERSQWONTSLALrmm;
+animation-duration:4s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+animation-play-state:running;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+height:200px;
+width:200px;
+}
+.__BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f40, #fff, #fff, #f40);
+animation-name:_BUFFERSQWONTSLALS;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+}
+.__BufferVHH8I {
+position:absolute;
+height:140px;
+width:140px;
+top:16px;
+right:16px;
+background:#141414;
+border-radius:4%;
+border:14px double #fff;
+animation-name:_BUFFERSQWONTSLALrmmM;
+box-sizing:content-box;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+filter:blur(4px);
+z-index:9;
+}
+@keyframes _BUFFERSQWONTSLALrmmM {
+0% {
+border-radius:1%;
+filter:blur(14px);
+border:14px double #c80000;
+}
+100% {
+border-radius: 100%;
+filter:blur(1px);
+border:14px double #141414;
+}
+}
+@keyframes _BUFFERSQWONTSLALS {
+0% {
+border-radius:8%;
+}
+100% {
+border-radius:100%;
+}
+}
+.__BufferVectors span:nth-child(2) {
+filter:blur(4px);
+animation-name:_ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.__BufferVectors span:nth-child(3) {
+filter:blur(4px);
+animation-name:_ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.__BufferVectors span:nth-child(4) {
+filter:blur(4px);
+animation-name:_ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.__BufferVectors span:nth-child(5) {
+filter:blur(7px);
+animation-name:_ISCC;
+animation-duration:7s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.__BufferVectors span:nth-child(6) {
+filter:blur(4px);
+animation-name:_ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.__BufferVectors span:nth-child(7) {
+filter:blur(4px);
+animation-name:_ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.__BufferVectors span:nth-child(8) {
+filter:blur(7px);
+animation-name:_ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+@keyframes _ISCC {
+0% {
+rotate:0deg;
+filter:inital;
+border-radius:100%;
+}
+100% {
+rotate:400deg;
+filter:blur(1px);
+border-radius:41%;
+}
+}
+@keyframes _BUFFERSQWONTSLALrmm {
+0% {
+rotate:0deg;
+filter:hue-rotate(400deg);
+}
+72% {
+rotate:124deg;
+filter:hue-rotate(124deg);
+}
+100% {
+rotate:400deg;
+filter:hue-rotate(0deg);
+}
+}
+.____BufferVectors {
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border-radius:81%;
+animation-name:__BUFFERSQWONTSLALrmm;
+animation-duration:4s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+animation-play-state:running;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+height:200px;
+width:200px;
+}
+.____BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f40, #fff, #fff, #f40);
+animation-name:__BUFFERSQWONTSLALS;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease-in-out;
+}
+.____BufferVHH8I {
+position:absolute;
+height:140px;
+width:140px;
+top:16px;
+right:16px;
+background:#181818;
+border-radius:4%;
+border:14px double #191919;
+animation-name:__BUFFERSQWONTSLALrmmM;
+box-sizing:content-box;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease-in-out;
+filter:blur(4px);
+z-index:9;
+}
+@keyframes __BUFFERSQWONTSLALrmmM {
+0% {
+border-radius:1%;
+border:14px double #141414;
+filter:blur(4px);
+}
+41% {
+border-radius: 81%;
+border:14px double #181818;
+filter:blur(2px);
+}
+100% {
+border-radius: 100%;
+border:14px double #181818;
+filter:blur(1px);
+}
+}
+@keyframes __BUFFERSQWONTSLALS {
+0% {
+border-radius:118%;
+}
+100% {
+border-radius:41%;
+}
+}
+.____BufferVectors span:nth-child(2) {
+filter:blur(7px);
+animation-name:__ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____BufferVectors span:nth-child(3) {
+filter:blur(7px);
+animation-name:__ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____BufferVectors span:nth-child(4) {
+filter:blur(7px);
+animation-name:__ISCC;
+animation-duration:1s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____BufferVectors span:nth-child(5) {
+filter:blur(7px);
+animation-name:__ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____BufferVectors span:nth-child(6) {
+filter:blur(4px);
+animation-name:__ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____BufferVectors span:nth-child(7) {
+filter:blur(2px);
+animation-name:__ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____BufferVectors span:nth-child(8) {
+filter:blur(1px);
+animation-name:__ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+@keyframes __ISCC {
+0% {
+rotate:0deg;
+filter:inital;
+border-radius:100%;
+}
+100% {
+rotate:400deg;
+filter:blur(2px);
+border-radius:41%;
+}
+}
+@keyframes __BUFFERSQWONTSLALrmm {
+0% {
+rotate:0deg;
+filter:hue-rotate(9deg);
+}
+41% {
+rotate:124deg;
+filter:hue-rotate(4deg);
+}
+100% {
+rotate:400deg;
+filter:hue-rotate(0deg);
+}
+}
+.________BufferVectors {
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border-radius:81%;
+animation-name:____BUFFERSQWONTSLALrmm;
+animation-duration:4s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+animation-play-state:running;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+height:200px;
+width:200px;
+}
+.________BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f40, #141414, #141414, #f40);
+animation-name:____BUFFERSQWONTSLALS;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease-in-out;
+}
+.________BufferVHH8I {
+position:absolute;
+height:140px;
+width:140px;
+top:16px;
+right:16px;
+background:#181818;
+border-radius:4%;
+border:14px double #191919;
+animation-name:____BUFFERSQWONTSLALrmmM;
+box-sizing:content-box;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease-in-out;
+filter:blur(4px);
+z-index:9;
+}
+@keyframes ____BUFFERSQWONTSLALrmmM {
+0% {
+border-radius:100%;
+border:14px double #141414;
+filter:blur(4px);
+}
+41% {
+border-radius: 41%;
+border:14px double #181818;
+filter:blur(2px);
+}
+100% {
+border-radius: 100%;
+border:14px double #181818;
+filter:blur(1px);
+}
+}
+@keyframes ____BUFFERSQWONTSLALS {
+0% {
+border-radius:100%;
+}
+100% {
+border-radius:41%;
+}
+}
+.________BufferVectors span:nth-child(2) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(3) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(4) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:1s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(5) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(6) {
+filter:blur(4px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(7) {
+filter:blur(2px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(8) {
+filter:blur(1px);
+animation-name:____ISCC4;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+background:linear-gradient(#fff, #141414, #141414, #fff);
+}
+@keyframes ____ISCC {
+0% {
+rotate:0deg;
+filter:inital;
+border-radius:100%;
+}
+100% {
+rotate:400deg;
+filter:blur(2px);
+border-radius:41%;
+}
+}
+@keyframes ____ISCC4 {
+0% {
+rotate:0deg;
+filter:inital;
+border-radius:100%;
+}
+100% {
+rotate:400deg;
+filter:blur(2px);
+border-radius:100%;
+}
+}
+@keyframes ____BUFFERSQWONTSLALrmm {
+0% {
+rotate:0deg;
+filter:hue-rotate(9deg);
+}
+41% {
+rotate:0deg;
+filter:hue-rotate(4deg);
+}
+100% {
+rotate:400deg;
+filter:hue-rotate(0deg);
+}
+}
+.____________________________BufferVectors {
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border-radius:81%;
+animation-name:______________BUFFERSQWONTSLALrmm;
+animation-duration:4s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+animation-play-state:running;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+height:200px;
+width:200px;
+}
+.____________________________BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f40, #fff, #fff, #f40);
+animation-name:______________BUFFERSQWONTSLALS;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+}
+.____________________________BufferVHH8I {
+position:absolute;
+height:140px;
+width:140px;
+top:16px;
+right:16px;
+background:#141414;
+border-radius:4%;
+border:14px double #fff;
+animation-name:______________BUFFERSQWONTSLALrmmM;
+box-sizing:content-box;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+filter:blur(4px);
+z-index:9;
+}
+@keyframes ______________BUFFERSQWONTSLALrmmM {
+0% {
+border-radius:1%;
+filter:blur(4px);
+border:14px double #f40;
+}
+100% {
+border-radius: 100%;
+filter:blur(1px);
+border:14px double #141414;
+}
+}
+@keyframes ______________BUFFERSQWONTSLALS {
+0% {
+border-radius:8%;
+}
+100% {
+border-radius:100%;
+}
+}
+.____________________________BufferVectors span:nth-child(2) {
+filter:blur(4px);
+animation-name:______________ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____________________________BufferVectors span:nth-child(3) {
+filter:blur(4px);
+animation-name:______________ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____________________________BufferVectors span:nth-child(4) {
+filter:blur(4px);
+animation-name:______________ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____________________________BufferVectors span:nth-child(5) {
+filter:blur(7px);
+animation-name:______________ISCC;
+animation-duration:7s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____________________________BufferVectors span:nth-child(6) {
+filter:blur(4px);
+animation-name:______________ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____________________________BufferVectors span:nth-child(7) {
+filter:blur(4px);
+animation-name:______________ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.____________________________BufferVectors span:nth-child(8) {
+filter:blur(7px);
+animation-name:______________ISCC;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+@keyframes ______________ISCC {
+0% {
+rotate:0deg;
+filter:inital;
+border-radius:100%;
+}
+100% {
+rotate:400deg;
+filter:blur(1px);
+border-radius:41%;
+}
+}
+@keyframes ______________BUFFERSQWONTSLALrmm {
+0% {
+rotate:0deg;
+filter:hue-rotate(400deg);
+}
+72% {
+rotate:124deg;
+filter:hue-rotate(124deg);
+}
+100% {
+rotate:400deg;
+filter:hue-rotate(0deg);
+}
+}
+.________________________________BufferVectors {
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border-radius:81%;
+animation-name:________________BUFFERSQWONTSLALrmm;
+animation-duration:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+animation-play-state:running;
+animation-timing-function:ease-in-out;
+height:200px;
+width:200px;
+}
+.________________________________BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f00, #fff, #fff, #f40);
+animation-name:________________BUFFERSQWONTSLALS;
+animation-duration:3s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+}
+.________________________________BufferVHH8I {
+position:absolute;
+height:140px;
+width:140px;
+top:16px;
+right:16px;
+background:#141414;
+border-radius:4%;
+border:14px double #fff;
+animation-name:________________BUFFERSQWONTSLALrmmM;
+box-sizing:content-box;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+filter:blur(7px);
+z-index:9;
+}
+@keyframes ________________BUFFERSQWONTSLALrmmM {
+0% {
+border-radius: 1%;
+filter: blur(4px);
+border: 14px double #fff;
+}
+100% {
+border-radius: 100%;
+filter: blur(1px);
+border: 14px double #c80000;
+}
+}
+@keyframes ________________BUFFERSQWONTSLALS {
+0% {
+border-radius:4%;
+}
+100% {
+border-radius:100%;
+}
+}
+.________________________________BufferVectors span:nth-child(2) {
+filter:blur(4px);
+}
+.________________________________BufferVectors span:nth-child(3) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________________________________BufferVectors span:nth-child(4) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________________________________BufferVectors span:nth-child(5) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________________________________BufferVectors span:nth-child(6) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________________________________BufferVectors span:nth-child(7) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________________________________BufferVectors span:nth-child(8) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________________________________BufferVectors span:nth-child(9) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:2s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+@keyframes ________________BUFFERSQWONTSLALrmm {
+0% {
+rotate:700deg;
+filter:hue-rotate(0deg);
+}
+100% {
+rotate:0deg;
+filter:hue-rotate(24deg);
+}
+}
+.________________________________________________________________________________________________________________________________________________________________BufferVectors {
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border-radius:81%;
+animation-name:________________________________________________________________________________BUFFERSQWONTSLALrmm;
+animation-duration:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+animation-timing-function:ease-in-out;
+height:200px;
+width:200px;
+}
+.________________________________________________________________________________________________________________________________________________________________BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f00, #141414, #141414, #f40);
+animation-name:________________________________________________________________________________BUFFERSQWONTSLALS;
+animation-duration:3s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+}
+.________________________________________________________________________________________________________________________________________________________________BufferVHH8I {
+position:absolute;
+height:140px;
+width:140px;
+top:16px;
+right:16px;
+background:#141414;
+border-radius:4%;
+border:14px double #141414;
+animation-name:________________________________________________________________________________BUFFERSQWONTSLALrmmM;
+box-sizing:content-box;
+animation-duration:4s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+filter:blur(7px);
+z-index:9;
+}
+@keyframes ________________________________________________________________________________BUFFERSQWONTSLALrmmM {
+0% {
+border-radius: 1%;
+filter: blur(8px);
+border: 14px double #141414;
+}
+100% {
+border-radius: 100%;
+filter: blur(1px);
+border: 14px double #c80000;
+}
+}
+@keyframes ________________________________________________________________________________BUFFERSQWONTSLALS {
+0% {
+border-radius:4%;
+}
+100% {
+border-radius:100%;
+}
+}
+.________________________________________________________________________________________________________________________________________________________________BufferVectors span:nth-child(2) {
+filter:blur(4px);
+}
+@keyframes ________________________________________________________________________________BUFFERSQWONTSLALrmm {
+0% {
+rotate:700deg;
+filter:hue-rotate(0deg)blur(1px);
+}
+100% {
+rotate:0deg;
+filter:hue-rotate(24deg)blur(2px);
+}
 }
