@@ -336,5 +336,9 @@ setTimeout(() => {
 image.style.filter = null;
 }, 400); }); }); });
 </script>
+<script>
+$('article img').on('load', function(){
+$(this).addClass('loaded');
+});</script>
 </body>
 </html>
