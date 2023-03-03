@@ -148,7 +148,6 @@ align-items:flex-start;
 }
 img[loading="lazy"] {
 transition:opacity .44s ease-in-out;
-opacity: 0;
 }
 img[loading="lazy"].loaded {
 transition:opacity .44s ease-in-out;
