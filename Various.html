@@ -9,6 +9,10 @@
 <link rel="preload" href="Write/Skin_8D.17.png" as="image">
 </head>
 <body>
+<script>
+$('article img').on('load', function(){
+$(this).addClass('loaded');
+});</script>
 <div class="Init___‼_"><div class="__BufferVectors"><div class="__BufferVHH8I"></div><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <div class="Init___‼_"><div class="____BufferVectors"><div class="____BufferVHH8I"></div><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <div class="Init___‼_"><div class="________BufferVectors"><div class="________BufferVHH8I"></div><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
@@ -317,10 +321,6 @@ if ($(e.target).has(".Vari").length > 0) {padding += 144;} if ($(e.target).is(".
 $(document).one("click", function(event) {if (!$(event.target).is(".context-menu")) {contextMenu.hide();}});});
 $("#_Return_").on("click", function(event) {event.preventDefault(); window.history.back();});
 </script>
-<script>
-$('article img').on('load', function(){
-$(this).addClass('loaded');
-});</script>
 <div class="V_"><div class="_TRUTH"><p>The screen is too small to display. Please rotate into landscape, or use a larger device.</p></div></div>
 <script>
 var finalQuadVector = 299; 
