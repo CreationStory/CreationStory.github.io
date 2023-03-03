@@ -265,29 +265,23 @@ const images = document.querySelectorAll('article img');
 
 function handleIntersection(entries, observer) {
   entries.forEach(function(entry) {
-    if (entry.isIntersecting && !entry.target.hasAttribute('data-loaded')) {
+    if (entry.isIntersecting) {
       const img = entry.target;
-      const src = img.dataset.src;
-
-      if (src) {
-        const newImg = new Image();
-        newImg.onload = function() {
-          img.style.opacity = 1;
-          img.setAttribute('data-loaded', true);
-        }
-        newImg.src = src;
-      }
+      img.style.opacity = 1;
+      observer.unobserve(img);
     }
   });
 }
 
-const observer = new IntersectionObserver(handleIntersection, {
-  rootMargin: '-50px'
-});
+const observer = new IntersectionObserver(handleIntersection);
 
 images.forEach(function(img) {
-  img.style.opacity = 0;
-  observer.observe(img);
+  if (img.complete) {
+    img.style.opacity = 1;
+  } else {
+    img.style.opacity = 0;
+    observer.observe(img);
+  }
 });
 </script>
 </body>
