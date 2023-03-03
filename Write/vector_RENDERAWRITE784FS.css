@@ -146,9 +146,12 @@ justify-content:flex-start;
 align-content:flex-start;
 align-items:flex-start;
 }
-img[loading="lazy"] {
+img {
 opacity: 0;
 transition:opacity .44s ease-in-out;
+}
+.loaded {
+opacity: 1;
 }
 img[loading="lazy"].loaded {
 opacity: 1;

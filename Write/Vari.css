@@ -1,12 +1,15 @@
 @font-face {
 font-family:'DIAGRAPH';
 src:url('../Dia/Dia.otf') format('opentype');
+font-display:swap;
 }@font-face {
 font-family:'DIAGRAPH9';
 src:url('../Dia/Romentic.ttf') format('truetype');
+font-display:swap;
 }@font-face {
 font-family:'DIAGRAPH9_ACVectorRenders888';
 src:url('../Dia/Apoc.ttf') format('truetype');
+font-display:swap;
 }::-webkit-scrollbar-thumb {
 visibility:hidden;
 width:0px;
