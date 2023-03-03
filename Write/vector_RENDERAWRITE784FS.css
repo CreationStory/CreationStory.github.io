@@ -151,6 +151,7 @@ opacity: 0;
 transition:opacity .44s ease-in-out;
 }
 .loaded {
+transition:opacity .44s ease-in-out;
 opacity: 1;
 }
 img[loading="lazy"].loaded {
