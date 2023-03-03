@@ -337,8 +337,27 @@ image.style.filter = null;
 }, 400); }); }); });
 </script>
 <script>
-$('article img').on('load', function(){
-$(this).addClass('loaded');
+$(document).ready(() => {
+  let $articleImgs = $('article img');
+  
+  const addLoadedClass = ($img) => {
+    $img.addClass('loaded');
+  };
+
+  $articleImgs.each((index, img) => {
+    if (img.complete) {
+      addLoadedClass($(img));
+    } else {
+      $(img).on('load', () => {
+        addLoadedClass($(img));
+      });
+    }
+  });
+
+  $articleImgs.imagesLoaded(() => {
+    addLoadedClass($articleImgs);
+  });
+});
 });</script>
 </body>
 </html>
