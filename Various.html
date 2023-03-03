@@ -269,18 +269,13 @@ if (!isAnimating) {
 truthDiagraphs.style.transition = 'all .14s';
 truthDiagraphs.style.transform = 'rotateY(-4deg) rotateX(-14deg) perspective(700px)';
 truthDiagraphs.style.textShadow = '0px 0px 8px #240000';
-isAnimating = true;
-}
-}, 41);
-});
+isAnimating = true;} }, 41); });
 truthDiagraphs.addEventListener('mouseleave', () => {
 truthDiagraphs.style.transition = 'all .41s';
 truthDiagraphs.style.transform = null;
 truthDiagraphs.style.textShadow = null;
 isAnimating = false;
-clearTimeout(timeoutId);
-});
-});
+clearTimeout(timeoutId); }); });
 </script>
 <script>$(document).ready(function(){var saturate=1;var brightness=1;var direction=1;$('._GallVectorWRITEINTOLIFE article').css('filter','saturate('+saturate+')brightness('+brightness+')');setInterval(function(){saturate+=direction * 0.1;brightness=(brightness==1)?1.08:1;if(saturate<=1||saturate>=1.4){direction *= -1;}$('._GallVectorWRITEINTOLIFE article').css('filter','saturate('+saturate+')brightness('+brightness+')');},8000);});</script>
 <script>
@@ -336,16 +331,14 @@ window.addEventListener('resize', function() {if (window.innerWidth < finalQuadV
 <script>
 const articles = document.querySelectorAll('article');
 articles.forEach((article) => {
-  article.addEventListener('click', () => {
-    const images = article.querySelectorAll('img');
-    images.forEach((image) => {
-	  image.style.transition = 'all 1.44s';
-      image.style.filter = 'hue-rotate(-24deg) brightness(24%)';
-      setTimeout(() => {
-        image.style.filter = null;
-      }, 400);
-    });
-  });
-});</script>
+article.addEventListener('click', () => {
+const images = article.querySelectorAll('img');
+images.forEach((image) => {
+image.style.transition = 'all 1.44s';
+image.style.filter = 'hue-rotate(-24deg) brightness(24%)';
+setTimeout(() => {
+image.style.filter = null;
+}, 400); }); }); });
+</script>
 </body>
 </html>
