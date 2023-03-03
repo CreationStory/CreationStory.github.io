@@ -146,15 +146,12 @@ justify-content:flex-start;
 align-content:flex-start;
 align-items:flex-start;
 }
-img {
+img[loading="lazy"] {
+transition:opacity .44s ease-in-out;
 opacity: 0;
-transition:opacity .44s ease-in-out;
-}
-.loaded {
-transition:opacity .44s ease-in-out;
-opacity: 1;
 }
 img[loading="lazy"].loaded {
+transition:opacity .44s ease-in-out;
 opacity: 1;
 }
 .VectorCASTS_ALGA778888-wrapper {
