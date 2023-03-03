@@ -277,7 +277,6 @@ const observer = new IntersectionObserver(entries => {
       img.setAttribute('src', src);
       img.removeAttribute('data-src');
       
-      // Add a class to the image to trigger the fade-in effect
       img.classList.add('loaded');
 
       observer.unobserve(img);
