@@ -2,13 +2,9 @@
 font-family:'DIAGRAPH';
 src:url('../Dia/Dia.otf') format('opentype');
 }@font-face {
-font-family:'DIAGRAPH2';
-src:url('../Dia/H_Render.ttf') format('truetype');
-}@font-face {
 font-family:'DIAGRAPH9';
 src:url('../Dia/Romentic.ttf') format('truetype');
-}
-@font-face {
+}@font-face {
 font-family:'DIAGRAPH9_ACVectorRenders888';
 src:url('../Dia/Apoc.ttf') format('truetype');
 }::-webkit-scrollbar-thumb {
