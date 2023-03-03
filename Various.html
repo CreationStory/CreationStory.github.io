@@ -261,40 +261,40 @@
 <script>$(document).on("contextmenu",(function(t){t.preventDefault();var e=$(".context-menu"),n=t.pageY,i=t.pageX,o=e.height(),c=e.width(),a=$(window).height(),s=$(window).width(),l=114;$(t.target).has(".Vari").length>0&&(l+=144),$(t.target).is(".Vari span")&&(l+=144),$(t.target).is(".Render____DRAWCal")&&(l+=144),n+o+l>a&&(n=a-o-l),n-l<0&&(n=l),i+c+l>s&&(i=s-c-l),i-l<0&&(i=l),e.is(":visible")?(e.hide(),setTimeout((function(){e.css({display:"block",top:n,left:i})}),124)):e.css({display:"block",top:n,left:i}),$(document).one("click",(function(t){$(t.target).is(".context-menu")||e.hide()}))})),$("#_Return_").on("click",(function(t){t.preventDefault(),window.history.back()}));</script>
 <div class="V_"><div class="_TRUTH"><p>The screen is too small to display. Please rotate into landscape, or use a larger device.</p></div></div>
 <script>var finalQuadVector=299,Cal_f=window.innerWidth;if(Cal_f<finalQuadVector){var V_=document.querySelector(".V_");V_.style.display="block"}window.addEventListener("resize",(function(){window.innerWidth<finalQuadVector?V_.style.display="block":V_.style.display="none"}));</script><script>const articles=document.querySelectorAll("article");articles.forEach((e=>{e.addEventListener("click",(()=>{e.querySelectorAll("img").forEach((e=>{e.style.transition="all 1.44s",e.style.filter="hue-rotate(-24deg) brightness(14%)",setTimeout((()=>{e.style.filter=null}),400)}))}))}));</script><script>
-// Wait for the page to load
-window.addEventListener("load", function() {
-  // Get all the images inside the article
-  var imgs = document.querySelectorAll("article img");
-  // Loop through each image
-  for (var i = 0; i < imgs.length; i++) {
-    // Set opacity to 0 initially
-    imgs[i].style.opacity = 0;
-    // Create a new ImagesLoaded object
-    var imgLoad = imagesLoaded(imgs[i]);
-    // Delay for 1 second before checking if the image is loaded or not
-    setTimeout(function() {
-      // Check if the image is loaded or not
-      imgLoad.on("done", function(instance) {
-        // Check if the image is in view
-        if (isElementInViewport(instance.elements[0])) {
-          // Set opacity to 1 if the image is loaded and in view
-          instance.elements[0].style.opacity = 1;
-        }
-      });
-    }, 1000);
-  }
-});
+$(function() {
+  // create an array to keep track of loaded images
+  var loadedImages = [];
 
-// Check if an element is in the viewport
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-</script>
+  // function to check if an image has already been loaded
+  function isImageLoaded(imgSrc) {
+    return loadedImages.indexOf(imgSrc) !== -1;
+  }
+
+  // function to handle the image load event
+  function handleImageLoad() {
+    var $img = $(this);
+    var imgSrc = $img.attr('src');
+
+    // check if the image is already loaded
+    if (!isImageLoaded(imgSrc)) {
+      // add the 'loaded' class and track the loaded image
+      $img.addClass('loaded');
+      loadedImages.push(imgSrc);
+    }
+  }
+
+  // function to handle the image error event
+  function handleImageError() {
+    var $img = $(this);
+    var imgSrc = $img.attr('src');
+
+    // remove the 'loaded' class and track the failed image
+    $img.removeClass('loaded');
+    loadedImages.push(imgSrc);
+  }
+
+  // attach load and error event listeners to all images
+  $('img').on('load', handleImageLoad).on('error', handleImageError);
+});</script>
 </body>
 </html>
