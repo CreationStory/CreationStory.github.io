@@ -273,7 +273,7 @@
         observer.unobserve(lazyImage);
       }
     });
-  }, {rootMargin: "0px 0px -20% 0px"}); // observe 20vh below the viewport
+  }, {rootMargin: "0px 0px -200px 0px"}); // observe 200px below the viewport
 
   $("article img:not(.loaded)").each(function() {
     observer.observe(this);
