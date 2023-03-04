@@ -265,18 +265,17 @@
     }
   });
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting || entry.intersectionRatio > 0) {
-        const lazyImage = entry.target;
-        $(lazyImage).addClass('loaded');
-        observer.unobserve(lazyImage);
+  $(window).scroll(function() {
+    const windowHeight = $(window).height();
+    const scrollTop = $(window).scrollTop();
+    const bottomThreshold = scrollTop + windowHeight + 200; // observe 200px below the viewport
+
+    $("article img:not(.loaded)").each(function() {
+      const imgTop = $(this).offset().top;
+      if (imgTop <= bottomThreshold) {
+        $(this).addClass('loaded');
       }
     });
-  }, {rootMargin: "0px 0px -200px 0px"}); // observe 200px below the viewport
-
-  $("article img:not(.loaded)").each(function() {
-    observer.observe(this);
   });
 });</script><script>const VICTORY=document.querySelectorAll(".Vari9 span");VICTORY.forEach((e=>{let t,l=!1;e.addEventListener("mouseenter",(()=>{clearTimeout(t),t=setTimeout((()=>{l||(e.style.transition="all .14s",e.style.transform="rotateY(-4deg) rotateX(-14deg) perspective(700px)",e.style.textShadow="0px 0px 8px #240000",l=!0)}),41)})),e.addEventListener("mouseleave",(()=>{e.style.transition="all .41s",e.style.transform=null,e.style.textShadow=null,l=!1,clearTimeout(t)}))}));</script><script>$(document).ready(function(){var saturate=1;var brightness=1;var direction=1;$('._GallVectorWRITEINTOLIFE article').css('filter','saturate('+saturate+')brightness('+brightness+')');setInterval(function(){saturate+=direction * 0.1;brightness=(brightness==1)?1.08:1;if(saturate<=1||saturate>=1.4){direction *= -1;}$('._GallVectorWRITEINTOLIFE article').css('filter','saturate('+saturate+')brightness('+brightness+')');},8000);});</script><script>var initWords=function(t){const n=["&nbsp;","Creation Story"];let e=0;const s=()=>{t.innerHTML=n[parseInt(e/2,10)%n.length],e%2!=0?t.classList.add("HIGHLANGUAGELOW"):t.classList.remove("HIGHLANGUAGELOW"),e++,e===3*n.length&&(e=0)};setInterval(s,24);s()};initWords(document.getElementById("HIGHLOWWORD"));</script>
 <div class="context-menu">
