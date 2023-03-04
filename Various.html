@@ -254,31 +254,15 @@
 <p class="W_G">Paul stood in the midst of the Areopagites and said, "Men of Athens, I perceive that in all things you are very religious, in a vain worship. For as I was passing through and considering the objects of your worship, I even found an altar with the inscription ‘TO THE UNKNOWN GOD’ Therefore, the one whom you worship in ignorance, Him I proclaim to you: God who made the world and everything in it. Since He is Lord of heaven and earth, does not dwell in temples made with hands, nor is He worshipped with men's hands, as though He needed anything, since He Himself gives to all life breath and all things, and He made from one blood every nation of mankind to live on all the face of the earth, and has determined their preappointed times and the boundaries of their dwellings, so that they should seek the Lord, in the hope that they may grope for Him and find Him, though He is not far from each one of us, for in Him we live and move and have our being. As even some of your own poets have said, ‘For we also are His offspring’ Therefore, since we are the offspring of God, we ought not to think that Divine Nature is like gold or silver or stone, an image formed by human skill and thought. Truly these times of ignorance God overlooked, but now commands all people everywhere repent, because He has appointed a day on which He will judge the world in righteousness by the Man who He has ordained, He has given assurance of this to all by raising Him from the dead."</p>
 </figure>
 <script>setInterval(function(){console.log("JESUS CHRIST");}, 7000);</script>
-<script src="Write/lCLCast_4.js"></script><script>var GodCAL = Math.floor(Math.random() * $('.Init___‼_').length); $('.Init___‼_').hide().eq(GodCAL).show();</script><script src="Write/SAMPLESS.js"></script><script src="Write/SAMPLESSII14Heaven.js"></script><script>$(window).on("load", function() {
-  $("article img").each(function() {
-    if (this.complete) {
-      $(this).addClass("loaded");
-    } else {
-      $(this).on("load", function() {
+<script src="Write/lCLCast_4.js"></script><script>var GodCAL = Math.floor(Math.random() * $('.Init___‼_').length); $('.Init___‼_').hide().eq(GodCAL).show();</script><script src="Write/SAMPLESS.js"></script><script src="Write/SAMPLESSII14Heaven.js"></script><script>$(function() {
+  $(window).on("load", function(){
+    $("img").each(function() {
+      if ($(this).offset().top - $(window).scrollTop() < $(window).height() * 0.8) {
         $(this).addClass("loaded");
-      });
-    }
-  });
-
-  var vh = $(window).height() * 0.2; // 20% of viewport height
-  var imgOffset = vh - $(window).height(); // distance from viewport top to image load point
-
-  // add "loaded" class to images that are already above the load point when the page loads
-  $('article img').each(function() {
-    if ($(this).offset().top < $(window).scrollTop() + imgOffset) {
-      $(this).addClass('loaded');
-    }
-  });
-
-  $(window).on('scroll', function() {
-    $('article img').each(function() {
-      if ($(this).offset().top < $(window).scrollTop() + imgOffset && !$(this).hasClass('loaded')) {
-        $(this).addClass('loaded');
+      } else {
+        $(this).one("load", function() {
+          $(this).addClass("loaded");
+        });
       }
     });
   });
