@@ -266,12 +266,10 @@
   });
 
   var vh = $(window).height() * 0.2; // 20% of viewport height
+  var imgOffset = vh - $(window).height(); // distance from viewport top to image load point
   $(window).on('scroll', function() {
     $('article img').each(function() {
-      var imgTop = $(this).offset().top;
-      var imgBottom = imgTop + $(this).height();
-
-      if ((imgTop < vh + $(window).scrollTop() + 200) && (imgBottom > $(window).scrollTop() - 200)) {
+      if ($(this).offset().top < $(window).scrollTop() + imgOffset) {
         $(this).addClass('loaded');
       }
     });
