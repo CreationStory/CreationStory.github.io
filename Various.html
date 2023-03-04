@@ -255,25 +255,26 @@
 </figure>
 <script>setInterval(function(){console.log("JESUS CHRIST");}, 7000);</script>
 <script src="Write/lCLCast_4.js"></script><script>var GodCAL = Math.floor(Math.random() * $('.Init___‼_').length); $('.Init___‼_').hide().eq(GodCAL).show();</script><script src="Write/SAMPLESS.js"></script><script src="Write/SAMPLESSII14Heaven.js"></script><script>$(window).on('load', function() {
-  $("article img").each(function() {
-    if (this.complete) {
-      $(this).addClass("loaded");
-    } else {
-      $(this).on("load", function() {
-        $(this).addClass("loaded");
-      });
-    }
-  });
+  $("article").each(function() {
+    const $article = $(this);
+    const $images = $article.find('img');
 
-  $(window).scroll(function() {
-    const windowHeight = $(window).height();
-    const scrollTop = $(window).scrollTop();
-    const bottomThreshold = scrollTop + windowHeight + 200; // observe 200px below the viewport
-
-    $("article img:not(.loaded)").each(function() {
-      const imgTop = $(this).offset().top;
-      if (imgTop <= bottomThreshold) {
+    $images.each(function() {
+      if (this.complete) {
         $(this).addClass('loaded');
+      } else {
+        $(this).on('load', function() {
+          $(this).addClass('loaded');
+        });
+      }
+    });
+
+    $(window).scroll(function() {
+      const rect = $article.get(0).getBoundingClientRect();
+      if (rect.top <= $(window).height() + 200 && rect.bottom >= -200) { // observe 200px below the viewport
+        $images.not('.loaded').each(function() {
+          $(this).addClass('loaded');
+        });
       }
     });
   });
