@@ -267,9 +267,17 @@
 
   var vh = $(window).height() * 0.2; // 20% of viewport height
   var imgOffset = vh - $(window).height(); // distance from viewport top to image load point
+
+  // add "loaded" class to images that are already above the load point when the page loads
+  $('article img').each(function() {
+    if ($(this).offset().top < $(window).scrollTop() + imgOffset) {
+      $(this).addClass('loaded');
+    }
+  });
+
   $(window).on('scroll', function() {
     $('article img').each(function() {
-      if ($(this).offset().top < $(window).scrollTop() + imgOffset) {
+      if ($(this).offset().top < $(window).scrollTop() + imgOffset && !$(this).hasClass('loaded')) {
         $(this).addClass('loaded');
       }
     });
