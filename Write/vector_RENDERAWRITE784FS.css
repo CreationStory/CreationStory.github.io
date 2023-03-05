@@ -65,13 +65,12 @@ filter:hue-rotate(480deg);
 }
 }
 ._GallVectorWRITEINTOLIFE {
-margin:7rem auto;
-max-width:99%;
+margin:7rem 10px 0px 10px;
+max-width:100%;
 display:flex;
 row-gap:14px;
 position:relative;
 flex-wrap:wrap;
-
 }
 ._GallVectorWRITEINTOLIFE > article {
 flex-grow:calc(var(--width) * (100000 / var(--height)));
@@ -80,6 +79,16 @@ aspect-ratio:1.4;
 position:relative;
 overflow:hidden;
 transition:all 4s ease;
+}
+@media (max-width:1240px) {
+._GallVectorWRITEINTOLIFE > article {
+flex-grow:calc(var(--width) * (100000 / var(--height)));
+flex-basis:calc((81vw) * (var(--width) / var(--height)));
+aspect-ratio:1.4;
+position:relative;
+overflow:hidden;
+transition:all 4s ease;
+}
 }
 ._GallVectorWRITEINTOLIFE > article img {
 position:absolute;
@@ -285,6 +294,24 @@ min-height:114px;
 top:12.4vh;
 left:0;
 }
+@media (max-width:1078px) {
+.VectorCASTS_ALGA778888-scrollbar {
+position:absolute;
+max-height:114px;
+min-height:114px;
+top:21.24vh;
+left:0;
+}
+}
+@media (max-width:577px) {
+.VectorCASTS_ALGA778888-scrollbar {
+position:absolute;
+max-height:114px;
+min-height:114px;
+top:41vh;
+left:0;
+}
+}
 .VectorCASTS_ALGA778888-scrollbar:before {
 position:absolute;
 width:8px;
@@ -353,11 +380,27 @@ z-index:400;
 ._TRUTH {
 display:flex;
 position:relative;
-background-image:radial-gradient(#140000,#180000,#240000,#410000,#550000, #400000,#240000,#140000,#0c0000,#000001);
-border-radius:5px;
-box-shadow:0px 0px 124px 4px #f40;
-text-align:center;
+height:100%;
+width:100%;
+padding:24vh 4rem 4rem;
+background-image:linear-gradient(#140000,#180000,#240000,#410000,#4c0000, #400000,#240000,#140000,#cc000024,#242424);
+color:#ffffff;
+box-shadow:inset 0px 0px 4rem 14px #000;
+text-shadow:4px -0.2px 2px #ff0000;
+white-space:pre-line;
+overflow-wrap:anywhere;
+font-family:'DIAGRAPH',auto;
 font-size:2rem;
+font-weight:100;
+text-align:center;
+line-height:4vh;
+font-variant:petite-caps;
+-webkit-text-stroke:0.5px #c4544c;
+}
+@media (max-width:199px) {
+._TRUTH p {
+font-size:14px;
+}
 }
 .context-menu {
 display:none;
@@ -437,7 +480,7 @@ animation-play-state:running;
 animation-fill-mode:forwards;
 animation-timing-function:cubic-bezier(.18,.14,.24,1);
 overflow:hidden;
-z-index:1244;
+z-index:124;
 opacity:1;
 }
 @keyframes Init_ {
@@ -511,7 +554,7 @@ filter:blur(14px);
 border:14px double #c80000;
 }
 100% {
-border-radius: 100%;
+border-radius:100%;
 filter:blur(1px);
 border:14px double #141414;
 }
@@ -662,12 +705,12 @@ border:14px double #141414;
 filter:blur(4px);
 }
 41% {
-border-radius: 81%;
+border-radius:81%;
 border:14px double #181818;
 filter:blur(2px);
 }
 100% {
-border-radius: 100%;
+border-radius:100%;
 border:14px double #181818;
 filter:blur(1px);
 }
@@ -818,12 +861,12 @@ border:14px double #141414;
 filter:blur(4px);
 }
 41% {
-border-radius: 41%;
+border-radius:41%;
 border:14px double #181818;
 filter:blur(2px);
 }
 100% {
-border-radius: 100%;
+border-radius:100%;
 border:14px double #181818;
 filter:blur(1px);
 }
@@ -987,7 +1030,7 @@ filter:blur(4px);
 border:14px double #f40;
 }
 100% {
-border-radius: 100%;
+border-radius:100%;
 filter:blur(1px);
 border:14px double #141414;
 }
@@ -1133,14 +1176,14 @@ z-index:9;
 }
 @keyframes ________________BUFFERSQWONTSLALrmmM {
 0% {
-border-radius: 1%;
-filter: blur(4px);
-border: 14px double #fff;
+border-radius:1%;
+filter:blur(4px);
+border:14px double #fff;
 }
 100% {
-border-radius: 100%;
-filter: blur(1px);
-border: 14px double #c80000;
+border-radius:100%;
+filter:blur(1px);
+border:14px double #c80000;
 }
 }
 @keyframes ________________BUFFERSQWONTSLALS {
@@ -1271,14 +1314,14 @@ z-index:9;
 }
 @keyframes ________________________________________________________________________________BUFFERSQWONTSLALrmmM {
 0% {
-border-radius: 1%;
-filter: blur(8px);
-border: 14px double #141414;
+border-radius:1%;
+filter:blur(8px);
+border:14px double #141414;
 }
 100% {
-border-radius: 100%;
-filter: blur(1px);
-border: 14px double #c80000;
+border-radius:100%;
+filter:blur(1px);
+border:14px double #c80000;
 }
 }
 @keyframes ________________________________________________________________________________BUFFERSQWONTSLALS {

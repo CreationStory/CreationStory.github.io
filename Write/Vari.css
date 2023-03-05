@@ -203,11 +203,11 @@ margin-top:4rem;
 justify-content:center;
 z-index:24;
 }
-@media (max-width:1400px) {
+@media (max-width:1580px) {
 .Vari {
 position:relative;
 display:flex;
-margin-top:1.24rem;
+margin-top:2.4rem;
 justify-content:center;
 z-index:24;
 }
@@ -270,25 +270,39 @@ row-gap:4rem;
 .Vari9 {
 display:flex;
 width:100%;
-flex-wrap:wrap;
-column-gap:17rem;
-margin-right:12.4rem;
-margin-left:12.14rem;
+flex-wrap:nowrap;
+column-gap:9rem;
+margin-right:8.7rem;
+margin-left:7rem;
 justify-content:space-evenly;
 transition:.81s linear;
 user-select:none;
 row-gap:4rem;
 }
 }
-@media (max-width:1040px) {
+@media (max-width:1234px) {
 .Vari9 {
 display:flex;
 width:100%;
-flex-wrap:wrap;
-column-gap:14rem;
-margin-right:8.24rem;
+flex-wrap:nowrap;
+column-gap:7rem;
+margin-right:7rem;
 margin-left:8rem;
 justify-content:space-evenly;
+transition:.81s linear;
+user-select:none;
+row-gap:4rem;
+}
+}
+@media (max-width:1078px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap-reverse;
+column-gap:14rem;
+margin-right:8rem;
+margin-left:8rem;
+justify-content:space-between;
 transition:.81s linear;
 user-select:none;
 row-gap:4rem;
@@ -299,13 +313,83 @@ row-gap:4rem;
 display:flex;
 width:100%;
 flex-wrap:wrap;
-column-gap:8rem;
-margin-right:7rem;
-margin-left:4rem;
+column-gap:14rem;
+margin-right:1.24rem;
+margin-left:.24rem;
+justify-content:center;
+transition:.81s linear;
+user-select:none;
+row-gap:5rem;
+}
+}
+@media (max-width:714px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap;
+column-gap:12.4rem;
+margin-right:2rem;
+margin-left:1rem;
+justify-content:center;
+transition:.81s linear;
+user-select:none;
+row-gap:5rem;
+}
+}
+@media (max-width:644px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap;
+column-gap:7rem;
+margin-right:2.4rem;
+margin-left:1rem;
 justify-content:space-evenly;
 transition:.81s linear;
 user-select:none;
-row-gap:4rem;
+row-gap:5rem;
+}
+}
+@media (max-width:577px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap;
+column-gap:12.4rem;
+margin-right:4rem;
+margin-left:2.124rem;
+justify-content:center;
+transition:.41s linear;
+user-select:none;
+row-gap:5rem;
+}
+}
+@media (max-width:420px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap;
+column-gap:14rem;
+margin-right:7rem;
+margin-left:5rem;
+justify-content:center;
+transition:.41s linear;
+user-select:none;
+row-gap:5rem;
+}
+}
+@media (max-width:370px) {
+.Vari9 {
+display:flex;
+width:100%;
+flex-wrap:wrap;
+column-gap:41vh;
+margin-right:4rem;
+margin-left:2rem;
+justify-content:center;
+transition:.41s linear;
+user-select:none;
+row-gap:5rem;
 }
 }
 p.Vari9 span {
@@ -583,7 +667,7 @@ transform:translateZ(1.4px);
 }
 ._RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff00007;
+text-shadow:0px 0px 24px #ff000041;
 }
 ._RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -747,7 +831,7 @@ transform:translateZ(1.4px);
 }
 .__RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff00007;
+text-shadow:0px 0px 24px #ff000041;
 }
 .__RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -911,7 +995,7 @@ transform:translateZ(1.4px);
 }
 .___RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff00007;
+text-shadow:0px 0px 24px #ff000041;
 }
 .___RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -1075,7 +1159,7 @@ transform:translateZ(1.4px);
 }
 .____RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff00007;
+text-shadow:0px 0px 24px #ff000041;
 }
 .____RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -1202,8 +1286,164 @@ font-stretch:ultra-expanded;
 font-variant:petite-caps;
 user-select:auto;
 }
+@media (max-width:1400px) {
+.W_G {
+margin:0 4rem 2rem 4rem;
+position:relative;
+display:flex;
+justify-content:center;
+font-family:DIAGRAPH, sans-serif;
+font-size:2.7rem;
+color:#800000;
+text-align:justify;
+line-height:41px;
+letter-spacing:0px;
+word-spacing:0px;
+text-shadow:2px 0px 1px #ffffff, 4px 2px 4px #240000;
+-webkit-text-stroke:1px #c4c4c4;
+font-stretch:ultra-expanded;
+font-variant:petite-caps;
+user-select:auto;
+}
+}
 .W_G::selection {
 color:#fff;
 -webkit-text-stroke:1px #242424;
 background-color:#c80000;
+}
+@media (max-width:1234px) {
+._RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"Adipose"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+.__RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"Apocalum"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+.___RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"MindRoom"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+.____RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"Textures"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+}
+@media (max-width:1074px) {
+._RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"Adipose"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2.448rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+.__RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"Apocalum"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2.448rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+.___RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"MindRoom"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2.448rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+.____RenderVectorCHRISTGLORY:after {
+position:absolute;
+content:"Textures"!important;
+font-family:DIAGRAPH9_ACVectorRenders888, impact, fantasy, DIAGRAPH2, DIAGRAPH;
+font-weight:100;
+font-size:2.448rem;
+line-height:4rem;
+color:#240000;
+word-spacing:2px;
+letter-spacing:2.5px;
+transition:all 1.24s ease-in-out;
+text-align:center;
+white-space:nowrap;
+overflow-wrap:anywhere;
+}
+}
+.VariCOVER_ {
+position:relative;
+display:flex;
+flex-direction:column;
+justify-content:revert;
+}
+.Renderblocks__ {
+position:relative;
+display:flex;
+height:100%;
+width:100%;
 }
