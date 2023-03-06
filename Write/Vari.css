@@ -657,7 +657,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -667,7 +667,7 @@ transform:translateZ(1.4px);
 }
 ._RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff000041;
+text-shadow:0px 0px 14px #c4000041;
 }
 ._RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -821,7 +821,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -831,7 +831,7 @@ transform:translateZ(1.4px);
 }
 .__RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff000041;
+text-shadow:0px 0px 14px #c4000041;
 }
 .__RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -985,7 +985,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -995,7 +995,7 @@ transform:translateZ(1.4px);
 }
 .___RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff000041;
+text-shadow:0px 0px 14px #c4000041;
 }
 .___RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -1149,7 +1149,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1159,7 +1159,7 @@ transform:translateZ(1.4px);
 }
 .____RenderVectorCHRISTGLORY:nth-child(2):after {
 transform:translateZ(-1.5px);
-text-shadow:0px 0px 24px #ff000041;
+text-shadow:0px 0px 14px #c4000041;
 }
 .____RenderVectorCHRISTGLORY:nth-child(3):after {
 transform:translateZ(-3px);
@@ -1322,7 +1322,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1337,7 +1337,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1352,7 +1352,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1367,7 +1367,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1384,7 +1384,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1399,7 +1399,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1414,7 +1414,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1429,7 +1429,7 @@ line-height:4rem;
 color:#240000;
 word-spacing:2px;
 letter-spacing:2.5px;
-transition:all 1.24s ease-in-out;
+transition:all .1s ease;
 text-align:center;
 white-space:nowrap;
 overflow-wrap:anywhere;
@@ -1446,4 +1446,14 @@ position:relative;
 display:flex;
 height:100%;
 width:100%;
+}
+@media (max-width:800px) {
+.FFACE {
+display:flex;
+justify-content:right;
+margin-top:.4rem;
+margin-right:1.24rem;
+user-select:none;
+opacity:0;
+}
 }
