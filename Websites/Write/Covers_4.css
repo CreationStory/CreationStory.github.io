@@ -69,12 +69,10 @@ html, html * {
 margin:0px;
 scrollbar-width:none;
 }
-
 a, a:link, a:hover, a:focus, a:active, a:visited {
 color:#FFF;
 text-decoration:none;
 }
-
 body {
 background:url('./1L.png');
 background-position:center; 
@@ -83,7 +81,6 @@ background-size:cover;
 background-color:#161616;
 overflow:hidden;
 }
-
 #slateT {
 position:fixed;
 background:url('./1T.png');
@@ -95,7 +92,6 @@ left:0;
 bottom:0;
 z-index:1;
 }
-
 #slateT2 {
 position:fixed;
 background:url('./1T2.png');
@@ -107,7 +103,6 @@ left:0;
 bottom:0;
 z-index:1;
 }
-
 #slate {
 position:fixed;
 background:url('./1.png');
@@ -226,7 +221,6 @@ transform:rotate(14deg);
 transform:rotate(-23deg);
 }
 }
-
 .CovernMum {
 position:absolute;
 display:inline;
@@ -380,14 +374,14 @@ transition:.24s ease-in-out;
 }
 .PLATEGIORPTIN-scroll {
 height:100vh;
-width:97vw;
+width:100%;
 display:flex;
 flex-wrap:wrap;
 margin:0;
 align-items:center;
 position:absolute;
 bottom:0;
-padding:2vh 0 0 0;
+padding:0.4rem 0 0 0;
 background-color:#0000;
 scroll-snap-type:y mandatory;
 scroll-behavior:smooth;
@@ -407,29 +401,21 @@ z-index:124;
 .PLATEGIORPTIN-item {
 flex-basis: fit-content;
 margin:0;
-padding:24vh 0 0 8vw;
+padding:28vh 0 0 8vw;
 background-color:#0000;
 scroll-snap-align:start;
 z-index:124;
 }
 }
-@media (max-width:549px) {
+@media (max-width:548px) {
 .PLATEGIORPTIN-item {
 flex-basis: fit-content;
 margin:0;
-padding:24vh 0 4vw 4vw;
+padding:29vh 0 0 8vw;
 background-color:#0000;
 scroll-snap-align:start;
 z-index:124;
 }
-}
-.PLATEGIORPTINI {
-width:100vw;
-margin:0;
-padding:24vh 0 0 12.479vw;
-background-color:#0000;
-scroll-snap-align:start;
-z-index:124;
 }
 .PLATEGIORPTINF {
 width:100vw;
@@ -439,18 +425,57 @@ background-color:#0000;
 scroll-snap-align:start;
 z-index:124;
 }
+@media (max-width:718px) {
+.PLATEGIORPTINF {
+width:100vw;
+margin:0;
+padding:28vh 0 0 8vw;
+background-color:#0000;
+scroll-snap-align:start;
+z-index:124;
+}
+}
+@media (max-width:548px) {
+.PLATEGIORPTINF {
+width:100vw;
+margin:0;
+padding:41vh 0 0 8vw;
+background-color:#0000;
+scroll-snap-align:start;
+z-index:124;
+}
+}
+.NForMYgAPQuadss {
+height:14vh;
+position:relative;
+display:flex;
+}
 .NForMYgAP1189 {
-height:7vh;
+height:24vh;
+position:relative;
+display:flex;
 }
 .PLATEGIORPTIN-img {
-height:481px;
+height:24vw;
+min-height:400px;
+width:auto;
 pointer-events:none;
 user-select:none;
 }
-@media (max-width:718px) {
+@media (max-width:548px) {
 .PLATEGIORPTIN-img {
-height:auto;
-max-width:100%;
+height:17vw;
+min-height:344px;
+width:auto;
+pointer-events:none;
+user-select:none;
+}
+}
+@media (max-width:440px) {
+.PLATEGIORPTIN-img {
+height:24vh;
+min-height:84vw;
+width:auto;
 pointer-events:none;
 user-select:none;
 }
