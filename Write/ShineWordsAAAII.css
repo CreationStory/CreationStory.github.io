@@ -420,8 +420,8 @@ margin-block-start:0;
 margin-block-end:0;
 overflow:revert;
 overflow-wrap:revert;
-text-align:right;
-text-align-last:right;
+text-align:center;
+text-align-last:center;
 color:#fff0;
 font-size:4px;
 text-shadow:-2px 2px 1px #0000, 0px -1px 0px #fff0;
@@ -631,8 +631,30 @@ background:url('CalLine.png');
 background-repeat:no-repeat;
 background-size:cover;
 object-fit:scale-down;
-pointer-events:none;
 user-select:none;
+}
+.CALLINE img {
+position:relative;
+display:inline;
+margin:0;
+top:7px;
+right:-.81vw;
+margin-inline-start:1rem;
+margin-inline-end:0;
+margin-block-start:0;
+margin-block-end:0;
+height:25px;
+width:auto;
+float:left;
+transition:all 1.24s cubic-bezier(.18,.14,.24,1);
+z-index:400;
+mix-blend-mode:difference;
+filter:none;
+}
+.CALLINE img:hover {
+cursor:Crosshair;
+transition:all 1.14s cubic-bezier(.14,.18,.24,1);
+filter:brightness(100%)saturate(400%)drop-shadow(0 0 4px #141414)hue-rotate(390deg);
 }
 .MindRoom {
 display:flex;

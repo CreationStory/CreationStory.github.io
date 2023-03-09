@@ -1101,7 +1101,7 @@ filter:none;
 .CALLINE img:hover {
 cursor:Crosshair;
 transition:all .24s cubic-bezier(.14,.18,.24,1);
-filter:brightness(400%)saturate(4000%)drop-shadow(0 0 1px #000)hue-rotate(124deg);
+filter:brightness(100%)saturate(400%)drop-shadow(0 0 4px #141414)hue-rotate(390deg);
 }
 .MindRoom {
 display:block;
