@@ -68,7 +68,7 @@ background-position:center;
 background-repeat:repeat;
 background-size:cover;
 background-color:#161616;
-overflow:scroll;
+overflow:hidden;
 }
 #slateT {
 position:fixed;
@@ -169,19 +169,20 @@ text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;
 transition:.24s ease-in-out;
 }
 .PLATEGIORPTIN-scroll {
-height:100vh;
+height:104vh;
 width:100vw;
 display:flex;
 flex-wrap:wrap;
 margin:0;
 align-items:center;
 position:absolute;
-bottom:0;
-padding:2vh 0 0 0;
+bottom:-4.2vh;
+padding:0;
 background-color:#0000;
 scroll-behavior:smooth;
 overflow-y:scroll;
 z-index:124;
+transition:all 1.24s ease;
 }
 .PLATEGIORPTIN-item {
 width:100vw;
@@ -224,10 +225,11 @@ margin-block-start:0;
 margin-block-end:0;
 text-shadow:0px 3px 0px #000, 0px 1px 0px #f40, 0px 0px 2px #000;
 animation-name:HI;
-animation-delay:7s;
-animation-duration:10.24181s;
+animation-delay:.124s;
+animation-duration:14s;
 animation-iteration-count:1;
-animation-play-state:running;
+animation-play-state:paused;
+transition:all 1.24s ease;
 animation-timing-function:cubic-bezier(.9,.18,.48,.148);
 pointer-events:none;
 user-select:none;
@@ -494,4 +496,32 @@ opacity:0;
 img[loading="lazy"].loaded {
 transition:opacity .44s ease-in-out;
 opacity:1;
+}
+.TRUST {
+animation:TRUST 1.24s ease;
+}
+.FAITH {
+animation:FAITH 1.24s ease;
+}
+@keyframes TRUST {
+0% {
+transform:translateY(0);
+}
+41% {
+transform:translateY(-124px);
+}
+100% {
+transform:translateY(0);
+}
+}
+@keyframes FAITH {
+0% {
+transform:translateY(0);
+}
+41% {
+transform:translateY(-124px);
+}
+100% {
+transform:translateY(0);
+}
 }
