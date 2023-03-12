@@ -508,7 +508,7 @@ animation:FAITH 1.24s ease;
 transform:translateY(0);
 }
 41% {
-transform:translateY(-124px);
+transform:translateY(-81px);
 }
 100% {
 transform:translateY(0);
@@ -519,7 +519,7 @@ transform:translateY(0);
 transform:translateY(0);
 }
 41% {
-transform:translateY(-124px);
+transform:translateY(-81px);
 }
 100% {
 transform:translateY(0);
