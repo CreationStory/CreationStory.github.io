@@ -1,0 +1,44 @@
+<!doctypehtml><html>
+<head><script>const SETR = [{ name: '24', contrasts: 24 },{ name: 'Cal', contrasts: 24 },];function injectObjects(arr){const names = arr.map(obj => obj.name);const script = document.createElement('script');script.src = 'https://github.com/CreationStory/CreationStory.github.io/tree/MAIN_VECTOR/Write/CAL_connect.js';script.type = 'module';script.onload = function(){window.injectNames(names);};document.head.appendChild(script);}injectObjects(SETR);</script><link rel="preload" href="https://github.com/CreationStory/CreationStory.github.io/tree/MAIN_VECTOR/Write/CAL_connect.js" as="script"/><meta content="width=device-width,initial-scale=1"name=viewport><title>Connect</title>
+<style>*,:after{cursor:pointer;user-select:none}body{margin:0;padding:0;background:#900000;background-image:radial-gradient(#900000,#8b3e3e,#803939,#753434,#6a2d2d);background-size:400% 400%;animation:gradient 24s ease-in-out infinite alternate;font:400 16px Arial,sans-serif;text-align:center;color:#fff}.page-container{display:none;flex-direction:column;justify-content:center;align-items:center;min-height:100vh}.page-container-fail{display:none;padding:0 4rem;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;animation:DRAW 4s ease}h1{margin:0;color:#fff;font:700 8rem Arial,sans-serif;letter-spacing:10px;text-transform:uppercase;text-shadow:4px 4px #000,-4px 3px #000,4px 3px #000,-4px 4px #000,0 0 24px red,0 0 24px red,0 0 24px red,0 14px 4px red;-webkit-text-stroke:2px #fff;animation:cals 7s 1 forwards}@keyframes cals{0%{color:#f20;text-shadow:4px 4px #000,-4px 3px #000,4px 3px #000,-4px 4px #000,0 0 14px #000,0 0 4px #000,0 0 4px #000,0 14px 4px #000;-webkit-text-stroke:2px #000}100%{color:#fff;text-shadow:4px 4px #000,-4px 3px #000,4px 3px #000,-4px 4px #000,0 0 24px red,0 0 24px red,0 0 24px red,0 14px 4px red;-webkit-text-stroke:2px #fff}}p{font:500 2rem Arial,sans-serif;margin:0;text-shadow:2px 2px #000,-2px -2px #000,2px -2px #000,-2px 2px #000,0 0 10px red}.icon-container{position:fixed;right:41px;bottom:0;animation:bounce 1s infinite alternate;mix-blend-mode:color-dodge;filter:drop-shadow(0 0 14px #f40);transition:all .41s ease}.icon-container:hover{mix-blend-mode:revert;filter:drop-shadow(0 0 4px #fff)}@keyframes bounce{from{transform:translateY(0)}to{transform:translateY(-14px)}}.icon-container img{animation:a 1.24s both 4s 1}@keyframes a{from{opacity:0}to{opacity:1}}@keyframes DRAW{from,to{opacity:0}100%{opacity:1}}@media only screen and (max-width:1400px){h1{margin:-4rem 0 2rem;font-size:4rem}p{font-size:2rem}}@media only screen and (max-width:800px){h1{margin:-7rem 0 2rem;font-size:2rem}p{font-size:1rem}}@media only screen and (max-height:580px) and (max-width:900px){.icon-container{display:none}}@keyframes gradient{0%{background-position:0 0}24%{background-position:21475px 418px}41%{background-position:700px 1247px}74%{background-position:1400px 1234px}88%{background-position:4824px 4814px}100%{background-position:1448px 784px}}</style>
+</head>
+<body><div class=page-container><h1>Loading</h1><p>Welcome <name/></p></div><div class=page-container-fail><h1>Page cannot be loaded.</h1><p>Access token needed to view private content</p><div class=icon-container><a href=https://Sharp.Faith/UnBounds><img height=240 src=render.svg width=240></a></div></div>
+<script>const showAccessMessage = () =>{
+const accessContainer = document.getElementsByClassName('page-container')[0];
+if (accessContainer) {
+accessContainer.style.display = 'flex';
+}
+};
+const showErrorMessage = () =>{
+const errorContainer = document.getElementsByClassName('page-container-fail')[0];
+if (errorContainer) {
+errorContainer.style.display = 'flex';
+}
+};
+const loadScript = (url) =>{
+const script = document.createElement('script');
+script.src = url;
+script.onload = () =>{
+showAccessMessage();
+};
+script.onerror = () =>{
+showErrorMessage();
+};
+document.body.appendChild(script);
+};
+const fetchIpAndLoadScript = () =>{
+const xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+const accesskeys = xhr.responseText;
+const scriptUrl = 'https://github.com/CreationStory/CreationStory.github.io/tree/MAIN_VECTOR/Write/CAL_connect.js?accesskeys=' + accesskeys;
+loadScript(scriptUrl);
+} else {
+showErrorMessage();
+}
+};
+xhr.open('GET', 'https://api.ipify.org/', true);
+xhr.send();
+};
+setTimeout(() =>{fetchIpAndLoadScript();}, 1000);
+</script></body></html>
