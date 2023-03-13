@@ -42,6 +42,7 @@ src:url('../Dia/9.ttf') format('truetype');
 a, a:focus {
 text-decoration:none;
 color:inherit;
+user-select:none!important;
 }
 ::selection {
 color:#fff;
@@ -852,7 +853,7 @@ animation-timing-function:cubic-bezier(.9,.18,.48,.148);
 max-width:100%;
 mix-blend-mode:normal;
 transition:all 1.24s ease;
-filter:none;
+filter:drop-shadow(0px 0px 14px #141414) saturate(200%) contrast(124%) sepia(41%);
 opacity:0;
 }
 @keyframes GODSLAWR8Iop {
@@ -879,7 +880,7 @@ opacity:1;
 }
 .Casting IMG:hover {
 transition:all .41s ease;
-filter:drop-shadow(0px 0px 14px #141414) saturate(200%) contrast(124%) sepia(41%);
+filter:none;
 }
 @media (max-width:518px) {
 p.WORDOFZXAC9 span {
