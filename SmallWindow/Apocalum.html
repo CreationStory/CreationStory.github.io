@@ -6,7 +6,7 @@
 <link href="Write/Apocaluma.css" rel="stylesheet">
 <title>Apocalum</title>
 <link rel="icon" href="Write/CS.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <body>
 <div class="HIGHLOWWORDOR">
 <p class="HIGHLOWWORDER" id="HIGHLOWWORD"></p>
@@ -187,39 +187,6 @@
 </div>
 </div>
 </div>
-<script type="text/javascript">
-var initWords = function (element) {
-const symbols = ['Glory To God', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Praise The Holy Father'];
-let count = 0;
-const iteration = () => {
-element.innerHTML = symbols[parseInt(count / 2, 10) % symbols.length];
-if (count % 2 !== 0) {
-element.classList.add("HIGHLANGUAGELOW");
-} else {
-element.classList.remove("HIGHLANGUAGELOW");
-}
-count++;
-if (count === symbols.length * 3) {
-count = 0;
-}
-};
-let inthandle = setInterval(iteration, 18);
-iteration();}
-initWords(document.getElementById("HIGHLOWWORD"));
-</script>
-<script>
-const square = document.querySelector('.cs');
-square.classList.remove('rights');
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-square.classList.add('rights');
-return;
-}
-square.classList.remove('rights');
-});
-});
-observer.observe(document.querySelector('.ENDING'));
-</script>
+<script>var initWords=function(n){const s=["Glory To God","&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Praise The Holy Father"];let t=0;const e=()=>{n.innerHTML=s[parseInt(t/2,10)%s.length],t%2!=0?n.classList.add("HIGHLANGUAGELOW"):n.classList.remove("HIGHLANGUAGELOW"),t++,t===3*s.length&&(t=0)};setInterval(e,18);e()};initWords(document.getElementById("HIGHLOWWORD"));</script>
 </body>
 </html>
