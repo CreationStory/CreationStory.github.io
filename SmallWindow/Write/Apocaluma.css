@@ -109,13 +109,14 @@ color:#540000;
 .CALGRADI {
 position:fixed;
 background:url('CalGrad.png');
-background-repeat:repeat;
+background-repeat:repeat-x;
 background-size:contain;
 height:32.1vh;
 width:100%;
 bottom:0;
 pointer-events:none;
 z-index:1;
+border:none;
 }
 .HIGHLOWWORDOR {
 margin-top:9px;
