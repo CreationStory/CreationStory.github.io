@@ -70,6 +70,16 @@ background-size:cover;
 background-color:#161616;
 overflow:hidden;
 }
+@media (max-width:1024px) {
+body {
+background:url('./1L.png');
+background-position:center; 
+background-repeat:repeat;
+background-size:cover;
+background-color:#161616;
+overflow:scroll;
+}
+}
 #slateT {
 position:fixed;
 background:url('./1T.png');
