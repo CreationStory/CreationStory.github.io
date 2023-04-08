@@ -27,6 +27,6 @@
 </div>
 </div>
 </div>
-<script>document.addEventListener("DOMContentLoaded",function(){var a=document.querySelector(".RENDER24");if(a){a.style.animationPlayState="running"}else{var b=setInterval(function(){if("complete"===document.readyState||performance.now()>7e3){clearInterval(b);var c=document.querySelector(".RENDER24");c&&(c.style.animationPlayState="running")}},124)}});</script>
+<script>window.onload=function(){var a=document.querySelector(".RENDER24");if(a){a.style.animationPlayState="running"}else{var b=setInterval(function(){if("complete"===document.readyState||performance.now()>7000){clearInterval(b);var c=document.querySelector(".RENDER24");if(c){c.style.animationPlayState="running"}}},124)}};</script>
 </body>
 </html>
