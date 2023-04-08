@@ -20,12 +20,30 @@ background-color:#540007;
 color:#540007;
 text-align:center;
 margin:0px;
-scrollbar-width:none;
--ms-overflow-style:none;
-}@font-face {
+}
+.RENDER24 {
+opacity:0;
+animation-name:Cal41;
+animation-delay:0s;
+animation-play-state:paused;
+animation-duration:.24s;
+animation-fill-mode:forwards;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+@keyframes Cal41 {
+0% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+@font-face {
 font-family: 'DIAGRAPH';
 src: url('../Dia/Dia.otf') format('opentype');
-} 
+}
 @font-face {
 font-family: 'Designer';
 src: url('../Dia/Designer.ttf') format('truetype');
@@ -33,14 +51,10 @@ src: url('../Dia/Designer.ttf') format('truetype');
 @font-face {
 font-family: 'DIAGRAPH9';
 src: url('../Dia/9.ttf') format('truetype');
-} 
+}
 a, a:hover, a:focus, a:active {
 text-decoration:none;
 color:inherit;
-}
-::-moz-selection {
-color:#450000;
-background:#ff000018;
 }
 ::selection {
 color:#fff;
