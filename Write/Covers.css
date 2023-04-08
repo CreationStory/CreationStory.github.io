@@ -95,6 +95,25 @@ opacity:0;
 opacity:1;
 }
 }
+.RENDER__24 {
+opacity:0;
+animation-name:CS_124;
+animation-delay:0s;
+animation-play-state:paused;
+animation-duration:1.4s;
+animation-fill-mode:forwards;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-timing-function:ease;
+}
+@keyframes CS_124 {
+0% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
 #slateT {
 position:fixed;
 background:url('./1T.png');
