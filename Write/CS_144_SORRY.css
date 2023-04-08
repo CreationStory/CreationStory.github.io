@@ -69,7 +69,7 @@ background-repeat:repeat;
 background-size:cover;
 overflow:hidden;
 animation-name:InitCtts__;
-animation-delay:1.8s;
+animation-delay:4s;
 animation-duration:1.4s;
 animation-iteration-count:1;
 animation-play-state:running;
@@ -110,20 +110,6 @@ animation-timing-function:cubic-bezier(.18,.14,.24,1);
 height:200px;
 width:200px;
 }
-.__BufferVectors span {
-position:absolute;
-height:200px;
-width:200px;
-border-radius:81%;
-background:linear-gradient(#f40, #fff, #fff, #f40);
-animation-name:_BUFFERSQWONTSLALS;
-animation-duration:1.24s;
-animation-iteration-count:1;
-animation-direction:normal;
-animation-play-state:running;
-animation-fill-mode:forwards;
-animation-timing-function:ease;
-}
 .__BufferVHH8I {
 position:absolute;
 height:140px;
@@ -156,17 +142,9 @@ filter:blur(1px);
 border:14px double #141414;
 }
 }
-@keyframes _BUFFERSQWONTSLALS {
-0% {
-border-radius:8%;
-}
-100% {
-border-radius:100%;
-}
-}
 .__BufferVectors span:nth-child(2) {
 filter:blur(4px);
-animation-name:_ISCC;
+animation-name:_Quadss;
 animation-duration:1.24s;
 animation-iteration-count:1;
 animation-direction:alternate-reverse;
@@ -174,7 +152,7 @@ animation-timing-function:cubic-bezier(.18,.14,.24,1);
 }
 .__BufferVectors span:nth-child(3) {
 filter:blur(4px);
-animation-name:_ISCC;
+animation-name:_Quadss;
 animation-duration:1.24s;
 animation-iteration-count:1;
 animation-direction:alternate-reverse;
@@ -182,45 +160,13 @@ animation-timing-function:cubic-bezier(.18,.14,.24,1);
 }
 .__BufferVectors span:nth-child(4) {
 filter:blur(4px);
-animation-name:_ISCC;
+animation-name:_Quadss;
 animation-duration:1.24s;
 animation-iteration-count:1;
 animation-direction:alternate-reverse;
 animation-timing-function:cubic-bezier(.18,.14,.24,1);
 }
-.__BufferVectors span:nth-child(5) {
-filter:blur(7px);
-animation-name:_ISCC;
-animation-duration:1.24s;
-animation-iteration-count:1;
-animation-direction:alternate-reverse;
-animation-timing-function:cubic-bezier(.18,.14,.24,1);
-}
-.__BufferVectors span:nth-child(6) {
-filter:blur(4px);
-animation-name:_ISCC;
-animation-duration:1.24s;
-animation-iteration-count:1;
-animation-direction:alternate-reverse;
-animation-timing-function:cubic-bezier(.18,.14,.24,1);
-}
-.__BufferVectors span:nth-child(7) {
-filter:blur(4px);
-animation-name:_ISCC;
-animation-duration:1.24s;
-animation-iteration-count:1;
-animation-direction:alternate;
-animation-timing-function:cubic-bezier(.18,.14,.24,1);
-}
-.__BufferVectors span:nth-child(8) {
-filter:blur(7px);
-animation-name:_ISCC;
-animation-duration:1.24s;
-animation-iteration-count:1;
-animation-direction:alternate;
-animation-timing-function:cubic-bezier(.18,.14,.24,1);
-}
-@keyframes _ISCC {
+@keyframes _Quadss {
 0% {
 rotate:0deg;
 filter:inital;
@@ -250,7 +196,7 @@ html, html * {
 margin:0px;
 }
 a, a:link, a:hover, a:focus, a:active, a:visited {
-color:#FFF;
+color:#ffF;
 text-decoration:none;
 }
 body {
@@ -259,6 +205,7 @@ background-color:#000;
 background-size:800% 800%;
 animation-name:_Cast;
 animation-duration:124s;
+animation-delay:3s;
 animation-fill-mode:both;
 animation-iteration-count:infinite;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
@@ -310,6 +257,7 @@ animation-fill-mode:both;
 animation-direction:alternate;
 animation-iteration-count:infinite;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
+animation-delay:2s;
 z-index:0;
 }
 @media (max-width:1400px) {
@@ -333,6 +281,7 @@ animation-duration:28s;
 animation-fill-mode:both;
 animation-direction:alternate;
 animation-iteration-count:infinite;
+animation-delay:2s;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
 z-index:0;
 }
@@ -624,6 +573,7 @@ animation-fill-mode:both;
 animation-direction:alternate;
 animation-iteration-count:infinite;
 animation-timing-function:ease;
+animation-delay:4s;
 }
 @keyframes writes {
 0% {
@@ -776,7 +726,7 @@ z-index:99999;
 mix-blend-mode:exclusion;
 user-select:none;
 pointer-events:none;
-transition:all .24s ease-in-out .9s;
+transition:all .24s ease-in-out 1.24s;
 opacity:0;
 }
 @media (max-width:421px) {
@@ -791,7 +741,7 @@ z-index:99999;
 mix-blend-mode:exclusion;
 user-select:none;
 pointer-events:none;
-transition:all .24s ease-in-out .9s;
+transition:all .24s ease-in-out 1.24s;
 opacity:0;
 transform:scale(.81);
 }
@@ -883,7 +833,7 @@ text-decoration-color:#ff000014;
 text-decoration-style:wavy;
 text-decoration-thickness:from-font;
 animation-name:SOUTHKOREA__20042;
-animation-duration:14s;
+animation-duration:19s;
 animation-fill-mode:both;
 animation-direction:alternate;
 animation-delay:4s;
@@ -913,7 +863,7 @@ text-decoration-color:#ff000014;
 text-decoration-style:wavy;
 text-decoration-thickness:from-font;
 animation-name:SOUTHKOREA__20042;
-animation-duration:14s;
+animation-duration:19s;
 animation-fill-mode:both;
 animation-direction:alternate;
 animation-delay:4s;
@@ -944,7 +894,7 @@ text-decoration-color:#ff000014;
 text-decoration-style:wavy;
 text-decoration-thickness:from-font;
 animation-name:SOUTHKOREA__20042;
-animation-duration:14s;
+animation-duration:19s;
 animation-fill-mode:both;
 animation-direction:alternate;
 animation-delay:4s;
@@ -969,7 +919,7 @@ transform:skewY(1deg);
 .Nikki {
 animation-name:SOUTHKOREA_____2005;
 animation-delay:4s;
-animation-duration:14s;
+animation-duration:19s;
 animation-fill-mode:both;
 animation-direction:alternate;
 animation-iteration-count:infinite;
