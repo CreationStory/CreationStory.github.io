@@ -132,10 +132,10 @@ right:0;
 left:0;
 bottom:0;
 animation-name:tio;
-animation-delay:1.4s;
+animation-delay:.0s;
 animation-duration:81s;
 animation-fill-mode:both;
-animation-play-state:running;
+animation-play-state:paused;
 animation-iteration-count:infinite;
 animation-timing-function:cubic-bezier(.18,.14,.27,1);
 opacity:0;
@@ -522,7 +522,7 @@ background:#0000;
 }
 img[loading="lazy"] {
 transition:opacity .44s ease-in-out;
-opacity:0;
+opacity:1;
 }
 img[loading="lazy"].loaded {
 transition:opacity .44s ease-in-out;
