@@ -642,11 +642,11 @@ flex-grow:4000000000;
 background:#0000;
 }
 img[loading="lazy"] {
-transition:opacity .44s ease-in-out;
+transition:opacity .41s ease-in-out;
 opacity:0;
 }
 img[loading="lazy"].loaded {
-transition:opacity .44s ease-in-out;
+transition:opacity 2s ease-in-out;
 opacity:1;
 }
 .TRUST {
