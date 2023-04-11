@@ -96,12 +96,12 @@ width:100%;
 height:100%;
 }
 ._GallVectorWRITEINTOLIFE img {
-transition:all .41s ease;
+transition:all 1.24s ease;
 opacity:0;
 }
 ._GallVectorWRITEINTOLIFE img.render {
 opacity:1;
-transition:all .24s ease;
+transition:all .41s linear;
 }
 [data-VectorCASTS_ALGA778888] {
 position:relative;
