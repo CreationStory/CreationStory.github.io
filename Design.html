@@ -99,11 +99,36 @@
 </div>
 <script src='Write/lCLCast_4.js'></script>
 <script>var GodCAL = Math.floor(Math.random() * $('.Init___‼_').length); var selectedElement = $('.Init___‼_').hide().eq(GodCAL); selectedElement.show().find('.BuffersVectorizationings').css('opacity', 1);</script>
-<script>function Vector_R() {var vectorwrite = ['Write/SKIN_YYT.png', 'Write/Skin_WOOOOOOOO.png', 'Write/Skin_W.png', 'Write/Skin_TIMES.png', 'Write/Skin_THEGIFT.png', 'Write/Skin_CO.png', 'Write/Skin_SSti.png', 'Write/Skin.png', 'Write/Skin_77.png', 'Write/Skin_A47.png', 'Write/Skin_812Qquads.png', 'Write/Skin_ARMAENTIUAMCA.png', 'Write/Skin_C.png', 'Write/Skin_C41.png', 'Write/Skin_C48.png', 'Write/SKIN_CAL.png', 'Write/SKIN_CastingT.png', 'Write/SKIN_Castors.png', 'Write/Skin_CCta.png', 'Write/Skin_CHH.png', 'Write/SKIN_CS.png', 'Write/Skin_GALL.png', 'Write/SKIN_EasterWINS.png', 'Write/SKIN_God.png', 'Write/Skin_H.png', 'Write/SKIN_KOREA.png', 'Write/Skin_L48S.png', 'Write/Skin_LOVEL.png', 'Write/Skin_PRAY.png', 'Write/Skin_R2.png', 'Write/SKIN_Racs.png', 'Write/Skin_RKA78.png', 'Write/Skin_SSti.png', 'Write/Skin_TGOD.png'];
+<script>
+var vectorwrite = [
+  'Write/SKIN_YYT.png', 'Write/Skin_WOOOOOOOO.png', 'Write/Skin_W.png', 
+  'Write/Skin_TIMES.png', 'Write/Skin_THEGIFT.png', 'Write/Skin_CO.png', 
+  'Write/Skin_SSti.png', 'Write/Skin.png', 'Write/Skin_77.png', 'Write/Skin_A47.png', 
+  'Write/Skin_812Qquads.png', 'Write/Skin_ARMAENTIUAMCA.png', 'Write/Skin_C.png', 
+  'Write/Skin_C41.png', 'Write/Skin_C48.png', 'Write/SKIN_CAL.png', 'Write/SKIN_CastingT.png', 
+  'Write/SKIN_Castors.png', 'Write/Skin_CCta.png', 'Write/Skin_CHH.png', 'Write/SKIN_CS.png', 
+  'Write/Skin_GALL.png', 'Write/SKIN_EasterWINS.png', 'Write/SKIN_God.png', 'Write/Skin_H.png', 
+  'Write/SKIN_KOREA.png', 'Write/Skin_L48S.png', 'Write/Skin_LOVEL.png', 'Write/Skin_PRAY.png', 
+  'Write/Skin_R2.png', 'Write/SKIN_Racs.png', 'Write/Skin_RKA78.png', 'Write/Skin_SSti.png', 
+  'Write/Skin_TGOD.png'
+];
+var currentImage = new Image();
 var nextImage = new Image();
-nextImage.src = vectorwrite[Math.floor(Math.random() * vectorwrite.length)];
-$('body').css({'background-image':'url('+ nextImage.src + ')'});
-}setInterval(Vector_R, 18000);Vector_R();</script>
+
+function Vector_R() {
+  var randomIndex = Math.floor(Math.random() * vectorwrite.length);
+  nextImage.onload = function() {
+    currentImage = nextImage;
+    $('body').css('background-image', 'url(' + currentImage.src + ')');
+    nextImage = new Image();
+    nextImage.src = vectorwrite[randomIndex];
+  }
+  nextImage.src = vectorwrite[randomIndex];
+}
+
+setInterval(Vector_R, 18000);
+Vector_R();
+</script>
 <script>$(window).on('load', () => {
 const element = $('.Init___‼_');
 if (element.length) {
