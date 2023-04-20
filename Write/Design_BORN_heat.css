@@ -24,6 +24,10 @@ margin:0px;
 transition:all .14s ease-in-out;
 scrollbar-width:none;
 }
+.C {
+opacity:0;
+z-index:-4000;
+}
 * {
 cursor:Cell;
 }
