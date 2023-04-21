@@ -947,7 +947,7 @@ filter:hue-rotate(24deg)blur(2px);
 }
 .BuffersVectorizationings {
 opacity:0;
-transition:all .41s ease;
+transition:all 1.24s ease;
 }
 .Tibbles {
 	
