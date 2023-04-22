@@ -21,7 +21,7 @@ background-color:#540007;
 color:#540007;
 text-align:center;
 margin:0px;
-transition:all 7s cubic-bezier(0,0,.4,1);
+transition:all 7s cubic-bezier(.24,.4,.8,1);
 scrollbar-width:none;
 }
 .C {
