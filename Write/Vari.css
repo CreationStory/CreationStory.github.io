@@ -41,6 +41,8 @@ float:left;
 pointer-events:none;
 user-select:none;
 z-index:1;
+opacity:1;
+transition:all .41s ease;
 }
 .LGliolgap {
 margin-top:12.3vh;
