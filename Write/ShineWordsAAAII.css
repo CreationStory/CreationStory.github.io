@@ -35,22 +35,49 @@ opacity:0;
 z-index:-4000;
 }
 .RENDER24 {
-opacity:0;
+display:flex;
+position:absolute;
+visibility:visible;
+top:0;
+right:0;
+height:100%;
+width:100%;
+background-color:#540007;
+background-position:center center; 
+background-repeat:no-repeat;
+background-size:cover;
+box-sizing:content-box;
+user-select:none;
+overflow:hidden;
+z-index:4000;
 animation-name:Cal41;
-animation-delay:0s;
-animation-play-state:paused;
+animation-delay:.24s;
 animation-duration:.24s;
-animation-fill-mode:forwards;
 animation-iteration-count:1;
+animation-play-state:paused;
+animation-fill-mode:forwards;
 animation-direction:normal;
-animation-timing-function:ease;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+opacity:1;
 }
 @keyframes Cal41 {
 0% {
+opacity:1;
+height:100%;
+width:100%;
+visibility:visible;
+}
+90% {
 opacity:0;
+height:100%;
+width:100%;
+visibility:visible;
 }
 100% {
-opacity:1;
+opacity:0;
+height:0;
+width:0;
+visibility:hidden;
 }
 }
 @font-face {
@@ -593,25 +620,27 @@ transition:.24s ease-in-out;
 }
 }
 p.WORDOFZXAC9 span:hover {
-color:#ffffffc9;
+color:#fff;
 text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
 filter:drop-shadow(0px 0px 0px #000);
-animation-play-state:paused;
 transition:.081s ease-in-out;
 }
 p.WORDOFZXAC9 span:active {
-color:#ffffffc9;
-text-shadow:-2px 2px 4px #000, 0px -1px 14px #f40;
-filter:drop-shadow(0px 0px 0px #000);
-animation-play-state:paused;
+color:#fff0;
+text-shadow:2px -7px 2px #fff, 4px -7px 1px #141414, 0px -4px 7px #f40;
+filter:drop-shadow(2px 4px 1px #000024);
 transition:.081s ease-in-out;
 }
 p.WORDOFZX:hover {
 color:#ffffff41;
 text-shadow:-2px 2px 1px #000, 0px 0px 1px #dd9b54, 0px 1px 1px #fff;
 filter:drop-shadow(3px 2px 1px #000);
-animation-play-state:paused;
 transition:.08s ease-in-out;
+}
+p.WORDOFZX:active {
+text-shadow:2px -4px 2px #000, 0px -1px 1px #fff;
+filter:drop-shadow(0px 0px 4px #000);
+transition:.14s ease;
 }
 .VariLine {
 position:absolute;
@@ -706,28 +735,61 @@ background-size:cover;
 object-fit:scale-down;
 user-select:none;
 }
-.CALLINE img {
+.CALLINE span {
 position:relative;
 display:inline;
 margin:0;
 top:7px;
 right:-.81vw;
+background-image:url('4_rendersM.png');
+background-repeat:no-repeat;
+background-position:center center;
 margin-inline-start:1rem;
 margin-inline-end:0;
 margin-block-start:0;
 margin-block-end:0;
-height:25px;
-width:auto;
+height:24px;
+width:37px;
 float:left;
-transition:all 1.24s cubic-bezier(.18,.14,.24,1);
+animation-name:Cal24;
+animation-duration:1.24s;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+animation-direction:normal;
+animation-timing-function:cubic-bezier(.14,.18,.24,1);
+transition:all 1s cubic-bezier(.14,.18,.24,1);
 z-index:400;
-mix-blend-mode:difference;
-filter:brightness(100%)saturate(400%)drop-shadow(0 0 4px #141414)hue-rotate(390deg);
-}
-.CALLINE img:hover {
-cursor:Crosshair;
-transition:all 1.14s cubic-bezier(.14,.18,.24,1);
+mix-blend-mode:hard-light;
 filter:none;
+}
+.CALLINE span:hover {
+background-image:url('4_rendersE.png');
+animation-name:Cal;
+animation-duration:1.24s;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+animation-direction:normal;
+animation-timing-function:cubic-bezier(.14,.18,.24,1);
+}
+@keyframes Cal {
+0% {
+background-image:url('4_rendersM.png');
+filter:none;
+}
+100% {
+background-image:url('4_rendersE.png');
+filter:drop-shadow(1px 2px 4px #00000041) saturate(1.4) contrast(1.24);
+}
+}
+@keyframes Cal24 {
+0% {
+background-image:url('4_rendersE.png');
+filter:drop-shadow(1px 2px 4px #00000041) saturate(1.4) contrast(1.24);
+}
+100% {
+background-image:url('4_rendersM.png');
+filter:none;
+}
 }
 .MindRoom {
 display:flex;
