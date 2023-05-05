@@ -421,11 +421,12 @@ background-position:center;
 background-repeat:repeat;
 background-size:cover;
 animation-name:Init_;
-animation-delay:4.32s;
-animation-duration:1.24s;
+animation-delay:2.7s;
+animation-duration:.41s;
 animation-iteration-count:1;
-animation-play-state:running;
+animation-play-state:paused;
 animation-fill-mode:forwards;
+animation-direction:normal;
 animation-timing-function:cubic-bezier(.18,.14,.24,1);
 overflow:hidden;
 z-index:124;
@@ -437,7 +438,9 @@ display:flex;
 visibility:visible;
 opacity:1;
 }
-99% {
+90% {
+display:flex;
+visibility:visible;
 opacity:0;
 }
 100% {
