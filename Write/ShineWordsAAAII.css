@@ -51,7 +51,7 @@ user-select:none;
 overflow:hidden;
 z-index:4000;
 animation-name:Cal41;
-animation-delay:.24s;
+animation-delay:.14s;
 animation-duration:.24s;
 animation-iteration-count:1;
 animation-play-state:paused;
@@ -763,9 +763,8 @@ mix-blend-mode:hard-light;
 filter:none;
 }
 .CALLINE span:hover {
-background-image:url('4_rendersE.png');
 animation-name:Cal;
-animation-duration:1.24s;
+animation-duration:.81s;
 animation-iteration-count:1;
 animation-fill-mode:forwards;
 animation-direction:normal;
@@ -790,6 +789,14 @@ filter:drop-shadow(1px 2px 4px #00000041) saturate(1.4) contrast(1.24);
 background-image:url('4_rendersM.png');
 filter:none;
 }
+}
+.CALLINE span.Castings {
+animation-name:Cal;
+animation-duration:1.24s;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+animation-direction:normal;
+animation-timing-function:cubic-bezier(.14,.18,.24,1);
 }
 .MindRoom {
 display:flex;
@@ -1220,6 +1227,7 @@ text-align:justify;
 text-align-last:justify;
 transition:all .24s cubic-bezier(.18,.24,.41,1);
 transform:translate(-50%, -50%) scale(.9);
+user-select:none;
 opacity:.24;
 z-index:24;
 }

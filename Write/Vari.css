@@ -44,8 +44,14 @@ z-index:1;
 opacity:1;
 transition:all .41s ease;
 }
-.LGliolgap {
-margin-top:12.3vh;
+.BuffersVectorizationingCastingarisiumca {
+opacity:0;
+transition:all .81s ease;
+}
+.C {
+position:absolute;
+opacity:0;
+z-index:-4000;
 }
 p.HIGHLOWWORDER {
 font-size:18px;
@@ -420,7 +426,6 @@ position:fixed;
 top:-8vh;
 background:url(CalGrad.png);
 background-repeat:repeat;
-background-size:contain;
 height:14vh;
 width:100%;
 rotate:180deg;
@@ -1447,7 +1452,7 @@ justify-content:revert;
 .Renderblocks__ {
 position:relative;
 display:flex;
-height:100%;
+height:124%;
 width:100%;
 }
 @media (max-width:800px) {

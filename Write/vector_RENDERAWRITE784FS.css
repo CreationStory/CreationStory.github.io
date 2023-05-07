@@ -40,32 +40,32 @@ font-size:1rem;
 overflow-x:hidden;
 }
 .RenderBackdropulantern {
-margin:0;
 height:100%;
 width:100%;
+margin:0;
+position:fixed;
 background-image:url('Skin_8D.17.png');
 background-repeat:no-repeat;
-background-attachment:fixed;
+background-position:top center;
 background-size:cover;
-background-position:top;
-animation-name:L;
-animation-duration:24s;
+transition:all 12.4s cubic-bezier(.18,.24,.41,1);
+animation-name:L_;
+animation-duration:14s;
 animation-fill-mode:both;
 animation-direction:alternate;
 animation-iteration-count:infinite;
 animation-timing-function:ease;
-position:fixed;
 }
-@keyframes L {
+@keyframes L_ {
 0% {
-filter:hue-rotate(0deg);
+filter:hue-rotate(0deg)brightness(100%);
 }
 100% {
-filter:hue-rotate(480deg);
+filter:hue-rotate(24deg)brightness(40%);
 }
 }
 ._GallVectorWRITEINTOLIFE {
-margin:7rem 10px 0px 10px;
+margin:8rem 10px 0px 10px;
 max-width:100%;
 display:flex;
 row-gap:14px;
@@ -415,7 +415,7 @@ right:0;
 height:100%;
 width:100%;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 background-color:#141414;
 background-position:center; 
 background-repeat:repeat;
@@ -451,9 +451,9 @@ opacity:0;
 }
 .__BufferVectors {
 position:relative;
-display:flex;
+display:none;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 border-radius:81%;
 animation-name:_BUFFERSQWONTSLALrmm;
 animation-duration:4s;
@@ -463,6 +463,8 @@ animation-play-state:running;
 animation-timing-function:cubic-bezier(.18,.14,.24,1);
 height:200px;
 width:200px;
+opacity:0;
+transition:all .14s cubic-bezier(.18,.14,.24,1);
 }
 .__BufferVectors span {
 position:absolute;
@@ -604,7 +606,7 @@ filter:hue-rotate(0deg);
 position:relative;
 display:flex;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 border-radius:81%;
 animation-name:__BUFFERSQWONTSLALrmm;
 animation-duration:4s;
@@ -760,7 +762,7 @@ filter:hue-rotate(0deg);
 position:relative;
 display:flex;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 border-radius:81%;
 animation-name:____BUFFERSQWONTSLALrmm;
 animation-duration:4s;
@@ -927,9 +929,9 @@ filter:hue-rotate(0deg);
 }
 .____________________________BufferVectors {
 position:relative;
-display:flex;
+display:none;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 border-radius:81%;
 animation-name:______________BUFFERSQWONTSLALrmm;
 animation-duration:4s;
@@ -939,6 +941,8 @@ animation-play-state:running;
 animation-timing-function:cubic-bezier(.18,.14,.24,1);
 height:200px;
 width:200px;
+opacity:0;
+transition:all .14s cubic-bezier(.18,.14,.24,1);
 }
 .____________________________BufferVectors span {
 position:absolute;
@@ -1078,9 +1082,9 @@ filter:hue-rotate(0deg);
 }
 .________________________________BufferVectors {
 position:relative;
-display:flex;
+display:none;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 border-radius:81%;
 animation-name:________________BUFFERSQWONTSLALrmm;
 animation-duration:2s;
@@ -1090,6 +1094,8 @@ animation-play-state:running;
 animation-timing-function:ease-in-out;
 height:200px;
 width:200px;
+opacity:0;
+transition:all .14s cubic-bezier(.18,.14,.24,1);
 }
 .________________________________BufferVectors span {
 position:absolute;
@@ -1218,7 +1224,7 @@ filter:hue-rotate(24deg);
 position:relative;
 display:flex;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 border-radius:81%;
 animation-name:________________________________________________________________________________BUFFERSQWONTSLALrmm;
 animation-duration:2s;
