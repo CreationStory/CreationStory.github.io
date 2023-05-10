@@ -128,7 +128,7 @@ background:url('./1.png');
 background-position:center;
 background-repeat:no-repeat;
 background-size:contain;
-transform:rotate(-23deg);
+transform:rotate(-24deg);
 transform-origin:118vw 57vw;
 animation-name:tio;
 animation-duration:81s;
@@ -139,9 +139,34 @@ animation-timing-function:cubic-bezier(.18,.14,.27,1);
 transition:opacity .14s ease;
 z-index:0;
 }
+@media (max-width:1400px) {
+#slate {
+position:fixed;
+height:212vh;
+width:144vw;
+top:0;
+right:0;
+left:0;
+bottom:0;
+background:url('./1.png');
+background-position:center;
+background-repeat:no-repeat;
+background-size:contain;
+transform:rotate(-24deg);
+transform-origin:180vw 81vw;
+animation-name:tio;
+animation-duration:400s;
+animation-fill-mode:both;
+animation-play-state:paused;
+animation-iteration-count:infinite;
+animation-timing-function:cubic-bezier(.18,.14,.27,1);
+transition:opacity .14s ease;
+z-index:0;
+}
+}
 @keyframes tio {
 0% {
-transform:rotate(-23deg);
+transform:rotate(-24deg);
 }
 27% {
 transform:rotate(40deg);
@@ -150,13 +175,13 @@ transform:rotate(40deg);
 transform:rotate(27deg);
 }
 54% {
-transform:rotate(49deg);
+transform:rotate(48deg);
 }
 72% {
 transform:rotate(14deg);
 }
 100% {
-transform:rotate(-23deg);
+transform:rotate(-24deg);
 }
 }
 .CovernMum {
@@ -212,6 +237,7 @@ margin:0;
 padding:45vh 0 0 18vw;
 background-color:#0000;
 z-index:124;
+transition:all 1.24s cubic-bezier(.18,.14,.27,1);
 }
 @media (max-height:900px) {
 .PLATEGIORPTIN-item {
@@ -248,7 +274,7 @@ margin-top:12.4vh;
 }
 .BuffersVectorizationingCastingarisiumca {
 opacity:0;
-transition:all .81s ease;
+transition:all 1.24s .42s ease;
 }
 .__BufferVectors {
 position:relative;
@@ -392,6 +418,170 @@ border-radius:41%;
 }
 }
 @keyframes _BUFFERSQWONTSLALrmm {
+0% {
+rotate:0deg;
+filter:hue-rotate(400deg);
+}
+72% {
+rotate:124deg;
+filter:hue-rotate(124deg);
+}
+100% {
+rotate:400deg;
+filter:hue-rotate(0deg);
+}
+}
+.________BufferVectors {
+position:relative;
+display:none;
+align-items:center;
+justify-content:center;
+border-radius:81%;
+animation-name:____BUFFERSQWONTSLALrmm;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+animation-play-state:running;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+height:200px;
+width:200px;
+opacity:0;
+transition:all .14s cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span {
+position:absolute;
+height:200px;
+width:200px;
+border-radius:81%;
+background:linear-gradient(#f40, #fff, #fff, #f40);
+animation-name:____BUFFERSQWONTSLALS;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+}
+.________BufferVHH8I {
+position:absolute;
+height:140px;
+width:140px;
+top:16px;
+right:16px;
+background:url('VectorRenderCAST___.webp');
+background-position:top;
+border-radius:4%;
+border:14px double #fff;
+animation-name:____BUFFERSQWONTSLALrmmM;
+box-sizing:content-box;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+filter:blur(4px);
+z-index:9;
+}
+@keyframes ____BUFFERSQWONTSLALrmmM {
+0% {
+border-radius:1%;
+filter:blur(14px);
+border:14px double #c80000;
+}
+100% {
+border-radius:100%;
+filter:blur(1px);
+border:14px double #141414;
+}
+}
+@keyframes ____BUFFERSQWONTSLALS {
+0% {
+border-radius:8%;
+}
+100% {
+border-radius:100%;
+}
+}
+.________BufferVectors span:nth-child(2) {
+filter:blur(4px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(3) {
+filter:blur(4px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(4) {
+filter:blur(41px);
+animation-name:____ISCC;
+animation-duration:14s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(5) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:7s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(6) {
+filter:blur(4px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:alternate-reverse;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(7) {
+filter:blur(4px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+.________BufferVectors span:nth-child(8) {
+filter:blur(7px);
+animation-name:____ISCC;
+animation-duration:4s;
+animation-delay:.41s;
+animation-iteration-count:1;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.18,.14,.24,1);
+}
+@keyframes ____ISCC {
+0% {
+rotate:0deg;
+filter:inital;
+border-radius:100%;
+}
+100% {
+rotate:400deg;
+filter:blur(1px);
+border-radius:41%;
+}
+}
+@keyframes ____BUFFERSQWONTSLALrmm {
 0% {
 rotate:0deg;
 filter:hue-rotate(400deg);
@@ -561,21 +751,19 @@ rotate:400deg;
 filter:hue-rotate(0deg);
 }
 }
-}
 .prevJcshT {
 position:relative;
 display:block;
+margin-block-start:0;
+margin-block-end:0;
 top:41vh;
 left:40vw;
 color:#724114;
 font-family:Ser;
-font-size:.9vw;
+font-size:1.8vh;
+font-weight:100;
 font-variant:small-caps;
 letter-spacing:1px;
-font-weight:100;
-z-index:41;
-margin-block-start:0;
-margin-block-end:0;
 text-shadow:0px 3px 0px #000, 0px 1px 0px #f40, 0px 0px 2px #000;
 animation-name:HI;
 animation-delay:.124s;
@@ -583,10 +771,11 @@ animation-duration:14s;
 animation-iteration-count:1;
 animation-play-state:paused;
 transition:all 1.24s ease;
+opacity:0;
 animation-timing-function:cubic-bezier(.9,.18,.48,.148);
 pointer-events:none;
 user-select:none;
-opacity:0;
+z-index:41;
 }
 @keyframes HI {
 0% {
@@ -690,10 +879,22 @@ display:flex;
 height:100%;
 width:100%;
 }
-._GallVectorWRITEINTOLIFE {
-margin:0 1rem 0 1rem;
-max-width:100%;
+.Cast {
+position:absolute;
+align-self:center;
 display:flex;
+height:90%;
+width:100%;
+transition:all .41s ease-in-out;
+box-shadow:0px 2px 1px -1px #f40, 0px -2px 1px -1px #f40, 0px -124px 1px 0px #141414, 0px 124px 0px 0px #141414;
+backdrop-filter:hue-rotate(14deg) blur(24px);
+opacity:0;
+z-index:24;
+}
+._GallVectorWRITEINTOLIFE {
+margin:.41rem 1rem .81rem 1rem;
+max-width:100%;
+display:none;
 row-gap:14px;
 position:relative;
 flex-wrap:wrap;
@@ -761,13 +962,32 @@ line-height:14vh;
 margin:0;
 margin-block-start:0;
 margin-block-end:0;
-overflow:scroll;
 overflow-wrap:anywhere;
 text-align:center;
 text-align-last:center;
 text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
 filter:drop-shadow(0px 0px 4px #000);
 transition:.24s ease-in-out;
+}
+@media (max-width:899px) {
+p.WORDOFZXAC9WmIH941_ {
+font-size:calc(24px + 8vw);
+font-weight:100;
+word-spacing:18px;
+color:#1c0c0c;
+font-family:Ser;
+letter-spacing:2px;
+line-height:124px;
+margin:0;
+margin-block-start:0;
+margin-block-end:0;
+overflow-wrap:anywhere;
+text-align:center;
+text-align-last:center;
+text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
+filter:drop-shadow(0px 0px 4px #000);
+transition:.24s ease-in-out;
+}
 }
 @media (max-width:440px) {
 p.WORDOFZXAC9WmIH941_ {
@@ -781,7 +1001,6 @@ line-height:7vh;
 margin:0;
 margin-block-start:0;
 margin-block-end:0;
-overflow:scroll;
 overflow-wrap:anywhere;
 text-align:center;
 text-align-last:center;
