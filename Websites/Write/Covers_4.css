@@ -454,7 +454,43 @@ user-select:none;
 pointer-events:none;
 z-index:4000;
 }
+.InitCast {
+position:fixed;
+height:100vh;
+width:100vw;
+opacity:1;
+background:#141414;
+background-size:cover;
+animation-name:Init__;
+animation-duration:1.24s;
+animation-delay:1.4s;
+animation-iteration-count:1;
+animation-play-state:running;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+overflow:hidden;
+user-select:none;
+pointer-events:none;
+z-index:4000;
+}
 @keyframes Init_ {
+0% {
+opacity:1;
+height:100vh;
+width:100vw;
+}
+90% {
+opacity:0;
+height:100vh;
+width:100vw;
+}
+100% {
+opacity:0;
+height:0vh;
+width:0vw;
+}
+}
+@keyframes Init__ {
 0% {
 opacity:1;
 height:100vh;
