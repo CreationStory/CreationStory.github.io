@@ -2300,7 +2300,6 @@ transition:.24s ease-in-out;
 .InitCast {
 animation-name:Init__;
 animation-duration:1.24s;
-animation-delay:.14s;
 animation-iteration-count:1;
 animation-play-state:paused;
 animation-fill-mode:forwards;
