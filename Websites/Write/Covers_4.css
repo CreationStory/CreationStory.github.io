@@ -179,7 +179,7 @@ transition:.24s ease-in-out;
 }
 @media (max-width:524px) {
 p.WORDOFZXAC9WmIH9 {
-font-size:4vh;
+font-size:24px;
 font-weight:900;
 word-spacing:4px;
 color:#1c0c0c;
@@ -206,7 +206,7 @@ transition:.24s ease-in-out;
 position:absolute;
 display:inline;
 margin:0;
-top:7vh;
+top:4vh;
 left:14px;
 user-select:none;
 z-index:14;
@@ -231,7 +231,7 @@ transition:.24s ease-in-out;
 @media (max-width:1244px) {
 p.WORDOFZXAC9WmIH9 span {
 font-variant:small-caps;
-opacity:.14;
+opacity:.81;
 text-shadow:-1.4px 1px 1px #ff8c8a, .4px 1px 0px #ff44009c;
 transition:.24s ease-in-out;
 }
@@ -248,7 +248,6 @@ bottom:7vh;
 left:2vw;
 padding:.4rem 0 0 0;
 background-color:#0000;
-scroll-snap-type:y mandatory;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
@@ -259,7 +258,6 @@ width:100vw;
 margin:0;
 padding:18vh 0 0 18vw;
 background-color:#0000;
-scroll-snap-align:start;
 z-index:124;
 }
 @media (max-width:1700px) {
@@ -275,7 +273,6 @@ bottom:7vh;
 left:4vw;
 padding:.4rem 0 0 0;
 background-color:#0000;
-scroll-snap-type:y mandatory;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
@@ -295,7 +292,6 @@ bottom:7vh;
 left:8vw;
 padding:.4rem 0 0 0;
 background-color:#0000;
-scroll-snap-type:y mandatory;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
@@ -315,7 +311,6 @@ bottom:4vh;
 left:0;
 padding:.4rem 0 0 0;
 background-color:#0000;
-scroll-snap-type:y mandatory;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
@@ -328,7 +323,6 @@ margin:0;
 width:100vw;
 padding:18vh 0 0 7vw;
 background-color:#0000;
-scroll-snap-align:start;
 z-index:124;
 }
 }
@@ -340,7 +334,6 @@ margin:0;
 width:100vw;
 padding:24vh 0;
 background-color:#0000;
-scroll-snap-align:start;
 z-index:124;
 }
 }
@@ -349,7 +342,6 @@ width:100vw;
 margin:0;
 padding:14vh 0 0 17vw;
 background-color:#0000;
-scroll-snap-align:start;
 z-index:124;
 }
 @media (max-width:718px) {
@@ -358,7 +350,6 @@ width:100vw;
 margin:0;
 padding:28vh 0 0 8vw;
 background-color:#0000;
-scroll-snap-align:start;
 z-index:124;
 }
 }
@@ -368,7 +359,6 @@ width:100vw;
 margin:0;
 padding:41vh 0 0 8vw;
 background-color:#0000;
-scroll-snap-align:start;
 z-index:124;
 }
 }
@@ -454,43 +444,7 @@ user-select:none;
 pointer-events:none;
 z-index:4000;
 }
-.InitCast {
-position:fixed;
-height:100vh;
-width:100vw;
-opacity:1;
-background:#141414;
-background-size:cover;
-animation-name:Init__;
-animation-duration:1.24s;
-animation-delay:.14s;
-animation-iteration-count:1;
-animation-play-state:paused;
-animation-fill-mode:forwards;
-animation-timing-function:ease;
-overflow:hidden;
-user-select:none;
-pointer-events:none;
-z-index:4000;
-}
 @keyframes Init_ {
-0% {
-opacity:1;
-height:100vh;
-width:100vw;
-}
-90% {
-opacity:0;
-height:100vh;
-width:100vw;
-}
-100% {
-opacity:0;
-height:0vh;
-width:0vw;
-}
-}
-@keyframes Init__ {
 0% {
 opacity:1;
 height:100vh;
