@@ -434,7 +434,7 @@ background-size:cover;
 mix-blend-mode:exclusion;
 animation-name:Init_;
 animation-duration:4s;
-animation-delay:0s;
+animation-delay:.41s;
 animation-iteration-count:1;
 animation-play-state:paused;
 animation-fill-mode:forwards;
