@@ -2297,6 +2297,27 @@ filter:drop-shadow(0px 0px 4px #000);
 transition:.24s ease-in-out;
 }
 }
+.InitCast {
+animation-name:Init__;
+animation-duration:1.24s;
+animation-delay:.14s;
+animation-iteration-count:1;
+animation-play-state:paused;
+animation-fill-mode:forwards;
+animation-timing-function:ease;
+opacity:0;
+}
+@keyframes Init__ {
+0% {
+opacity:0;
+}
+90% {
+opacity:1;
+}
+100% {
+opacity:1;
+}
+}
 .Tibbles {
 	
 }
