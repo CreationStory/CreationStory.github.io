@@ -51,8 +51,8 @@ user-select:none;
 overflow:hidden;
 z-index:4000;
 animation-name:Cal41;
-animation-delay:.14s;
-animation-duration:.24s;
+animation-duration:.41s;
+animation-delay:.124s;
 animation-iteration-count:1;
 animation-play-state:paused;
 animation-fill-mode:forwards;
@@ -626,9 +626,9 @@ filter:drop-shadow(0px 0px 0px #000);
 transition:.081s ease-in-out;
 }
 p.WORDOFZXAC9 span:active {
-color:#fff0;
-text-shadow:2px -4px 2px #fff, 4px -4px 1px #141414, 0px -4px 7px #f40;
-filter:drop-shadow(2px 4px 1px #000024);
+color:#ffffff41;
+text-shadow:2px -4px 2px #180c1c, 0px -1px 1px #fff, 1px 0px 1px #f40;
+filter:drop-shadow(1px 4px 1px #000);
 transition:.041s ease-in-out;
 }
 p.WORDOFZX:hover {
