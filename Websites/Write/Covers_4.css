@@ -244,7 +244,7 @@ flex-wrap:wrap;
 margin:0;
 align-items:center;
 position:absolute;
-bottom:7vh;
+bottom:0;
 left:2vw;
 padding:.4rem 0 0 0;
 background-color:#0000;
@@ -269,7 +269,7 @@ flex-wrap:wrap;
 margin:0;
 align-items:center;
 position:absolute;
-bottom:7vh;
+bottom:0;
 left:4vw;
 padding:.4rem 0 0 0;
 background-color:#0000;
@@ -288,7 +288,7 @@ flex-wrap:wrap;
 margin:0;
 align-items:center;
 position:absolute;
-bottom:7vh;
+bottom:0;
 left:8vw;
 padding:.4rem 0 0 0;
 background-color:#0000;
@@ -307,7 +307,7 @@ flex-wrap:wrap;
 margin:0;
 align-items:center;
 position:absolute;
-bottom:4vh;
+bottom:0;
 left:0;
 padding:.4rem 0 0 0;
 background-color:#0000;
@@ -363,7 +363,6 @@ z-index:124;
 }
 }
 .NForMYgAPQuadss {
-height:14vh;
 position:relative;
 display:flex;
 }
