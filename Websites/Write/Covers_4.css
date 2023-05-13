@@ -85,7 +85,7 @@ background:url('./1.png');
 background-position:center;
 background-repeat:no-repeat;
 background-size:contain;
-transform:rotate(-23deg);
+transform:rotate(-4deg);
 transform-origin:104vw 34vw;
 height:212vh;
 width:144vw;
@@ -94,32 +94,26 @@ right:0;
 left:0;
 bottom:0;
 animation-name:tio;
-animation-duration:124s;
+animation-duration:81s;
+animation-delay:1.4s;
 animation-fill-mode:both;
 animation-play-state:running;
 animation-iteration-count:infinite;
 animation-direction:alternate;
-animation-timing-function:cubic-bezier(.18,.14,.27,1);
+animation-timing-function:ease;
 z-index:0;
 }
 @keyframes tio {
 0% {
-transform:rotate(1deg);
+transform:rotate(-4deg);
+filter:hue-rotate(9deg);
 }
-27% {
-transform:rotate(14deg);
-}
-45% {
-transform:rotate(18deg);
-}
-54% {
+41% {
 transform:rotate(24deg);
-}
-72% {
-transform:rotate(27deg);
 }
 100% {
-transform:rotate(24deg);
+transform:rotate(41deg);
+filter:hue-rotate(-124deg);
 }
 }
 .CovernMum {
@@ -251,7 +245,7 @@ background-color:#0000;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
-z-index:124;
+z-index:1;
 }
 .PLATEGIORPTIN-item {
 width:100vw;
@@ -276,7 +270,7 @@ background-color:#0000;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
-z-index:124;
+z-index:1;
 }
 }
 @media (max-width:1400px) {
@@ -295,7 +289,7 @@ background-color:#0000;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
-z-index:124;
+z-index:1;
 }
 }
 @media (max-width:1244px) {
@@ -314,7 +308,7 @@ background-color:#0000;
 scroll-behavior:smooth;
 overflow-y:scroll;
 overflow-x:hidden;
-z-index:124;
+z-index:1;
 }
 .PLATEGIORPTIN-item {
 display:flex;
