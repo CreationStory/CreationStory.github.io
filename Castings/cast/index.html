@@ -110,9 +110,9 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.unobserve(entry.target);
       }
     });
-  });
+  }, { rootMargin: '0px 0px 100px 0px' }); // Adjust the rootMargin value as per your requirements
 
-  // Append the shuffled items to the gallery and observe them
+  // Append the shuffled items to the gallery
   shuffledItems.forEach(function (item) {
     gallery.appendChild(item);
     observer.observe(item);
