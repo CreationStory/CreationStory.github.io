@@ -79,45 +79,61 @@
   </div>
 </div>
 
-<script>
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Retrieve the gallery container
-  const gallery = document.getElementById("gallery");
-
-  // Retrieve all the gallery items
-  const galleryItems = Array.from(gallery.getElementsByClassName("gallery-item"));
-
-  // Shuffle the gallery items
-  const shuffledItems = shuffleArray(galleryItems);
-
-  // Create an intersection observer
-  const observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        // Load the image source from the data-src attribute
-        const img = entry.target.querySelector("img");
-        img.src = img.dataset.src;
-
-        // Unobserve the target once it is loaded
-        observer.unobserve(entry.target);
+  <script>
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
       }
-    });
-  }, { rootMargin: '0px 0px 100px 0px' }); // Adjust the rootMargin value as per your requirements
+      return array;
+    }
 
-  // Append the shuffled items to the gallery
-  shuffledItems.forEach(function (item) {
-    gallery.appendChild(item);
-    observer.observe(item);
+    document.addEventListener("DOMContentLoaded", function() {
+      // Retrieve the gallery container
+      const gallery = document.getElementById("gallery");
+
+      // Retrieve all the gallery items
+      const galleryItems = Array.from(gallery.getElementsByClassName("gallery-item"));
+
+      // Shuffle the gallery items
+      const shuffledItems = shuffleArray(galleryItems);
+
+      // Remove existing items from the gallery
+      gallery.innerHTML = "";
+
+      // Append the shuffled items to the gallery
+      shuffledItems.forEach(function(item) {
+        gallery.appendChild(item);
+      });
+    });
+  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Create an intersection observer
+    const observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          // Load the image source from the data-src attribute
+          const img = entry.target.querySelector("img");
+          img.src = img.dataset.src;
+
+          // Unobserve the target once it is loaded
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px 100px 0px' }); // Adjust the rootMargin value as per your requirements
+
+    // Retrieve all the gallery items
+    const galleryItems = Array.from(document.getElementsByClassName("gallery-item"));
+
+    // Delay the observer activation for 4 seconds
+    setTimeout(function() {
+      // Observe the gallery items
+      galleryItems.forEach(function(item) {
+        observer.observe(item);
+      });
+    }, 4000); // 4 seconds delay
   });
-});
 </script>
 </body>
 </html>
