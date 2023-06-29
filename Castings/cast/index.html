@@ -1,137 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
-<link href="Casts.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+  <title></title>
+  <link href="Casts.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
 </head>
 <body>
-<div class="G____Cast"></div>
-<div class="G_Cast"></div>
-<div class="container">
-  <div class="gallery" id="gallery">
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/1.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/2.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/3.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/4.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/5.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/6.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/7.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/8.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/9.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/10.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/11.png">
-    </div>
-	    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/12.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/14.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/15.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/16.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/17.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/18.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/19.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/20.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/21.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/22.png">
-    </div>
-    <div class="gallery-item">
-      <img class="lazy-img" data-src="a/23.png">
+  <div class="G____Cast"></div>
+  <div class="G_Cast"></div>
+  <div class="container">
+    <div class="gallery" id="gallery">
+      <article class="gallery-item">
+        <img data-src="1.png">
+      </article>
+      <article class="gallery-item">
+        <img data-src="2.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="3.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="4.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="5.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="6.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="7.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="8.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="9.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="10.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="11.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="12.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="14.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="15.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="16.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="17.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="18.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="19.png">
+      </article>
+	        <article class="gallery-item">
+        <img data-src="20.png">
+      </article>
     </div>
   </div>
-</div>
 
   <script>
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
+    function randomizeGallery() {
+      const gallery = document.getElementById('gallery');
+      const galleryItems = Array.from(gallery.getElementsByClassName('gallery-item'));
+
+      galleryItems.forEach(item => {
+        const randomIndex = Math.floor(Math.random() * galleryItems.length);
+        gallery.insertBefore(item, galleryItems[randomIndex]);
+      });
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-      // Retrieve the gallery container
-      const gallery = document.getElementById("gallery");
-
-      // Retrieve all the gallery items
-      const galleryItems = Array.from(gallery.getElementsByClassName("gallery-item"));
-
-      // Shuffle the gallery items
-      const shuffledItems = shuffleArray(galleryItems);
-
-      // Create a temporary document fragment to store the shuffled items
-      const fragment = document.createDocumentFragment();
-
-      // Append the shuffled items to the fragment
-      shuffledItems.forEach(function(item) {
-        fragment.appendChild(item);
-      });
-
-      // Append the fragment to the gallery container
-      gallery.appendChild(fragment);
-
-      // Function to handle intersection changes
-      function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const lazyImg = entry.target.querySelector('.lazy-img');
-            if (lazyImg) {
-              lazyImg.src = lazyImg.dataset.src;
-              lazyImg.classList.remove('lazy-img');
-              observer.unobserve(entry.target);
-            }
+    function loadImages(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target.querySelector('img');
+          if (img && img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            observer.unobserve(entry.target);
           }
-        });
-      }
-
-      // Create an intersection observer instance
-      const observer = new IntersectionObserver(handleIntersection, {
-        rootMargin: '100px',
+        }
       });
+    }
 
-      // Observe the lazy-loaded images
-      const lazyImages = document.querySelectorAll('.lazy-img');
-      lazyImages.forEach(img => observer.observe(img.parentNode));
-    });
+    function createIntersectionObserver() {
+      const options = {
+        root: null,
+        rootMargin: '200px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver(loadImages, options);
+
+      const galleryItems = Array.from(document.getElementsByClassName('gallery-item'));
+      galleryItems.forEach(item => observer.observe(item));
+    }
+
+    randomizeGallery();
+    createIntersectionObserver();
   </script>
 </body>
 </html>
