@@ -11,104 +11,127 @@
 <div class="container">
   <div class="gallery" id="gallery">
     <div class="gallery-item">
-      <img data-src="a/1.png">
+      <img class="lazy-img" data-src="a/1.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/2.png">
+      <img class="lazy-img" data-src="a/2.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/3.png">
+      <img class="lazy-img" data-src="a/3.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/4.png">
+      <img class="lazy-img" data-src="a/4.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/5.png">
+      <img class="lazy-img" data-src="a/5.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/6.png">
+      <img class="lazy-img" data-src="a/6.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/7.png">
+      <img class="lazy-img" data-src="a/7.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/8.png">
+      <img class="lazy-img" data-src="a/8.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/9.png">
+      <img class="lazy-img" data-src="a/9.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/10.png">
+      <img class="lazy-img" data-src="a/10.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/11.png">
+      <img class="lazy-img" data-src="a/11.png">
     </div>
 	    <div class="gallery-item">
-      <img data-src="a/12.png">
+      <img class="lazy-img" data-src="a/12.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/14.png">
+      <img class="lazy-img" data-src="a/14.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/15.png">
+      <img class="lazy-img" data-src="a/15.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/16.png">
+      <img class="lazy-img" data-src="a/16.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/17.png">
+      <img class="lazy-img" data-src="a/17.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/18.png">
+      <img class="lazy-img" data-src="a/18.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/19.png">
+      <img class="lazy-img" data-src="a/19.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/20.png">
+      <img class="lazy-img" data-src="a/20.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/21.png">
+      <img class="lazy-img" data-src="a/21.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/22.png">
+      <img class="lazy-img" data-src="a/22.png">
     </div>
     <div class="gallery-item">
-      <img data-src="a/23.png">
+      <img class="lazy-img" data-src="a/23.png">
     </div>
   </div>
 </div>
 
-<script>
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+  <script>
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
     }
-    return array;
-  }
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // Retrieve the gallery container
-    const gallery = document.getElementById("gallery");
+    document.addEventListener("DOMContentLoaded", function() {
+      // Retrieve the gallery container
+      const gallery = document.getElementById("gallery");
 
-    // Retrieve all the gallery items
-    const galleryItems = Array.from(gallery.getElementsByClassName("gallery-item"));
+      // Retrieve all the gallery items
+      const galleryItems = Array.from(gallery.getElementsByClassName("gallery-item"));
 
-    // Shuffle the gallery items
-    const shuffledItems = shuffleArray(galleryItems);
+      // Shuffle the gallery items
+      const shuffledItems = shuffleArray(galleryItems);
 
-    // Create a temporary document fragment to store the shuffled items
-    const fragment = document.createDocumentFragment();
+      // Create a temporary document fragment to store the shuffled items
+      const fragment = document.createDocumentFragment();
 
-    // Append the shuffled items to the fragment
-    shuffledItems.forEach(function(item) {
-      fragment.appendChild(item);
+      // Append the shuffled items to the fragment
+      shuffledItems.forEach(function(item) {
+        fragment.appendChild(item);
+      });
+
+      // Append the fragment to the gallery container
+      gallery.appendChild(fragment);
+
+      // Function to handle intersection changes
+      function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const lazyImg = entry.target.querySelector('.lazy-img');
+            if (lazyImg) {
+              lazyImg.src = lazyImg.dataset.src;
+              lazyImg.classList.remove('lazy-img');
+              observer.unobserve(entry.target);
+            }
+          }
+        });
+      }
+
+      // Create an intersection observer instance
+      const observer = new IntersectionObserver(handleIntersection, {
+        rootMargin: '100px',
+      });
+
+      // Observe the lazy-loaded images
+      const lazyImages = document.querySelectorAll('.lazy-img');
+      lazyImages.forEach(img => observer.observe(img.parentNode));
     });
-
-    // Append the fragment to the gallery container
-    gallery.appendChild(fragment);
-  });
-</script>
+  </script>
 </body>
 </html>
