@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="Casts.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+</head>
+<body>
+<div class="G____Cast"></div>
+<div class="G_Cast"></div>
+<div class="container">
+  <div class="gallery" id="gallery">
+    <div class="gallery-item">
+      <img data-src="1.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="2.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="3.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="4.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="5.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="6.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="7.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="8.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="9.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="10.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="11.png">
+    </div>
+	    <div class="gallery-item">
+      <img data-src="12.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="14.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="15.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="16.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="17.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="18.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="19.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="20.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="21.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="22.png">
+    </div>
+    <div class="gallery-item">
+      <img data-src="23.png">
+    </div>
+  </div>
+</div>
+
+<script>
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Retrieve the gallery container
+  const gallery = document.getElementById("gallery");
+  
+  // Retrieve all the gallery items
+  const galleryItems = Array.from(gallery.getElementsByClassName("gallery-item"));
+  
+  // Shuffle the gallery items
+  const shuffledItems = shuffleArray(galleryItems);
+  
+  // Remove existing items from the gallery
+  gallery.innerHTML = "";
+  
+  // Append the shuffled items to the gallery
+  shuffledItems.forEach(function(item) {
+    gallery.appendChild(item);
+  });
+  
+  // Create an intersection observer
+  const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        // Load the image source from the data-src attribute
+        const img = entry.target.querySelector("img");
+        img.src = img.dataset.src;
+        
+        // Unobserve the target once it is loaded
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  
+  // Observe all the gallery items
+  galleryItems.forEach(function(item) {
+    observer.observe(item);
+  });
+});
+</script>
+</body>
+</html>
