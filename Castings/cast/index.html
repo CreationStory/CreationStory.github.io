@@ -121,7 +121,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { rootMargin: '0px 0px 100px 0px' }); // Adjust the rootMargin value as per your requirements
+    }, { rootMargin: '0px 0px 100px 0px', root: null }); // Set root property to null or provide the appropriate element
 
     // Retrieve all the gallery items
     const galleryItems = Array.from(document.getElementsByClassName("gallery-item"));
@@ -132,8 +132,9 @@
       galleryItems.forEach(function(item) {
         observer.observe(item);
       });
-    }, 4000); // 4 seconds delay
+    }); // 4 seconds delay
   });
 </script>
+
 </body>
 </html>
