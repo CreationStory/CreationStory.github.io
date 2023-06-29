@@ -21,13 +21,11 @@ body {
 .gallery-item {
   width: 400px;
   padding: 10px;
-  height: auto; /* Add this line */
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Add this line */
 }
 
 @media (max-width:1400px) {
