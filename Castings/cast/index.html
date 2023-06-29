@@ -91,37 +91,30 @@ function shuffleArray(array) {
 document.addEventListener("DOMContentLoaded", function() {
   // Retrieve the gallery container
   const gallery = document.getElementById("gallery");
-  
+
   // Retrieve all the gallery items
   const galleryItems = Array.from(gallery.getElementsByClassName("gallery-item"));
-  
+
   // Shuffle the gallery items
   const shuffledItems = shuffleArray(galleryItems);
-  
-  // Remove existing items from the gallery
-  gallery.innerHTML = "";
-  
-  // Append the shuffled items to the gallery
-  shuffledItems.forEach(function(item) {
-    gallery.appendChild(item);
-  });
-  
+
   // Create an intersection observer
-  const observer = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(function(entry) {
+  const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         // Load the image source from the data-src attribute
         const img = entry.target.querySelector("img");
         img.src = img.dataset.src;
-        
+
         // Unobserve the target once it is loaded
         observer.unobserve(entry.target);
       }
     });
   });
-  
-  // Observe all the gallery items
-  galleryItems.forEach(function(item) {
+
+  // Append the shuffled items to the gallery and observe them
+  shuffledItems.forEach(function (item) {
+    gallery.appendChild(item);
     observer.observe(item);
   });
 });
