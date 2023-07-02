@@ -56,7 +56,7 @@ z-index:124;
 opacity:0;
 }
 .preview-box.renders {opacity:1;transition:opacity .24s ease;}
-.preview-wrapper {height:100%;width:100%;background-repeat:no-repeat;overflow:auto;opacity:0;transition:all .59s ease;}
+.preview-wrapper {height:100%;width:100%;background-repeat:no-repeat;overflow:auto;opacity:0;transition:all .24s 0s ease;}
 @media (max-width:1400px) {
 .container {
 margin:auto;
