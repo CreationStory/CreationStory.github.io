@@ -42,6 +42,8 @@ margin:auto;
 display:none;
 height:70vh;
 width:59vw;
+background:url('C.gif');
+background-size:cover;
 position:fixed;
 overflow:hidden;
 user-select:none;
