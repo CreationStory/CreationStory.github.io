@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>High quality render wallpapers</title>
+<title>Renders - high quality wallpapers</title>
 <link href="Render/Casts.css" rel="stylesheet">
 <link rel="icon" href="Write/CS.ico">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <div class="G____Cast"></div>
 <div class="G_Cast"></div>
 <div class="container">
-<button id="dark-theme-btn">
+<button id="dark-theme-casts">
 <svg width="30" height="30" viewBox="0 0 30 30">
 <path d="M15 0 A15 15 0 0 1 15 30 L15 15 Z" fill="#141414"></path>
 <path d="M15 0 A15 15 0 0 0 15 30 L15 15 Z" fill="#fff"></path>
@@ -486,6 +486,7 @@
 </a>
 </article>
 </div>
+
 <div class="preview-box">
 <div class="preview-wrapper"></div>
 </div>
@@ -498,27 +499,21 @@ const j = Math.floor(Math.random() * (i + 1));
 }
 return array;
 }
-
 function CastLoadImages() {
   const images = document.querySelectorAll('.gallery-item img');
-
   const options = {
     root: null,
     rootMargin: '400px'
   };
-
   const loadImage = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
-
     const handleImageLoad = () => {
       image.classList.add('loaded');
       image.removeEventListener('load', handleImageLoad);
     };
-
     image.addEventListener('load', handleImageLoad);
     image.removeAttribute('data-src');
   };
-
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.intersectionRatio > 0 || entry.isIntersecting) {
@@ -527,14 +522,11 @@ function CastLoadImages() {
       }
     });
   };
-
   const observer = new IntersectionObserver(handleIntersection, options);
-
   images.forEach((image) => {
     observer.observe(image);
   });
 }
-
 window.addEventListener('DOMContentLoaded', () => {
   const gallery = document.getElementById('gallery');
   const galleryItems = Array.from(gallery.getElementsByClassName('gallery-item'));
@@ -549,48 +541,54 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 <script>
-const galleryImages = document.querySelectorAll('.gallery img');
-const previewBox = document.querySelector('.preview-box');
-const previewWrapper = document.querySelector('.preview-wrapper');
-const minWidth = 1400;
-galleryImages.forEach(image => {
-image.addEventListener('mouseenter', showPreview);
-image.addEventListener('mouseleave', hidePreview);
-image.addEventListener('mousemove', movePreview);
-});
-  function showPreview(event) {
-    const imageUrl = event.target.getAttribute('data-hover');
-    if (window.innerWidth >= minWidth) {
-      previewWrapper.style.backgroundImage = `url(${imageUrl})`;
-      previewBox.style.display = 'block';
-      previewBox.style.pointerEvents = 'none';
-    }
+  const galleryImages = document.querySelectorAll('.gallery img');
+  const previewBox = document.querySelector('.preview-box');
+  const previewWrapper = document.querySelector('.preview-wrapper');
+  const minWidth = 1400;
+  let hidePreviewTimeout;
+  galleryImages.forEach(image => {
+    image.addEventListener('mouseenter', showPreview);
+    image.addEventListener('mouseleave', hidePreview);
+    image.addEventListener('mousemove', movePreview);
+  });
+function showPreview(event) {
+  const imageUrl = event.target.getAttribute('data-hover');
+  if (window.innerWidth >= minWidth) {
+    previewWrapper.style.backgroundImage = `url(${imageUrl})`;
+    previewBox.classList.add('renders');
+	previewBox.style.pointerEvents = 'none';
+    const tempImg = new Image();
+    tempImg.src = imageUrl;
+    tempImg.addEventListener('load', () => {
+      previewWrapper.style.opacity = '1';
+    });
   }
+}
 function hidePreview() {
-previewBox.style.display = 'none';
+    previewBox.classList.remove('renders');
 }
-function movePreview(event) {
-const mouseY = event.clientY;
-const mouseX = event.clientX;
-const previewBoxHeight = previewBox.offsetHeight;
-const previewBoxWidth = previewBox.offsetWidth;
-const viewportHeight = window.innerHeight;
-const viewportWidth = window.innerWidth;
-let top = mouseY / 4;
-let right = mouseX / 2.4 - 24;
-
-  if (top + previewBoxHeight > viewportHeight) {
-    top = mouseY - previewBoxHeight - 24;
-}
-  if (right + previewBoxWidth > viewportWidth) {
-    right = mouseX - previewBoxWidth - 24;
+  function movePreview(event) {
+    clearTimeout(hidePreviewTimeout);
+    const mouseY = event.clientY;
+    const mouseX = event.clientX;
+    const previewBoxHeight = previewBox.offsetHeight;
+    const previewBoxWidth = previewBox.offsetWidth;
+    const viewportHeight = window.innerHeight;
+    const viewportWidth = window.innerWidth;
+    let top = mouseY / 4;
+    let right = mouseX / 2.4 - 24;
+    if (top + previewBoxHeight > viewportHeight) {
+      top = mouseY - previewBoxHeight - 24;
+    }
+    if (right + previewBoxWidth > viewportWidth) {
+      right = mouseX - previewBoxWidth - 24;
+    }
+    previewBox.style.top = `${top}px`;
+    previewBox.style.right = `${right}px`;
   }
-	previewBox.style.top = `${top}px`;
-	previewBox.style.right = `${right}px`;
-}											
 </script>
 <script>
-const darkThemeBtn = document.getElementById("dark-theme-btn");
+const darkThemeBtn = document.getElementById("dark-theme-casts");
 let isDarkMode = getCookie("SharpFaithvectorViews") === "true";
 applyMode();
 darkThemeBtn.addEventListener("click", function() {
@@ -599,7 +597,7 @@ applyMode();
 setCookie("SharpFaithvectorViews", isDarkMode);
 });
 function applyMode() {
-const svgIcon = document.querySelector("#dark-theme-btn svg");
+const svgIcon = document.querySelector("#dark-theme-casts svg");
 const darkFillColor = "#141414";
 const lightFillColor = "#fff";
 if (isDarkMode) {
@@ -610,7 +608,7 @@ element.style.backgroundColor = darkFillColor;
 document.querySelectorAll(".gallery article img").forEach(element => {
 element.style.filter = "drop-shadow(0 0 1px #f40)";
 });
-document.querySelectorAll("#dark-theme-btn").forEach(element => {
+document.querySelectorAll("#dark-theme-casts").forEach(element => {
 element.style.filter = "drop-shadow(0 -1px 1px #f40)";
 });
 svgIcon.querySelector("path:nth-child(1)").setAttribute("fill", lightFillColor);
@@ -623,7 +621,7 @@ element.style.backgroundColor = lightFillColor;
 document.querySelectorAll(".gallery article img").forEach(element => {
 element.style.filter = "drop-shadow(0 0 1px #141414)";
 });
-document.querySelectorAll("#dark-theme-btn").forEach(element => {
+document.querySelectorAll("#dark-theme-casts").forEach(element => {
 element.style.filter = "drop-shadow(0 0 1px #141414)";
 });
 svgIcon.querySelector("path:nth-child(1)").setAttribute("fill", darkFillColor);
@@ -647,6 +645,15 @@ return cookie.substring(cookieName.length, cookie.length);
 }
 return "";
 }
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+var CAST = document.body;
+CAST.style.transition = "all 1.4s";
+setTimeout(function() {
+CAST.style.opacity = "1";
+});
+});
 </script>
 <script src="Render/Casts.js"></script>
 </body>
