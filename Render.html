@@ -11,10 +11,7 @@
 <div class="G_Cast"></div>
 <div class="container">
 <button id="dark-theme-casts">
-<svg width="30" height="30" viewBox="0 0 30 30">
-<path d="M15 0 A15 15 0 0 1 15 30 L15 15 Z" fill="#141414"></path>
-<path d="M15 0 A15 15 0 0 0 15 30 L15 15 Z" fill="#fff"></path>
-</svg>
+<svg width="30" height="30" viewBox="0 0 30 30"><path d="M15 0 A15 15 0 0 1 15 30 L15 15 Z" fill="#141414"></path><path d="M15 0 A15 15 0 0 0 15 30 L15 15 Z" fill="#fff"></path></svg>
 </button>
 <div class="gallery" id="gallery">
 <article class="gallery-item">
@@ -411,8 +408,7 @@
 <div class="preview-box">
 <div class="preview-wrapper"></div>
 </div>
-</div>
-<script>
+</div><script>
 function shuffleArray(array) {
 for (let i = array.length - 1; i > 0; i--) {
 const j = Math.floor(Math.random() * (i + 1));
@@ -460,67 +456,60 @@ gallery.appendChild(item);
 });
 CastLoadImages();
 });
-</script>
-<script>
+</script><script>
 const galleryImages = document.querySelectorAll('.gallery img');
 const previewBox = document.querySelector('.preview-box');
 const previewWrapper = document.querySelector('.preview-wrapper');
 const minWidth = 1400;
 let hidePreviewTimeout;
 let imageLoaded = false;
-
 galleryImages.forEach(image => {
-  image.addEventListener('mouseenter', showPreview);
-  image.addEventListener('mouseleave', hidePreview);
-  image.addEventListener('mousemove', movePreview);
+image.addEventListener('mouseenter', showPreview);
+image.addEventListener('mouseleave', hidePreview);
+image.addEventListener('mousemove', movePreview);
 });
-
 function showPreview(event) {
-  const imageUrl = event.target.getAttribute('data-hover');
-  if (window.innerWidth >= minWidth) {
-    previewWrapper.style.backgroundImage = `url(${imageUrl})`;
-    previewBox.classList.add('renders');
-    previewBox.style.pointerEvents = 'none';
-    previewWrapper.style.opacity = '0'; 
-    imageLoaded = false; 
-    const tempImg = new Image();
-    tempImg.src = imageUrl;
-    tempImg.addEventListener('load', () => {
-      previewWrapper.style.opacity = '1'; 
-      imageLoaded = true; 
-    });
-  }
+const imageUrl = event.target.getAttribute('data-hover');
+if (window.innerWidth >= minWidth) {
+previewWrapper.style.backgroundImage = `url(${imageUrl})`;
+previewBox.classList.add('renders');
+previewBox.style.pointerEvents = 'none';
+previewWrapper.style.opacity = '0'; 
+imageLoaded = false; 
+const tempImg = new Image();
+tempImg.src = imageUrl;
+tempImg.addEventListener('load', () => {
+previewWrapper.style.opacity = '1'; 
+imageLoaded = true; 
+});
 }
-
+}
 function hidePreview() {
-  if (!imageLoaded) {
-   
-    previewWrapper.style.opacity = '0';
-  }
-  previewBox.classList.remove('renders');
+if (!imageLoaded) {
+previewWrapper.style.opacity = '0';
 }
-
+previewBox.classList.remove('renders');
+}
 function movePreview(event) {
-  clearTimeout(hidePreviewTimeout);
-  const mouseY = event.clientY;
-  const mouseX = event.clientX;
-  const previewBoxHeight = previewBox.offsetHeight;
-  const previewBoxWidth = previewBox.offsetWidth;
-  const viewportHeight = window.innerHeight;
-  const viewportWidth = window.innerWidth;
-  let top = mouseY / 4;
-  let right = mouseX / 2.4 - 24;
-  if (top + previewBoxHeight > viewportHeight) {
-    top = mouseY - previewBoxHeight - 24;
-  }
-  if (right + previewBoxWidth > viewportWidth) {
-    right = mouseX - previewBoxWidth - 24;
-  }
-  previewBox.style.top = `${top}px`;
-  previewBox.style.right = `${right}px`;
+clearTimeout(hidePreviewTimeout);
+const mouseY = event.clientY;
+const mouseX = event.clientX;
+const previewBoxHeight = previewBox.offsetHeight;
+const previewBoxWidth = previewBox.offsetWidth;
+const viewportHeight = window.innerHeight;
+const viewportWidth = window.innerWidth;
+let top = mouseY / 4;
+let right = mouseX / 2.4 - 24;
+if (top + previewBoxHeight > viewportHeight) {
+top = mouseY - previewBoxHeight - 24;
 }
-</script>
-<script>
+if (right + previewBoxWidth > viewportWidth) {
+right = mouseX - previewBoxWidth - 24;
+}
+previewBox.style.top = `${top}px`;
+previewBox.style.right = `${right}px`;
+}
+</script><script>
 const darkThemeBtn = document.getElementById("dark-theme-casts");
 let isDarkMode = getCookie("SharpFaithvectorViews") === "true";
 applyMode();
@@ -578,8 +567,7 @@ return cookie.substring(cookieName.length, cookie.length);
 }
 return "";
 }
-</script>
-<script>
+</script><script>
 document.addEventListener("DOMContentLoaded", function() {
 var CAST = document.body;
 CAST.style.transition = "all 1.4s";
