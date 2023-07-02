@@ -462,51 +462,57 @@ CastLoadImages();
 });
 </script>
 <script>
-const galleryImages = document.querySelectorAll('.gallery img');
-const previewBox = document.querySelector('.preview-box');
-const previewWrapper = document.querySelector('.preview-wrapper');
-const minWidth = 1400;
-let hidePreviewTimeout;
-galleryImages.forEach(image => {
-image.addEventListener('mouseenter', showPreview);
-image.addEventListener('mouseleave', hidePreview);
-image.addEventListener('mousemove', movePreview);
-});
-function showPreview(event) {
-const imageUrl = event.target.getAttribute('data-hover');
-if (window.innerWidth >= minWidth) {
-previewWrapper.style.backgroundImage = `url(${imageUrl})`;
-previewBox.classList.add('renders');
-previewBox.style.pointerEvents = 'none';
-const tempImg = new Image();
-tempImg.src = imageUrl;
-tempImg.addEventListener('load', () => {
-previewWrapper.style.opacity = '1';
-});
-}
-}
-function hidePreview() {
-previewBox.classList.remove('renders');
-}
-function movePreview(event) {
-clearTimeout(hidePreviewTimeout);
-const mouseY = event.clientY;
-const mouseX = event.clientX;
-const previewBoxHeight = previewBox.offsetHeight;
-const previewBoxWidth = previewBox.offsetWidth;
-const viewportHeight = window.innerHeight;
-const viewportWidth = window.innerWidth;
-let top = mouseY / 4;
-let right = mouseX / 2.4 - 24;
-if (top + previewBoxHeight > viewportHeight) {
-top = mouseY - previewBoxHeight - 24;
-}
-if (right + previewBoxWidth > viewportWidth) {
-right = mouseX - previewBoxWidth - 24;
-}
-previewBox.style.top = `${top}px`;
-previewBox.style.right = `${right}px`;
-}
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const previewBox = document.querySelector('.preview-box');
+    const previewWrapper = document.querySelector('.preview-wrapper');
+    const minWidth = 1400;
+    let hidePreviewTimeout;
+
+    galleryImages.forEach((image) => {
+      image.addEventListener('mouseenter', showPreview);
+      image.addEventListener('mouseleave', hidePreview);
+      image.addEventListener('mousemove', movePreview);
+    });
+
+    function showPreview(event) {
+      const imageUrl = event.target.getAttribute('data-hover');
+      if (window.innerWidth >= minWidth) {
+        previewWrapper.style.backgroundImage = `url(${imageUrl})`;
+        previewBox.classList.add('renders');
+        previewBox.style.pointerEvents = 'none';
+        const tempImg = new Image();
+        tempImg.src = imageUrl;
+        tempImg.addEventListener('load', () => {
+          previewWrapper.style.opacity = '1';
+        });
+      }
+    }
+
+    function hidePreview() {
+      previewBox.classList.remove('renders');
+    }
+
+    function movePreview(event) {
+      clearTimeout(hidePreviewTimeout);
+      const mouseY = event.clientY;
+      const mouseX = event.clientX;
+      const previewBoxHeight = previewBox.offsetHeight;
+      const previewBoxWidth = previewBox.offsetWidth;
+      const viewportHeight = window.innerHeight;
+      const viewportWidth = window.innerWidth;
+      let top = mouseY / 4;
+      let right = mouseX / 2.4 - 24;
+      if (top + previewBoxHeight > viewportHeight) {
+        top = mouseY - previewBoxHeight - 24;
+      }
+      if (right + previewBoxWidth > viewportWidth) {
+        right = mouseX - previewBoxWidth - 24;
+      }
+      previewBox.style.top = `${top}px`;
+      previewBox.style.right = `${right}px`;
+    }
+  });
 </script>
 <script>
 const darkThemeBtn = document.getElementById("dark-theme-casts");
