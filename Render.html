@@ -500,46 +500,52 @@ return array;
 }
 
 function CastLoadImages() {
-const images = document.querySelectorAll('.gallery-item img');
+  const images = document.querySelectorAll('.gallery-item img');
 
-const options = {
-root: null,
-rootMargin: '400px'
-};
+  const options = {
+    root: null,
+    rootMargin: '400px'
+  };
 
-const loadImage = (image) => {
-image.setAttribute('src', image.getAttribute('data-src'));
-image.classList.add('loaded');
-image.removeAttribute('data-src');
-};
+  const loadImage = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
 
-const handleIntersection = (entries, observer) => {
-entries.forEach((entry) => {
-if (entry.intersectionRatio > 0 || entry.isIntersecting) {
-loadImage(entry.target);
-observer.unobserve(entry.target);
-}
-});
-};
+    const handleImageLoad = () => {
+      image.classList.add('loaded');
+      image.removeEventListener('load', handleImageLoad);
+    };
 
-const observer = new IntersectionObserver(handleIntersection, options);
+    image.addEventListener('load', handleImageLoad);
+    image.removeAttribute('data-src');
+  };
 
-images.forEach((image) => {
-observer.observe(image);
-});
+  const handleIntersection = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0 || entry.isIntersecting) {
+        loadImage(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  images.forEach((image) => {
+    observer.observe(image);
+  });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-const gallery = document.getElementById('gallery');
-const galleryItems = Array.from(gallery.getElementsByClassName('gallery-item'));
-const shuffledItems = shuffleArray(galleryItems);
-galleryItems.forEach((item) => {
-item.parentNode.removeChild(item);
-});
-shuffledItems.forEach((item) => {
-gallery.appendChild(item);
-});
-CastLoadImages();
+  const gallery = document.getElementById('gallery');
+  const galleryItems = Array.from(gallery.getElementsByClassName('gallery-item'));
+  const shuffledItems = shuffleArray(galleryItems);
+  galleryItems.forEach((item) => {
+    item.parentNode.removeChild(item);
+  });
+  shuffledItems.forEach((item) => {
+    gallery.appendChild(item);
+  });
+  CastLoadImages();
 });
 </script>
 <script>
