@@ -32,8 +32,8 @@ background-color:#ffffcc;
 opacity:0;
 user-select:none;
 }
-.G____Cast {position:fixed;background-color:#fff;height:10px;width:100%;top:0;z-index:1;}
-.G_Cast {position:fixed;background-color:#fff;height:10px;width:100%;bottom:0;z-index:1;}
+.G____Cast {position:fixed;background-color:#fff;height:10px;width:100%;top:0;z-index:1;transition:all 1.4s;}
+.G_Cast {position:fixed;background-color:#fff;height:10px;width:100%;bottom:0;z-index:1;transition:all 1.24s;}
 .container {margin:auto;max-width:1400px;}
 .gallery {display:flex;justify-content:center;padding:14px 0 14px 0;flex-wrap:wrap;column-gap:14px;row-gap:14px;}
 .gallery article {height:280px;width:400px;}
