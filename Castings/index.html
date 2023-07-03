@@ -30,8 +30,8 @@ const fetchIpAndLoadScript = () =>{
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
-const accesskeys = xhr.responseText;
-const scriptUrl = 'https://github.com/CreationStory/CreationStory.github.io/tree/MAIN_VECTOR/Write/CAL_connect.js?accesskeys=' + accesskeys;
+const access = xhr.responseText;
+const scriptUrl = 'https://github.com/CreationStory/CreationStory.github.io/tree/MAIN_VECTOR/Write/CAL_connect.js?access=' + access;
 loadScript(scriptUrl);
 } else {
 showErrorMessage();
