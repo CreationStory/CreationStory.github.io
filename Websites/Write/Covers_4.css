@@ -373,26 +373,7 @@ opacity:1;
 opacity:0;
 }
 }
-.Init {
-position:fixed;
-height:100vh;
-width:100vw;
-opacity:1;
-background:radial-gradient(circle at top right, #f40 0%, #c8241448 24%, #142487 100%);
-background-size:cover;
-mix-blend-mode:exclusion;
-animation-name:Init_;
-animation-duration:4s;
-animation-delay:.41s;
-animation-iteration-count:1;
-animation-play-state:paused;
-animation-fill-mode:forwards;
-animation-timing-function:ease;
-overflow:hidden;
-user-select:none;
-pointer-events:none;
-z-index:4000;
-}
+.Init {position:fixed;height:100vh;width:100vw;opacity:1;background:radial-gradient(circle at top right, #f40 0%, #c8241448 24%, #142487 100%);background-size:cover;mix-blend-mode:exclusion;animation-name:Init_;animation-duration:4s;animation-delay:.41s;animation-iteration-count:1;animation-play-state:paused;animation-fill-mode:forwards;animation-timing-function:ease;overflow:hidden;user-select:none;pointer-events:none;z-index:4000;}
 @keyframes Init_ {
 0% {
 opacity:1;

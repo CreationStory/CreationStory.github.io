@@ -45,28 +45,7 @@
 <img class="PLATEGIORPTIN-img" src="Write/CastsVectors/12.webp">
 </div><div class="NForMYgAP1189"></div></div></a>
 <div class="CALGRADI"></div>
-<script>
-  var fallbackTimeout = setTimeout(setPlayStateFallback, 7000);
-
-  document.addEventListener("DOMContentLoaded", function() {
-    clearTimeout(fallbackTimeout);
-    setTimeout(ChristKnowsTheTime, 800);
-  });
-
-  function setPlayStateFallback() {
-    var elements = document.getElementsByClassName("Init");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.animationPlayState = "running";
-    }
-  }
-
-  function ChristKnowsTheTime() {
-    var elements = document.getElementsByClassName("Init");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.animationPlayState = "running";
-    }
-  }
-</script>
+<script>var fallbackTimeout = setTimeout(setPlayStateFallback,7000);window.onload = function() {clearTimeout(fallbackTimeout);setTimeout(ChristKnowsTheTime,700);};function setPlayStateFallback() {var elements = document.getElementsByClassName("Init");for (var i = 0; i < elements.length; i++) {elements[i].style.animationPlayState = "running";}}function ChristKnowsTheTime() {var elements = document.getElementsByClassName("Init");for (var i = 0; i < elements.length; i++) {elements[i].style.animationPlayState = "running";}}</script>
 <script>const animateHueRotation=t=>{const e=document.querySelector(`#${t}`);e.style.transition="all 1s ease";let a=0,o=0,n=Date.now();const i=()=>{let t=Date.now()-n,l=Math.min(t/1240,1);1===l&&(a=Math.floor(Math.random() * 84) + 41, n = Date.now(), o = a),o+=(a-o)*l,e.style.filter=`saturate(${o}%)`,requestAnimationFrame(i)};i()};animateHueRotation("slateT");animateHueRotation("slateT2");</script>
 <script>const CastingVECTORRENDERING=document.querySelectorAll('.PLATEGIORPTIN-img'),triggerImages=[{triggerIndex:1,targetIndex:3},{triggerIndex:2,targetIndex:4},{triggerIndex:3,targetIndex:5},{triggerIndex:4,targetIndex:6},{triggerIndex:5,targetIndex:7},{triggerIndex:7,targetIndex:8},{triggerIndex:8,targetIndex:9}];for(let i=0;i<3;i++){const img=CastingVECTORRENDERING[i];img.src=img.dataset.src}const observer=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){const targetIndex=triggerImages.find(({triggerIndex})=>triggerIndex===parseInt(entry.target.dataset.triggerIndex))?.targetIndex;if(targetIndex!==undefined){const imgToLoad=CastingVECTORRENDERING[targetIndex];imgToLoad.src=imgToLoad.dataset.src;observer.unobserve(entry.target)}}})},{threshold:0});triggerImages.forEach(({triggerIndex})=>{const triggerImg=document.querySelector(`.PLATEGIORPTIN-img[data-trigger-index="${triggerIndex}"]`);if(triggerImg){observer.observe(triggerImg)}});</script>
 </body>
