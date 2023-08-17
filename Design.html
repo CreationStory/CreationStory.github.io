@@ -25,7 +25,7 @@
 <div class="FACEH">
 <div class="FACE">
 <p class="WORDOF"><a href="#Covers">Cover art</a></p>
-<p class="WORDOF"><a href="#MindRoom">Visual effects</a></p>
+<p class="WORDOF"><a href="#Visuals">Visual effects</a></p>
 </div>
 </div>
 <div class="FACET">
@@ -47,15 +47,17 @@
 <iframe id="RenderCastings__" sandbox="allow-same-origin allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" loading="lazy" frameBorder="0"></iframe></div>
 </div>
 </div>
-<div class="MindRoom" id="MindRoom">
-<a class="MindRoom__close" href="#">X</a>
-<div class="MindRoom-inner">
-<div class="MindRoom__photo">
+<div class="Visuals" id="Visuals">
+<a class="Visuals__close" href="#">X</a>
+<div class="Visuals-inner">
+<div style="margin:4vw;padding:19vw;position:relative;"><iframe height="100vh" width="100vw" src="https://player.vimeo.com/video/855372839?h=855372839&muted=1&loop=1&autoplay=1&color=F40&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy" frameborder="0" allow="autoplay"></iframe>
+</div>
+<div class="Visuals__photo">
 <a href="Write/MindRoomCAST.png">
 <img data-src="Write/MindRoom_Casting.png" src="Write/Skin_.png"/>
 </a>
 </div>
-<div class="MindRoom__photo">
+<div class="Visuals__photo">
 <a href="Write/MindRoom_0.png">
 <img data-src="Write/MindRoom_Castings.png" src="Write/Skin_.png" height="768px" width="1364px"/>
 </a>
@@ -72,8 +74,8 @@
 <img data-src="Write/MindRoom_Cast4.png" src="Write/Skin_.png" height="768px" width="1364px"/>
 </a>
 </div>
-<div style="margin-top:.27vh;margin-bottom:1.8vh;padding:56.25% 0 0 0;position:relative;"><iframe height="100vh" width="100vw" src="https://player.vimeo.com/video/641348009?h=668232c602&loop=1&autoplay=0&color=F40&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy" frameborder="0" allow="autoplay"></iframe></div><br />
-<div style="margin-top:.27vh;margin-bottom:1.8vh;padding:56.25% 0 0 0;position:relative;"><iframe height="100vh" width="100vw"src="https://player.vimeo.com/video/641364202?h=53f8d5719d&autoplay=0&loop=1&color=F40&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy" frameborder="0" allow="autoplay"></iframe></div>
+<div style="margin-top:.28vh;margin-bottom:1.9vh;padding:56.25% 0 0 0;position:relative;"><iframe height="100vh" width="100vw" src="https://player.vimeo.com/video/641348009?h=668232c602&loop=1&autoplay=0&color=F40&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy" frameborder="0" allow="autoplay"></iframe></div><br />
+<div style="margin-top:.28vh;margin-bottom:1.9vh;padding:56.25% 0 0 0;position:relative;"><iframe height="100vh" width="100vw" src="https://player.vimeo.com/video/641364202?h=53f8d5719d&autoplay=0&loop=1&color=F40&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" loading="lazy" frameborder="0" allow="autoplay"></iframe></div>
 </div>
 </div>
 </div>
@@ -96,75 +98,11 @@
 </div>
 </div>
 </div>
-<script>
-    function Vector_R() {
-        var vectorwrite = [
-            "Write/SKIN_YYT.png",
-            "Write/Skin_WOOOOOOOO.png",
-            "Write/Skin_TIMES.png",
-            "Write/Skin_THEGIFT.png",
-            "Write/Skin_CO.png",
-            "Write/Skin_SSti.png",
-            "Write/Skin.png",
-            "Write/Skin_77.png",
-            "Write/Skin_A47.png",
-            "Write/Skin_812Qquads.png",
-            "Write/Skin_ARMAENTIUAMCA.png",
-            "Write/Skin_C.png",
-            "Write/Skin_C41.png",
-            "Write/Skin_C48.png",
-            "Write/SKIN_CAL.png",
-            "Write/SKIN_CastingT.png",
-            "Write/SKIN_Castors.png",
-            "Write/Skin_CCta.png",
-            "Write/Skin_CHH.png",
-            "Write/SKIN_CS.png",
-            "Write/Skin_GALL.png",
-            "Write/SKIN_EasterWINS.png",
-            "Write/SKIN_God.png",
-            "Write/SKIN_KOREA.png",
-            "Write/Skin_L48S.png",
-            "Write/Skin_LOVEL.png",
-            "Write/Skin_PRAY.png",
-            "Write/Skin_R2.png",
-            "Write/SKIN_Racs.png",
-            "Write/Skin_TGOD.png",
-        ];
-        $("body").css({ "background-image": "url(Write/Skin_THEGIFT.png)" });
-        function VectorsTHEREIN() {
-            var nextImageSrc = vectorwrite[Math.floor(Math.random() * vectorwrite.length)];
-            var nextImage = new Image();
-            nextImage.src = nextImageSrc;
-            $(".C").css({ "background-image": "url(" + nextImageSrc + ")" });
-            setTimeout(function () {
-                $("body").css({ "background-image": "url(" + nextImage.src + ")" });
-            }, 14000);
-        }
-        setInterval(function () {
-            VectorsTHEREIN();
-        }, 14000);
-    }
-    Vector_R();
-</script>
-
-<script>
-function activateElement(element) {
-  element.classList.add('Cast');
-  setTimeout(function() {
-    element.classList.remove('Cast');
-  }, 1400); // 3000 milliseconds = 3 seconds
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  var galleryLink = document.querySelector('.WORDOFZX');
-  
-  galleryLink.addEventListener('mousedown', function() {
-    activateElement(this);
-  });
-});
-</script>
-
-<script>const playAnimation = function() {const VectorC = $('.Init___‼_'); if (VectorC.length) {VectorC.css('animation-play-state', 'running');}}; setTimeout(function() {const VectorC = $('.Init___‼_'); if (VectorC.length) {VectorC.css('animation-play-state', 'running');}},7000); window.onload = function() {if (document.readyState === 'complete') {playAnimation();} else {document.addEventListener('readystatechange', function() {if (document.readyState === 'complete') {playAnimation();}});}};</script><script>function addClass(){var e=document.querySelector(".CALLINE span");e.classList.add("Castings")}function removeClass(){var e=document.querySelector(".CALLINE span");e.classList.remove("Castings")}function applyClassRandomly(){var e=Math.floor(Math.random()*(124000-14000+1)+14000);addClass(),setTimeout(function(){removeClass()},4000),setTimeout(applyClassRandomly,e)}setTimeout(applyClassRandomly,7000);</script><script>const mindRoom = document.getElementById('MindRoom'); const images = mindRoom.querySelectorAll('img[data-src]'); const observer = new IntersectionObserver((entries, observer) => {entries.forEach((entry) => {if (entry.isIntersecting) {const image = entry.target; image.src = image.getAttribute('data-src'); image.removeAttribute('data-src'); observer.unobserve(image);}});}); images.forEach((image) => {observer.observe(image);});</script><script>document.addEventListener('DOMContentLoaded', function() {var e = document.getElementById('RenderCastings__');var initCast = document.querySelector('.Covers-inner .InitCast');function t() {var t = document.querySelector('.Covers:target');if (t) {e.onload = function() {if (initCast) {initCast.style.animationPlayState = 'running';}};e.src = 'Websites/Covers_Raw.html';}}setTimeout(t, 400);window.addEventListener('hashchange', t);});</script><script>document.addEventListener('DOMContentLoaded',function(){var e=document.getElementById('RenderCastings_');function t(){var t=document.querySelector('.Websites:target');t&&(e.src='Websites/example/index.html')}setTimeout(t,400);window.addEventListener('hashchange',t)});</script><script>window.addEventListener('DOMContentLoaded', function() {setTimeout(function() {function adjustRenderCastingsHeight() {var windowHeight = window.innerHeight;var renderCastings = document.querySelector('#RenderCastings__');var renderCastingsRect = renderCastings.getBoundingClientRect();var renderCastingsHeight = windowHeight - renderCastingsRect.top - 8;renderCastings.style.height = renderCastingsHeight + 'px';}window.addEventListener('resize', adjustRenderCastingsHeight);adjustRenderCastingsHeight();},124);});</script>
+<script>function Vector_R() {var vectorwrite = ["Write/SKIN_YYT.png", "Write/Skin_WOOOOOOOO.png", "Write/Skin_TIMES.png", "Write/Skin_THEGIFT.png", "Write/Skin_CO.png", "Write/Skin_SSti.png", "Write/Skin.png", "Write/Skin_77.png", "Write/Skin_A47.png", "Write/Skin_812Qquads.png", "Write/Skin_ARMAENTIUAMCA.png", "Write/Skin_C.png", "Write/Skin_C41.png", "Write/Skin_C48.png", "Write/SKIN_CAL.png", "Write/SKIN_CastingT.png", "Write/SKIN_Castors.png", "Write/Skin_CCta.png", "Write/Skin_CHH.png", "Write/SKIN_CS.png", "Write/Skin_GALL.png", "Write/SKIN_EasterWINS.png", "Write/SKIN_God.png", "Write/SKIN_KOREA.png", "Write/Skin_L48S.png", "Write/Skin_LOVEL.png", "Write/Skin_PRAY.png", "Write/Skin_R2.png", "Write/SKIN_Racs.png", "Write/Skin_TGOD.png",];$("body").css({ "background-image": "url(Write/Skin_THEGIFT.png)" });function VectorsTHEREIN() {var nextImageSrc = vectorwrite[Math.floor(Math.random() * vectorwrite.length)];var nextImage = new Image();nextImage.src = nextImageSrc;$(".C").css({ "background-image": "url(" + nextImageSrc + ")" });setTimeout(function () {$("body").css({ "background-image": "url(" + nextImage.src + ")" });}, 14000);}setInterval(function () {VectorsTHEREIN();}, 14000);}Vector_R();</script>
+<script>function activateElement(element) {element.classList.add('Cast');setTimeout(function() {element.classList.remove('Cast');}, 1400);}document.addEventListener('DOMContentLoaded', function() {var galleryLink = document.querySelector('.WORDOFZX');galleryLink.addEventListener('mousedown', function() {activateElement(this);});});</script>
+<script>const playAnimation = function() {const VectorC = $('.Init___‼_'); if (VectorC.length) {VectorC.css('animation-play-state', 'running');}}; setTimeout(function() {const VectorC = $('.Init___‼_'); if (VectorC.length) {VectorC.css('animation-play-state', 'running');}},7000); window.onload = function() {if (document.readyState === 'complete') {playAnimation();} else {document.addEventListener('readystatechange', function() {if (document.readyState === 'complete') {playAnimation();}});}};</script>
+<script>function addClass(){var e=document.querySelector(".CALLINE span");e.classList.add("Castings")}function removeClass(){var e=document.querySelector(".CALLINE span");e.classList.remove("Castings")}function applyClassRandomly(){var e=Math.floor(Math.random()*(124000-14000+1)+14000);addClass(),setTimeout(function(){removeClass()},4000),setTimeout(applyClassRandomly,e)}setTimeout(applyClassRandomly,7000);</script><script>const Visuals = document.getElementById('Visuals'); const images = Visuals.querySelectorAll('img[data-src]'); const observer = new IntersectionObserver((entries, observer) => {entries.forEach((entry) => {if (entry.isIntersecting) {const image = entry.target; image.src = image.getAttribute('data-src'); image.removeAttribute('data-src'); observer.unobserve(image);}});}); images.forEach((image) => {observer.observe(image);});</script>
+<script>document.addEventListener('DOMContentLoaded', function() {var e = document.getElementById('RenderCastings__');var initCast = document.querySelector('.Covers-inner .InitCast');function t() {var t = document.querySelector('.Covers:target');if (t) {e.onload = function() {if (initCast) {initCast.style.animationPlayState = 'running';}};e.src = 'Websites/Covers_Raw.html';}}setTimeout(t, 400);window.addEventListener('hashchange', t);});</script><script>document.addEventListener('DOMContentLoaded',function(){var e=document.getElementById('RenderCastings_');function t(){var t=document.querySelector('.Websites:target');t&&(e.src='Websites/example/index.html')}setTimeout(t,400);window.addEventListener('hashchange',t)});</script><script>window.addEventListener('DOMContentLoaded', function() {setTimeout(function() {function adjustRenderCastingsHeight() {var windowHeight = window.innerHeight;var renderCastings = document.querySelector('#RenderCastings__');var renderCastingsRect = renderCastings.getBoundingClientRect();var renderCastingsHeight = windowHeight - renderCastingsRect.top - 8;renderCastings.style.height = renderCastingsHeight + 'px';}window.addEventListener('resize', adjustRenderCastingsHeight);adjustRenderCastingsHeight();},400);});</script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>
