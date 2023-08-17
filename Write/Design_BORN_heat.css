@@ -196,7 +196,7 @@ vertical-align:4px;
 pointer-events:none;
 user-select:none;
 }
-p.WORDOF {margin:59px;font-size:7.4vw;font-weight:100;word-spacing:18px;font-family:Designer;letter-spacing:3px;line-height:124px;color:#78584cc9;overflow:revert;overflow-wrap:revert;white-space:nowrap;text-align:left;text-align-last:left;text-shadow:0px 1px 0px #f00, 2px 2px 4px #000, -1px 2px 1px #f40, -2px 1px 2px #fff, 1px 2px 9px #f40, -2px -3px 2px #000000, 1px 2px 1px #f50;filter:drop-shadow(2px 1px 0px #000);transition:.28s cubic-bezier(.18,.14,.27,1);}
+p.WORDOF {margin:59px;font-size:7.4vw;font-weight:100;word-spacing:18px;font-family:Designer;letter-spacing:3px;line-height:124px;color:#78584cc9;overflow:revert;font-variant: small-caps;overflow-wrap:revert;white-space:nowrap;text-align:left;text-align-last:left;text-shadow:0px 1px 0px #f00, 2px 2px 4px #000, -1px 2px 1px #f40, -2px 1px 2px #fff, 1px 2px 9px #f40, -2px -3px 2px #000000, 1px 2px 1px #f50;filter:drop-shadow(2px 1px 0px #000);transition:.28s cubic-bezier(.18,.14,.27,1);}
 @media (max-width:1700px) {
 p.WORDOF {line-height:4.8vw;}
 }
@@ -254,10 +254,10 @@ overflow-wrap:revert;
 font-variant:petite-caps;
 text-align:center;
 text-align-last:center;
-color:#ffffffc9;
+color:#540007;
 font-size:3.4rem;
-text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
-filter:drop-shadow(0px 1px 0px #000);
+text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;
+filter:drop-shadow(0px 1px 2px #000);
 transition:.14s ease-in-out;
 }
 p.WORDOFZX_88 a sub {
@@ -291,10 +291,10 @@ overflow:revert;
 overflow-wrap:revert;
 text-align:center;
 text-align-last:center;
-color:#ffffffc9;
+color:#540007;
 font-size:2.8rem;
-text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
-filter:drop-shadow(0px 1px 0px #000);
+text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;
+filter:drop-shadow(0px 1px 2px #000);
 transition:.14s ease-in-out;
 }
 }
@@ -524,15 +524,16 @@ text-shadow:2px -4px 2px #fff, 4px -4px 1px #141414, 0px -4px 7px #f40;
 filter:drop-shadow(2px 4px 1px #000024);
 transition:.14s 0s ease-in-out;
 }
-p.WORDOFZX_88:active {
-text-shadow:2px -3px 2px #000, -1px -2px 1px #fff;
-filter:drop-shadow(0px 1px 0px #fff);
+p.WORDOFZX_88:hover {
+color:#ffffffc9;
+text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
+filter:drop-shadow(0px 1px 0px #000);
 transition:.14s 0s ease-in-out;
 }
-p.WORDOFZX_88:hover {
-color:#540007;
-text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;
-filter:drop-shadow(0px 1px 2px #000);
+p.WORDOFZX_88:active {
+color:#fff0;
+text-shadow:2px -4px 2px #fff, 4px -4px 1px #141414, 0px -4px 7px #f40;
+filter:drop-shadow(2px 4px 1px #000024);
 transition:.14s 0s ease-in-out;
 }
 .VariLine {position:absolute;width:100vw;display:flex;bottom:9vh;justify-content:center;user-select:none;}
@@ -682,7 +683,7 @@ animation-fill-mode:forwards;
 animation-direction:normal;
 animation-timing-function:cubic-bezier(.14,.18,.24,1);
 }
-.MindRoom {
+.Visuals {
 display:block;
 position:fixed;
 width:100vw;
@@ -697,7 +698,7 @@ overflow-y:auto;
 overflow-x:hidden;
 transition:.24s ease-in-out;
 }
-.MindRoom-inner {
+.Visuals-inner {
 top:0;
 right:-5px;
 position:absolute;
@@ -706,7 +707,7 @@ width:100vw;
 height:100vh;
 transition:.18s ease-in-out;
 }
-.MindRoom__photo {
+.Visuals__photo {
 display:inline;
 align-items:center;
 justify-content:center;
@@ -716,20 +717,20 @@ overflow:overlay;
 user-select:none;
 pointer-events:none;
 }
-.MindRoom__photo img {
+.Visuals__photo img {
 height:auto;
 width:100%;
 user-select:none;
 pointer-events:none;
 }
-.MindRoom:target {
+.Visuals:target {
 visibility:visible;
 opacity:1;
 }
-.MindRoom:target .MindRoom-inner {
+.Visuals:target .Visuals-inner {
 bottom:0;
 }
-.MindRoom__close {
+.Visuals__close {
 position:fixed;
 top:1.8vh;
 left:2.24vw;
@@ -756,26 +757,26 @@ text-decoration:none;
 user-select:none;
 transition:.118s linear;
 }
-.MindRoom__close:hover {
+.Visuals__close:hover {
 color:#ffffff54;
 background-color:#ffffff54;
 text-shadow:0 0 9px #000, 0px 1px 1px #ffffff54, 0px 0px 1px #ff0000;
 }
-#MindRoom::-webkit-scrollbar-track
+#Visuals::-webkit-scrollbar-track
 {
 box-shadow:inset 0 0 4px #000;
 background-color:#540007;
 display:block;
 visibility:visible;
 }
-#MindRoom::-webkit-scrollbar
+#Visuals::-webkit-scrollbar
 {
 width:9px;
 background-color:#441000;
 display:block;
 visibility:visible;
 }
-#MindRoom::-webkit-scrollbar-thumb
+#Visuals::-webkit-scrollbar-thumb
 {
 background-color:#ff0000;
 box-shadow:inset 0px 0px 3px #000;
