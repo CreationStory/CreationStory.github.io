@@ -59,7 +59,7 @@ overflow:hidden;
 }
 #slateT {
 position:fixed;
-background:url('./1T.png');
+background:url('./1T.webp');
 background-position:left; 
 background-repeat:no-repeat;
 top:0;
@@ -70,7 +70,7 @@ z-index:1;
 }
 #slateT2 {
 position:fixed;
-background:url('./1T2.png');
+background:url('./1T2.webp');
 background-position:top; 
 background-repeat:no-repeat;
 top:0;
@@ -81,7 +81,7 @@ z-index:1;
 }
 #slate {
 position:fixed;
-background:url('./1.png');
+background:url('./1.webp');
 background-position:center;
 background-repeat:no-repeat;
 background-size:contain;
