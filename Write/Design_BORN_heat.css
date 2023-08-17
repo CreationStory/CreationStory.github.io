@@ -1181,9 +1181,14 @@ display:none;
 visibility:hidden;
 }
 }
-#RenderCastings__ {
-height:58.77vh;
-width:94vw;
+#RenderCastings__ {height:58.77vh;width:94vw;animation-name:CASTS14SK;animation-duration:4s;animation-direction: normal;animation-timing-function: ease-in-out;animation-iteration-count:1;animation-fill-mode: forwards;background:radial-gradient(circle at top right, #f40 0%, #c8241448 24%, #142487 100%);}
+@keyframes CASTS14SK {
+0% {
+filter:blur(14px)saturate(124%)drop-shadow(0px 0px 140px #f40);
+}
+100% {
+filter:blur(0px)saturate(104%)drop-shadow(0px 0px 19px #fff0);
+}
 }
 @media (max-height:420px) {
 #RenderCastings__ {
