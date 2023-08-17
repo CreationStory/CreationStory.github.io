@@ -229,9 +229,7 @@ z-index:124;
 }
 @media (max-width:700px) {
 .PLATEGIORPTIN-item.render {
-height:0px;
-width:0px;
-display:none;
+    scale: .8;
 }
 }
 @media (max-width:1700px) {
