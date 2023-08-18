@@ -23,6 +23,7 @@ text-align:center;
 margin:0px;
 transition:all 12s cubic-bezier(.18,.24,.41,1);
 scrollbar-width:none;
+overflow:hidden;
 }
 .C {
 position:absolute;
