@@ -13,7 +13,23 @@ height:0px;
 }
 html {
 }
-body {display: block;position: relative;box-sizing: border-box;height: 100vh;margin:0;color:#540007;text-align:center;background-image:url('Skin.png');background-repeat:no-repeat;background-attachment:fixed;background-position:center center;background-size:cover;background-color:#540007;transition:all 12s cubic-bezier(.18,.24,.41,1);scrollbar-width:none;overflow:hidden;}
+body {
+margin:0;
+height: 100vh;
+width:100vw;
+color:#540007;
+text-align:center;
+background-image:url('Skin.png');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center center;
+background-size:cover;
+background-color:#540007;
+transition:all 12s cubic-bezier(.18,.24,.41,1);
+scrollbar-width:none;
+position: fixed;
+overflow:hidden;
+}
 .C {
 position:absolute;
 opacity:0;
