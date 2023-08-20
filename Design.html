@@ -107,6 +107,13 @@
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script>window.addEventListener('load', function() {setTimeout(function() {var iframecast = document.getElementById('RenderCastings__');if (iframecast) {if (!iframecast.src) {iframecast.src = iframecast.getAttribute('data-src'); }}}, 4000);});</script>
 <script>window.addEventListener('load', function () {setTimeout(function () {var iframe = document.getElementById('Casts');if (iframe) {iframe.src = iframe.getAttribute('data-src');}},4000);});</script>
+<script>
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+});</script>
 <script>const playAnimation = function() {const VectorC = $('.Init___‼_'); if (VectorC.length) {VectorC.css('animation-play-state', 'running');}}; setTimeout(function() {const VectorC = $('.Init___‼_'); if (VectorC.length) {VectorC.css('animation-play-state', 'running');}},7000); window.onload = function() {if (document.readyState === 'complete') {playAnimation();} else {document.addEventListener('readystatechange', function() {if (document.readyState === 'complete') {playAnimation();}});}};</script>
 </body>
 </html>
