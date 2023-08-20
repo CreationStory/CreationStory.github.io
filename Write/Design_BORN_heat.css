@@ -11,9 +11,10 @@ visibility:hidden;
 width:0px;
 height:1px;
 }
-body {
-height: 100vh;
+html {
 height: calc(var(--vh, 1vh) * 100);
+}
+body {
 margin:0;
 color:#540007;
 text-align:center;
