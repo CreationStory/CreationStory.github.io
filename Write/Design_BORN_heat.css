@@ -12,11 +12,12 @@ width:0px;
 height:0px;
 }
 html {
+box-sizing:content-box;
+height: 100%;
 }
 body {
-margin:0;
-height: 100vh;
-width:100vw;
+height: 100%;
+margin:auto;
 color:#540007;
 text-align:center;
 background-image:url('Skin.png');
@@ -27,7 +28,6 @@ background-size:cover;
 background-color:#540007;
 transition:all 12s cubic-bezier(.18,.24,.41,1);
 scrollbar-width:none;
-position: fixed;
 overflow:hidden;
 }
 .C {
