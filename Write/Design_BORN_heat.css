@@ -12,8 +12,7 @@ width:0px;
 height:0px;
 }
 html {
-box-sizing:content-box;
-height: 100%;
+height: calc(100vh - calc(100vh - 100%))
 }
 body {
 height: 100%;
