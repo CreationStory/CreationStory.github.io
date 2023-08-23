@@ -182,7 +182,7 @@ text-shadow:-2px 2px 1px #000, 0px -1px 0px #f40;
 }
 p.WORDOFZX {margin:48px 0;font-family:Designer;word-spacing:18px;font-weight:100;letter-spacing:2px;line-height:0;overflow:revert;overflow-wrap:revert;text-align:center;text-align-last:center;color:#540007;font-variant:all-small-caps;font-size: 5.9vw;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s 0s ease-in-out;}
 @media (max-width:2000px) {
-p.WORDOFZX {margin:48px 0;font-family:Designer;word-spacing:18px;font-weight:100;letter-spacing:2px;line-height:0;overflow:revert;overflow-wrap:revert;text-align:center;text-align-last:center;color:#540007;font-variant:all-small-caps;font-size: calc(5.9vw + 7px);text-shadow: -2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s 0s ease-in-out;}
+p.WORDOFZX {margin:48px 0;font-family:Designer;word-spacing:18px;font-weight:100;letter-spacing:2px;line-height:0;overflow:revert;overflow-wrap:revert;text-align:center;text-align-last:center;color:#540007;font-variant:all-small-caps;font-size: 5.9vw;text-shadow: -2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s 0s ease-in-out;}
 }
 @media (max-width:1400px) {
 p.WORDOFZX {margin: 48px 0;font-family:Designer;word-spacing:18px;font-weight:100;letter-spacing:2px;line-height:0;overflow:revert;overflow-wrap:revert;text-align:center;text-align-last:center;color:#540007;font-variant:all-small-caps;font-size: 9vw;text-shadow: -2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s 0s ease-in-out;}
@@ -204,7 +204,7 @@ letter-spacing:0px;
 }
 p.WORDOFZX2 {font-family:Designer;word-spacing:18px;font-weight:100;line-height:0;word-spacing:14px;margin:4px 0 0px 0;overflow:revert;overflow-wrap:revert;color:#1c120c;text-align:center;text-align-last:center;font-size: 5vw;letter-spacing:4px;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s ease-in-out;}
 @media (max-width:2000px) {
-p.WORDOFZX2 {font-family:Designer;word-spacing:18px;font-weight:100;line-height:0;word-spacing:14px;margin:4px 0 0px 0;overflow:revert;overflow-wrap:revert;color:#1c120c;text-align:center;text-align-last:center;font-size: 4vw;letter-spacing:4px;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s ease-in-out;}
+p.WORDOFZX2 {font-family:Designer;word-spacing:18px;font-weight:100;line-height:0;word-spacing:14px;margin: 9px 0 0px 0;overflow:revert;overflow-wrap:revert;color:#1c120c;text-align:center;text-align-last:center;font-size: 4.8vw;letter-spacing:4px;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s ease-in-out;}
 }
 @media (max-width:1700px) {
 p.WORDOFZX2 {font-family:Designer;word-spacing:18px;font-weight:100;line-height:0;word-spacing:14px;margin:4px 0 0px 0;overflow:revert;overflow-wrap:revert;color:#1c120c;text-align:center;text-align-last:center;font-size: 77px;letter-spacing:4px;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s ease-in-out;}
@@ -249,7 +249,7 @@ p.WORDOFZXAC9 {margin:27vh 0 38vh 0;font-weight:100;word-spacing:18px;font-famil
 }
 p.WORDOFZXAC9 span {font-variant:small-caps;margin-right:1.04rem;color:#1c120c;font-size: 12.4vw;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s .28s ease-in-out;}
 @media (max-width:2000px) {
-p.WORDOFZXAC9 span {font-variant:small-caps;margin-right:1.04rem;color:#1c120c;font-size: 10.24vw;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s .28s ease-in-out;}
+p.WORDOFZXAC9 span {font-variant:small-caps;margin-right:1.04rem;color:#1c120c;font-size: 8.7vw;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s .28s ease-in-out;}
 }
 @media (max-width: 1400px) {
 p.WORDOFZXAC9 span {font-variant:small-caps;margin-right:1.04rem;color:#1c120c;font-size: 17vw;text-shadow:-2px 3px 2px #000, 0px 2px 0px #f40;filter:drop-shadow(0px 0px 2px #000);transition:.14s .28s ease-in-out;}
