@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <link href="Write/SCRIPTS14.css" rel="stylesheet">
-<title>Creation Story</title>
+<title>Minimal Reproducible Example</title>
 <link rel="icon" href="Write/CS.ico">
 </head>
 <body>
-<iframe id="CastVectors_______" src="Write/CastVectors.html"></iframe>
 <div class="CASTRENDER"></div>
 <div class="CAST____14"></div>
 <div class="RENDER14">
@@ -19,328 +18,23 @@
 <div class="RENDER">
 <div class="Cal Cast124">
 <div class="Cast124_______"><div class="C14"><p>The Bible</p>
-<div class="Vector____"><p>Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast Cast.</p></div>
+<div class="Vector____"><p>Text content</p></div>
 <div class="Vector_________"><p><a href="Cymraeg.html">Cymraeg</a><br><a href="Norsk.html">Norsk</a><br><a href="Deutsch.html">Deutsch</a><br><a href="Français.html">Français</a></p><p><a href="Русский.html">Pyccknn</a><br><a href="Suomi.html">Suomi</a><br><a href="Íslenskur.html">Íslenskur</a><br><a href="عربي.html"><i>عربي</i></a></p></div>
 </div>
 </div>
 </div>
-<div class="Cal Cast124____"><a href="#"><div class="Cast124_______"></div><p>Witness</p></a></div>
-<div class="Cal Cast124________"><a href="#"><div class="Cast124_______"></div><p>Cast Cast</p></a></div>
+<div class="Cal Cast124____"><a href="#"><div class="Cast124_______"></div><p>Book 1</p></a></div>
+<div class="Cal Cast124________"><a href="#"><div class="Cast124_______"></div><p>Book 2</p></a></div>
 <div class="RENDER RENDER________ Cast124____________">
-<div class="Cal Cast124_____________________"><a href="#"><div class="Cast124_______"></div><p>Closer <I>To The</I> Truth</p></a></div>
-<div class="Cal Cast_"><a href="Insilui/Exhume.html"><div class="Cast124_______"></div><p>E<i>xhumar</i></p></a></div>
-<div class="Cal Cast__"><a href="#"><div class="Cast124_______"></div><p>C<i>asts 124</i></p></a></div>
-<div class="Cal Cast___"><a href="#"><div class="Cast124_______"></div><p>C<i>asts 124</i></p></a></div>
-<div class="Cal Cast____"><a href="#"><div class="Cast124_______"></div><p>C<i>onstilua</i></p></a></div>
+<div class="Cal Cast124_____________________"><a href="#"><div class="Cast124_______"></div><p>Book <I>of/I> 3</p></a></div>
+<div class="Cal Cast_"><a href="Insilui/Exhume.html"><div class="Cast124_______"></div><p>B<i>ook 4</i></p></a></div>
+<div class="Cal Cast__"><a href="#"><div class="Cast124_______"></div><p>B<i>ook 5</i></p></a></div>
+<div class="Cal Cast___"><a href="#"><div class="Cast124_______"></div><p>B<i>ook 6</i></p></a></div>
+<div class="Cal Cast____"><a href="#"><div class="Cast124_______"></div><p>B<i>ook 7</i></p></a></div>
 </div>
 </div>
 </div>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var iframe = document.getElementById("CastVectors_______");
-    if (iframe) {
-      iframe.onload = function () {
-        var castSlate = document.querySelector(".Cal.Cast124");
-        if (castSlate) {
-          castSlate.addEventListener("mouseover", function () {
-            iframe.contentWindow.postMessage({ action: "setOpacity", value: 1 }, "*");
-          });
-          castSlate.addEventListener("mouseout", function () {
-            iframe.contentWindow.postMessage({ action: "resetOpacity" }, "*");
-          });
-        }
-      };
-    }
-  });
-</script>
-
-
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-const CastC = document.querySelector('.Cast124');
-CastC.addEventListener('click', function() {
-window.location.href = 'English.html';
-});
-});
-</script>
-
-<script>
-const firstCast = Array.from(document.querySelectorAll('.Cast124____, .Cast124________'));
-const lastCast = Array.from(document.querySelectorAll('.Cast124_____________________, .Cast_, .Cast__, .Cast___, .Cast____'));
-const elements = document.querySelectorAll('.Cast124____, .Cast124________, .Cast124_____________________, .Cast_, .Cast__, .Cast___, .Cast____');
-elements.forEach(element => {
-element.addEventListener('mouseenter', () => {
-elements.forEach(e => {
-e.style.opacity = (firstCast.includes(e) && element !== e) ? .48 : 1;
-e.style.backgroundColor = (lastCast.includes(e) && element !== e) ? '#14141448' : 'transparent';
-const paragraph = e.querySelector('p');
-if (paragraph) {
-paragraph.style.opacity = (element === e) ? 1 : .48;
-}
-});
-});
-element.addEventListener('mouseleave', () => {
-elements.forEach(e => {
-e.style.opacity = 1;
-e.style.backgroundColor = 'transparent';
-const paragraph = e.querySelector('p');
-if (paragraph) {
-paragraph.style.opacity = 1;
-}
-});
-});
-});
-</script>
-
-<script>document.addEventListener("DOMContentLoaded", function() {
-    var elements = document.getElementsByTagName("a");
-    for (var k = 0; k < elements.length; k++) {
-        elements[k].draggable = false;
-    }
-});
-document.addEventListener("dragstart", function(event) {
-    event.preventDefault();
-});</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-var CastElement = document.querySelector('.Cast124____');
-var Cast124Element = document.querySelector('.Cast124________');
-var CastC14Element = document.querySelector('.Cast124_____________________');
-var Cast14 = document.querySelector('.Cast_');
-var CastCS = document.querySelector('.Cast__');
-var Cast48 = document.querySelector('.Cast___');
-var CAST = document.querySelector('.Cast____');
-
-// Add mouseover event listener
-CastElement.addEventListener('mouseover', function() {
-var paragraphElement = CastElement.querySelector('p');
-paragraphElement.classList.add('Cast');
-});
-
-// Add mouseout event listener
-CastElement.addEventListener('mouseout', function() {
-var paragraphElement = CastElement.querySelector('p');
-paragraphElement.classList.remove('Cast');
-});
-
-CastElement.addEventListener('mousedown', function() {
-var paragraphElement = CastElement.querySelector('p');
-paragraphElement.classList.add('Cast14');
-});
-
-CastElement.addEventListener('mouseup', function() {   
-setTimeout(function() {
-var paragraphElement = CastElement.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-CastElement.addEventListener('mouseleave', function() {   
-setTimeout(function() {
-var paragraphElement = CastElement.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-// Add mouseover event listener
-Cast124Element.addEventListener('mouseover', function() {
-var paragraphElement = Cast124Element.querySelector('p');
-paragraphElement.classList.add('Cast');
-});
-
-// Add mouseout event listener
-Cast124Element.addEventListener('mouseout', function() {
-var paragraphElement = Cast124Element.querySelector('p');
-paragraphElement.classList.remove('Cast');
-});
-
-Cast124Element.addEventListener('mousedown', function() {
-var paragraphElement = Cast124Element.querySelector('p');
-paragraphElement.classList.add('Cast14');
-});
-
-Cast124Element.addEventListener('mouseup', function() {   
-setTimeout(function() {
-var paragraphElement = Cast124Element.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-Cast124Element.addEventListener('mouseleave', function() {   
-setTimeout(function() {
-var paragraphElement = Cast124Element.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-// Add mouseover event listener
-CastC14Element.addEventListener('mouseover', function() {
-var paragraphElement = CastC14Element.querySelector('p');
-paragraphElement.classList.add('Cast');
-});
-
-// Add mouseout event listener
-CastC14Element.addEventListener('mouseout', function() {
-var paragraphElement = CastC14Element.querySelector('p');
-paragraphElement.classList.remove('Cast');
-});	
-
-CastC14Element.addEventListener('mousedown', function() {
-var paragraphElement = CastC14Element.querySelector('p');
-paragraphElement.classList.add('Cast14');
-});
-
-CastC14Element.addEventListener('mouseup', function() {   
-setTimeout(function() {
-var paragraphElement = CastC14Element.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-CastC14Element.addEventListener('mouseleave', function() {   
-setTimeout(function() {
-var paragraphElement = CastC14Element.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-// Add mouseover event listener
-Cast14.addEventListener('mouseover', function() {
-var paragraphElement = Cast14.querySelector('p');
-paragraphElement.classList.add('Cast');
-});
-
-// Add mouseout event listener
-Cast14.addEventListener('mouseout', function() {
-var paragraphElement = Cast14.querySelector('p');
-paragraphElement.classList.remove('Cast');
-});
-
-Cast14.addEventListener('mousedown', function() {
-var paragraphElement = Cast14.querySelector('p');
-paragraphElement.classList.add('Cast14');
-});
-
-Cast14.addEventListener('mouseup', function() {   
-setTimeout(function() {
-var paragraphElement = Cast14.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-Cast14.addEventListener('mouseleave', function() {   
-setTimeout(function() {
-var paragraphElement = Cast14.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-CastCS.addEventListener('mouseover', function() {
-var paragraphElement = CastCS.querySelector('p');
-paragraphElement.classList.add('Cast');
-});
-
-CastCS.addEventListener('mouseout', function() {
-var paragraphElement = CastCS.querySelector('p');
-paragraphElement.classList.remove('Cast');
-});
-
-CastCS.addEventListener('mousedown', function() {
-var paragraphElement = CastCS.querySelector('p');
-paragraphElement.classList.add('Cast14');
-});
-
-CastCS.addEventListener('mouseup', function() {   
-setTimeout(function() {
-var paragraphElement = CastCS.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-CastCS.addEventListener('mouseleave', function() {   
-setTimeout(function() {
-var paragraphElement = CastCS.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-Cast48.addEventListener('mouseover', function() {
-var paragraphElement = Cast48.querySelector('p');
-paragraphElement.classList.add('Cast');
-});
-
-Cast48.addEventListener('mouseout', function() {
-var paragraphElement = Cast48.querySelector('p');
-paragraphElement.classList.remove('Cast');
-});
-
-Cast48.addEventListener('mousedown', function() {
-var paragraphElement = Cast48.querySelector('p');
-paragraphElement.classList.add('Cast14');
-});
-
-Cast48.addEventListener('mouseup', function() {   
-setTimeout(function() {
-var paragraphElement = Cast48.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-Cast48.addEventListener('mouseleave', function() {   
-setTimeout(function() {
-var paragraphElement = Cast48.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-CAST.addEventListener('mouseover', function() {
-var paragraphElement = CAST.querySelector('p');
-paragraphElement.classList.add('Cast');
-});
-
-CAST.addEventListener('mouseout', function() {
-var paragraphElement = CAST.querySelector('p');
-paragraphElement.classList.remove('Cast');
-});
-
-CAST.addEventListener('mousedown', function() {
-var paragraphElement = CAST.querySelector('p');
-paragraphElement.classList.add('Cast14');
-});
-
-CAST.addEventListener('mouseup', function() {   
-setTimeout(function() {
-var paragraphElement = CAST.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-
-CAST.addEventListener('mouseleave', function() {   
-setTimeout(function() {
-var paragraphElement = CAST.querySelector('p');
-paragraphElement.classList.remove('Cast14');
-}, 1400);
-});
-});
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(function() {
-    var element = document.querySelector(".CAST____14");
-
-    if (element) {
-      element.style.cssText = "height:0vh!important;width:0vh!important;display:none!important;opacity:0!important;pointer-events:none!important;";
-    }
-  }, 3400);
-});
-</script>
-
 <script>
 window.addEventListener('load', (event) => {
   const CastRenderDiv = document.querySelector('.CASTRENDER');
