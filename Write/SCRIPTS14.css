@@ -1,0 +1,761 @@
+::-webkit-scrollbar, ::-webkit-scrollbar:vertical, ::-webkit-scrollbar:horizontal {
+display:none;
+height:0;
+width:0;
+visibility:hidden;
+}
+*::-webkit-scrollbar, *::-webkit-scrollbar:vertical, *::-webkit-scrollbar:horizontal {
+display:none;
+height:0;
+width:0;
+visibility:hidden;
+}
+* {
+will-change:backdrop-filter(blur);
+}
+#CastVectors_______ {
+height:100vh;
+width:100vw;
+display:flex;
+background:#fff0;
+overflow:hidden;
+pointer-events:none;
+user-select:none;
+border:none;
+outline:none;
+z-index:-480;
+position:absolute;
+scrollbar-width:none;
+}
+body {
+margin:0;
+height:100vh;
+width:100vw;
+background:radial-gradient(circle, #740000 7%, #590000 59%, #590000 87%, #740000 104%);
+overflow:hidden;
+scrollbar-width:none;
+}
+.CASTRENDER {
+height:100%;
+width:100%;
+right:0;
+background:radial-gradient(circle, #740000 14%, #590000 59%, #590000 87%, #740000 104%);
+backdrop-filter:blur(28px);
+z-index:124000;
+transition:all 480s .48s cubic-bezier(0, 0, 0, 7.4);
+pointer-events:none;
+position:fixed;
+}
+@font-face {
+font-family:Cast;
+src:url("../Duw/14.ttf") format("truetype");
+}
+@font-face {
+font-family:CS;
+src:url("../Duw/CS.ttf") format("truetype");
+}
+@font-face {
+font-family:Charlie;
+src:url("../Duw/Word.ttf") format("truetype");
+}
+a:link {
+text-decoration:none;
+}
+a:visited {
+text-decoration:none;
+}
+a:hover {
+text-decoration:none;
+}
+a,
+a:focus,
+a:active {
+color:inherit;
+text-decoration:none;
+}
+.CAST {
+height:100vh;
+width:100vw;
+display:flex;
+align-items:center;
+}
+.CAST____14 {
+height:100vh;
+width:100vw;
+display:block;
+background:#fff0;
+animation-name:CAST14;
+animation-duration:1.4s;
+animation-delay:2.8s;
+animation-timing-function:ease-in-out;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-fill-mode:forwards;
+animation-play-state:running;
+opacity:1;
+z-index:740000;
+pointer-events:all;
+position:absolute;
+}
+@keyframes CAST14 {
+0% {
+height:100vh;
+width:100vw;
+display:block;
+opacity:1;
+pointer-events:all;
+}
+99% {
+height:0vh;
+width:0vh;
+display:block;
+opacity:0;
+pointer-events:none;
+}
+100% {
+height:0vh;
+width:0vh;
+display:none;
+opacity:0;
+pointer-events:none;
+}
+}
+.RENDER14 {
+transition:all .48s cubic-bezier(.14, .19, .48, .48);
+opacity:0;
+}
+.RENDER {
+height:48vh;
+display:grid;
+background:#fff0;
+grid-gap:4px;
+grid-template-columns:repeat(4, [col] 1fr);
+grid-template-rows:repeat(2, [row] auto);
+box-shadow:0px 0px 4px 0px #480000, 0px 0px 4px 0px inset #590000;
+overflow:hidden;
+}
+.Cal {
+box-shadow:0px 0px 4px 0px #000, 0px 0px 4px 0px inset #000;
+background:#fff0;
+}
+.Cast124 {
+width:48vw;
+background:url(T.png);
+background-size:100vw 124vh;
+background-position:48% 48%;
+animation-name:CASTS____;
+animation-duration:74s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.19, .14, .28, 1);
+border:0 solid #fff0;
+border-image-source:repeating-radial-gradient(#14000000 14px, #fff 59px, #28000000 124px);
+border-image-slice:124;
+border-image-width:1px;
+border-image-outset:2px;
+border-image-repeat:stretch;
+cursor:pointer;
+user-select:none;
+}
+@keyframes CASTS____ {
+0% {
+background-position:48% 48%;
+}
+100% {
+background-position:87% 87%;
+}
+}
+.Cast124 p {
+margin:4.8% 0 0 7%;
+font-family:Cast;
+font-size:7.4vw;
+font-weight:100;
+word-spacing:19px;
+letter-spacing:4px;
+line-height:14vh;
+color:#78584cc9;
+font-variant:small-caps;
+text-shadow:0px 1px 0px #f00, 2px 2px 4px #000, -1px 2px 1px #f40, -2px 1px 2px #fff, 1px 2px 9px #f40, -2px -3px 2px #000000, 1px 2px 1px #f50;
+filter:drop-shadow(2px 1px 0px #000);
+transition:all .14s ease-in-out;
+}
+.Vector____ {
+margin:0 0 0 1.9vw;
+height:12.4vh;
+width:59%;
+background:#ff000014;
+border:0 solid #fff0;
+border-image-source:repeating-radial-gradient(#fff0, #fff0, #fff, #fff0, #fff0);
+border-image-slice:28;
+border-image-width:1px;
+border-image-outset:2px;
+border-image-repeat:stretch;
+box-shadow:0 0 4px 4px inset #ffffff14;
+position:relative;
+}
+.Vector____ p {
+margin:1.9vh 1.24vw 0 1.24vw;
+font-family:'Cast';
+font-size:.74vw;
+color:#ffffff87;
+font-weight:900;
+word-spacing:4px;
+letter-spacing:2px;
+font-variant:none;
+text-shadow:0px 1px 1px #000, 1px 0px 1px #fff, 1px 1px 2px #f40;
+filter:drop-shadow(0 0 1px #140000);
+line-height:1.9vh;
+}
+.Vector_________ {
+margin:1.24vh 0 0 1.9vw;
+height:10.24vh;
+width:19%;
+display:flex;
+justify-content:center;
+gap:.59vw;
+background:#ff000014;
+border:0 solid #fff0;
+border-image-source:repeating-radial-gradient(#fff0, #fff 48%, #fff0);
+border-image-slice:4.8;
+border-image-width:1px;
+border-image-outset:2px;
+border-image-repeat:stretch;
+box-shadow:0 0 4px 4px inset #ffffff14;
+position:relative;
+}
+.Vector_________ p {
+margin:1.24vh 0 0 .19vw;
+font-family:Cast;
+font-size:.59vw;
+color:#ffffff87;
+font-weight:900;
+word-spacing:4px;
+letter-spacing:2px;
+font-variant:all-small-caps;
+text-align:center;
+text-align-last:center;
+line-height:1.9vh;
+text-shadow:0px 1px 1px #000, 1px 0px 1px #fff, 1px 1px 2px #f40;
+filter:drop-shadow(0 0 1px #140000);
+}
+.Vector_________ p i {
+font-variant:contextual;
+font-style:normal;
+}
+.Vector_________ p a {
+transition:all .14s ease-in-out;
+}
+.Vector_________ p a:hover {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;
+filter:drop-shadow(0 0 9px #fff);
+text-decoration:underline;
+}
+.Cast124_______ {
+display:flex;
+height:100%;
+width:100%;
+flex-wrap:wrap;
+background:#fff0;
+animation-name:CASTS_________;
+animation-duration:28s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-delay:7.4s;
+animation-timing-function:cubic-bezier(.48, .14, .48, .48);
+position:relative;
+}
+.Cast124_______::before {}
+.Cast124_______::after {}
+.C14 {
+height:100%;
+display:flex;
+width:100%;
+flex-wrap:wrap;
+filter:saturate(1)brightness(1)drop-shadow(0 0 0px #fff0);
+box-shadow:0 0 0px 0 #48000000;
+transition:filter 4.8s 0s cubic-bezier(.14, -1.9, 0, .14), box-shadow 4.8s 0s cubic-bezier(.14, .19, 0, .14);
+}
+.C14:hover {
+filter:saturate(1.9)brightness(1.4)drop-shadow(0 0 480px #fff);
+box-shadow:0 0 74px 0 #ff0000c9;
+transition:filter 48s .048s cubic-bezier(0, .48, .14, 1.9), box-shadow 14s .048s cubic-bezier(0, .48, .14, 1.9)
+}
+@keyframes CASTS_________ {
+0% {
+backdrop-filter:blur(0px);
+}
+48% {
+backdrop-filter:blur(4.8px);
+}
+74% {
+backdrop-filter:blur(1.4px);
+}
+100% {
+backdrop-filter:blur(0px);
+}
+}
+.Cast124____ {
+animation-name:RENDER124;
+animation-duration:124s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.19, .14, .28, 1);
+background:url(T.png);
+background-size:100vw 114vh;
+background-position:87% 48%;
+border:0 solid #fff0;
+border-image-source:repeating-radial-gradient(#14000000 14px, #fff0 48px, #fff 59px, #28000000 124px);
+border-image-slice:124;
+border-image-width:1px;
+border-image-outset:2px;
+border-image-repeat:stretch;
+transition:all .48s 0s ease-in-out;
+user-select:none;
+}
+.Cast124____:hover {
+border-image-source:repeating-radial-gradient(#f00 14px, #f00 59px, #fff 124px);
+border-image-slice:14;
+transition:all .48s .014s ease-in-out;
+}
+.Cast124____ p {
+margin:-2% 0 0 1.24%;
+color:#480000;
+font-family:Charlie;
+font-size:2.4vw;
+font-weight:100;
+text-shadow:1px -1px 1px #fff, -1px 1px 2px #282828, -3px 2px 2px #870000, 0px -1px 0px #fff;
+-webkit-text-stroke:0.74px #000;
+filter:drop-shadow(1px 1px 0px #000);
+letter-spacing:2px;
+word-spacing:8px;
+line-height:0;
+transition:all .124s ease-in-out;
+position:fixed;
+}
+.Cast124____ p:hover {
+color:#280000;
+text-shadow:1px -1px 1px #f00, -1px 1px 2px #000000, -3px 2px 2px #000000, 0px -1px 0px #fff;
+filter:drop-shadow(2px 1px 0px #000);
+}
+.Cast124____ p.Cast {
+color:#280000;
+text-shadow:1px -1px 1px #f00, -1px 1px 2px #000000, -3px 2px 2px #000000, 0px -1px 0px #fff;
+filter:drop-shadow(2px 1px 0px #000);
+}
+.Cast124____ p.Cast14 {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast124____ p:active {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+@keyframes RENDER124 {
+0% {
+background-position:87% 48%;
+}
+100% {
+background-position:74% 19%;
+}
+}
+.Cast124________ {
+animation-name:RENDER14;
+animation-duration:190s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.19, .14, .28, 1);
+background:url(T.png);
+background-size:104vw 124vh;
+background-position:100% 100%;
+border:0 solid #fff0;
+border-image-source:repeating-radial-gradient(#14000000 14px, #fff0 48px, #fff 59px, #28000000 124px);
+border-image-slice:124;
+border-image-width:1px;
+border-image-outset:2px;
+border-image-repeat:stretch;
+transition:all .48s 0s ease-in-out;
+user-select:none;
+}
+.Cast124________:hover {
+border-image-source:repeating-radial-gradient(#f00 14px, #f00 59px, #fff 124px);
+border-image-slice:14;
+transition:all .48s .014s ease-in-out;
+}
+.Cast124________ p {
+margin:-2% 0 0 1.24%;
+color:#480000;
+font-family:Charlie;
+font-size:2.4vw;
+font-weight:100;
+text-shadow:1px -1px 1px #fff, -1px 1px 2px #282828, -3px 2px 2px #870000, 0px -1px 0px #fff;
+-webkit-text-stroke:0.74px #000;
+filter:drop-shadow(1px 1px 0px #000);
+letter-spacing:2px;
+word-spacing:8px;
+line-height:0;
+transition:all .124s ease-in-out;
+position:fixed;
+}
+.Cast124________ p:hover {
+color:#fff;
+text-shadow:1px -1px 1px #fff, -1px 1px 2px #000000, -3px 2px 2px #000000, 0px -1px 0px #000;
+-webkit-text-stroke:.74px #f00;
+filter:drop-shadow(0px 0px 0px #fff);
+}
+.Cast124________ p.Cast {
+color:#fff;
+text-shadow:1px -1px 1px #fff, -1px 1px 2px #000000, -3px 2px 2px #000000, 0px -1px 0px #000;
+-webkit-text-stroke:.74px #f00;
+filter:drop-shadow(0px 0px 0px #fff);
+}
+.Cast124________ p.Cast14 {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast124________ p:active {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+@keyframes RENDER14 {
+0% {
+background-position:100% 100%;
+}
+100% {
+background-position:48% 0%;
+}
+}
+.RENDER________ {
+grid-template-columns:repeat(4, 4vw);
+}
+.RENDER____ {
+height:100%;
+width:10.24px;
+background:radial-gradient(#fff, #fff0 48%);
+z-index:124;
+position:absolute;
+}
+.RENDER____124 {
+height:100%;
+width:10.24px;
+right:0;
+background:radial-gradient(#fff, #fff0 48%);
+position:absolute;
+}
+.Cast124____________ {
+animation-name:RENDERCAST;
+animation-duration:140s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-timing-function:cubic-bezier(.19, .14, .28, 1);
+background:url(T____.png);
+background-size:100vw 114vh;
+background-position:48% 100%;
+border:0 solid #fff0;
+border-image-source:repeating-radial-gradient(#14000000 14px, #fff0 48px, #fff 59px, #28000000 124px);
+box-shadow:0 0 4px 0px #000;
+border-image-slice:124;
+border-image-width:1px;
+border-image-outset:2px;
+border-image-repeat:stretch;
+user-select:none;
+}
+@keyframes RENDERCAST {
+0% {
+background-position:48% 100%;
+}
+100% {
+background-position:59% 28%;
+}
+}
+.RENDER________ .Cal {
+color:#141414;
+}
+.RENDER________ .Cast124_____________________ {
+grid-column:1 / 5;
+transition:all .48s ease-in-out;
+}
+.Cast124_____________________ p {
+margin:-1.4% 0 0 -1.9%;
+color:#480000;
+font-family:Charlie;
+font-size:2vw;
+font-weight:100;
+text-shadow:1px -2px 0px #fff, 4px -4px 4px #480000, -3px 1px 4px #480000, 0px 0px 7px #f00, 3px 0px 4px #000;
+-webkit-text-stroke:.74px #000;
+filter:drop-shadow(1px 1px 0px #000);
+letter-spacing:2px;
+word-spacing:-4px;
+line-height:0;
+transform:scaleX(.74);
+transition:all .124s ease-in-out, opacity .28s ease-in-out;
+white-space:nowrap;
+position:fixed;
+}
+@media (min-width:2800px) {
+.Cast124_____________________ p {
+margin:-1.4% 0 0 -1.9%;
+word-spacing:4.8px;
+}
+}
+@media (min-width:3400px) {
+.Cast124_____________________ p {
+margin:-1.4% 0 0 -1.9%;
+word-spacing:14px;
+}
+}
+.Cast124_____________________ p i {
+margin:0 12.4px 0 19px;
+font-size:.87vw;
+word-spacing:-4px;
+letter-spacing:3px;
+font-style:normal;
+}
+.Cast124_____________________ p:hover {
+text-shadow:1px -2px 0px #480000, 4px -4px 4px #480000, -3px 1px 4px #740000, 0px 0px 7px #f00, 3px 0px 4px #000;
+-webkit-text-stroke:.74px #f00;
+filter:drop-shadow(2px 1px 0px #000);
+}
+.Cast124_____________________ p.Cast {
+text-shadow:1px -2px 0px #480000, 4px -4px 4px #480000, -3px 1px 4px #740000, 0px 0px 7px #f00, 3px 0px 4px #000;
+-webkit-text-stroke:.74px #f00;
+filter:drop-shadow(2px 1px 0px #000);
+}
+.Cast124_____________________ p.Cast14 {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast124_____________________ p:active {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast_ {
+transition:all .48s ease-in-out;
+}
+.Cast_ p {
+margin:-10% 0 0 .74%;
+color:#fff0;
+font-family:CS;
+font-size:1.9vw;
+font-weight:700;
+font-variant:small-caps;
+letter-spacing:4px;
+filter:blur(0px);
+text-shadow:1px -1px 0px #ffcac4, 1px 0px 0px #124ca7;
+-webkit-text-stroke:0.1px #000;
+writing-mode:vertical-lr;
+transition:all .124s ease-in-out, opacity .28s ease-in-out;
+transform:rotate(180deg)skewY(4deg);
+position:fixed;
+}
+.Cast_ p:hover {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast_ p.Cast {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast_ p.Cast14 {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast_ p:active {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast_ p i {
+margin:4px 0 0 0;
+vertical-align:3px;
+font-style:normal;
+}
+.Cast__ {
+transition:all .48s ease-in-out;
+}
+.Cast__ p {
+margin:-10.9% 0 0 .48%;
+color:#fff0;
+font-family:CS;
+font-size:2.8vw;
+font-weight:700;
+font-variant:small-caps;
+letter-spacing:4px;
+filter:blur(0px);
+text-shadow:1px -1px 0px #ffcac4, 1px 0px 0px #124ca7;
+-webkit-text-stroke:0.1px #000;
+writing-mode:vertical-lr;
+transition:all .124s ease-in-out, opacity .28s ease-in-out;
+transform:rotate(180deg)skewY(4deg);
+position:fixed;
+}
+.Cast__ p:hover {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast__ p.Cast {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast__ p.Cast14 {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast__ p:active {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast__ p i {
+margin:4px 0 0 0;
+font-size:1.9vw;
+vertical-align:3px;
+font-style:normal;
+}
+.Cast___ {
+transition:all .48s ease-in-out;
+}
+.Cast___ p {
+margin:-10.9% 0 0 .48%;
+color:#fff0;
+font-family:CS;
+font-size:2.8vw;
+font-weight:700;
+font-variant:small-caps;
+letter-spacing:4px;
+filter:blur(0px);
+text-shadow:1px -1px 0px #ffcac4, 1px 0px 0px #124ca7;
+-webkit-text-stroke:0.1px #000;
+writing-mode:vertical-lr;
+transition:all .124s ease-in-out, opacity .28s ease-in-out;
+transform:rotate(180deg)skewY(4deg);
+position:fixed;
+}
+.Cast___ p:hover {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast___ p.Cast {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast___ p.Cast14 {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast___ p:active {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast___ p i {
+margin:4px 0 0 0;
+font-size:1.9vw;
+vertical-align:3px;
+font-style:normal;
+}
+.Cast____ {
+transition:all .48s ease-in-out;
+}
+.Cast____ p {
+margin:-10.9% 0 0 .48%;
+color:#fff0;
+font-family:CS;
+font-size:2.8vw;
+font-weight:700;
+font-variant:small-caps;
+letter-spacing:4px;
+filter:blur(0px);
+text-shadow:1px -1px 0px #ffcac4, 1px 0px 0px #124ca7;
+-webkit-text-stroke:0.1px #000;
+writing-mode:vertical-lr;
+transition:all .124s ease-in-out, opacity .28s ease-in-out;
+transform:rotate(180deg)skewY(4deg);
+position:fixed;
+}
+.Cast____ p:hover {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast____ p.Cast {
+color:#f00;
+text-shadow:1px -1px 0px #000, 1px 0px 0px #fff;
+-webkit-text-stroke:.74px #480000;
+filter:drop-shadow(2px 1px 1px #000);
+}
+.Cast____ p.Cast14 {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast____ p:active {
+color:#fff;
+text-shadow:0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 4px #fff, 0px 0px 14px #f40;
+-webkit-text-stroke:.74px #fff;
+filter:drop-shadow(1px 0px 2px #fff);
+}
+.Cast____ p i {
+margin:4px 0 0 0;
+font-size:1.9vw;
+vertical-align:3px;
+font-style:normal;
+}
+.CASTRENDER124 {
+margin:48vh 0 0 0;
+height:1px;
+width:100vw;
+background:#480000;
+box-shadow:0px 0px 4px 2px #480000;
+z-index:87000;
+position:fixed;
+}
+.CASTRENDERS48 {
+margin:-48vh 0 0 0;
+height:1px;
+width:100vw;
+background:#480000;
+box-shadow:0px 0px 4px 2px #480000;
+z-index:87000;
+position:fixed;
+}
