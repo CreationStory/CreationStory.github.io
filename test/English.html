@@ -267,5 +267,64 @@ window.addEventListener("hashchange", navigateToBookFromHash);
 <iframe id="Revelation" class="CASTS" data-src="CAST/VECTORS/Revelation.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
 </div>
 </div>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        const books = [
+            { name: 'Deuteronomy', breakpoint: 330, hyphenIndex: 6 },
+            { name: 'Ecclesiastes', breakpoint: 330, hyphenIndex: 5 },
+            { name: 'Lamentations', breakpoint: 330, hyphenIndex: 6 },
+            { name: 'Corinthians', breakpoint: 330, hyphenIndex: 7 },
+            { name: 'Corinthians2', breakpoint: 330, hyphenIndex: 7 },
+            { name: 'Thessalonians', breakpoint: 330, hyphenIndex: 9 },
+            { name: 'Thessalonians2', breakpoint: 330, hyphenIndex: 9 }
+        ];
+        const container = document.querySelector('.T');
+        function insertHyphen(book) {
+            const bookElement = document.querySelector(`.B[onclick="Casts124('${book.name}')"]`);
+            const containerWidth = container.clientWidth;
+            if (containerWidth < book.breakpoint) {
+                const text = bookElement.textContent;
+                const index = book.hyphenIndex;
+                if (!text.includes('-')) {
+                    const newText = text.slice(0, index) + '-' + text.slice(index);
+                    bookElement.textContent = newText;
+                }
+            } else {
+                bookElement.textContent = book.name;
+            }
+        }
+        books.forEach(book => insertHyphen(book));
+        window.addEventListener('resize', function() {
+            books.forEach(book => insertHyphen(book));
+        });
+    });
+</script>
+<script>
+const CastVector = () => {
+    const viewportHeight = window.innerHeight;
+    document.documentElement.style.height = `${viewportHeight}px`;
+    document.body.style.height = `${viewportHeight}px`;
+};
+const Cast14 = (callback, delay) => {
+    let timeoutId;
+    return (...args) => {
+        if (!timeoutId) {
+            timeoutId = setTimeout(() => {
+                callback(...args);
+                timeoutId = null;
+            }, delay);
+        }
+    };
+};
+const CastEngage = Cast14(CastVector, 14);
+const CastRender = new ResizeObserver(CastEngage);
+CastRender.observe(document.documentElement);
+window.addEventListener('DOMContentLoaded', CastEngage);
+window.addEventListener('load', CastEngage);
+window.addEventListener('resize', CastEngage);
+window.addEventListener('scroll', CastEngage);
+window.addEventListener('focus', CastEngage);
+window.addEventListener('blur', CastEngage);
+</script>
 </body>
 </html>
