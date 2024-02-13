@@ -105,7 +105,7 @@ scrollbar-width: none;
 .B.Casts14 {margin: 7.4vh 0 14vh 0;height: 14%;width: 100%;background: url("14.png");background-size: contain;background-repeat: no-repeat;background-position: center;filter: drop-shadow(0px 0px 14px #ff0000);mix-blend-mode: luminosity;pointer-events: none;}
 }
 .CASTS {display: none;}
-.Vector {height: 100vh;width: 74vw;border: none;overflow: hidden;}
+.Vector {height: 100%;width: 74vw;border: none;overflow: hidden;}
 .Vector iframe {
 height: 100vh;
 width: 74vw;
@@ -135,7 +135,7 @@ height:28vh;
 @media (max-width:1200px) {
 .WRITE {margin:7.4vh 0 0 0;font-size: 14vw;}
 }
-@media (min-height: 1004px) and (max-width: 1200px) {
+@media (min-height: 1004px) and (max-width:1200px) {
 .WRITE {margin: 4.8% 4.8% 0 4.8%;height: 59vh;font-size: 15.1vh;text-align: center;}
 }
 .RENDER124 {display: flex;height: 40vh;width: 48vw;justify-content: center;bottom: 14vh;background: #ff000014;backdrop-filter: blur(4px);border: 0 solid #fff0;border-image-source: repeating-radial-gradient(#fff0, #fff 74%, #fff0);border-image-slice: 1.4%;border-image-width: 1px;border-image-outset: 2px;border-image-repeat: stretch;box-shadow: 0 0 4px 4px inset #ffffff14;position: fixed;}
@@ -143,23 +143,7 @@ height:28vh;
 .RENDER124 {display: flex;height: 48vh;width: 48vw;justify-content: center;bottom: 7.4vh;background: #ff000014;backdrop-filter: blur(4px);border: 0 solid #fff0;border-image-source: repeating-radial-gradient(#fff0, #fff, #fff0);border-image-slice: 1.4%;border-image-width: 1px;border-image-outset: 2px;border-image-repeat: stretch;box-shadow: 0 0 4px 4px inset #ffffff14;position: fixed;}
 }
 @media (max-width: 1200px) {
-.RENDER124 {
-display:flex;
-height: 59vh;
-width: 59vw;
-justify-content: center;
-bottom: 4.8vh;
-background: #ff000014;
-backdrop-filter: blur(4px);
-border: 0 solid #fff0;
-border-image-source: repeating-radial-gradient(#140000 14px, #fff 59px, #280000 280px);
-border-image-slice: 144;
-border-image-width: 1px;
-border-image-outset: 2px;
-border-image-repeat: stretch;
-box-shadow: 0 0 4px 4px inset #ffffff14;
-position: fixed;
-}
+.RENDER124 {display:flex;height: 59vh;width: 59vw;justify-content: center;bottom: 4.8vh;background: #ff000014;backdrop-filter: blur(4px);border: 0 solid #fff0;border-image-source: repeating-radial-gradient(#140000 14px, #fff 59px, #280000 280px);border-image-slice: 144;border-image-width: 1px;border-image-outset: 2px;border-image-repeat: stretch;box-shadow: 0 0 4px 4px inset #ffffff14;position: fixed;}
 }
 @media (max-width: 740px) {
 .RENDER124 {
@@ -268,4 +252,4 @@ bottom: 4.8vh;
 position: fixed;
 }
 }
-.TIBS {display: flex;height: 100vh;width: 27.34vw;left: 0;background: linear-gradient(#fff0 90vh, #590000 97.34vh), linear-gradient(#480000 4.8px, #fff0 2.8vh);z-index: 14;user-select: none;pointer-events: none;position: fixed;}
+.TIBS {display: flex;height: 100vh;width: 27.34vw;top: 0;right: 0;left: 0;bottom: 0;background: linear-gradient(#fff0 90vh, #590000 97.34vh), linear-gradient(#480000 4.8px, #fff0 2.8vh);z-index: 14;user-select: none;pointer-events: none;position: fixed;}
