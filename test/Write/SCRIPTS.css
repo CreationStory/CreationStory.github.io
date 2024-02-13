@@ -14,11 +14,11 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background: radial-gradient(circle, #740000 7%, #590000 59%, #590000 87%, #740000 104%);
     overflow: hidden;
-    position:absolute;
+    position: absolute;
     scrollbar-width: none;
 }
 
@@ -600,7 +600,7 @@ a, a:focus, a:active {
     height: 100%;
     width: 27.34vw;
     left: 0;
-    background: linear-gradient(#fff0 90vh, #590000 97.34vh), linear-gradient(#480000 4.8px, #fff0 2.8vh);
+    background: linear-gradient(#fff0 90%, #590000 97.34%), linear-gradient(#480000 4.8px, #fff0 2.8%);
     z-index: 14;
     user-select: none;
     pointer-events: none;
