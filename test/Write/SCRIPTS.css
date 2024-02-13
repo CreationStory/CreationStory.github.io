@@ -12,7 +12,7 @@ visibility: hidden;
 }
 html, 
 body {
-height:100dvh;
+height:100svmin;
 }
 body {
 margin: 0;
