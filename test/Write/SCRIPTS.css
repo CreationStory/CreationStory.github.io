@@ -10,9 +10,12 @@ height: 0;
 width: 0;
 visibility: hidden;
 }
+html, 
+body {
+height:100dvh;
+}
 body {
 margin: 0;
-height: 100vh;
 width: 100vw;
 background: radial-gradient(circle, #740000 7%, #590000 59%, #590000 87%, #740000 104%);
 overflow: hidden;
