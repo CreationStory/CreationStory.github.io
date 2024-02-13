@@ -14,10 +14,11 @@
 
 body {
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     background: radial-gradient(circle, #740000 7%, #590000 59%, #590000 87%, #740000 104%);
     overflow: hidden;
+    position:absolute;
     scrollbar-width: none;
 }
 
