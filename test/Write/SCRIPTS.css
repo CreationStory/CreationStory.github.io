@@ -71,13 +71,30 @@ a, a:focus, a:active {
     border-image-outset: 4px;
     border-image-repeat: stretch;
     filter: drop-shadow(0px 0px 1.4px #ff0000);
+    animation-name:Cast_;
+    animation-duration:74s;
+    animation-timing-function:ease-in-out;
+    animation-delay:4.8s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-fill-mode:both;
     box-shadow: -1.4px 0px 2.8px 0px inset #ff000074, 0px 0px 4.8px 0px #ff000074;
     z-index: 4;
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
 }
-
+@keyframes Cast_ {
+0% {
+filter: drop-shadow(0px 0px 1.4px #ff0000);
+}
+14% {
+filter: drop-shadow(0px 0px 4.8px #ff0000);
+}
+100% {
+filter: drop-shadow(0px 0px 1.4px #ff0000);
+}
+}
 @media (max-width: 2550px) {
     .T {
         border-image-width:1px;
@@ -108,26 +125,33 @@ a, a:focus, a:active {
     margin: 4vh 0 8vh 0;
     font-family: CS;
     color: #fff;
-    font-size: 2vw;
+    font-size: 2.8vw;
     word-spacing: .14px;
     letter-spacing: .14px;
     font-weight: 900;
     text-align: center;
-    text-shadow: 0 -1px 1px #000, -1px 1px 0px #000;
+    text-shadow: 1px -1px 0px #000, -1px 0px 4px #000;
     font-variant: small-caps;
-    line-height: 0;
+    line-height: 104%;
     filter: drop-shadow(0px 0px 4px #590000);
     transition: all .28s ease-in-out;
     cursor: pointer;
     user-select: none;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 14px 0px 14px;
+}
+
+.B.Cast {
+    color: #ff000074;
+    text-shadow: 0 -1px 1px #fff, -1px 1px 0px #000;
+    filter: drop-shadow(0px 0px 1.4px #000);
+    transition: all .48s ease-in-out;
 }
 
 .B:hover {
     color: #ff000074;
     text-shadow: 0 -1px 1px #fff, -1px 1px 0px #000;
     filter: drop-shadow(0px 0px 1.4px #000);
-    transition: all .14s ease-in-out;
+    transition: all .19s ease-in-out;
 }
 
 @media (max-width: 1400px) {
@@ -197,7 +221,7 @@ a, a:focus, a:active {
 }
 
 .Vector iframe {
-    height: 100vh;
+    height: 104%;
     width: 74vw;
     border: none;
     outline: none;
@@ -265,10 +289,10 @@ a, a:focus, a:active {
 
 .RENDER124 {
     display: flex;
-    height: 40vh;
-    width: 48vw;
+    height: 40.8%;
+    width: 48%;
     justify-content: center;
-    bottom: 14vh;
+    bottom: 14%;
     background: #ff000014;
     backdrop-filter: blur(4px);
     border: 0 solid #fff0;
@@ -284,10 +308,10 @@ a, a:focus, a:active {
 @media (max-width: 2550px) {
     .RENDER124 {
         display: flex;
-        height: 48vh;
-        width: 48vw;
+        height: 48%;
+        width: 48%;
         justify-content: center;
-        bottom: 7.4vh;
+        bottom: 7.4%;
         background: #ff000014;
         backdrop-filter: blur(4px);
         border: 0 solid #fff0;
@@ -304,10 +328,10 @@ a, a:focus, a:active {
 @media (max-width: 1200px) {
     .RENDER124 {
         display:flex;
-        height: 59vh;
-        width: 59vw;
+        height: 59%;
+        width: 59%;
         justify-content: center;
-        bottom: 4.8vh;
+        bottom: 4.8%;
         background: #ff000014;
         backdrop-filter: blur(4px);
         border: 0 solid #fff0;
@@ -324,10 +348,10 @@ a, a:focus, a:active {
 @media (max-width: 740px) {
     .RENDER124 {
         display:flex;
-        height: 59vh;
-        width: 59vw;
+        height: 59%;
+        width: 59%;
         justify-content: center;
-        bottom: 4.8vh;
+        bottom: 4.8%;
         background: #ff000014;
         backdrop-filter: blur(4px);
         border: 0 solid #fff0;
@@ -357,7 +381,7 @@ a, a:focus, a:active {
 }
 
 .rendertext {
-    margin: 7vh 4vw 0 3.4vw;
+    margin: 7.4% 5.9% 0 5.9%;
     display: flex;
     height: 140px;
     width: 100%;
@@ -390,6 +414,7 @@ a, a:focus, a:active {
 
 .text-box {
     display: flex;
+    justify-content: right;
 }
 
 .title {
@@ -399,7 +424,7 @@ a, a:focus, a:active {
     font-weight: 900;
     word-spacing: 4px;
     letter-spacing: 1px;
-    text-shadow: 0px 1px 1px #000, 1px 0px 1px #fff, 1px 1px 2px #f40;
+    text-shadow: 0px 1px 1px #000, 1px 0px 1px #fff, 1px 1px 2px #f40, 2px 1px 2px #000;
     filter: drop-shadow(0 0 1px #140000);
     line-height: 0;
 }
@@ -439,7 +464,7 @@ a, a:focus, a:active {
 }
 
 .number {
-    margin: 2.48% 0 0 15.1%;
+    margin: 2.48% 1.4% 0 0;
     font-family: CS;
     font-size: 1.19vw;
     color: #ffffff74;
@@ -480,7 +505,7 @@ a, a:focus, a:active {
 }
 
 .description {
-    margin: 3.4% 0 0 5.9%;
+    margin: 3.4% 4.8% 0 0;
     font-family: CS;
     font-size: 1.24vw;
     color: #ff000074;
@@ -519,7 +544,7 @@ a, a:focus, a:active {
 }
 
 .CAST________ {
-    text-indent: 1.4%;
+    text-indent: 7.4%;
 }
 
 .WORDTHEREOF {
