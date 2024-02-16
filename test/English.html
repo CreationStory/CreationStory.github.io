@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <link href="Write/SCRIPTS.css" rel="stylesheet">
@@ -7,101 +7,140 @@
 <link rel="icon" href="Write/CS.ico">
 <meta name="viewport" content="height=device-height, width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
 <script>
+const CAST____ = window.innerWidth >= 2550 ? "190" : "140";
 function Casts124(t) {
-  let e = document.querySelectorAll(".CASTS"),
-    a = document.querySelector(".R");
-  e.forEach(e => {
-    e.id === t
-      ? (e.getAttribute("data-src") &&
-          (e.src = e.getAttribute("data-src"), e.removeAttribute("data-src")),
-        (e.style.display = "block"))
-      : (e.style.display = "none");
-  }),
-    (a.style.display = "none");
-}
-
+let e = document.querySelectorAll(".CASTS"),
+a = document.querySelector(".R");
+e.forEach(e => {
+if (e.id === t) {
+if (e.getAttribute("data-src")) {
+let dataSrc = e.getAttribute("data-src") + `&zoom=${CAST____}`;
+e.src = dataSrc;
+e.removeAttribute("data-src");}
+e.style.display = "block";
+} else {
+e.style.display = "none";}
+});
+a.style.display = "none";}
 function navigateToBookFromHash() {
-  let hash = window.location.hash.substr(1).toLowerCase(),
-    e = document.querySelectorAll(".CASTS"),
-    isFullStopSeparated = hash.includes(".");
-
-  let a = false;
-  e.forEach(e => {
-    if (e.id.toLowerCase() === hash || (isFullStopSeparated && e.id.toLowerCase() === hash.split(".")[0])) {
-      Casts124(e.id);
-      let page = isFullStopSeparated ? hash.split(".")[1] || 1 : 1;
-      let o = `CAST/VECTORS/${e.id}.pdf#toolbar=0&fit=Fit&zoom=140&page=${page}`;
-      e.src = o;
-      a = true;
-    }
-  });
-
-  if (!a) {
-    // Extract book title and page number from hash
-    let match = hash.match(/^([a-z]+)(\d*)$/);
-    if (match) {
-      let title = match[1].toLowerCase();
-      let pageNumber = match[2];
-      
-      // Mapping object for alternative titles
-      const alternativeTitles = {
-        secondsamuel: "Samuel2",
-        secondkings: "Kings2",
-        secondchronicles: "Chronicles2",
-        secondcorinthians: "Corinthians2",
-        secondthessalonians: "Thessalonians2",
-        secondtimothy: "Timothy2",
-        secondpeter: "Peter2",
-        thefirstepistleofjohn: "FirstEpistleofJohn",
-        thesecondepistleofjohn: "SecondEpistleofJohn",
-        thethirdepistleofjohn: "ThirdEpistleofJohn",
-        revelations: "Revelation",
-      };
-
-      let mappedTitle = alternativeTitles[title];
-      if (mappedTitle) {
-        e.forEach(t => {
-          if (t.id.toLowerCase() === mappedTitle.toLowerCase()) {
-            Casts124(t.id);
-            let page = isFullStopSeparated ? hash.split(".")[1] || pageNumber : pageNumber || 1;
-            let e = `CAST/VECTORS/${mappedTitle}.pdf#toolbar=0&fit=Fit&zoom=140&page=${page}`;
-            t.src = e;
-            a = true;
-          }
-        });
-      }
-    }
-  }
-
-  if (!a) {
-    // Handle numeric hash for existing book titles
-    let o = hash.match(/^([a-z]+)(\d+)$/);
-    if (o) {
-      let l = o[1],
-        i = parseInt(o[2]);
-      e.forEach(t => {
-        if (t.id.toLowerCase() === l) {
-          Casts124(t.id);
-          let page = isFullStopSeparated ? hash.split(".")[1] || i : i;
-          let e = `CAST/VECTORS/${l}.pdf#toolbar=0&fit=Fit&zoom=140&page=${page}`;
-          t.src = e;
-          a = true;
-        }
-      });
-    }
-  }
-
-  setTimeout(function () {
-    history.replaceState(null, null, window.location.pathname);
-  }, 480);
-}
-
-window.onload = function () {
-  setTimeout(function () {
-    navigateToBookFromHash(), history.replaceState(null, null, window.location.pathname);
-  }, 480);
-};
-
+let hash = window.location.hash.substr(1).toLowerCase(),
+e = document.querySelectorAll(".CASTS"),
+isFullStopSeparated = hash.includes(".");
+let a = false;
+e.forEach(e => {
+if (e.id.toLowerCase() === hash || (isFullStopSeparated && e.id.toLowerCase() === hash.split(".")[0])) {
+Casts124(e.id);
+let page = isFullStopSeparated ? hash.split(".")[1] || 1 : 1;
+let o = `CAST/VECTORS/${e.id}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`;
+e.src = o;
+a = true;}});
+if (!a) {
+let match = hash.match(/^([a-z]+)(\d*)$/);
+if (match) {
+let title = match[1].toLowerCase();
+let pageNumber = match[2];
+const alternativeTitles = {
+firstsamuel: "Samuel",
+secondsamuel: "Samuel2",
+firstkings: "Kings",
+secondkings: "Kings2",
+firstchronicles: "Chronicles",
+secondchronicles: "Chronicles2",
+thegospelofmatthew: "Matthew",
+gospelofmatthew: "Matthew",
+thegospelofmark: "Mark",
+gospelofmark: "Mark",
+thegospelofluke: "Luke",
+gospelofluke: "Luke",
+thegospelofjohn: "John",
+gospelofjohn: "John",
+theactsoftheapostles: "Acts",
+theactsofapostles: "Acts",
+actsoftheapostles: "Acts",
+actsofapostles: "Acts",
+thedeedsoftheapostles: "Acts",
+deedsoftheapostles: "Acts",
+deedsofapostles: "Acts",
+theepistleofpaultotheromans: "Romans",
+thefirstepistleofpaultothecorinthians: "Corinthians",
+firstepistleofpaultothecorinthians: "Corinthians",
+firstcorinthians: "Corinthians",
+thesecondepistleofpaultothecorinthians: "Corinthians2",
+secondepistleofpaultothecorinthians: "Corinthians2",
+secondcorinthians: "Corinthians2",
+thefirstepistleofpaultothegalatians: "Galatians",
+firstepistleofpaultothegalatians: "Galatians",
+theepistleofpaultotheephesians: "Ephesians",
+epistleofpaultotheephesians: "Ephesians",
+theepistleofpaultothephilippians: "Philippians",
+epistleofpaultothephilippians: "Philippians",
+theepistleofpaultothecolossians: "Colossians",
+epistleofpaultothecolossians: "Colossians",
+thefirstepistleofpaultothethessalonians: "Thessalonians",
+firstepistleofpaultothethessalonians: "Thessalonians",
+firstthessalonians: "Thessalonians",
+thesecondepsitleofpaultothethessalonians: "Thessalonians2",
+secondepistleofpaultothethessalonians: "Thessalonians2",
+secondthessalonians: "Thessalonians2",
+thefirstepistleofpaultotimothy: "Timothy",
+firstepistleofpaultotimothy: "Timothy",
+firsttimothy: "Timothy",
+thesecondepistleofpaultotimothy: "Timothy2",
+secondepistleofpaultotimothy: "Timothy2",
+secondtimothy: "Timothy2",
+theepistleofpaultotitus: "Titus",
+epistleofpaultotitus: "Titus",
+theepistleofpaultophilemon: "Philemon",
+epistleofpaultophilemon: "Philemon",
+theepistletothehebrews: "Hebrews",
+epistletothehebrews: "Hebrews",
+theepistleofjames: "James",
+epistleofjames: "James",
+thefirstepistleofpeter: "Peter",
+firstepistleofpeter: "Peter",
+firstpeter: "Peter",
+thesecondepistleofpeter: "Peter2",
+secondepistleofpeter: "Peter2",
+secondpeter: "Peter2",
+thefirstepistleofjohn: "FirstEpistleofJohn",
+firstjohn: "FirstEpistleofJohn",
+thesecondepistleofjohn: "SecondEpistleofJohn",
+secondjohn: "SecondEpistleofJohn",
+thethirdepistleofjohn: "ThirdEpistleofJohn",
+thirdjohn: "ThirdEpistleofJohn",
+thebookofrevelation: "Revelation",
+thebookofrevelations: "Revelation",
+bookofrevelation: "Revelation",
+revelations: "Revelation"};
+let mappedTitle = alternativeTitles[title];
+if (mappedTitle) {
+e.forEach(t => {
+if (t.id.toLowerCase() === mappedTitle.toLowerCase()) {
+Casts124(t.id);
+let page = isFullStopSeparated ? hash.split(".")[1] || pageNumber : pageNumber || 1;
+let e = `CAST/VECTORS/${mappedTitle}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`;
+t.src = e;
+a = true;}});}}}
+if (!a) {
+let o = hash.match(/^([a-z]+)(\d+)$/);
+if (o) {
+let l = o[1],
+i = parseInt(o[2]);
+e.forEach(t => {
+if (t.id.toLowerCase() === l) {
+Casts124(t.id);
+let page = isFullStopSeparated ? hash.split(".")[1] || i : i;
+let e = `CAST/VECTORS/${l}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`;
+t.src = e;
+a = true;}});}}
+setTimeout(function() {
+history.replaceState(null, null, window.location.pathname);
+}, 480);}
+window.onload = function() {
+setTimeout(function() {
+navigateToBookFromHash(),
+history.replaceState(null, null, window.location.pathname);
+}, 480);};
 window.addEventListener("hashchange", navigateToBookFromHash);
 </script>
 </head>
@@ -184,87 +223,87 @@ window.addEventListener("hashchange", navigateToBookFromHash);
 <div class="rendertext">
 <div class="text-box">
 <div class="title">OLD TESTAMENT</div>
-<div class="number">&nbsp;&nbsp;&nbsp;&nbsp;39</div>
-<div class="description">&nbsp;&nbsp;&nbsp;&nbsp;Books</div>
+<div class="number">39</div>
+<div class="description">Books</div>
 </div>
 <div class="text-box">
 <div class="title">NEW TESTAMENT</div>
-<div class="number">&nbsp;&nbsp;&nbsp;&nbsp;27</div>
-<div class="description">&nbsp;&nbsp;&nbsp;&nbsp;Books</div>
+<div class="number">27</div>
+<div class="description">Books</div>
 </div>
 <div class="text-box">
 <div class="title">APOCRYPHIA</div>
 <div class="number CAST____">14</div>
 <div class="description CAST________">Scripts</div>
 </div>
-</div><div class="WORDTHEREOF"><a href="Cymraeg.html">Welsh</a>&nbsp; &#8226; &nbsp;<a href="Norsk.html">Norwegian</a>&nbsp; &#8226; &nbsp;<a href="Deutsch.html">German</a>&nbsp; &#8226; &nbsp;<a href="Français.html">French</a>&nbsp; &#8226; &nbsp;<a href="Русский.html">Russian</a>&nbsp; &#8226; &nbsp;<a href="Suomi.html">Finnish</a>&nbsp; &#8226; &nbsp;<a href="Íslenskur.html">Iclandic</a>&nbsp; &#8226; &nbsp;<a href="عربي.html">Arabic&nbsp; &#8226; &nbsp;</a><a href="Cymraeg.html">Cymraeg</a>&nbsp; &#8226; &nbsp;<a href="Norsk.html">Norsk</a>&nbsp; &#8226; &nbsp;<a href="Deutsch.html">Deustch</a>&nbsp; &#8226; &nbsp;<a href="Français.html">Français</a>&nbsp; &#8226; &nbsp;<a class="PYCCKNN" href="Русский.html">Русский</a>&nbsp; &#8226; &nbsp;<a href="Suomi.html">Suomi</a>&nbsp; &#8226; &nbsp;<a href="Íslenskur.html">Íslenska</a>&nbsp; &#8226; &nbsp;<a href="عربي.html">&#65165;&#65247;&#65151;&#65228;&#65143;&#65198;&#65142;&#65169;&#65268;&#65149;&#65172;</a></div>
+</div><div class="WORDTHEREOF"><a href="Cymraeg.html">Welsh</a>&nbsp; &#8226; &nbsp;<a href="Norsk.html">Norwegian</a>&nbsp; &#8226; &nbsp;<a href="Deutsch.html">German</a>&nbsp; &#8226; &nbsp;<a href="Français.html">French</a>&nbsp; &#8226; &nbsp;<a href="Русский.html">Russian</a>&nbsp; &#8226; &nbsp;<a href="Suomi.html">Finnish</a>&nbsp; &#8226; &nbsp;<a href="Íslenskur.html">Iclandic</a>&nbsp; &#8226; &nbsp;<a href="عربي.html">Arabic</a>&nbsp; &#8226; &nbsp;<a href="Cymraeg.html">Cymraeg</a>&nbsp; &#8226; &nbsp;<a href="Norsk.html">Norsk</a>&nbsp; &#8226; &nbsp;<a href="Deutsch.html">Deustch</a>&nbsp; &#8226; &nbsp;<a href="Français.html">Français</a>&nbsp; &#8226; &nbsp;<a class="PYCCKNN" href="Русский.html">Русский</a>&nbsp; &#8226; &nbsp;<a href="Suomi.html">Suomi</a>&nbsp; &#8226; &nbsp;<a href="Íslenskur.html">Íslenska</a>&nbsp; &#8226; &nbsp;<a href="عربي.html">&#65165;&#65247;&#65151;&#65228;&#65143;&#65198;&#65142;&#65169;&#65268;&#65149;&#65172;</a></div>
 </div></div>
-<iframe id="Genesis" class="CASTS" data-src="CAST/VECTORS/Genesis.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Exodus" class="CASTS" data-src="CAST/VECTORS/Exodus.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Leviticus" class="CASTS" data-src="CAST/VECTORS/Leviticus.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Numbers" class="CASTS" data-src="CAST/VECTORS/Numbers.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Deuteronomy" class="CASTS" data-src="CAST/VECTORS/Deuteronomy.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Joshua" class="CASTS" data-src="CAST/VECTORS/Joshua.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Judges" class="CASTS" data-src="CAST/VECTORS/Judges.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Ruth" class="CASTS" data-src="CAST/VECTORS/Ruth.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Samuel" class="CASTS" data-src="CAST/VECTORS/Samuel.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Samuel2" class="CASTS" data-src="CAST/VECTORS/Samuel2.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Kings" class="CASTS" data-src="CAST/VECTORS/Kings.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Kings2" class="CASTS" data-src="CAST/VECTORS/Kings2.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Chronicles" class="CASTS" data-src="CAST/VECTORS/Chronicles.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Chronicles2" class="CASTS" data-src="CAST/VECTORS/Chronicles2.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Ezra" class="CASTS" data-src="CAST/VECTORS/Ezra.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Nehemiah" class="CASTS" data-src="CAST/VECTORS/Nehemiah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Esther" class="CASTS" data-src="CAST/VECTORS/Esther.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Job" class="CASTS" data-src="CAST/VECTORS/Job.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Psalms" class="CASTS" data-src="CAST/VECTORS/Psalms.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Proverbs" class="CASTS" data-src="CAST/VECTORS/Proverbs.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Ecclesiastes" class="CASTS" data-src="CAST/VECTORS/Ecclesiastes.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="SongofSolomon" class="CASTS" data-src="CAST/VECTORS/SongofSolomon.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Isaiah" class="CASTS" data-src="CAST/VECTORS/Isaiah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Jeremiah" class="CASTS" data-src="CAST/VECTORS/Jeremiah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Lamentations" class="CASTS" data-src="CAST/VECTORS/Lamentations.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Ezekiel" class="CASTS" data-src="CAST/VECTORS/Ezekiel.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Daniel" class="CASTS" data-src="CAST/VECTORS/Daniel.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Hosea" class="CASTS" data-src="CAST/VECTORS/Hosea.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Joel" class="CASTS" data-src="CAST/VECTORS/Joel.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Amos" class="CASTS" data-src="CAST/VECTORS/Amos.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Obadiah" class="CASTS" data-src="CAST/VECTORS/Obadiah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Jonah" class="CASTS" data-src="CAST/VECTORS/Jonah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Micah" class="CASTS" data-src="CAST/VECTORS/Micah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Nahum" class="CASTS" data-src="CAST/VECTORS/Nahum.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Habakkuk" class="CASTS" data-src="CAST/VECTORS/Habakkuk.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Zephaniah" class="CASTS" data-src="CAST/VECTORS/Zephaniah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Haggai" class="CASTS" data-src="CAST/VECTORS/Haggai.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Zechariah" class="CASTS" data-src="CAST/VECTORS/Zechariah.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Malachi" class="CASTS" data-src="CAST/VECTORS/Malachi.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Matthew" class="CASTS" data-src="CAST/VECTORS/Matthew.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Mark" class="CASTS" data-src="CAST/VECTORS/Mark.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Luke" class="CASTS" data-src="CAST/VECTORS/Luke.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="John" class="CASTS" data-src="CAST/VECTORS/John.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Acts" class="CASTS" data-src="CAST/VECTORS/Acts.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Romans" class="CASTS" data-src="CAST/VECTORS/Romans.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Corinthians" class="CASTS" data-src="CAST/VECTORS/Corinthians.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Corinthians2" class="CASTS" data-src="CAST/VECTORS/Corinthians2.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Galatians" class="CASTS" data-src="CAST/VECTORS/Galatians.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Ephesians" class="CASTS" data-src="CAST/VECTORS/Ephesians.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Philippians" class="CASTS" data-src="CAST/VECTORS/Philippians.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Colossians" class="CASTS" data-src="CAST/VECTORS/Colossians.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Thessalonians" class="CASTS" data-src="CAST/VECTORS/Thessalonians.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Thessalonians2" class="CASTS" data-src="CAST/VECTORS/Thessalonians2.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Timothy" class="CASTS" data-src="CAST/VECTORS/Timothy.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Timothy2" class="CASTS" data-src="CAST/VECTORS/Timothy2.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Titus" class="CASTS" data-src="CAST/VECTORS/Titus.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Philemon" class="CASTS" data-src="CAST/VECTORS/Philemon.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Hebrews" class="CASTS" data-src="CAST/VECTORS/Hebrews.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="James" class="CASTS" data-src="CAST/VECTORS/James.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Peter" class="CASTS" data-src="CAST/VECTORS/Peter.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Peter2" class="CASTS" data-src="CAST/VECTORS/Peter2.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="FirstEpistleofJohn" class="CASTS" data-src="CAST/VECTORS/FirstEpistleofJohn.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="SecondEpistleofJohn" class="CASTS" data-src="CAST/VECTORS/SecondEpistleofJohn.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="ThirdEpistleofJohn" class="CASTS" data-src="CAST/VECTORS/ThirdEpistleofJohn.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Jude" class="CASTS" data-src="CAST/VECTORS/Jude.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
-<iframe id="Revelation" class="CASTS" data-src="CAST/VECTORS/Revelation.pdf#toolbar=0&fit=Fit&zoom=140"></iframe>
+<iframe id="Genesis" class="CASTS" data-src="CAST/VECTORS/Genesis.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Exodus" class="CASTS" data-src="CAST/VECTORS/Exodus.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Leviticus" class="CASTS" data-src="CAST/VECTORS/Leviticus.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Numbers" class="CASTS" data-src="CAST/VECTORS/Numbers.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Deuteronomy" class="CASTS" data-src="CAST/VECTORS/Deuteronomy.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Joshua" class="CASTS" data-src="CAST/VECTORS/Joshua.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Judges" class="CASTS" data-src="CAST/VECTORS/Judges.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Ruth" class="CASTS" data-src="CAST/VECTORS/Ruth.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Samuel" class="CASTS" data-src="CAST/VECTORS/Samuel.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Samuel2" class="CASTS" data-src="CAST/VECTORS/Samuel2.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Kings" class="CASTS" data-src="CAST/VECTORS/Kings.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Kings2" class="CASTS" data-src="CAST/VECTORS/Kings2.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Chronicles" class="CASTS" data-src="CAST/VECTORS/Chronicles.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Chronicles2" class="CASTS" data-src="CAST/VECTORS/Chronicles2.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Ezra" class="CASTS" data-src="CAST/VECTORS/Ezra.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Nehemiah" class="CASTS" data-src="CAST/VECTORS/Nehemiah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Esther" class="CASTS" data-src="CAST/VECTORS/Esther.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Job" class="CASTS" data-src="CAST/VECTORS/Job.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Psalms" class="CASTS" data-src="CAST/VECTORS/Psalms.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Proverbs" class="CASTS" data-src="CAST/VECTORS/Proverbs.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Ecclesiastes" class="CASTS" data-src="CAST/VECTORS/Ecclesiastes.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="SongofSolomon" class="CASTS" data-src="CAST/VECTORS/SongofSolomon.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Isaiah" class="CASTS" data-src="CAST/VECTORS/Isaiah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Jeremiah" class="CASTS" data-src="CAST/VECTORS/Jeremiah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Lamentations" class="CASTS" data-src="CAST/VECTORS/Lamentations.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Ezekiel" class="CASTS" data-src="CAST/VECTORS/Ezekiel.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Daniel" class="CASTS" data-src="CAST/VECTORS/Daniel.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Hosea" class="CASTS" data-src="CAST/VECTORS/Hosea.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Joel" class="CASTS" data-src="CAST/VECTORS/Joel.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Amos" class="CASTS" data-src="CAST/VECTORS/Amos.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Obadiah" class="CASTS" data-src="CAST/VECTORS/Obadiah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Jonah" class="CASTS" data-src="CAST/VECTORS/Jonah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Micah" class="CASTS" data-src="CAST/VECTORS/Micah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Nahum" class="CASTS" data-src="CAST/VECTORS/Nahum.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Habakkuk" class="CASTS" data-src="CAST/VECTORS/Habakkuk.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Zephaniah" class="CASTS" data-src="CAST/VECTORS/Zephaniah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Haggai" class="CASTS" data-src="CAST/VECTORS/Haggai.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Zechariah" class="CASTS" data-src="CAST/VECTORS/Zechariah.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Malachi" class="CASTS" data-src="CAST/VECTORS/Malachi.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Matthew" class="CASTS" data-src="CAST/VECTORS/Matthew.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Mark" class="CASTS" data-src="CAST/VECTORS/Mark.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Luke" class="CASTS" data-src="CAST/VECTORS/Luke.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="John" class="CASTS" data-src="CAST/VECTORS/John.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Acts" class="CASTS" data-src="CAST/VECTORS/Acts.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Romans" class="CASTS" data-src="CAST/VECTORS/Romans.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Corinthians" class="CASTS" data-src="CAST/VECTORS/Corinthians.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Corinthians2" class="CASTS" data-src="CAST/VECTORS/Corinthians2.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Galatians" class="CASTS" data-src="CAST/VECTORS/Galatians.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Ephesians" class="CASTS" data-src="CAST/VECTORS/Ephesians.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Philippians" class="CASTS" data-src="CAST/VECTORS/Philippians.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Colossians" class="CASTS" data-src="CAST/VECTORS/Colossians.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Thessalonians" class="CASTS" data-src="CAST/VECTORS/Thessalonians.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Thessalonians2" class="CASTS" data-src="CAST/VECTORS/Thessalonians2.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Timothy" class="CASTS" data-src="CAST/VECTORS/Timothy.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Timothy2" class="CASTS" data-src="CAST/VECTORS/Timothy2.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Titus" class="CASTS" data-src="CAST/VECTORS/Titus.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Philemon" class="CASTS" data-src="CAST/VECTORS/Philemon.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Hebrews" class="CASTS" data-src="CAST/VECTORS/Hebrews.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="James" class="CASTS" data-src="CAST/VECTORS/James.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Peter" class="CASTS" data-src="CAST/VECTORS/Peter.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Peter2" class="CASTS" data-src="CAST/VECTORS/Peter2.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="FirstEpistleofJohn" class="CASTS" data-src="CAST/VECTORS/FirstEpistleofJohn.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="SecondEpistleofJohn" class="CASTS" data-src="CAST/VECTORS/SecondEpistleofJohn.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="ThirdEpistleofJohn" class="CASTS" data-src="CAST/VECTORS/ThirdEpistleofJohn.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Jude" class="CASTS" data-src="CAST/VECTORS/Jude.pdf#toolbar=0&fit=Fit"></iframe>
+<iframe id="Revelation" class="CASTS" data-src="CAST/VECTORS/Revelation.pdf#toolbar=0&fit=Fit"></iframe>
 </div>
 </div>
 <script>
@@ -290,7 +329,11 @@ window.addEventListener("hashchange", navigateToBookFromHash);
                     bookElement.textContent = newText;
                 }
             } else {
-                bookElement.textContent = book.name;
+                if (book.name.match(/\d+$/)) {
+                    bookElement.textContent = book.name.replace(/(\d+)$/, ' $1');
+                } else {
+                    bookElement.textContent = book.name;
+                }
             }
         }
         books.forEach(book => insertHyphen(book));
@@ -299,6 +342,62 @@ window.addEventListener("hashchange", navigateToBookFromHash);
         });
     });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const bookElements = document.querySelectorAll('.B:not(.Casts)');
+    const tContainer = document.querySelector('.T');
+    let isMouseOverTContainer = false;
+    let isAnyBookOpen = false;
+    let shouldNotTriggerEffect = window.location.hash !== '';
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    const marginBooks = 4;
+    const bookHeight = element.clientHeight;
+    const topWithMargin = -bookHeight * marginBooks;
+    const bottomWithMargin = (window.innerHeight || document.documentElement.clientHeight) + (bookHeight * marginBooks);
+
+    return (
+        rect.top <= bottomWithMargin &&
+        rect.bottom >= topWithMargin &&
+        rect.left >= 0 &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+    function applyFajitaEffect() {
+        if (isMouseOverTContainer || isAnyBookOpen || shouldNotTriggerEffect) {
+            return;
+        }
+        const visibleBooks = Array.from(bookElements).filter((element) => isInViewport(element));
+        visibleBooks.forEach((element, index) => {
+            setTimeout(() => {
+                element.classList.add('Cast');
+                setTimeout(() => {
+                    element.classList.remove('Cast');
+                }, 408);
+            }, index * 208);
+        });
+    }
+    function getRandomInterval() {
+        const intervals = [4800, 4800, 4800];
+        const randomIndex = Math.floor(Math.random() * intervals.length);
+        return intervals[randomIndex];
+    }
+    setInterval(applyFajitaEffect, getRandomInterval());
+    tContainer.addEventListener('mouseover', () => isMouseOverTContainer = true);
+    tContainer.addEventListener('mouseout', () => isMouseOverTContainer = false);
+    bookElements.forEach((book) => {
+        book.addEventListener('click', () => {
+            isAnyBookOpen = !isAnyBookOpen;
+        });
+    });
+    window.addEventListener('hashchange', () => {
+        shouldNotTriggerEffect = window.location.hash !== '';
+    });
+});
+</script>
+<script src="Write/CAST_.js"></script>
+<script src="Write/CAST____.js"></script>
 <script>
 const CastVector = () => {
     const viewportHeight = window.innerHeight;
@@ -316,7 +415,7 @@ const Cast14 = (callback, delay) => {
         }
     };
 };
-const CastEngage = Cast14(CastVector, 14);
+const CastEngage = Cast14(CastVector, 140);
 const CastRender = new ResizeObserver(CastEngage);
 CastRender.observe(document.documentElement);
 window.addEventListener('DOMContentLoaded', CastEngage);
