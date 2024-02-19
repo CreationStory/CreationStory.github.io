@@ -3,43 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <link href="Write/SCRIPTS.css" rel="stylesheet">
-<title>Creation Scripts</title>
+<title>The Bible</title>
 <link rel="icon" href="Write/CS.ico">
 <meta name="viewport" content="height=device-height, width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
-<script>
-const CAST____ = window.innerWidth >= 2550 ? "190" : "140";
-function Casts124(t) {
-let e = document.querySelectorAll(".CASTS"),
-a = document.querySelector(".R");
-e.forEach(e => {
-if (e.id === t) {
-if (e.getAttribute("data-src")) {
-let dataSrc = e.getAttribute("data-src") + `&zoom=${CAST____}`;
-e.src = dataSrc;
-e.removeAttribute("data-src");}
-e.style.display = "block";
-} else {
-e.style.display = "none";}
-});
-a.style.display = "none";}
-function navigateToBookFromHash() {
-let hash = window.location.hash.substr(1).toLowerCase(),
-e = document.querySelectorAll(".CASTS"),
-isFullStopSeparated = hash.includes(".");
-let a = false;
-e.forEach(e => {
-if (e.id.toLowerCase() === hash || (isFullStopSeparated && e.id.toLowerCase() === hash.split(".")[0])) {
-Casts124(e.id);
-let page = isFullStopSeparated ? hash.split(".")[1] || 1 : 1;
-let o = `CAST/VECTORS/${e.id}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`;
-e.src = o;
-a = true;}});
-if (!a) {
-let match = hash.match(/^([a-z]+)(\d*)$/);
-if (match) {
-let title = match[1].toLowerCase();
-let pageNumber = match[2];
-const alternativeTitles = {
+<script>const CAST____ = window.innerWidth <= 1240 ? "74" : window.innerWidth <= 1500 ? "104" : window.innerWidth >= 2550 ? "190" : "140";
+function Casts124(t) { let e = document.querySelectorAll(".CASTS"), a = document.querySelector(".R"); e.forEach(e => { if (e.id === t) { if (e.getAttribute("data-src")) { let dataSrc = e.getAttribute("data-src") + `&zoom=${CAST____}`; e.src = dataSrc; e.removeAttribute("data-src");} e.style.display = "block"; } else { e.style.display = "none"; }}); a.style.display = "none"; document.querySelector('.BookC').style.pointerEvents = "all"; document.querySelector('.BookC').style.opacity = "1"; }
+function navigateToBookFromHash() { let hash = window.location.hash.substr(1).toLowerCase(), e = document.querySelectorAll(".CASTS"), isFullStopSeparated = hash.includes("."); let a = false; e.forEach(e => { if (e.id.toLowerCase() === hash || (isFullStopSeparated && e.id.toLowerCase() === hash.split(".")[0])) { Casts124(e.id); let page = isFullStopSeparated ? hash.split(".")[1] || 1 : 1; let o = `CAST/VECTORS/${e.id}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`; e.src = o; a = true; }}); if (!a) { let match = hash.match(/^([a-z]+)(\d*)$/); if (match) { let title = match[1].toLowerCase(); let pageNumber = match[2]; const alternativeTitles = {
 firstsamuel: "Samuel",
 secondsamuel: "Samuel2",
 firstkings: "Kings",
@@ -111,41 +80,16 @@ thirdjohn: "ThirdEpistleofJohn",
 thebookofrevelation: "Revelation",
 thebookofrevelations: "Revelation",
 bookofrevelation: "Revelation",
+bookofrevelations: "Revelation",
 revelations: "Revelation"};
-let mappedTitle = alternativeTitles[title];
-if (mappedTitle) {
-e.forEach(t => {
-if (t.id.toLowerCase() === mappedTitle.toLowerCase()) {
-Casts124(t.id);
-let page = isFullStopSeparated ? hash.split(".")[1] || pageNumber : pageNumber || 1;
-let e = `CAST/VECTORS/${mappedTitle}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`;
-t.src = e;
-a = true;}});}}}
-if (!a) {
-let o = hash.match(/^([a-z]+)(\d+)$/);
-if (o) {
-let l = o[1],
-i = parseInt(o[2]);
-e.forEach(t => {
-if (t.id.toLowerCase() === l) {
-Casts124(t.id);
-let page = isFullStopSeparated ? hash.split(".")[1] || i : i;
-let e = `CAST/VECTORS/${l}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`;
-t.src = e;
-a = true;}});}}
-setTimeout(function() {
-history.replaceState(null, null, window.location.pathname);
-}, 480);}
-window.onload = function() {
-setTimeout(function() {
-navigateToBookFromHash(),
-history.replaceState(null, null, window.location.pathname);
-}, 480);};
-window.addEventListener("hashchange", navigateToBookFromHash);
-</script>
+let mappedTitle = alternativeTitles[title]; if (mappedTitle) { e.forEach(t => { if (t.id.toLowerCase() === mappedTitle.toLowerCase()) { Casts124(t.id); let page = isFullStopSeparated ? hash.split(".")[1] || pageNumber : pageNumber || 1; let e = `CAST/VECTORS/${mappedTitle}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`; t.src = e; a = true; }});} } } if (!a) { let o = hash.match(/^([a-z]+)(\d+)$/); if (o) { let l = o[1], i = parseInt(o[2]); e.forEach(t => { if (t.id.toLowerCase() === l) { Casts124(t.id); let page = isFullStopSeparated ? hash.split(".")[1] || i : i; let e = `CAST/VECTORS/${l}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`; t.src = e; a = true; }}); }} setTimeout(function() { history.replaceState(null, null, window.location.pathname); }, 480); }
+window.onload = function() { setTimeout(function() { navigateToBookFromHash(), history.replaceState(null, null, window.location.pathname); }, 480); };
+window.addEventListener("hashchange", navigateToBookFromHash);</script>
 </head>
 <body>
 <div class="CAST124">
+<div class="CAST______________"></div>
+<div class="CASTVECTOR"></div>
 <div class="TIBS"></div>
 <div class="T">
 <div class="B" onclick="Casts124('Genesis')">Genesis</div>
@@ -210,11 +154,11 @@ window.addEventListener("hashchange", navigateToBookFromHash);
 <div class="B" onclick="Casts124('James')">James</div>
 <div class="B" onclick="Casts124('Peter')">Peter</div>
 <div class="B" onclick="Casts124('Peter2')">Peter 2</div>
-<div class="B" onclick="Casts124('FirstEpistleofJohn')">First Epistle of John</div>
-<div class="B" onclick="Casts124('SecondEpistleofJohn')">Second Epistle of John</div>
-<div class="B" onclick="Casts124('ThirdEpistleofJohn')">Third Epistle of John</div>
+<div class="B" onclick="Casts124('FirstEpistleofJohn')"><p><i>The</i><br></p>First Epistle of John</div>
+<div class="B" onclick="Casts124('SecondEpistleofJohn')"><p><i>The</i><br></p>Second Epistle of John</div>
+<div class="B" onclick="Casts124('ThirdEpistleofJohn')"><p><i>The</i><br></p>Third Epistle of John</div>
 <div class="B" onclick="Casts124('Jude')">Jude</div>
-<div class="B" onclick="Casts124('Revelation')">Revelation</div>
+<div class="B" onclick="Casts124('Revelation')"><p><i><b>The</b> <b>Book</b> of</i><br></p>Revelation</div>
 <div class="B Casts14"></div>
 </div>
 <div class="Vector">
@@ -305,125 +249,196 @@ window.addEventListener("hashchange", navigateToBookFromHash);
 <iframe id="Jude" class="CASTS" data-src="CAST/VECTORS/Jude.pdf#toolbar=0&fit=Fit"></iframe>
 <iframe id="Revelation" class="CASTS" data-src="CAST/VECTORS/Revelation.pdf#toolbar=0&fit=Fit"></iframe>
 </div>
+<div class="BookC">
+<div class="Slate"><p></p></div>
+<div class="Open"><p></p></div>
 </div>
-<script>
-    window.addEventListener('DOMContentLoaded', function() {
-        const books = [
-            { name: 'Deuteronomy', breakpoint: 330, hyphenIndex: 6 },
-            { name: 'Ecclesiastes', breakpoint: 330, hyphenIndex: 5 },
-            { name: 'Lamentations', breakpoint: 330, hyphenIndex: 6 },
-            { name: 'Corinthians', breakpoint: 330, hyphenIndex: 7 },
-            { name: 'Corinthians2', breakpoint: 330, hyphenIndex: 7 },
-            { name: 'Thessalonians', breakpoint: 330, hyphenIndex: 9 },
-            { name: 'Thessalonians2', breakpoint: 330, hyphenIndex: 9 }
-        ];
-        const container = document.querySelector('.T');
-        function insertHyphen(book) {
-            const bookElement = document.querySelector(`.B[onclick="Casts124('${book.name}')"]`);
-            const containerWidth = container.clientWidth;
-            if (containerWidth < book.breakpoint) {
-                const text = bookElement.textContent;
-                const index = book.hyphenIndex;
-                if (!text.includes('-')) {
-                    const newText = text.slice(0, index) + '-' + text.slice(index);
-                    bookElement.textContent = newText;
-                }
-            } else {
-                if (book.name.match(/\d+$/)) {
-                    bookElement.textContent = book.name.replace(/(\d+)$/, ' $1');
-                } else {
-                    bookElement.textContent = book.name;
-                }
-            }
-        }
-        books.forEach(book => insertHyphen(book));
-        window.addEventListener('resize', function() {
-            books.forEach(book => insertHyphen(book));
-        });
-    });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const bookElements = document.querySelectorAll('.B:not(.Casts)');
-    const tContainer = document.querySelector('.T');
-    let isMouseOverTContainer = false;
-    let isAnyBookOpen = false;
-    let shouldNotTriggerEffect = window.location.hash !== '';
+</div>
+<script>window.addEventListener('DOMContentLoaded', function() { const Books = [{ name: 'Deuteronomy', breakpoint: 380, hyphenIndex: 6 }, { name: 'Ecclesiastes', breakpoint: 380, hyphenIndex: 5 }, { name: 'Lamentations', breakpoint: 380, hyphenIndex: 6 }, { name: 'Corinthians', breakpoint: 380, hyphenIndex: 7 }, { name: 'Corinthians2', breakpoint: 380, hyphenIndex: 7 }, { name: 'Thessalonians', breakpoint: 380, hyphenIndex: 9 }, { name: 'Thessalonians2', breakpoint: 380, hyphenIndex: 9 }];
+const CAST = document.querySelector('.T');
+function insertHyphen(Book) { const BookVECTOR = document.querySelector(`.B[onclick="Casts124('${Book.name}')"]`); const CASTVector = CAST.clientWidth;
+if (CASTVector < Book.breakpoint) { const text = BookVECTOR.textContent; const index = Book.hyphenIndex;
+if (!text.includes('-')) { const newText = text.slice(0, index) + '-' + text.slice(index); BookVECTOR.textContent = newText; }} else { if (Book.name.match(/\d+$/)) { BookVECTOR.textContent = Book.name.replace(/(\d+)$/, ' $1'); } else { BookVECTOR.textContent = Book.name; }}}
+Books.forEach(Book => insertHyphen(Book));
+window.addEventListener('resize', function() {Books.forEach(Book => insertHyphen(Book));});});</script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+const Books = document.querySelectorAll('.B:not(.Casts)');
+const Cast = document.querySelector('.T');
+let isMouseOverT = false;
+let isBookOpen = false;
+let shouldNotTriggerEffect = window.location.hash !== '';
 function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    const marginBooks = 4;
-    const bookHeight = element.clientHeight;
-    const topWithMargin = -bookHeight * marginBooks;
-    const bottomWithMargin = (window.innerHeight || document.documentElement.clientHeight) + (bookHeight * marginBooks);
-
-    return (
-        rect.top <= bottomWithMargin &&
-        rect.bottom >= topWithMargin &&
-        rect.left >= 0 &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-    function applyFajitaEffect() {
-        if (isMouseOverTContainer || isAnyBookOpen || shouldNotTriggerEffect) {
-            return;
-        }
-        const visibleBooks = Array.from(bookElements).filter((element) => isInViewport(element));
-        visibleBooks.forEach((element, index) => {
-            setTimeout(() => {
-                element.classList.add('Cast');
-                setTimeout(() => {
-                    element.classList.remove('Cast');
-                }, 408);
-            }, index * 208);
-        });
-    }
-    function getRandomInterval() {
-        const intervals = [4800, 4800, 4800];
-        const randomIndex = Math.floor(Math.random() * intervals.length);
-        return intervals[randomIndex];
-    }
-    setInterval(applyFajitaEffect, getRandomInterval());
-    tContainer.addEventListener('mouseover', () => isMouseOverTContainer = true);
-    tContainer.addEventListener('mouseout', () => isMouseOverTContainer = false);
-    bookElements.forEach((book) => {
-        book.addEventListener('click', () => {
-            isAnyBookOpen = !isAnyBookOpen;
-        });
-    });
-    window.addEventListener('hashchange', () => {
-        shouldNotTriggerEffect = window.location.hash !== '';
-    });
-});
-</script>
+const rect = element.getBoundingClientRect();
+const marginBooks = 4;
+const bookHeight = element.clientHeight;
+const topMargin = -bookHeight * marginBooks;
+const bottomMargin = window.innerHeight + (bookHeight * marginBooks);
+return (rect.top <= bottomMargin && rect.bottom >= topMargin && rect.left >= 0 && rect.right <= window.innerWidth);}
+function engage() {if (isMouseOverT || isBookOpen || shouldNotTriggerEffect) {return;}
+const visibleBooks = Array.from(Books).filter((element) => isInViewport(element));
+visibleBooks.forEach((element, index) => {setTimeout(() => {element.classList.add('Cast'); setTimeout(() => {element.classList.remove('Cast');}, 408);}, index * 208);});}
+function getInterval() {const intervals = [10024, 28000, 48000]; const randomIndex = Math.floor(Math.random() * intervals.length); return intervals[randomIndex];}
+setInterval(engage, getInterval());
+Cast.addEventListener('mouseover', () => isMouseOverT = true);
+Cast.addEventListener('mouseout', () => isMouseOverT = false);
+Books.forEach((book) => {book.addEventListener('click', () => {isBookOpen = !isBookOpen;});});
+window.addEventListener('hashchange', () => {shouldNotTriggerEffect = window.location.hash !== '';});});</script>
 <script src="Write/CAST_.js"></script>
 <script src="Write/CAST____.js"></script>
-<script>
-const CastVector = () => {
-    const viewportHeight = window.innerHeight;
-    document.documentElement.style.height = `${viewportHeight}px`;
-    document.body.style.height = `${viewportHeight}px`;
-};
-const Cast14 = (callback, delay) => {
-    let timeoutId;
-    return (...args) => {
-        if (!timeoutId) {
-            timeoutId = setTimeout(() => {
-                callback(...args);
-                timeoutId = null;
-            }, delay);
-        }
-    };
-};
+<script>const CastVector = () => { const viewportHeight = window.innerHeight; document.documentElement.style.height = `${viewportHeight}px`; document.body.style.height = `${viewportHeight}px`;};
+const Cast14 = (callback, delay) => { let timeoutId; return (...args) => { if (!timeoutId) { timeoutId = setTimeout(() => { callback(...args); timeoutId = null; }, delay);}};};
 const CastEngage = Cast14(CastVector, 140);
 const CastRender = new ResizeObserver(CastEngage);
-CastRender.observe(document.documentElement);
-window.addEventListener('DOMContentLoaded', CastEngage);
-window.addEventListener('load', CastEngage);
-window.addEventListener('resize', CastEngage);
-window.addEventListener('scroll', CastEngage);
-window.addEventListener('focus', CastEngage);
-window.addEventListener('blur', CastEngage);
+CastRender.observe(document.documentElement); window.addEventListener('DOMContentLoaded', CastEngage); window.addEventListener('load', CastEngage); window.addEventListener('resize', CastEngage); window.addEventListener('scroll', CastEngage); window.addEventListener('focus', CastEngage); window.addEventListener('blur', CastEngage);</script>
+<script>window.addEventListener('load', (event) => { const CAST14 = document.querySelector('.CAST______________'); const CAST = document.querySelector('.CASTVECTOR'); const performActions = () => {if (CAST14) { CAST14.style.opacity = '0'; if (CAST) { CAST.style.backdropFilter = 'blur(0px)'; CAST.style.opacity = '0'; } }}; const maxLoadingTime = 7400; let timeoutId = setTimeout(() => { performActions(); }, maxLoadingTime); window.addEventListener('load', () => { clearTimeout(timeoutId); }); const retryDelay = 1400; const maxRetries = 2; let retries = 0; const errorHandler = () => {retries++; if (retries <= maxRetries) { setTimeout(() => { performActions(); }, retryDelay); } else { performActions(); }}; try {performActions();} catch (error) {errorHandler();}});</script>
+
+<script>
+window.addEventListener('wheel', function(event) {
+    if (event.ctrlKey === true) {
+        event.preventDefault();
+    }
+}, { passive: false });
+window.addEventListener('keydown', function(event) {
+    if (
+        event.ctrlKey === true &&
+        (event.key === '+' || event.key === '-' || event.key === '=' ||
+        event.keyCode === 61 || event.keyCode === 107 || event.keyCode === 173 ||
+        event.keyCode === 109 || event.keyCode === 187 || event.keyCode === 189)
+    ) {
+        event.preventDefault();
+    }
+});
+document.addEventListener('touchend', function(event) {
+    event.preventDefault();
+});
+document.addEventListener('dblclick', function(event) {
+    event.preventDefault();
+});
+document.addEventListener('gesturestart', function(event) {
+    event.preventDefault();
+});
+document.addEventListener('gesturechange', function(event) {
+    event.preventDefault();
+});
+document.addEventListener('dragstart', function(event) {
+    event.preventDefault();
+});
 </script>
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+  var slateOpen = true; // Variable to track whether the slate is open or closed
+  var CAST = document.querySelector('.BookC');
+  var slateParagraph = document.querySelector('.Slate p');
+  var openParagraph = document.querySelector('.Open p');
+
+  // Function to handle the Slate button click
+  function handleSlateClick() {
+    // Get references to the elements
+    var tElement = document.querySelector('.T');
+    var tibsElement = document.querySelector('.TIBS');
+    var vectorC = document.querySelector('.Vector');
+    var VectorList = document.querySelectorAll('.Vector iframe'); // Select all iframes with class Vector
+    var BookC = document.querySelector('.BookC');
+
+    // Toggle the slate state
+    slateOpen = !slateOpen;
+
+    // Set the widths of the elements based on the slate state
+    if (slateOpen) {
+      tElement.style.width = '28vw';
+      tibsElement.style.width = '27.34vw';
+      vectorC.style.width = '74vw';
+      if (window.innerWidth >= 2550) {
+        tElement.style.borderImageWidth = '2px';
+      } else {
+        tElement.style.borderImageWidth = '1px';
+      }
+      if (window.innerWidth >= 1801) {
+        BookC.style.left = '28%';
+      } else if (window.innerWidth <= 1400) {
+    BookC.style.left = '.14vw';}
+    else {
+        BookC.style.left = '24.48%';
+      }
+      BookC.style.opacity = '1';
+      slateParagraph.style.left = '-.14vw';
+      openParagraph.style.left = '-.14vw';
+    } else {
+      tElement.style.width = '0px';
+      tibsElement.style.width = '0px';
+      vectorC.style.width = '104%';
+        BookC.style.left = '.14vw';
+      tElement.style.borderImageWidth = '0px';
+      BookC.style.opacity = '.14';
+      slateParagraph.style.left = '1.4vw';
+      openParagraph.style.left = '1.4vw';
+    }
+
+    VectorList.forEach(function (iframe) {
+      if (slateOpen) {
+        iframe.style.width = '74vw';
+      } else {
+        iframe.style.width = '104vw';
+      }
+    });
+  }
+
+  function handleOpenClick() {
+    var activeBook = document.querySelector('iframe.CASTS:not([style*="display: none"])');
+    if (activeBook) {
+      var bookSrc = activeBook.getAttribute('src');
+      window.open(bookSrc, '_blank');
+    } else {
+      retern
+    }
+  }
+  
+  function handleSlateHover() {
+  slateParagraph.style.opacity = '1';
+    if (slateOpen) {
+      this.querySelector('p').innerText = 'Close Slate';
+    } else {
+      this.querySelector('p').innerText = 'Open Slate';
+    }
+  }
+
+  // Function to handle hover over Open button
+  function handleOpenHover() {
+    openParagraph.style.opacity = '1';
+    this.querySelector('p').innerText = 'Open Book';
+  }
+
+  // Function to handle hover out of buttons
+  function handleHoverOut() {
+  slateParagraph.style.opacity = '0';
+openParagraph.style.opacity = '0';
+  }
+  
+function CAST14() {
+    if (slateOpen) {
+        CAST.classList.remove('CAST______________');
+    } else {
+    CAST.classList.add('CAST______________');
+            setTimeout(function() {
+            CAST.classList.remove('CAST______________');
+        }, 480);
+    }
+}
+
+  document.querySelector('.BookC').addEventListener('mouseenter', CAST14);
+  document.querySelector('.Slate').addEventListener('click', handleSlateClick);
+  document.querySelector('.Slate').addEventListener('mouseenter', handleSlateHover);
+  document.querySelector('.Slate').addEventListener('mouseleave', handleHoverOut);
+  document.querySelector('.Open').addEventListener('click', handleOpenClick);
+  document.querySelector('.Open').addEventListener('mouseenter', handleOpenHover);
+  document.querySelector('.Open').addEventListener('mouseleave', handleHoverOut);
+  });
+</script>
+
+
+
+
 </body>
 </html>
