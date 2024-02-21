@@ -25,7 +25,6 @@ body {
     touch-action:pan-y;
     -webkit-tap-highlight-color:#fff0;
     -webkit-touch-callout:none;
-    user-select:none;
     -webkit-user-drag:none;
 }
 
@@ -72,6 +71,7 @@ text-decoration:none;
     width: 100%;
     justify-content: center;
     overflow: hidden;
+    user-select:none;
 }
 .T {
     height: 100%;
@@ -96,9 +96,9 @@ text-decoration:none;
     animation-fill-mode: both;
     transition: all 1.04s ease-out;
     box-shadow: -1.4px 0px 2.8px 0px inset #ff000074, 0px 0px 4.8px 0px #ff000074;
-    z-index: 4;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 14;
     scrollbar-width: none;
     touch-action:pan-y;
 }
@@ -121,6 +121,16 @@ text-decoration:none;
     .T {
         border-image-width:1px;
     }
+}
+
+.C {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background:#fff0;
+    filter:blur(0px);
+    transition:filter .48s .14s ease-in-out, background .48s .28s ease-in-out;
+    position: relative;
 }
 
 .T14 {
@@ -157,9 +167,12 @@ text-decoration:none;
     line-height: 104%;
     filter: drop-shadow(0px 0px 4px #590000);
     transition: all .28s ease-in-out;
+    white-space: nowrap;
+    text-wrap: nowrap;
     cursor: pointer;
     user-select: none;
     padding: 0px 14px 0px 14px;
+    pointer-events: all;
 }
 
 .B.Cast {
@@ -217,7 +230,7 @@ text-decoration:none;
     line-height: 104%;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .B {
         margin: 2.8vh 0 7.4vh 0;
         font-size: 3.4vw;
@@ -249,16 +262,33 @@ text-decoration:none;
     filter: drop-shadow(0px 0px 4px #590000);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .B.Casts {
         font-size: 4.8vw;
     }
 }
 
-.B.Casts14 {
+.B.Casts14_ {
     margin: 4vh 0 8vh 0;
     height: 14%;
     width: 100%;
+    display:none;
+    background: url("14_.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0px 0px 28px #ff000074);
+    mix-blend-mode: normal;
+    pointer-events: none;
+}
+
+.B.Casts14_ video {height: 104%;object-fit: contain;overflow: hidden;}
+
+.B.Casts14____ {
+    margin: 4vh 0 8vh 0;
+    height: 14%;
+    width: 100%;
+    display:none;
     background: url("14.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -268,8 +298,8 @@ text-decoration:none;
     pointer-events: none;
 }
 
-@media (max-width: 1440px) {
-    .B.Casts14 {
+@media (max-width: 1400px) {
+    .B.Casts14____ {
         margin: 7.4vh 0 14vh 4.8px;
         height: 14%;
         width: auto;
@@ -282,6 +312,7 @@ text-decoration:none;
         pointer-events: none;
     }
 }
+
 
 .CASTS {
     display: none;
@@ -317,6 +348,7 @@ text-decoration:none;
 
 .WRITE {
     margin: 10.4vh 0 0 0;
+    width: 100%;
     height: 28vh;
     min-height: 14%;
     font-family: CS;
@@ -340,6 +372,31 @@ text-decoration:none;
 @media (max-width: 1400px) {
     .WRITE {
         font-size: 14vw;
+    }
+}
+
+@media (max-width: 1400px) and (max-height:740px) {
+    .WRITE {
+     
+    }
+}
+
+@media (max-width: 1400px) and (min-height:900px) {
+    .WRITE {
+        margin: 4.8vh 0 0 0;
+        min-height: 48%;
+        width: 74%;
+        font-size: 19vh;
+        line-height: 90%;
+    }
+}
+
+@media (max-width: 1400px) and (min-height:1400px) {
+    .WRITE {
+        margin: 7.4vh 0 0 0;
+        min-height: 48%;
+        font-size: 15.1vh;
+        line-height: 109%;
     }
 }
 
@@ -409,7 +466,7 @@ text-decoration:none;
     }
 }
 
-@media (max-width: 1440px) and (min-height: 1040px) {
+@media (max-width: 1400px) and (min-height: 1040px) {
     .RENDER124 {
         height: 44.8%;
         width: 59%;
@@ -417,18 +474,11 @@ text-decoration:none;
     }
 }
 
-@media (min-width: 1441px) and (min-height: 970.43px) and (max-width:1600px) {
+@media (min-width: 1400px) and (min-height: 943px) and (max-width: 1600px) {
     .RENDER124 {
         height: 34%;
         width: 48%;
-        bottom: 20.8%;
-    }
-}
-
-@media (max-width: 1400px) and (min-height:937px) and (min-width:1240px) {
-    .RENDER124 {
-        height: 44.8%;
-        bottom: 10.4%;
+        bottom: 14%;
     }
 }
 
@@ -447,7 +497,7 @@ text-decoration:none;
     justify-content: space-between;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .rendertext {
         margin:4.8vh 1.4vw 0 0;
         display: flex;
@@ -485,20 +535,20 @@ text-decoration:none;
     }
 }
 
-@media (max-width: 1440px) and (min-height:1090px) {
+@media (max-width: 1400px) and (min-height:1090px) {
     .rendertext {
         margin: 4.8vh 1.4vw 0 0;
         height: 38%;
     }
 }
 
-@media (max-width: 1440px) and (min-height:1400px) {
+@media (max-width: 1400px) and (min-height:1400px) {
     .rendertext {
         height: 34%;
     }
 }
 
-@media (max-width: 1440px) and (min-height:1500px) {
+@media (max-width: 1400px) and (min-height:1500px) {
     .rendertext {
         height: 28%;
     }
@@ -535,7 +585,7 @@ text-decoration:none;
     line-height: 0;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .title {
         font-family:CS;
         font-size: 1.4vw;
@@ -563,7 +613,7 @@ text-decoration:none;
     }
 }
 
-@media (min-height: 740px) and (max-width: 1440px) {
+@media (min-height: 740px) and (max-width: 1400px) {
     .title {
         font-size: 1.9vw;
     }
@@ -575,13 +625,13 @@ text-decoration:none;
     }
 }
 
-@media (min-width: 1240px) and (min-height: 1400px) and (max-width:1440px) {
+@media (min-width: 1240px) and (min-height: 1400px) and (max-width:1400px) {
     .title {
         font-size: 2.8vw;
     }
 }
 
-@media (max-width: 1440px) and (min-height:1090px) {
+@media (max-width: 1400px) and (min-height:1090px) {
     .title {
         font-size: 2.08vw;
     }
@@ -629,7 +679,7 @@ text-decoration:none;
     }
 }
 
-@media (min-height: 740px) and (max-width: 1440px) {
+@media (min-height: 740px) and (max-width: 1400px) {
     .number {
         margin: 3.4% 1.4% 0 0;
         font-size: 1.51vw;
@@ -650,14 +700,14 @@ text-decoration:none;
     }
 }
 
-@media (min-width: 1240px) and (min-height: 1400px) and (max-width:1440px) {
+@media (min-width: 1240px) and (min-height: 1400px) and (max-width:1400px) {
     .number {
         margin: 4.8% 2.8% 0 0;
         font-size: 2.08vw;
     }
 }
 
-@media (max-width: 1440px) and (min-height:1090px) {
+@media (max-width: 1400px) and (min-height:1090px) {
     .number {
         margin: 3.4% 1.4% 0 0;
         font-size: 1.9vw;
@@ -671,7 +721,7 @@ text-decoration:none;
     }
 }
 
-@media (max-width: 1440px) and (min-height: 1040px) {
+@media (max-width: 1400px) and (min-height: 1040px) {
     .number {
         margin: 3.4% 1.4% 0 0;
         font-size: 1.9vw;
@@ -721,7 +771,7 @@ text-decoration:none;
     }
 }
 
-@media (min-height: 740px) and (max-width: 1440px) {
+@media (min-height: 740px) and (max-width: 1400px) {
     .description {
         margin: 4.08% 5.9% 0 0;
         font-size: 1.51vw;
@@ -742,20 +792,20 @@ text-decoration:none;
     }
 }
 
-@media (min-width: 1240px) and (min-height: 1400px) and (max-width: 1440px) {
+@media (min-width: 1240px) and (min-height: 1400px) and (max-width: 1400px) {
     .description {
         margin: 5.9% 10.4% 0 0;
         font-size: 2.28vw;
     }
 }
 
-@media (max-width: 1440px) and (min-height:1090px) {
+@media (max-width: 1400px) and (min-height:1090px) {
     .description {
         font-size: 1.9vw;
     }
 }
 
-@media (max-width: 1440px) and (min-height:1240px) {
+@media (max-width: 1400px) and (min-height:1240px) {
     .description {
         margin: 4.08% 5.9% 0 0;
         font-size: 2.28vw;
@@ -769,7 +819,7 @@ text-decoration:none;
     }
 }
 
-@media (max-width: 1440px) and (min-height: 1040px) {
+@media (max-width: 1400px) and (min-height: 1040px) {
     .description {
         margin: 3.8% 5.9% 0 0;
         font-size: 1.9vw;
@@ -826,7 +876,7 @@ text-decoration:none;
     font-family: Pyccknn;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .WORDTHEREOF {
         display:flex;
         height: 10.4vh;
@@ -866,7 +916,7 @@ text-decoration:none;
     }
 }
 
-@media (min-height: 740px) and (max-width: 1440px) {
+@media (min-height: 740px) and (max-width: 1400px) {
     .WORDTHEREOF {
         font-size: 1.04vw;
     }
@@ -878,7 +928,7 @@ text-decoration:none;
     }
 }
 
-@media (min-width: 1240px) and (min-height: 1400px) and (max-width:1440px) {
+@media (min-width: 1240px) and (min-height: 1400px) and (max-width:1400px) {
     .WORDTHEREOF {
         font-size: 1.4vw;
     }
@@ -976,7 +1026,7 @@ text-decoration:none;
 
     48% {
         filter: drop-shadow(0px 0px 4.8px #ff0000)blur(14px);
-        box-shadow: 4.8vw 0 48px 14px inset #ff000074;
+        box-shadow: 4.8vw 0 48px 14px inset #740000;
     }
 
     100% {
@@ -1132,8 +1182,8 @@ opacity: 0!important;
     left: 0;
     background: linear-gradient(#fff0 90%, #590000 97.34%), linear-gradient(#480000 4.8px, #fff0 2.8%);
     transition: all 1.04s ease-out;
-    z-index: 14;
+    z-index: 48;
     user-select: none;
     pointer-events: none;
     position: fixed;
-}
+};
