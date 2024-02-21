@@ -92,6 +92,7 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
 <div class="CASTVECTOR"></div>
 <div class="TIBS"></div>
 <div class="T">
+<div class="C">
 <div class="B" onclick="Casts124('Genesis')">Genesis</div>
 <div class="B" onclick="Casts124('Exodus')">Exodus</div>
 <div class="B" onclick="Casts124('Leviticus')">Leviticus</div>
@@ -154,12 +155,14 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
 <div class="B" onclick="Casts124('James')">James</div>
 <div class="B" onclick="Casts124('Peter')">Peter</div>
 <div class="B" onclick="Casts124('Peter2')">Peter 2</div>
-<div class="B" onclick="Casts124('FirstEpistleofJohn')"><p><i>The</i><br></p>First Epistle of John</div>
-<div class="B" onclick="Casts124('SecondEpistleofJohn')"><p><i>The</i><br></p>Second Epistle of John</div>
-<div class="B" onclick="Casts124('ThirdEpistleofJohn')"><p><i>The</i><br></p>Third Epistle of John</div>
+<div class="B" onclick="Casts124('FirstEpistleofJohn')"><p><i>The</i><br></p>First Epistle of<br>John</div>
+<div class="B" onclick="Casts124('SecondEpistleofJohn')"><p><i>The</i><br></p>Second Epistle of<br>John</div>
+<div class="B" onclick="Casts124('ThirdEpistleofJohn')"><p><i>The</i><br></p>Third Epistle of<br>John</div>
 <div class="B" onclick="Casts124('Jude')">Jude</div>
 <div class="B" onclick="Casts124('Revelation')"><p><i><b>The</b> <b>Book</b> of</i><br></p>Revelation</div>
-<div class="B Casts14"></div>
+</div>
+<div class="B Casts14_"><video autoplay muted loop><source src="Write/14.webm" type="video/webm"></video></div>
+<div class="B Casts14____"></div>
 </div>
 <div class="Vector">
 <div class="R">
@@ -261,6 +264,36 @@ if (CASTVector < Book.breakpoint) { const text = BookVECTOR.textContent; const i
 if (!text.includes('-')) { const newText = text.slice(0, index) + '-' + text.slice(index); BookVECTOR.textContent = newText; }} else { if (Book.name.match(/\d+$/)) { BookVECTOR.textContent = Book.name.replace(/(\d+)$/, ' $1'); } else { BookVECTOR.textContent = Book.name; }}}
 Books.forEach(Book => insertHyphen(Book));
 window.addEventListener('resize', function() {Books.forEach(Book => insertHyphen(Book));});});</script>
+<script>
+  function checkAlphaSupport() {
+    var video = document.createElement('video');
+    var supportsAlpha = false;
+    
+    if (video.canPlayType) {
+      // Check for support of VP9 with alpha
+      var canPlayType = video.canPlayType('video/webm; codecs="vp9"');
+      if (canPlayType === 'probably' || canPlayType === 'maybe') {
+        supportsAlpha = true;
+      }
+    }
+    
+    return supportsAlpha;
+  }
+
+  function showDivsBasedOnSupport() {
+  var supportedDiv = document.querySelector('.Casts14_');
+    var fallbackDiv = document.querySelector('.Casts14____');
+    
+    if (checkAlphaSupport()) {
+      fallbackDiv.style.display = 'none';
+      supportedDiv.style.display = 'block';
+    } else {
+      fallbackDiv.style.display = 'block';
+      supportedDiv.style.display = 'none';
+    }
+  }
+  document.addEventListener('DOMContentLoaded', showDivsBasedOnSupport);
+</script>
 <script>document.addEventListener('DOMContentLoaded', function() {
 const Books = document.querySelectorAll('.B:not(.Casts)');
 const Cast = document.querySelector('.T');
@@ -291,32 +324,42 @@ const CastEngage = Cast14(CastVector, 140);
 const CastRender = new ResizeObserver(CastEngage);
 CastRender.observe(document.documentElement); window.addEventListener('DOMContentLoaded', CastEngage); window.addEventListener('load', CastEngage); window.addEventListener('resize', CastEngage); window.addEventListener('scroll', CastEngage); window.addEventListener('focus', CastEngage); window.addEventListener('blur', CastEngage);</script>
 <script>window.addEventListener('load', (event) => { const CAST14 = document.querySelector('.CAST______________'); const CAST = document.querySelector('.CASTVECTOR'); const performActions = () => {if (CAST14) { CAST14.style.opacity = '0'; if (CAST) { CAST.style.backdropFilter = 'blur(0px)'; CAST.style.opacity = '0'; } }}; const maxLoadingTime = 7400; let timeoutId = setTimeout(() => { performActions(); }, maxLoadingTime); window.addEventListener('load', () => { clearTimeout(timeoutId); }); const retryDelay = 1400; const maxRetries = 2; let retries = 0; const errorHandler = () => {retries++; if (retries <= maxRetries) { setTimeout(() => { performActions(); }, retryDelay); } else { performActions(); }}; try {performActions();} catch (error) {errorHandler();}});</script>
-
 <script>
 window.addEventListener('wheel', function(event) {
-    if (event.ctrlKey === true) {
-        event.preventDefault();
-    }
+if (event.ctrlKey === true) {
+event.preventDefault();
+}
 }, { passive: false });
 window.addEventListener('keydown', function(event) {
-    if (
-        event.ctrlKey === true &&
-        (event.key === '+' || event.key === '-' || event.key === '=' ||
-        event.keyCode === 61 || event.keyCode === 107 || event.keyCode === 173 ||
-        event.keyCode === 109 || event.keyCode === 187 || event.keyCode === 189)
-    ) {
-        event.preventDefault();
-    }
+if (
+event.ctrlKey === true &&
+(event.key === '+' || event.key === '-' || event.key === '=' ||
+event.keyCode === 61 || event.keyCode === 107 || event.keyCode === 173 ||
+event.keyCode === 109 || event.keyCode === 187 || event.keyCode === 189)
+) {
+event.preventDefault();
+}
+});
+document.addEventListener('touchstart', function(event) {
+event.preventDefault();
+});
+document.addEventListener('contextmenu', function(event) {
+event.preventDefault();
+});
+document.addEventListener('dragstart', function(event) {
+event.preventDefault();
+});
+document.addEventListener('selectstart', function(event) {
+event.preventDefault();
 });
 </script>
-
-
 <script>
   window.addEventListener('DOMContentLoaded', function() {
   var slateOpen = true; // Variable to track whether the slate is open or closed
   var CAST = document.querySelector('.BookC');
   var slateParagraph = document.querySelector('.Slate p');
   var openParagraph = document.querySelector('.Open p');
+  let castCooldown = false;
 
   // Function to handle the Slate button click
   function handleSlateClick() {
@@ -326,6 +369,7 @@ window.addEventListener('keydown', function(event) {
     var vectorC = document.querySelector('.Vector');
     var VectorList = document.querySelectorAll('.Vector iframe'); // Select all iframes with class Vector
     var BookC = document.querySelector('.BookC');
+    var CASTS = document.querySelector('.C');
 
     // Toggle the slate state
     slateOpen = !slateOpen;
@@ -350,6 +394,8 @@ window.addEventListener('keydown', function(event) {
       BookC.style.opacity = '1';
       slateParagraph.style.left = '-.14vw';
       openParagraph.style.left = '-.14vw';
+      CASTS.style.background = '#fff0';
+      CASTS.style.filter = 'blur(0px)';
     } else {
       tElement.style.width = '0px';
       tibsElement.style.width = '0px';
@@ -359,6 +405,8 @@ window.addEventListener('keydown', function(event) {
       BookC.style.opacity = '.14';
       slateParagraph.style.left = '1.4vw';
       openParagraph.style.left = '1.4vw';
+      CASTS.style.background = '#ff000074';
+      CASTS.style.filter = 'blur(14px)';
     }
 
     VectorList.forEach(function (iframe) {
@@ -402,13 +450,17 @@ openParagraph.style.opacity = '0';
   }
   
 function CAST14() {
-    if (slateOpen) {
-        CAST.classList.remove('CAST______________');
-    } else {
-    CAST.classList.add('CAST______________');
-            setTimeout(function() {
+    if (!castCooldown) {
+        if (slateOpen) {
             CAST.classList.remove('CAST______________');
-        }, 480);
+        } else {
+            CAST.classList.add('CAST______________');
+            castCooldown = true;
+            setTimeout(function() {
+                CAST.classList.remove('CAST______________');
+                castCooldown = false;
+            }, 480);
+        }
     }
 }
 
