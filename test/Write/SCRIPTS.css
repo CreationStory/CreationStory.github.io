@@ -282,7 +282,7 @@ text-decoration:none;
     pointer-events: none;
 }
 
-.B.Casts14_ video {height: 104%;object-fit: contain;overflow: hidden;}
+.B.Casts14_ video {height: 104%;max-height:140px;object-fit: contain;overflow: hidden;}
 
 .B.Casts14____ {
     margin: 4vh 0 8vh 0;
