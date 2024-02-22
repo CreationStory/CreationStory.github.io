@@ -161,7 +161,7 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
 <div class="B" onclick="Casts124('Jude')">Jude</div>
 <div class="B" onclick="Casts124('Revelation')"><p><i><b>The</b> <b>Book</b> of</i><br></p>Revelation</div>
 </div>
-<div class="B Casts14_"><video autoplay muted loop><source src="Write/14.webm" type="video/webm"></video></div>
+<div class="B Casts14_"><video autoplay muted loop><source type="video/webm"></video></div>
 <div class="B Casts14____"></div>
 </div>
 <div class="Vector">
@@ -256,14 +256,54 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
 <div class="Slate"><p></p></div>
 <div class="Open"><p></p></div>
 </div>
+<div class="C____"><p></p></div>
 </div>
-<script>window.addEventListener('DOMContentLoaded', function() { const Books = [{ name: 'Deuteronomy', breakpoint: 380, hyphenIndex: 6 }, { name: 'Ecclesiastes', breakpoint: 380, hyphenIndex: 5 }, { name: 'Lamentations', breakpoint: 380, hyphenIndex: 6 }, { name: 'Corinthians', breakpoint: 380, hyphenIndex: 7 }, { name: 'Corinthians2', breakpoint: 380, hyphenIndex: 7 }, { name: 'Thessalonians', breakpoint: 380, hyphenIndex: 9 }, { name: 'Thessalonians2', breakpoint: 380, hyphenIndex: 9 }];
-const CAST = document.querySelector('.T');
-function insertHyphen(Book) { const BookVECTOR = document.querySelector(`.B[onclick="Casts124('${Book.name}')"]`); const CASTVector = CAST.clientWidth;
-if (CASTVector < Book.breakpoint) { const text = BookVECTOR.textContent; const index = Book.hyphenIndex;
-if (!text.includes('-')) { const newText = text.slice(0, index) + '-' + text.slice(index); BookVECTOR.textContent = newText; }} else { if (Book.name.match(/\d+$/)) { BookVECTOR.textContent = Book.name.replace(/(\d+)$/, ' $1'); } else { BookVECTOR.textContent = Book.name; }}}
-Books.forEach(Book => insertHyphen(Book));
-window.addEventListener('resize', function() {Books.forEach(Book => insertHyphen(Book));});});</script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    const Books = [
+      { name: 'Deuteronomy', breakpoint: 340.87, hyphenIndex: 6 },
+      { name: 'Chronicles', breakpoint: 340.87, hyphenIndex: 8 },
+      { name: 'Chronicles2', breakpoint: 340.87, hyphenIndex: 8 },
+      { name: 'Ecclesiastes', breakpoint: 340.87, hyphenIndex: 5 },
+      { name: 'Lamentations', breakpoint: 340.87, hyphenIndex: 6 },
+      { name: 'Habakkuk', breakpoint: 340.87, hyphenIndex: 4 },
+      { name: 'Corinthians', breakpoint: 140, hyphenIndex: 7 },
+      { name: 'Corinthians2', breakpoint: 140, hyphenIndex: 7 },
+      { name: 'Thessalonians', breakpoint: 140, hyphenIndex: 9 },
+      { name: 'Thessalonians2', breakpoint: 140, hyphenIndex: 9 }
+    ];
+
+    const CAST = document.querySelector('.T');
+
+    function insertHyphen(Book) {
+      const BookVECTOR = document.querySelector(`.B[onclick="Casts124('${Book.name}')"]`);
+      const CASTVector = CAST.clientWidth;
+
+      if (CASTVector < Book.breakpoint) {
+        const text = BookVECTOR.textContent;
+        const index = Book.hyphenIndex;
+
+        if (!text.includes('-')) {
+          const newText = text.slice(0, index) + '-<br>' + text.slice(index);
+          BookVECTOR.innerHTML = newText;
+        }
+      } else {
+        if (Book.name.match(/\d+$/)) {
+          BookVECTOR.textContent = Book.name.replace(/(\d+)$/, ' $1');
+        } else {
+          BookVECTOR.textContent = Book.name;
+        }
+      }
+    }
+
+    Books.forEach(Book => insertHyphen(Book));
+
+    window.addEventListener('resize', function() {
+      Books.forEach(Book => insertHyphen(Book));
+    });
+  });
+</script>
+
 <script>
   function checkAlphaSupport() {
     var video = document.createElement('video');
@@ -281,10 +321,15 @@ window.addEventListener('resize', function() {Books.forEach(Book => insertHyphen
   }
 
   function showDivsBasedOnSupport() {
-  var supportedDiv = document.querySelector('.Casts14_');
+    var supportedDiv = document.querySelector('.Casts14_');
     var fallbackDiv = document.querySelector('.Casts14____');
     
+    var videoElement = supportedDiv.querySelector('video');
+    var videoSrc = "Write/14.webm"; // Define the video file path here
+    
     if (checkAlphaSupport()) {
+      // Set the src attribute of the video element to the defined video file path
+      videoElement.src = videoSrc;
       fallbackDiv.style.display = 'none';
       supportedDiv.style.display = 'block';
     } else {
@@ -292,6 +337,7 @@ window.addEventListener('resize', function() {Books.forEach(Book => insertHyphen
       supportedDiv.style.display = 'none';
     }
   }
+  
   document.addEventListener('DOMContentLoaded', showDivsBasedOnSupport);
 </script>
 <script>document.addEventListener('DOMContentLoaded', function() {
@@ -464,6 +510,50 @@ function CAST14() {
     }
 }
 
+function handleLongHold() {
+    var tooltipText = '';
+    if (this.classList.contains('Slate')) {
+        tooltipText = slateOpen ? 'Close Slate' : 'Open Slate';
+    } else if (this.classList.contains('Open')) {
+        tooltipText = 'Open Book';
+    }
+    var tooltipParagraph = document.querySelector('.C____ p');
+    tooltipParagraph.innerText = tooltipText;
+    var tooltipDiv = document.querySelector('.C____');
+    tooltipDiv.style.opacity = '1';
+}
+
+// Function to handle release after long-hold action
+function handleLongHoldRelease() {
+    var tooltipDiv = document.querySelector('.C____');
+    tooltipDiv.style.opacity = '0'; // Hide the tooltip on release
+}
+
+function addTouchListenersIfNeeded() {
+  if (window.innerWidth <= 1400) {
+    document.querySelector('.Slate').addEventListener('touchstart', function(event) {
+      var touchDuration = 480; // Adjust this value as needed for the duration of long-hold
+      this.longHoldTimeout = setTimeout(handleLongHold.bind(this), touchDuration);
+    });
+    document.querySelector('.Open').addEventListener('touchstart', function(event) {
+      var touchDuration = 480; // Adjust this value as needed for the duration of long-hold
+      this.longHoldTimeout = setTimeout(handleLongHold.bind(this), touchDuration);
+    });
+  }
+}
+
+// Add event listeners for releasing long-hold actions
+document.querySelector('.Slate').addEventListener('touchend', function() {
+    clearTimeout(this.longHoldTimeout);
+    handleLongHoldRelease();
+});
+document.querySelector('.Open').addEventListener('touchend', function() {
+    clearTimeout(this.longHoldTimeout);
+    handleLongHoldRelease();
+});
+
+addTouchListenersIfNeeded()
+
   document.querySelector('.BookC').addEventListener('mouseenter', CAST14);
   document.querySelector('.Slate').addEventListener('click', handleSlateClick);
   document.querySelector('.Slate').addEventListener('mouseenter', handleSlateHover);
@@ -471,6 +561,9 @@ function CAST14() {
   document.querySelector('.Open').addEventListener('click', handleOpenClick);
   document.querySelector('.Open').addEventListener('mouseenter', handleOpenHover);
   document.querySelector('.Open').addEventListener('mouseleave', handleHoverOut);
+  window.addEventListener('resize', addTouchListenersIfNeeded);
+  document.addEventListener('touchstart', handleLongHoldRelease);
+  document.addEventListener('click', handleLongHoldRelease);
   });
 </script>
 
