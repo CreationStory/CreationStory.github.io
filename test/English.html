@@ -7,7 +7,7 @@
 <link rel="icon" href="Write/CS.ico">
 <meta name="viewport" content="height=device-height, width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
 <script>const CAST____ = window.innerWidth <= 1240 ? "74" : window.innerWidth <= 1500 ? "104" : window.innerWidth >= 2550 ? "190" : "140";
-function Casts124(t) { let e = document.querySelectorAll(".CASTS"), a = document.querySelector(".R"); e.forEach(e => { if (e.id === t) { if (e.getAttribute("data-src")) { let dataSrc = e.getAttribute("data-src") + `&zoom=${CAST____}`; e.src = dataSrc; e.removeAttribute("data-src");} e.style.display = "block"; } else { e.style.display = "none"; }}); a.style.display = "none"; document.querySelector('.BookC').style.pointerEvents = "all"; document.querySelector('.BookC').style.opacity = "1"; }
+function Casts124(t) { let e = document.querySelectorAll(".CASTS"), a = document.querySelector(".R"); e.forEach(e => { if (e.id === t) { if (e.getAttribute("data-src")) { let dataSrc = e.getAttribute("data-src") + `&zoom=${CAST____}`; e.src = dataSrc; e.removeAttribute("data-src");} e.style.display = "block"; } else { e.style.display = "none"; }}); a.style.display = "none"; document.querySelector('.BookC').style.pointerEvents = "all"; setTimeout(() => {document.querySelector('.BookC').style.opacity = "1";}, 740); }
 function navigateToBookFromHash() { let hash = window.location.hash.substr(1).toLowerCase(), e = document.querySelectorAll(".CASTS"), isFullStopSeparated = hash.includes("."); let a = false; e.forEach(e => { if (e.id.toLowerCase() === hash || (isFullStopSeparated && e.id.toLowerCase() === hash.split(".")[0])) { Casts124(e.id); let page = isFullStopSeparated ? hash.split(".")[1] || 1 : 1; let o = `CAST/VECTORS/${e.id}.pdf#toolbar=0&fit=Fit&zoom=${CAST____}&page=${page}`; e.src = o; a = true; }}); if (!a) { let match = hash.match(/^([a-z]+)(\d*)$/); if (match) { let title = match[1].toLowerCase(); let pageNumber = match[2]; const alternativeTitles = {
 firstsamuel: "Samuel",
 secondsamuel: "Samuel2",
@@ -257,7 +257,7 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
 <div class="Open"><p></p></div>
 </div>
 <div class="C____"><p></p></div>
-</div>
+<div class="CASTRENDER14"><p>INFORMATION</p><p class="C14">The display that you are viewing this page with is very large. Consider these to achieve perfect viewing<i>:</i></p><div class="RENDER_____"><div class="RENDER____"><img src="Write/CASTS____.png"><p class="CAST14___">Download and open in fullscreen any Book by using these icons</p></div><div class="RENDER____"><p class="CAST14_____">If attempting to display on a projector, large screen, or square panel, use the following resolutions as fitting<i>:</i><br><b>4800-2800, 3800-2200, 2800-1400, 1440, 1240, 1024, 740</b></p></div><div class="RENDER____"><p class="CAST14_______">Request Sharp.Faith to deliver a Book of The Bible by using a link. For example<i>:</i></p><p class="CAST_______"><a href="https://Sharp.Faith/CAST/Book">Sharp.Faith/CAST/Book</a><br><a href="https://Sharp.Faith/CAST/Revelation">Sharp.Faith/CAST/Revelation</a></p></div></div><div class="CASTRENDER____">CONTINUE&nbsp;TO&nbsp;THE BIBLE</div></div>
 <script>
   window.addEventListener('DOMContentLoaded', function() {
     const Books = [
@@ -267,10 +267,14 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
       { name: 'Ecclesiastes', breakpoint: 340.87, hyphenIndex: 5 },
       { name: 'Lamentations', breakpoint: 340.87, hyphenIndex: 6 },
       { name: 'Habakkuk', breakpoint: 340.87, hyphenIndex: 4 },
-      { name: 'Corinthians', breakpoint: 140, hyphenIndex: 7 },
-      { name: 'Corinthians2', breakpoint: 140, hyphenIndex: 7 },
-      { name: 'Thessalonians', breakpoint: 140, hyphenIndex: 9 },
-      { name: 'Thessalonians2', breakpoint: 140, hyphenIndex: 9 }
+      { name: 'Zephaniah', breakpoint: 340.87, hyphenIndex: 5 },
+      { name: 'Zechariah', breakpoint: 340.87, hyphenIndex: 5 },
+      { name: 'Corinthians', breakpoint: 340.87, hyphenIndex: 7 },
+      { name: 'Corinthians2', breakpoint: 340.87, hyphenIndex: 7 },
+      { name: 'Philippians', breakpoint: 340.87, hyphenIndex: 7 },
+      { name: 'Colossians', breakpoint: 340.87, hyphenIndex: 6 },
+      { name: 'Thessalonians', breakpoint: 340.87, hyphenIndex: 7 },
+      { name: 'Thessalonians2', breakpoint: 340.87, hyphenIndex: 7 }
     ];
 
     const CAST = document.querySelector('.T');
@@ -325,10 +329,18 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
     var fallbackDiv = document.querySelector('.Casts14____');
     
     var videoElement = supportedDiv.querySelector('video');
-    var videoSrc = "Write/14.webm"; // Define the video file path here
+
+    // Array containing the possible video source options
+    var videoOptions = ["Write/14.webm", "Write/14_.webm"];
+
+    // Generate a random index to select from the array
+    var randomIndex = Math.floor(Math.random() * videoOptions.length);
+
+    // Select the video source based on the random index
+    var videoSrc = videoOptions[randomIndex];
     
     if (checkAlphaSupport()) {
-      // Set the src attribute of the video element to the defined video file path
+      // Set the src attribute of the video element to the randomly selected video file path
       videoElement.src = videoSrc;
       fallbackDiv.style.display = 'none';
       supportedDiv.style.display = 'block';
@@ -340,28 +352,17 @@ window.addEventListener("hashchange", navigateToBookFromHash);</script>
   
   document.addEventListener('DOMContentLoaded', showDivsBasedOnSupport);
 </script>
-<script>document.addEventListener('DOMContentLoaded', function() {
-const Books = document.querySelectorAll('.B:not(.Casts)');
-const Cast = document.querySelector('.T');
-let isMouseOverT = false;
-let isBookOpen = false;
-let shouldNotTriggerEffect = window.location.hash !== '';
-function isInViewport(element) {
-const rect = element.getBoundingClientRect();
-const marginBooks = 4;
-const bookHeight = element.clientHeight;
-const topMargin = -bookHeight * marginBooks;
-const bottomMargin = window.innerHeight + (bookHeight * marginBooks);
-return (rect.top <= bottomMargin && rect.bottom >= topMargin && rect.left >= 0 && rect.right <= window.innerWidth);}
-function engage() {if (isMouseOverT || isBookOpen || shouldNotTriggerEffect) {return;}
+<script>document.addEventListener('DOMContentLoaded', function() { const Books = document.querySelectorAll('.B:not(.Casts)'); const Cast = document.querySelector('.T'); let isMouseOverT = false; let isBookOpen = false; let shouldNotTriggerEffect = window.location.hash !== ''; function isInViewport(element) { const rect = element.getBoundingClientRect(); const marginBooks = 4; const bookHeight = element.clientHeight; const topMargin = -bookHeight * marginBooks; const bottomMargin = window.innerHeight + (bookHeight * marginBooks); return (rect.top <= bottomMargin && rect.bottom >= topMargin && rect.left >= 0 && rect.right <= window.innerWidth); }
+function engage() { if (isMouseOverT || isBookOpen || shouldNotTriggerEffect) { return; }
 const visibleBooks = Array.from(Books).filter((element) => isInViewport(element));
-visibleBooks.forEach((element, index) => {setTimeout(() => {element.classList.add('Cast'); setTimeout(() => {element.classList.remove('Cast');}, 408);}, index * 208);});}
-function getInterval() {const intervals = [10024, 28000, 48000]; const randomIndex = Math.floor(Math.random() * intervals.length); return intervals[randomIndex];}
+visibleBooks.forEach((element, index) => {setTimeout(() => { element.classList.add('Cast'); setTimeout(() => { element.classList.remove('Cast'); }, 408); }, index * 208);}); }
+function getInterval() { const intervals = [10024, 28000, 48000]; const randomIndex = Math.floor(Math.random() * intervals.length); return intervals[randomIndex]; }
+if (Math.random() < .48) { setTimeout(engage, 1900); }
 setInterval(engage, getInterval());
 Cast.addEventListener('mouseover', () => isMouseOverT = true);
 Cast.addEventListener('mouseout', () => isMouseOverT = false);
-Books.forEach((book) => {book.addEventListener('click', () => {isBookOpen = !isBookOpen;});});
-window.addEventListener('hashchange', () => {shouldNotTriggerEffect = window.location.hash !== '';});});</script>
+Books.forEach((book) => { book.addEventListener('click', () => { isBookOpen = !isBookOpen; }); });
+window.addEventListener('hashchange', () => { shouldNotTriggerEffect = window.location.hash !== ''; });});</script>
 <script src="Write/CAST_.js"></script>
 <script src="Write/CAST____.js"></script>
 <script>const CastVector = () => { const viewportHeight = window.innerHeight; document.documentElement.style.height = `${viewportHeight}px`; document.body.style.height = `${viewportHeight}px`;};
@@ -400,6 +401,51 @@ event.preventDefault();
 });
 </script>
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const CAST_RENDER_CLASS = 'CASTRENDER14';
+    let castRenderDiv = document.querySelector('.' + CAST_RENDER_CLASS);
+    let closeButton = document.querySelector('.CASTRENDER____'); // Select the close button
+
+    function checkScreenSize() {
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        
+        if (screenWidth >= 4800 || screenHeight >= 4800) {
+            castRenderDiv.style.display = 'block';
+        } else {
+            castRenderDiv.style.display = 'none';
+        }
+    }
+
+    function debounce(func, wait, immediate) {
+        let timeout;
+        return function() {
+            const context = this;
+            const args = arguments;
+            const later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            const callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    }
+
+    function closeCastRender() {
+    castRenderDiv.style.opacity = '0';
+    setTimeout(() => {
+    castRenderDiv.style.display = 'none';
+            }, 480);
+    }
+
+    closeButton.addEventListener('click', closeCastRender); // Add click event listener to close button
+    window.addEventListener('resize', debounce(checkScreenSize, 140));
+    checkScreenSize();
+});
+</script>
+<script>
   window.addEventListener('DOMContentLoaded', function() {
   var slateOpen = true; // Variable to track whether the slate is open or closed
   var CAST = document.querySelector('.BookC');
@@ -413,6 +459,7 @@ event.preventDefault();
     var tElement = document.querySelector('.T');
     var tibsElement = document.querySelector('.TIBS');
     var vectorC = document.querySelector('.Vector');
+    var CAST____ = document.querySelectorAll('.B');
     var VectorList = document.querySelectorAll('.Vector iframe'); // Select all iframes with class Vector
     var BookC = document.querySelector('.BookC');
     var CASTS = document.querySelector('.C');
@@ -437,6 +484,11 @@ event.preventDefault();
     else {
         BookC.style.left = '24.48%';
       }
+      CAST____.forEach(function(element) {
+      setTimeout(function() {
+      element.style.whiteSpace = 'wrap';
+      }, 1400);
+      });
       BookC.style.opacity = '1';
       slateParagraph.style.left = '-.14vw';
       openParagraph.style.left = '-.14vw';
@@ -446,7 +498,10 @@ event.preventDefault();
       tElement.style.width = '0px';
       tibsElement.style.width = '0px';
       vectorC.style.width = '104%';
-        BookC.style.left = '.14vw';
+      CAST____.forEach(function(element) {
+      element.style.whiteSpace = 'nowrap';
+      });
+      BookC.style.left = '.14vw';
       tElement.style.borderImageWidth = '0px';
       BookC.style.opacity = '.14';
       slateParagraph.style.left = '1.4vw';
