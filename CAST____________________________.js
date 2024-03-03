@@ -1,7 +1,0 @@
-window.addEventListener('DOMContentLoaded', function() { const Books = [{ name: 'Deuteronomy', breakpoint: 340.7, hyphenIndex: 6 }, { name: 'Ecclesiastes', breakpoint: 340.7, hyphenIndex: 5 }, { name: 'Lamentations', breakpoint: 340.7, hyphenIndex: 6 }, { name: 'Corinthians', breakpoint: 340.7, hyphenIndex: 7 }, { name: 'Corinthians2', breakpoint: 340.7, hyphenIndex: 7 }, { name: 'Thessalonians', breakpoint: 340.7, hyphenIndex: 9 }, { name: 'Thessalonians2', breakpoint: 340.7, hyphenIndex: 9 }];
-const CAST = document.querySelector('.T');
-function insertHyphen(Book) { const BookVECTOR = document.querySelector(`.B[onclick="Casts124('${Book.name}')"]`); const CASTVector = CAST.clientWidth;
-if (CASTVector < Book.breakpoint) { const text = BookVECTOR.textContent; const index = Book.hyphenIndex;
-if (!text.includes('-')) { const newText = text.slice(0, index) + '-' + text.slice(index); BookVECTOR.textContent = newText; }} else { if (Book.name.match(/\d+$/)) { BookVECTOR.textContent = Book.name.replace(/(\d+)$/, ' $1'); } else { BookVECTOR.textContent = Book.name; }}}
-Books.forEach(Book => insertHyphen(Book));
-window.addEventListener('resize', function() {Books.forEach(Book => insertHyphen(Book));});});
