@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="14.css" rel="stylesheet">
+<meta name="viewport" content="height=device-height, width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
+</head>
+<body>
+<div id="CastRender"></div>
+<script src="CastRender124.js"></script>
+<script src="Cast.js"></script>
+<script src="CASTVECTORS.js"></script>
+<script>
+var CASTRENDER = true;
+
+function CASTRENDERS______________() {
+if (CASTRENDER) {
+var Cast = document.querySelector("#CastRender canvas");
+var C14 = Math.random();
+var CastC = [{ value: .124, castrender: .28 }, { value: .074, castrender: .48 }, { value: .19, castrender: .14 }, { value: .14, castrender: .28 }];
+var CASTSRENDERS = CAST__C14(CastC, C14);
+Cast.style.opacity = CASTSRENDERS;
+Cast.style.transition = 'all 0s ease-in-out, opacity 1.4s ease-in-out';}}
+
+function Nikki() {
+CASTRENDER = false;
+var Cast = document.querySelector("#CastRender canvas");
+Cast.style.transition = 'all 0s ease-in-out, opacity 4.8s ease-in-out';
+Cast.style.opacity = 1;
+
+setTimeout(function() {
+Cast.style.transition = 'all 0s ease-in-out, opacity 14s cubic-bezier(.14,.48,.48,1.4)';
+var C14 = Math.random();
+var CastC = [{ value: .124, castrender: .28 }, { value: .074, castrender: .48 }, { value: .19, castrender: .14 }, { value: .14, castrender: .28 }];
+var CASTSRENDERS = CAST__C14(CastC, C14);
+Cast.style.opacity = CASTSRENDERS;
+
+setTimeout(function() {
+Cast.style.transition = 'all 0s ease-in-out, opacity 1.4s ease-in-out';
+CASTRENDER = true;}, 14000);},
+4800);}
+
+function CAST__C14(CN, C14) {var CAST14 = 0; for (var i = 0; i < CN.length; i++) { CAST14 += CN[i].castrender; if (C14 < CAST14) {return CN[i].value;}} return CN[CN.length - 1].value;}
+
+setInterval(CASTRENDERS______________, 4800);
+setInterval(Nikki, 28000);
+</script>
+<script>
+  var intervalId; // Variable to store the interval ID
+
+  window.addEventListener("message", function (event) {
+    var data = event.data;
+
+    function setOpacityContinuously() {
+      var canvas = document.querySelector("#CastRender canvas");
+      if (canvas) {
+        canvas.style.opacity = "1";
+      }
+    }
+
+    if (data.action === "setOpacity") {
+      // Apply opacity immediately for the first time
+      setOpacityContinuously();
+
+      // Start the interval for subsequent applications
+      intervalId = setInterval(setOpacityContinuously, 480);
+    } else if (data.action === "resetOpacity") {
+      // Stop the interval when the user stops hovering
+      clearInterval(intervalId);
+
+      var canvas = document.querySelector("#CastRender canvas");
+      if (canvas) {
+        canvas.style.opacity = ".28";
+      }
+    }
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
