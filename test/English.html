@@ -2458,6 +2458,7 @@ function closeMenu() {
 // Event listener to open the menu when mouse enters the activator
 menuActivator.addEventListener("mouseenter", openMenu);
 menuActivator.addEventListener("click", toggleMenu);
+CAST____.addEventListener("touchstart", toggleMenu);
 menuActivator.addEventListener("keydown", handleKeyboardFocus);
 
 // Event listener to close the menu when mouse leaves the menu container or its children
