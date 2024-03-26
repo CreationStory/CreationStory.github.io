@@ -1,0 +1,64 @@
+@font-face {
+font-family:Nikki;
+src:url("../Duw/14.ttf") format("truetype");
+}
+body {
+margin:1.4vh 7.4vw 124px 4.8vw;
+background:#fff0;
+overflow:hidden;
+scrollbar-width:0px;
+}
+h4 {
+font-family:Nikki;
+color:#ffffff;
+font-size:28px;
+font-weight:900;
+text-align:start;
+filter:drop-shadow(0px 0px 1px #000);
+text-shadow:0px 1px 0px #fff, 0px 2px 0px #000, 1px 2px 0px #fff;
+}
+p {
+font-family:Nikki;
+color:#ffffff;
+font-size:28px;
+font-weight:900;
+word-spacing:4px;
+text-align:justify;
+text-align-last:center;
+filter:drop-shadow(0px 0px 1px #000);
+letter-spacing:1px;
+text-shadow:0px 1px 0px #fff, 0px 2px 0px #000, 1px 2px 4px #000;
+}
+.CAST14____ {
+margin: 0;
+height: 4.8%;
+width: 100%;
+display: block;
+background: linear-gradient(to bottom, #590000 7.4%, #fff0);
+top: 0;
+z-index: 74000;
+position: fixed;
+}
+.CAST_____ {
+margin: 0;
+height: 10.4%;
+width: 100%;
+display: block;
+background: linear-gradient(to top, #590000 48%, #fff0);
+bottom: 0;
+z-index: 74000;
+position: fixed;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar:vertical, ::-webkit-scrollbar:horizontal {
+    display: none;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+*::-webkit-scrollbar, *::-webkit-scrollbar:vertical, *::-webkit-scrollbar:horizontal {
+    display: none;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
