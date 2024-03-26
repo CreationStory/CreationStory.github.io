@@ -5,14 +5,22 @@
 <link href="Write/SCRIPTS.css" rel="stylesheet">
 <title>The Bible</title>
 <link rel="icon" href="Write/CS.ico">
-<meta name="viewport" content="height=device-height, width=device-width, minimum-scale=1, maximum-scale=4, initial-scale=1, user-scalable=yes">
+<meta name="viewport" content="height=device-height, width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
 <script>
   const CAST____ = window.innerWidth <= 1240 ? "74" : window.innerWidth <= 1501 ? "104" : window.innerWidth >= 2550 ? "190" : "140";
+
+  let CAST14 = false;
+  let CAST48 = [];
 
   function Casts124(t) {
     let e = document.querySelectorAll(".CASTS"),
         a = document.querySelector(".R"),
-        c14 = document.querySelector(".C____14"); // Select the div with class C____14
+        c14 = document.querySelector(".C____14");
+    
+    const CASTVECTORS = document.querySelector(".CASTVECTORS");
+
+    var C_______14 = document.querySelector(".C_______14");
+    C_______14.style.opacity = "0";
 
     e.forEach((e) => {
       if (e.id === t) {
@@ -24,22 +32,67 @@
         }
         e.src = source;
         e.setAttribute("CAST", source);
-        e.style.display = "block";
-      } else {
-        e.style.display = "none";
-      }
-    });
-    a.style.display = "none";
 
+        e.style.display = "block";
+
+            if (CAST14 && !CAST48.includes(t)) {
+                CASTVECTORS.style.transition = "all .74s ease-in-out";
+                CASTVECTORS.style.borderImageWidth = "";
+                setTimeout(() => {
+                    CASTVECTORS.style.transition = "";
+                    CASTVECTORS.style.borderImageWidth = "0%";
+                }, 480);
+            }
+
+        e.addEventListener('load', () => {
+        if (!a.classList.contains("CAST_________________________")) {
+    a.classList.add("CAST_________________________");
+}
+    if (CAST14) {
+        setTimeout(() => {
+            a.style.display = "none";
+            a.style.opacity = "0";
+            e.style.opacity = "1";
+            e.style.filter = "brightness(1)";
+        }, 480)} else {
+        setTimeout(() => {
+            a.style.display = "none";
+            a.style.opacity = "0";
+            e.style.opacity = "1";
+            e.style.filter = "brightness(1)";
+            CASTVECTORS.style.borderImageWidth = "0%";
+            CAST14 = true;
+        }, 1240)};
     setTimeout(() => {
+        a.classList.remove("CAST_________________________");
+    }, 2800);
+    CASTVECTORS.style.opacity = "1";
+
+
+
+      setTimeout(() => {
       document.querySelector(".BookC").style.opacity = "1";
       document.querySelector(".BookC").style.pointerEvents = "all";
-    }, 740);
+    }, 4800);
     if (window.innerWidth <= 1040) {
       document.querySelector(".BookC____").style.pointerEvents = "all";
       document.querySelector(".BookC____").style.opacity = "1";
     }
+      });
+
+      } else {
+        e.style.display = "none";
+      }
+
+        setTimeout(() => {
+        e.style.transition = "all 7.4s cubic-bezier(.14,.74,.14,1.09)";
+        }, 4800);
+    });
+
+    CAST48.push(t);
+
     setTopValue(t);
+
         e.forEach((iframe) => {
         if (iframe.id === t) {
             iframe.addEventListener('load', () => {
@@ -114,20 +167,19 @@ function setTopValue(t) {
         }
       }
     }
+    let resizeTimeout;
+function debounceResize() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    const castVector = selectedBookDiv.getAttribute('CAST-VECTOR');
+    setTopValue(castVector);
+  }, 480);
+}
+
+window.addEventListener('resize', () => {
+  debounceResize();
+});
   }
-
-  // Debounce the resize event
-  let resizeTimeout;
-  function debounceResize() {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(setTopValue, 340);
-  }
-
-  // Attach resize event listener
-  window.addEventListener('resize', debounceResize);
-
-  // Initial call to set the top value
-  setTopValue();
 
 function isPdfModeEnabled() {
     // Check if VECTOR cookie exists and returns true, or if it doesn't exist (default to PDF mode)
@@ -159,7 +211,8 @@ function isPdfModeEnabled() {
         let title = match[1].toLowerCase();
         let pageNumber = match[2];
         const alternativeTitles = {
-          firstsamuel: "Samuel"
+          firstsamuel: "Samuel",
+          secondsamuel: "Samuel2"
         };
         let mappedTitle = alternativeTitles[title];
         if (mappedTitle) {
@@ -205,12 +258,23 @@ function isPdfModeEnabled() {
       history.replaceState(null, null, window.location.pathname);
     }, 480);
   }
-  window.onload = function () {
-    setTimeout(function () {
-      navigateToBookFromHash(), history.replaceState(null, null, window.location.pathname);
-    }, 480);
-  };
-  window.addEventListener("hashchange", navigateToBookFromHash);
+document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('load', function () {
+        function checkForCookie() {
+            if (document.cookie.includes('VECTOR')) {
+                navigateToBookFromHash();
+                history.replaceState(null, null, window.location.pathname);
+            }
+        }
+        var interval = setInterval(checkForCookie, 740);
+        setTimeout(function () {
+            clearInterval(interval);
+            navigateToBookFromHash();
+            history.replaceState(null, null, window.location.pathname);
+        }, 1400);
+    });
+});
+window.addEventListener("hashchange", navigateToBookFromHash);
 </script>
 </head>
 <body>
@@ -391,6 +455,7 @@ function isPdfModeEnabled() {
   </div>
 </div>
 </div>
+<div class="CASTVECTORS"></div>
 <iframe id="Genesis" class="CASTS" data-src="CAST/VECTORS/Genesis.pdf#toolbar=0&fit=Fit" CAST="CAST/VECTORS/English/Genesis.html"></iframe>
 <iframe id="Exodus" class="CASTS" data-src="CAST/VECTORS/Exodus.pdf#toolbar=0&fit=Fit" CAST="CAST/VECTORS/English/Exodus.html"></iframe>
 <iframe id="Leviticus" class="CASTS" data-src="CAST/VECTORS/Leviticus.pdf#toolbar=0&fit=Fit" CAST="CAST/VECTORS/English/Leviticus.html"></iframe>
@@ -478,8 +543,6 @@ function isPdfModeEnabled() {
 <div class="C____"><p></p></div>
 <div class="C_______"><p></p></div>
 <div class="VECTOR____CAST"><div class="VECTOR____"><div class="C_____14"></div><p><a href="Cymraeg.html">Welsh</a>&nbsp; &#8226; &nbsp;<a href="Norsk.html">Norwegian</a>&nbsp; &#8226; &nbsp;<a href="Deutsch.html">German</a>&nbsp; &#8226; &nbsp;<a href="Français.html">French</a>&nbsp; &#8226; &nbsp;<a href="Русский.html">Russian</a>&nbsp; &#8226; &nbsp;<a href="Suomi.html">Finnish</a>&nbsp; &#8226; &nbsp;<a href="Íslenskur.html">Iclandic</a>&nbsp; &#8226; &nbsp;<a href="عربي.html">Arabic</a>&nbsp; &#8226; &nbsp;<a href="Cymraeg.html">Cymraeg</a>&nbsp; &#8226; &nbsp;<a href="Norsk.html">Norsk</a>&nbsp; &#8226; &nbsp;<a href="Deutsch.html">Deustch</a>&nbsp; &#8226; &nbsp;<a href="Français.html">Français</a>&nbsp; &#8226; &nbsp;<a class="PYCCKNN" href="Русский.html">Русский</a>&nbsp; &#8226; &nbsp;<a href="Suomi.html">Suomi</a>&nbsp; &#8226; &nbsp;<a href="Íslenskur.html">Íslenska</a>&nbsp; &#8226; &nbsp;<a href="عربي.html">&#65165;&#65247;&#65151;&#65228;&#65143;&#65198;&#65142;&#65169;&#65268;&#65149;&#65172;</a></p></div></div>
-
-<iframe class="IFRAMECHECK" id="IFRAMECHECK____" src="test.pdf"></iframe>
 
 <div class="CAST____C4">
 <div class="CAST______________48"><div class="C____14_____"></div><p class="CAST_">DOWNLOAD</p><p class="CAST___________________14">By downloading a Book of The Bible, you will have a file of that Book&#8202;. You may then read the Book without having to be connected to the internet.</p>
@@ -1315,6 +1378,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var CASTS = document.querySelector('.C');
     var CAST______________ = document.querySelector(".C____14");
     var CAST___ = document.querySelector('.CS_____');
+    var CAST_____48 = document.querySelector('.CASTVECTORS');
 
     // Toggle the slate state
     slateOpen = !slateOpen;
@@ -1361,12 +1425,18 @@ setTimeout(function() {
 }, 1400);
         CAST___.style.transition = 'opacity .48s 1.4s ease-in-out';
         CAST___.style.opacity = '1';
+        setTimeout(() => {
+        CAST_____48.style.transition = "";
+        CAST_____48.style.opacity = "1";
+        }, 480);
     } else {
       tElement.style.width = '0px';
       tibsElement.style.width = '0px';
       vectorC.style.width = '104%';
       BookC.style.left = '.14vw';
+      setTimeout(() => {
       tElement.style.borderImageWidth = '0px';
+      }, 1400);
       BookC.style.opacity = '.14';
       slateParagraph.style.left = '1.4vw';
       openParagraph.style.left = '1.4vw';
@@ -1377,18 +1447,12 @@ setTimeout(function() {
       }
       CAST___.style.transition = 'opacity .074s ease-in-out';
       CAST___.style.opacity = '0';
+      CAST_____48.style.transition = "all .14s ease-in-out";
+      CAST_____48.style.opacity = "0";
     }
 }
 
     handleResize();
-
-    VectorList.forEach(function (iframe) {
-      if (slateOpen) {
-        iframe.style.width = '74vw';
-      } else {
-        iframe.style.width = '104vw';
-      }
-    });
 
     window.addEventListener('resize', function() {
     handleResize();
@@ -1809,63 +1873,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('hashchange', handleLanguageDetectionAndTranslation);
 });
 </script>
-<script>
-  function isIE() {
-    return navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1;
-  }
-  function isChrome() {
-    var match = navigator.userAgent.match(/Chrome\/(\d+)/);
-    return match !== null && parseInt(match[1], 10) < 48;
-  }
-  function isFirefox() {
-    var match = navigator.userAgent.match(/Firefox\/(\d+)/);
-    return match !== null && parseInt(match[1], 10) < 48;
-  }
-  function isEdge() {
-    var match = navigator.userAgent.match(/Edge\/(\d+)/);
-    return match !== null && parseInt(match[1], 10) < 12;
-  }
-  function isOpera() {
-    var match = navigator.userAgent.match(/OPR\/(\d+)/);
-    return match !== null && parseInt(match[1], 10) < 12;
-  }
-  function handleClick() {
-    var elementToHide = document.querySelector(".CAST____48");
-    if (elementToHide) {
-      elementToHide.classList.add("CS____");
-      setTimeout(function () {
-        elementToHide.style.display = "none";
-      }, 2800);
-    }
-  }
-  function CAST() {
-    const element = document.querySelector(".CAST_______48");
-    element.style.background = "repeating-radial-gradient(#ff0000, #740000)";
-    var protocol = window.location.protocol;
-    window.location.href = protocol + "//Sharp.Faith/TheBible";
-  }
-  document.addEventListener("DOMContentLoaded", function () {
-    var element = document.querySelector(".CAST_______48");
-    if (element) {
-      element.addEventListener("click", CAST);
-    }
-  });
-  document.addEventListener("DOMContentLoaded", function () {
-    var element = document.querySelector(".CASTS_____");
-    if (element) {
-      element.addEventListener("click", handleClick);
-    }
-  });
-  window.onload = function () {
-    if (isIE() || isChrome() || isFirefox() || isEdge() || isOpera()) {
-      var elements = document.getElementsByClassName("CAST____48");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].style.display = "flex";
-      }
-    }
-  };
-</script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   // Check if the browser supports CSS filters and mix-blend-mode
@@ -2868,7 +2875,9 @@ document.addEventListener('DOMContentLoaded', function() {
     resetButton.addEventListener('pointerdown', handleReset);
 });
 
-// Retrieve user's preferences from the cookies and apply them
+// Declare supportsPDF variable outside the window.onload function
+var supportsPDF = false;
+
 window.onload = function() {
     var cookie = document.cookie;
     var preferences = cookie.split(';').map(function(cookie) {
@@ -2896,16 +2905,35 @@ window.onload = function() {
     if (preferences.color) {
         document.getElementById('color').value = preferences.color;
     }
+
     if (preferences.VECTOR) {
         if (preferences.VECTOR === 'true') {
             document.getElementById('vectorTrue').checked = true;
-        } else {
+        } else if (preferences.VECTOR === 'false') {
             document.getElementById('vectorFalse').checked = true;
         }
     }
 
+    // Check for PDF support only if not already set by preferences cookie
+    if (preferences.VECTOR === undefined) {
+        if (navigator.mimeTypes && navigator.mimeTypes.length) {
+            for (var i = 0; i < navigator.mimeTypes.length; i++) {
+                if (navigator.mimeTypes[i].type === 'application/pdf') {
+                    supportsPDF = true;
+                    break;
+                }
+            }
+        }
+
+        // Set VECTOR cookie based on PDF support
+        var vectorValue = supportsPDF ? 'true' : 'false';
+        var expirationDate = new Date();
+        expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Set expiration to 1 year from now
+        var expires = "expires=" + expirationDate.toUTCString();
+        document.cookie = 'VECTOR=' + vectorValue + '; ' + expires + '; path=/';
+    }
+
     setTextStyling(); // Apply the saved preferences
-    saveVectorPreference(); // Save the Vector preference
 };
 
 window.addEventListener('message', function(event) {
@@ -3072,53 +3100,6 @@ function handleThresholdExceeded() {
         }
     }
 });
-</script>
-
-<script>
-// Function to display the PDF support information in a popup
-function showPDFSupportInfo(message) {
-  // Create a popup with the provided message
-  alert(message);
-}
-
-// Function to check if the browser supports PDF files
-function testPDFSupport() {
-  // Get the iframe element
-  var iframe = document.getElementById('IFRAMECHECK____');
-
-  // Check if the browser recognizes the 'application/pdf' MIME type
-  var supportsPDF = false;
-
-  if (navigator.mimeTypes && navigator.mimeTypes.length) {
-    for (var i = 0; i < navigator.mimeTypes.length; i++) {
-      if (navigator.mimeTypes[i].type === 'application/pdf') {
-        supportsPDF = true;
-        break;
-      }
-    }
-  }
-
-  // Check if the iframe can be accessed and loaded
-  var iframeLoaded = false;
-  try {
-    var contentWindow = iframe.contentWindow;
-    var contentDocument = iframe.contentDocument || iframe.contentWindow.document;
-    if (contentWindow && contentDocument) {
-      iframeLoaded = true;
-    }
-  } catch (error) {
-    console.log('Error:', error);
-  }
-
-  // Create the message based on the results
-  var message = supportsPDF && iframeLoaded ? 'Browser fully supports PDF files.' : 'Browser does not fully support PDF files.';
-
-  // Display the PDF support information in a popup
-  showPDFSupportInfo(message);
-}
-
-// Call the function to test PDF support
-testPDFSupport();
 </script>
 
 </body>
