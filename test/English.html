@@ -5,7 +5,7 @@
 <link href="Write/SCRIPTS.css" rel="stylesheet">
 <title>The Bible</title>
 <link rel="icon" href="Write/CS.ico">
-<meta name="viewport" content="height=device-height, width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
 <script>
   const CAST____ = window.innerWidth <= 1240 ? "74" : window.innerWidth <= 1501 ? "104" : window.innerWidth >= 2550 ? "190" : "140";
 
@@ -173,7 +173,7 @@ function debounceResize() {
   resizeTimeout = setTimeout(() => {
     const castVector = selectedBookDiv.getAttribute('CAST-VECTOR');
     setTopValue(castVector);
-  }, 480);
+  }, 1400);
 }
 
 window.addEventListener('resize', () => {
@@ -286,7 +286,6 @@ window.addEventListener("hashchange", navigateToBookFromHash);
 <div class="T">
 <div class="C____14"></div>
 <div class="C">
-<div class="B CASTS_______"></div>
 <div class="B" onclick="Casts124('Genesis')" CAST-VECTOR="Genesis" tabindex="0">Genesis</div>
 <div class="B" onclick="Casts124('Exodus')" CAST-VECTOR="Exodus" tabindex="0">Exodus</div>
 <div class="B" onclick="Casts124('Leviticus')" CAST-VECTOR="Leviticus" tabindex="0">Leviticus</div>
@@ -349,12 +348,11 @@ window.addEventListener("hashchange", navigateToBookFromHash);
 <div class="B" onclick="Casts124('James')" CAST-VECTOR="James" tabindex="0">James</div>
 <div class="B" onclick="Casts124('Peter')" CAST-VECTOR="Peter" tabindex="0">Peter</div>
 <div class="B" onclick="Casts124('Peter2')" CAST-VECTOR="Peter2" tabindex="0">Peter 2</div>
-<div class="B" onclick="Casts124('FirstEpistleofJohn')" CAST-VECTOR="FirstEpistleofJohn" tabindex="0"><p><i>The</i><br></p>First Epistle of<br>John</div>
-<div class="B" onclick="Casts124('SecondEpistleofJohn')" CAST-VECTOR="SecondEpistleofJohn" tabindex="0"><p><i>The</i><br></p>Second Epistle of<br>John</div>
-<div class="B" onclick="Casts124('ThirdEpistleofJohn')" CAST-VECTOR="ThirdEpistleofJohn" tabindex="0"><p><i>The</i><br></p>Third Epistle of<br>John</div>
+<div class="B" onclick="Casts124('FirstEpistleofJohn')" CAST-VECTOR="FirstEpistleofJohn" tabindex="0"><p><i>THE</i></p>First Epistle of<br>John</div>
+<div class="B" onclick="Casts124('SecondEpistleofJohn')" CAST-VECTOR="SecondEpistleofJohn" tabindex="0"><p><i>THE</i></p>Second Epistle of<br>John</div>
+<div class="B" onclick="Casts124('ThirdEpistleofJohn')" CAST-VECTOR="ThirdEpistleofJohn" tabindex="0"><p><i>THE</i></p>Third Epistle of<br>John</div>
 <div class="B" onclick="Casts124('Jude')" CAST-VECTOR="Jude" tabindex="0">Jude</div>
 <div class="B" onclick="Casts124('Revelation')" CAST-VECTOR="Revelation" tabindex="0"><p><i><b>The</b> <b>Book</b> of</i><br></p>Revelation</div>
-<div class="B CASTS______________"></div>
 </div>
 <div class="B Casts14_"><video autoplay muted loop><source type="video/webm"></video></div>
 <div class="B Casts14____"></div>
@@ -849,81 +847,156 @@ window.addEventListener("hashchange", navigateToBookFromHash);
 <script>
   window.addEventListener('DOMContentLoaded', function() {
     const Books = [
-      { name: 'Deuteronomy', breakpoint: 340.87, hyphenIndex: 6 },
-      { name: 'Chronicles', breakpoint: 340.87, hyphenIndex: 8 },
-      { name: 'Chronicles2', breakpoint: 340.87, hyphenIndex: 8 },
-      { name: 'Ecclesiastes', breakpoint: 340.87, hyphenIndex: 5 },
-      { name: 'Lamentations', breakpoint: 340.87, hyphenIndex: 6 },
-      { name: 'Habakkuk', breakpoint: 340.87, hyphenIndex: 4 },
-      { name: 'Zephaniah', breakpoint: 340.87, hyphenIndex: 5 },
-      { name: 'Zechariah', breakpoint: 340.87, hyphenIndex: 5 },
-      { name: 'Corinthians', breakpoint: 340.87, hyphenIndex: 7 },
-      { name: 'Corinthians2', breakpoint: 340.87, hyphenIndex: 7 },
-      { name: 'Philippians', breakpoint: 340.87, hyphenIndex: 7 },
-      { name: 'Colossians', breakpoint: 340.87, hyphenIndex: 6 },
-      { name: 'Thessalonians', breakpoint: 340.87, hyphenIndex: 7 },
-      { name: 'Thessalonians2', breakpoint: 340.87, hyphenIndex: 7 }
+      { name: 'Deuteronomy', hyphenIndex: 6 },
+      { name: 'Chronicles', hyphenIndex: 8 },
+      { name: 'Chronicles2', hyphenIndex: 8 },
+      { name: 'Ecclesiastes', hyphenIndex: 5 },
+      { name: 'SongofSolomon', hyphenIndex: null },
+      { name: 'Lamentations', hyphenIndex: 6 },
+      { name: 'Habakkuk', hyphenIndex: 4 },
+      { name: 'Zephaniah', hyphenIndex: 5 },
+      { name: 'Zechariah', hyphenIndex: 5 },
+      { name: 'Corinthians', hyphenIndex: 7 },
+      { name: 'Corinthians2', hyphenIndex: 7 },
+      { name: 'Philippians', hyphenIndex: 7 },
+      { name: 'Colossians', hyphenIndex: 6 },
+      { name: 'Thessalonians', hyphenIndex: 7 },
+      { name: 'Thessalonians2', hyphenIndex: 7 },
+      { name: 'FirstEpistleofJohn', hyphenIndex: null },
+      { name: 'SecondEpistleofJohn', hyphenIndex: null },
+      { name: 'ThirdEpistleofJohn', hyphenIndex: null }
     ];
 
-    const CAST = document.querySelector('.T');
+    // Function to determine if a Book needs hyphenation or unhyphenation
+    function adjustHyphenation(book) {
+      const bookElement = document.querySelector(`.B[onclick="Casts124('${book.name}')"]`);
+      const containerElement = document.querySelector('.T');
+      const containerWidth = containerElement.clientWidth;
+      const bookWidth = bookElement.getBoundingClientRect().width;
 
-    function insertHyphen(Book) {
-      const BookVECTOR = document.querySelector(`.B[onclick="Casts124('${Book.name}')"]`);
-      const CASTVector = CAST.clientWidth;
-
-      if (CASTVector < Book.breakpoint) {
-        const text = BookVECTOR.textContent;
-        const index = Book.hyphenIndex;
-
-        if (!text.includes('-')) {
-          const newText = text.slice(0, index) + '-<br>' + text.slice(index);
-          BookVECTOR.innerHTML = newText;
+      if (bookWidth > containerWidth) {
+        // Hyphenate if the Book width exceeds the container width
+        if (book.name === 'SongofSolomon') {
+          hyphenateSongofSolomon(bookElement);
+        } else if (book.name === 'FirstEpistleofJohn') {
+          hyphenateFirstEpistleofJohn(bookElement);
+        } else if (book.name === 'SecondEpistleofJohn') {
+          hyphenateSecondEpistleofJohn(bookElement);
+        } else if (book.name === 'ThirdEpistleofJohn') {
+          hyphenateThirdEpistleofJohn(bookElement);
+        } else {
+          hyphenateBook(bookElement, book.hyphenIndex);
         }
       } else {
-        if (Book.name.match(/\d+$/)) {
-          BookVECTOR.textContent = Book.name.replace(/(\d+)$/, ' $1');
+        // Unhyphenate if the Book width does not exceed the container width
+        if (book.name === 'SongofSolomon') {
+          unhyphenateSongofSolomon(bookElement);
+        } else if (book.name === 'FirstEpistleofJohn') {
+          unhyphenateFirstEpistleofJohn(bookElement);
+        } else if (book.name === 'SecondEpistleofJohn') {
+          unhyphenateSecondEpistleofJohn(bookElement);
+        } else if (book.name === 'ThirdEpistleofJohn') {
+          unhyphenateThirdEpistleofJohn(bookElement);
         } else {
-          BookVECTOR.textContent = Book.name;
+          unhyphenateBook(bookElement);
         }
+        // Delay rechecking the Book width for hyphenation after unhyphenating
+        setTimeout(() => {
+          checkHyphenationAfterUnhyphenation(book);
+        }, 480);
       }
     }
 
-    Books.forEach(Book => insertHyphen(Book));
+    // Function to hyphenate a Book
+    function hyphenateBook(bookElement, hyphenIndex) {
+      const text = bookElement.textContent;
+      if (!text.includes('-')) {
+        const newText = text.slice(0, hyphenIndex) + '-<br>' + text.slice(hyphenIndex);
+        bookElement.innerHTML = newText;
+      }
+    }
 
+    // Function to unhyphenate a Book
+    function unhyphenateBook(bookElement) {
+      const text = bookElement.innerHTML;
+      const newText = text.replace('-<br>', ''); // Remove both hyphen and line break
+      bookElement.innerHTML = newText;
+    }
+
+    // Function to hyphenate SongofSolomon
+    function hyphenateSongofSolomon(bookElement) {
+      const newText = 'Song<br>of<br>Solomon'; // HTML representation of "Song of Solomon"
+      bookElement.innerHTML = newText;
+    }
+
+    // Function to unhyphenate SongofSolomon
+    function unhyphenateSongofSolomon(bookElement) {
+      bookElement.textContent = 'Song of Solomon';
+    }
+
+    
+    function hyphenateFirstEpistleofJohn(bookElement) {
+      const CAST14 = '<p><i>The</i></p>First<br>Epistle of<br>John';
+      bookElement.innerHTML = CAST14;
+    }
+
+   
+    function unhyphenateFirstEpistleofJohn(bookElement) {
+    const CAST14 = '<p><i>The</i></p>First Epistle of<br>John';
+    bookElement.innerHTML = CAST14;
+    }
+
+    // Function to hyphenate SecondEpistleofJohn
+    function hyphenateSecondEpistleofJohn(bookElement) {
+      const CAST14 = '<p><i>The</i></p>Second<br>Epistle of<br>John';
+      bookElement.innerHTML = CAST14;
+    }
+
+    // Function to unhyphenate SecondEpistleofJohn
+    function unhyphenateSecondEpistleofJohn(bookElement) {
+    const CAST14 = '<p><i>The</i></p>Second Epistle of<br>John';
+    bookElement.innerHTML = CAST14;
+    }
+
+    // Function to hyphenate ThirdEpistleofJohn
+    function hyphenateThirdEpistleofJohn(bookElement) {
+      const CAST14 = '<p><i>The</i></p>Third<br>Epistle of<br>John';
+      bookElement.innerHTML = CAST14;
+    }
+
+    // Function to unhyphenate ThirdEpistleofJohn
+    function unhyphenateThirdEpistleofJohn(bookElement) {
+      const CAST14 = '<p><i>The</i></p>Third Epistle of<br>John';
+      bookElement.innerHTML = CAST14;
+    }
+
+    // Function to check for hyphenation after unhyphenation
+    function checkHyphenationAfterUnhyphenation(book) {
+      const bookElement = document.querySelector(`.B[onclick="Casts124('${book.name}')"]`);
+      const containerElement = document.querySelector('.T');
+      const containerWidth = containerElement.clientWidth;
+      const bookWidth = bookElement.getBoundingClientRect().width;
+
+      if (bookWidth > containerWidth) {
+        adjustHyphenation(book);
+      }
+    }
+
+    // Function to adjust hyphenation for all Books
+    function handleResize() {
+      Books.forEach(book => adjustHyphenation(book));
+    }
+
+    // Initial call to adjust hyphenation
+    handleResize();
+
+    // Add event listener for window resize with debouncing
     let resizeTimer;
     window.addEventListener('resize', function() {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function() {
-        Books.forEach(Book => insertHyphen(Book));
-      }, 480);
+      resizeTimer = setTimeout(handleResize, 140); // Adjust debounce time as needed
     });
-    
-function updateText(attribute, initialText, replacementText, alternateText) {
-    var elements = document.querySelectorAll('[CAST-VECTOR="' + attribute + '"]');
-    elements.forEach(function(element) {
-        if (window.innerWidth <= 1240) {
-            element.innerHTML = alternateText;
-        } else if (window.innerWidth <= 1400) {
-            element.innerHTML = replacementText;
-        } else {
-            element.innerHTML = initialText;
-        }
-    });
-}
-
-function handleResize() {
-    updateText('SongofSolomon', 'Song of Solomon', 'Song of<br>Solomon', 'Song of<br>Solomon');
-    updateText('FirstEpistleofJohn', '<p><i>The</i><br></p>First Epistle of<br>John', '<p><i>The</i><br></p>First Epistle<br>of<br>John', '<p><i>The</i><br></p>First<br>Epistle<br>of John');
-    updateText('SecondEpistleofJohn', '<p><i>The</i><br></p>Second Epistle of<br>John', '<p><i>The</i><br></p>Second Epistle<br>of<br>John', '<p><i>The</i><br></p>Second<br>Epistle<br>of John');
-    updateText('ThirdEpistleofJohn', '<p><i>The</i><br></p>Third Epistle of<br>John', '<p><i>The</i><br></p>Third Epistle<br>of<br>John', '<p><i>The</i><br></p>Third<br>Epistle<br>of John');
-}
-
-// Initial call to handle resize
-handleResize();
-
-// Add event listener for window resize
-window.addEventListener('resize', handleResize);
-});
+  });
 </script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -2137,7 +2210,6 @@ if (hash === "#books" || hash === "#bookview" || hash === "#booksview" || hash =
     const Vector = document.querySelector(".Vector");
     const CAST124 = document.querySelector(".T");
     const TIBS = document.querySelector(".TIBS");
-    const paragraphs_____ = document.querySelectorAll('.B p');
     const CAST____14 = document.querySelector('.C____14');
     const BookC = document.querySelector('.BookC');
     const BookC____ = document.querySelector('.BookC____');
@@ -2149,9 +2221,6 @@ if (hash === "#books" || hash === "#bookview" || hash === "#booksview" || hash =
         Vector.style.width = "0%";
         CAST124.style.width = "100%";
         TIBS.style.width = "100%";
-        paragraphs_____.forEach(paragraph => {
-            paragraph.style.margin = "-1.4% 0 0 2.28%";
-        });
         CAST____14.style.display = "none";
         BookC.style.display = "none";
         BookC____.style.display = "none";
