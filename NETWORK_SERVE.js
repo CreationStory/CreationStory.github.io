@@ -14,8 +14,6 @@ const ASSETS = [
   "/FALLBACK.html"
 ];
 
-return;
-
 function HOSTS_ALLOWED(hostname) {
   return Array.from(HOSTS).some(HOST => hostname === HOST || hostname.endsWith("." + HOST));
 }
@@ -152,4 +150,5 @@ async function fetchWithTimeout(resource, options = {}) {
       if (attempt > 0) await new Promise(resolve => setTimeout(resolve, getRetryDelay(attempt)));
     } finally { clearTimeout(timeoutId); }
   }
+
 }
